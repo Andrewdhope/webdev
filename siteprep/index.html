@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<!-- https://www.w3schools.com/howto/howto_website.asp -->
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts/build.js"></script>
+	<script src="scripts/scratch.js"></script>
+</head>
+<body>
+<header>
+	<div class="centered">
+		<a>[</a>
+		<a class="split" href=#>work</a>
+		<a>|</a>
+		<a class="split" href=#>life</a>
+		<a>]</a>
+	</div>
+</header>
+<!-- work loads the career menu, life loads the leisure menu --> 
+	<div class="group">
+		<section id="content">
+		SECTION
+		</section>
+		<nav>
+			<ul>
+				<li><a href=# onclick="ajaxLoad('xml/career.xml',buildCareer,'xml/transform.xsl',['interests'])">interests</a></li>
+				<li><a href=# onclick="ajaxLoad('xml/career.xml',buildCareer,'xml/transform.xsl',['knowledge'])">knowledge</a></li>
+				<li><a href=# onclick="ajaxLoad('xml/career.xml',buildCareer,'xml/transform.xsl',['projects'])">projects</a></li>
+			</ul>
+		</nav>
+	</div>
+<footer>
+	FOOTER
+</footer>
+</body>
+</html>

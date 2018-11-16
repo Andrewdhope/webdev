@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+<!-- interests, knowledge, projects -->
+<!-- aim to highlight 3-5 for each -->
+<!-- these should chronicle my professional career, but focus on my ideal landing spot -->
+<!-- a little vague is ok, it is a *supplement* to the resume -->
+<!-- this can be goal-oriented, doesn't have to be strictly a statement of fact -->
+<!-- don't look back, look forward -->
+	<section option="media">
+		<bullet>
+			<title>analysis</title>
+			<note>continual research</note>
+			<note>get to the next question</note>
+			<line>troubleshooting</line>
+			<line>testing</line>
+		</bullet>
+	</section>
+	<section option="actions">
+		<bullet>
+			<title>analysis</title>
+			<note>continual research</note>
+			<note>get to the next question</note>
+			<line>troubleshooting</line>
+			<line>testing</line>
+		</bullet>
+		<!-- Actions > Sporting > https://sandiego.craigslist.org/d/sporting-goods/search/sga -->
+	<section option="ideas">
+		<bullet>
+			<title>ideas</title>
+				<line option="books">
+					<!--use json for each book-->
+					<effect option="lthree">
+					<item>Superforecasting
+						<timer>finished:</timer>
+					</item>
+					<item>Blood Meridian</item>
+					<item>House of Leaves</item>
+					</effect>
+					<effect option="nthree">
+					<item>The Signal and the Noise
+						<timer>started:</timer>
+					</item>
+					<item><item>
+					</effect>
+				</line>
+		</bullet>
+	<section option="pitch">
+		<note>R-Publisher</note>
+		<note>Home Cloud PC</note>
+	</section>
+	<section option="lit">
+		<leadin>last three:</leadin>
+		<leadin>next three:</leadin>
+	</section>
+</content>

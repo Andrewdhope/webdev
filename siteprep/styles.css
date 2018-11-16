@@ -1,0 +1,65 @@
+/* --- HEADER --- */
+
+header {
+	/* border: 3px solid; */ 
+	background-color: #4CAF50;
+	padding-top: 20px;
+}
+
+/* split class to hold styles for the main branching option*/
+.split {
+	color: #cccccc;
+}
+.centered { 
+	text-align: center;
+}
+
+/* --- GENERAL --- */ 
+
+a {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* --- BODY --- */ 
+
+section {
+	width: 75%;
+	float: left;
+	background-color: #3A4E7A;
+	color: #999999;
+}
+
+nav {
+	width: 25%;
+	float: right;
+	background-color: #4E2F60;
+	color: #999999;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+li:before {
+	content: " - ";
+	padding-right: 10px;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* --- FOOTER --- */
+
+footer {
+	text-align: right;
+	font-size: x-small; /* check */
+}

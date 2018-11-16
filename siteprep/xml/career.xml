@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+<!-- interests, knowledge, projects -->
+<!-- aim to highlight 3-5 for each -->
+<!-- these should chronicle my professional career, but focus on my ideal landing spot -->
+<!-- a little vague is ok, it is a *supplement* to the resume -->
+<!-- this can be goal-oriented, doesn't have to be strictly a statement of fact -->
+<!-- don't look back, look forward -->
+	<section option="interests">
+		<bullet>
+			<title>Design</title>
+			<note>needs work</note>
+			<line>design philosophy</line>
+			<line>design for x</line>
+			<line>innovation framework</line>
+		</bullet>
+		<bullet>
+			<title>Mining</title>
+			<line>value definition</line>
+			<line>identify inefficiency</line>
+		</bullet>
+		<bullet>
+			<title>Modeling</title>
+			<line>simulation</line>
+			<line>forecasting</line>
+			<line>decision science</line>
+			<line></line>
+		</bullet>
+	</section>
+	<section option="knowledge">
+		<!-- <bullet> 
+			<title>healthcare</title>
+			<note></note>
+			<line></line>
+		</bullet> -->
+		<bullet>
+			<title>Engineering</title>
+			<note></note>
+			<line>systems analysis</line>
+			<line>database design</line>
+			<line>process optimization</line>
+		</bullet>
+		<bullet>
+			<title>Statistics</title>
+			<line>regression</line>
+			<line>inference</line>
+			<line>visualization</line>
+		</bullet>
+		<bullet>
+			<title>Programming</title>
+			<note></note>
+			<line>scripting (M, R)</line>
+			<line>web design (XHTML)</line>
+			<line>analysis (R)</line>
+			<line>something (C#)</line>
+		</bullet>
+		<!-- <bullet>knowledge management</bullet> -->
+		<!-- <bullet>systems deisgn</bullet> -->
+	</section>
+	<section option="projects">
+		<!-- 
+		Database Design (enterprise architecture)
+		Technical Project Leadership (Hartford)
+		Innovation in Healthcare Delivery (PRO, ACO)(Scripps, Stanford, Partners)
+		Technical Support for Web Applications (MyChart, Mobile)
+		-->
+		<bullet>
+			<title>In healthcare</title>
+			<note></note>
+			<line>Scripps</line>
+				<detail>population health analytics</detail>
+			<line>Partners</line>
+			<line>Hartford</line>
+			<line>Stanford</line>
+		</bullet>
+		<bullet>
+			<title>In engineering</title>
+			<note></note>
+			<line>University of Pittsburgh</line>
+			<line>Curtiss-Wright</line>
+			<line></line>
+			<line>modeling</line>
+			<detail>simulation, decision, prediction</detail>
+		</bullet>
+		<bullet>
+			<title>In software</title>
+			<note></note>
+			<line>This website</line>
+		</bullet>
+		<bullet>
+			<title>In leadership</title>
+			<note></note>
+			<line>Hartford</line>
+			<line>Productivity - how we do work</line>
+		</bullet>
+	</section>
+	<section option="pitch">
+		<note>data science, data governance, data systems</note>
+		<note>develop a data science program with a full system architecture</note>
+	</section>
+</content>

@@ -1,0 +1,66 @@
+I want something that is...
+- Independent
+- Creative
+- Engineering, Technical, Data-driven, Mathematically affirmed
+- Variation, Low-overhead
+- Purposeful
+
+I can offer these pillars:
+- Creative
+- Curious, Knowledgable, Diligent
+- Logical
+- Empathetic
+- Consistent
+
+I have these accomplishments: (resume review)
+
+Express the above in design by:
+- Using consistent building blocks for the site. Simple, elegant. [consistent]
+- Self-written using classic elements. ORIGINAL. Use basic HMTL5 for pop. [creative]
+- Know your user. Usability concepts. [empathy]
+
+
+Layout before content.
+Banner with two paths [work|life]
+Work segmented into:
+- past, present, future?
+- education, work, skills
+- interests, knowledge, projects (ding!)
+	+ interests (content)
+		- efficiency
+		- value
+		- design
+		- leadership
+	+ knowledge
+	+ projects
+Life segmented into:
+- media
+- action 
+- ideas
+	+ books
+	+ papers
+	+ articles
+
+
+- Make a tabular or clever navigation. Something easily extendible. 
+	+ an XML resume would do - this can be loaded and displayed with AJAX
+		- how can i then display knowledge and projects, in the same space, without AJAX
+			+ Why not AJAX? These are essentially resume-sections as well.
+			+ The XML DOM and JS functions can shift to modify the formatting a bit.
+				- Keep it simple for now. This is cool and should work.
+			+ XSL to dynamically style the sections
+	+ just an outline
+	+ could embed nodes with tags to create different versions (based on querystring)
+		- maybe just do one first, also the work section should be general already
+	+ go ahead with this. a banner, right hand nav, left-central content, footer
+	+ xhtml conversion and validation
+	
+- Layout options
+	+ float (standard and useable)
+	+ flex (IE11+, mobile)
+	+ bootstrap (IE11+, mobile)
+
+		
+- Animations
+	+ Put basically a centered header with work and life on page load. On work click, shoot the header up and fill in the nav with its xml and the content section with an intro-placeholder-business card waiting for the nav.
+	+ wiping effects
