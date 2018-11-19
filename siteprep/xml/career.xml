@@ -9,21 +9,21 @@
 	<section option="interests">
 		<bullet>
 			<title>Design</title>
-			<note>needs work</note>
-			<line>design philosophy</line>
-			<line>design for x</line>
-			<line>innovation framework</line>
+			<line>philosophy</line>
+			<line>objectives</line>
+			<line>innovation</line>
 		</bullet>
 		<bullet>
 			<title>Mining</title>
-			<line>value definition</line>
-			<line>identify inefficiency</line>
+			<line>structure</line>
+			<line>evaluation</line>
+			<line>gains</line>
 		</bullet>
 		<bullet>
 			<title>Modeling</title>
 			<line>simulation</line>
 			<line>forecasting</line>
-			<line>decision science</line>
+			<line>decision</line>
 			<line></line>
 		</bullet>
 	</section>
@@ -36,9 +36,9 @@
 		<bullet>
 			<title>Engineering</title>
 			<note></note>
-			<line>systems analysis</line>
-			<line>database design</line>
-			<line>process optimization</line>
+			<line>dataset analysis</line>
+			<line>systems design</line>
+			<line>process improvement</line>
 		</bullet>
 		<bullet>
 			<title>Statistics</title>
@@ -49,13 +49,11 @@
 		<bullet>
 			<title>Programming</title>
 			<note></note>
-			<line>scripting (M, R)</line>
-			<line>web design (XHTML)</line>
 			<line>analysis (R)</line>
-			<line>something (C#)</line>
+			<line>processing (M)</line>
+			<line>development (C#)</line>
+			<line>presentation (XHTML)</line>
 		</bullet>
-		<!-- <bullet>knowledge management</bullet> -->
-		<!-- <bullet>systems deisgn</bullet> -->
 	</section>
 	<section option="projects">
 		<!-- 
@@ -65,37 +63,77 @@
 		Technical Support for Web Applications (MyChart, Mobile)
 		-->
 		<bullet>
-			<title>In healthcare</title>
-			<note></note>
-			<line>Scripps</line>
-				<detail>population health analytics</detail>
-			<line>Partners</line>
-			<line>Hartford</line>
-			<line>Stanford</line>
+			<title>Healthcare</title>
+			<note>Go with the full business names, or the shortened names?</note>
+			<line>Partners HealthCare System
+				<project>Custom mobile application
+					<role>Design analyst</role>
+					<link>https://itunes.apple.com/us/app/partners-patient-gateway-mobile/id1175078347?mt=8</link>
+				</project>
+				<project>Patient reported outcome measures
+					<role>Application engineer</role>
+					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
+				</project>
+			</line>
+			<line>Hartford HealthCare
+				<project>Enterprise implementation
+					<role>Technical coordinator</role>
+					<role>Support lead</role>
+					<role>Vendor architect</role>
+					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
+				</project>
+			</line>
+			<line>Stanford Health Care
+				<project>Patient scheduling
+					<role>Application engineer</role>
+					<link>https://mychart.stanfordhealthcare.org/MakeAppointment/OpenScheduling</link>
+				</project>
+			</line>
+			<line>Consulting
+				<detail>Population analytics</detail>
+				<detail>Regulatory reporting</detail>
+				<detail>Accountable care</detail>
+				<subline>Scripps Health
+					<location>San Deigo</location>
+				</subline>
+				<subline>Baptist Memorial Health Care
+					<location>Memphis</location>
+				</subline>
+				<subline>Lexington Medical Center
+					<location>Columbia</location>
+				</subline>
+			</line>
 		</bullet>
 		<bullet>
-			<title>In engineering</title>
+			<title>Engineering</title>
 			<note></note>
-			<line>University of Pittsburgh</line>
-			<line>Curtiss-Wright</line>
-			<line></line>
-			<line>modeling</line>
-			<detail>simulation, decision, prediction</detail>
+			<line>University of Pittsburgh
+				<project>Bachelor of Science in Industrial Engineering
+					<detail>cum laude</detail>
+					<link>https://www.engineering.pitt.edu/Departments/Industrial/</link>
+				</project>
+				<project>Curtiss-Wright Electro-Mechanical Division
+					<role>Engineering co-op</role>
+					<link>https://www.cw-ems.com/emd/</link>
+				</project>
+			</line>
+			<line>Johns Hopkins University
+				<detail>Data Science Specialization with R</detail>
+				<link>https://www.coursera.org/account/accomplishments/specialization/certificate/GKCFG624PGQ3</link>
+			</line>
+			<line>Independent development
+				<link>https://github.com/Andrewdhope</link>
+			</line>
 		</bullet>
 		<bullet>
-			<title>In software</title>
+			<title>Leadership</title>
 			<note></note>
-			<line>This website</line>
-		</bullet>
-		<bullet>
-			<title>In leadership</title>
-			<note></note>
-			<line>Hartford</line>
-			<line>Productivity - how we do work</line>
+			<line>Structured</line>
+			<line>Empowering</line>
+			<line>Adaptable</line>
 		</bullet>
 	</section>
 	<section option="pitch">
 		<note>data science, data governance, data systems</note>
-		<note>develop a data science program with a full system architecture</note>
 	</section>
 </content>

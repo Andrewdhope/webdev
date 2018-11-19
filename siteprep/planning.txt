@@ -17,12 +17,18 @@ General Steps
 - Design the framework [check]
 - Execute the framework [check]
 - Polish the framework []
-- Set up hosting []
+- Set up hosting [gh-pages?]
 - (loop) Work through details []
 
 Next steps: incorporate detail drill-downs.			
-			CSS - Selected menu option.
-
+	Project.com
+		role | role | role
+	CSS 
+		- Selected menu option.
+	Draft the LIFE side
+	Execute the landing effects
+	Put resume somewhere... in Footer? Only if its bold enough.
+	
 Samples and References:
 http://steadystatedigital.com/
 https://www.alltrails.com/about
@@ -50,3 +56,4 @@ Ongoing input:
 	
 - Domains
 	+ andrewdhope.com
+	+ andrewdhope.github.io

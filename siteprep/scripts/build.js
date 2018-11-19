@@ -17,6 +17,7 @@ function ajaxLoad(path, callback, stylesheetPath, args) {
 	request.send();
 }	
 
+// debugging function
 function ajaxReturn(path) { 
 	// caution - ajax sync requests are being deprecated
 	var request, xmlDoc ;
