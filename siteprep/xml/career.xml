@@ -64,8 +64,8 @@
 		-->
 		<bullet>
 			<title>Healthcare</title>
-			<note>Go with the full business names, or the shortened names?</note>
-			<line>Partners HealthCare System
+			<note>Use shortened names for the tiles, with a hover effect to display a logo, full business name, and link.</note>
+			<line>Partners
 				<project>Custom mobile application
 					<role>Design analyst</role>
 					<link>https://itunes.apple.com/us/app/partners-patient-gateway-mobile/id1175078347?mt=8</link>
@@ -75,7 +75,7 @@
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
 				</project>
 			</line>
-			<line>Hartford HealthCare
+			<line>Hartford
 				<project>Enterprise implementation
 					<role>Technical coordinator</role>
 					<role>Support lead</role>
@@ -83,7 +83,7 @@
 					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
 				</project>
 			</line>
-			<line>Stanford Health Care
+			<line>Stanford
 				<project>Patient scheduling
 					<role>Application engineer</role>
 					<link>https://mychart.stanfordhealthcare.org/MakeAppointment/OpenScheduling</link>
@@ -123,14 +123,20 @@
 			</line>
 			<line>Independent development
 				<link>https://github.com/Andrewdhope</link>
+				<link>https://data.world/andrewdhope</link>
+				<link>https://javascript.info</link>
+				<link>http://opendatastructures.org</link>
 			</line>
 		</bullet>
 		<bullet>
 			<title>Leadership</title>
-			<note></note>
+			<note>Could use another example here. Maybe try joining something.</note>
 			<line>Structured</line>
 			<line>Empowering</line>
 			<line>Adaptable</line>
+		</bullet>
+		<bullet>
+			<title>Service</title>
 		</bullet>
 	</section>
 	<section option="pitch">

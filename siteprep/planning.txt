@@ -28,6 +28,7 @@ Next steps: incorporate detail drill-downs.
 	Draft the LIFE side
 	Execute the landing effects
 	Put resume somewhere... in Footer? Only if its bold enough.
+	Resume and GitHub link in header.
 	
 Samples and References:
 http://steadystatedigital.com/

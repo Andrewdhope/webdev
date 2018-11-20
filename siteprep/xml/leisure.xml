@@ -1,55 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content>
-<!-- interests, knowledge, projects -->
-<!-- aim to highlight 3-5 for each -->
-<!-- these should chronicle my professional career, but focus on my ideal landing spot -->
-<!-- a little vague is ok, it is a *supplement* to the resume -->
-<!-- this can be goal-oriented, doesn't have to be strictly a statement of fact -->
 <!-- don't look back, look forward -->
 	<section option="media">
 		<bullet>
-			<title>analysis</title>
-			<note>continual research</note>
-			<note>get to the next question</note>
-			<line>troubleshooting</line>
-			<line>testing</line>
+			<title>sites</title>
+			<line>news
+				<entry>Five Thirty Eight</entry>
+				<entry>Twitter (follow list?)</entry>
+				<entry>The Onion</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>tunes</title>
+		</bullet>
+		<bullet>
+			<title>shows</title>
+			<note>A current node and an all time node</note>
+			<note>Simpsons, Better Call Saul, Westworld, Good Place</note>
+		</bullet>
+		<bullet>
+			<title>casts</title>
+			<line>stories
+				<entry>Hardcore History</entry>
+				<entry>History of Rome</entry>
+			</line>
+			<line>sports
+				<entry>Dunc'd On</entry>
+				<entry>Draft Sharks</entry>
+			</line>
+			<line>jokes
+				<entry>Mike and Tome Eat Snacks</entry>
+				<entry>The Worst Idea of All Time</entry>	
+			</line>
 		</bullet>
 	</section>
 	<section option="actions">
 		<bullet>
-			<title>analysis</title>
-			<note>continual research</note>
-			<note>get to the next question</note>
-			<line>troubleshooting</line>
-			<line>testing</line>
+			<title>hikes</title>
+			<line>gear
+				<entry>local
+					<link>https://sandiego.craigslist.org/d/sporting-goods/search/sga</link>
+				</entry>
+			</line>
+			<line>trails
+				<entry>info
+					<link>https://www.alltrails.com</link>
+				</entry>
+				<entry>local
+					<link>http://sandiegosierraclub.org/get-outdoors/hike/peaks-list/peak-list</link>
+				</entry>
+			</line>
 		</bullet>
-		<!-- Actions > Sporting > https://sandiego.craigslist.org/d/sporting-goods/search/sga -->
+		<bullet>
+			<title>lifts</title>
+			<line>maxes
+				<entry>deadlift
+					<value>405</value>
+					<date>November 2016</date>
+				</entry>
+				<entry>clean
+					<value>225</value>
+					<date>December 2016</date>
+				</entry>
+				<entry>squat
+					<value>305</value>
+					<date>May 2018</date>
+				</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>runs</title>
+			<line>PRs
+				<entry>13.1
+					<value>2:08:12</value>
+					<date>November 2018</date>
+				</entry>
+				<entry>5K
+					<value>20:59</value>
+					<date>November 2001</date>
+				</entry>
+			</line>
+			<line>workouts
+				<entry>Nike run club
+				</entry>	
+			</line>
+		</bullet>
+		<bullet>
+			<title>trips</title>
+			<notes>camping, touring, visiting</notes>
+		</bullet>
+		<bullet>
+			<title>more</title>
+				<notes>hoops: courts, arenas. games: poker, settlers, evolution. beach: blading, windsurfing. food: recipes, whiskey</notes>
+		</bullet>
 	<section option="ideas">
 		<bullet>
-			<title>ideas</title>
-				<line option="books">
+			<title>books</title>
+				<line option="lit">
 					<!--use json for each book-->
-					<effect option="lthree">
-					<item>Superforecasting
-						<timer>finished:</timer>
-					</item>
-					<item>Blood Meridian</item>
-					<item>House of Leaves</item>
+					<effect option="previous">
+						<entry>Superforecasting
+							<timer>finished:</timer>
+						</entry>
+						<entry>Blood Meridian</entry>
+						<entry>House of Leaves</entry>
 					</effect>
-					<effect option="nthree">
-					<item>The Signal and the Noise
-						<timer>started:</timer>
-					</item>
-					<item><item>
+					<effect option="next">
+						<entry>The Signal and the Noise
+							<timer>started:</timer>
+						</entry>
+						<entry><entry>
 					</effect>
 				</line>
 		</bullet>
+		<bullet>
+			<title>blogs</title>
+			<line>laws
+				<link>https://thirty-thousand.org/</link>
+				<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
+			</line>
+		</bullet>
+		<bullet>
+			<title>refs</title>
+			<line>techs
+				<entry>Cross Validated</entry>
+				<entry>Portal:Statistics</entry>
+				<entry>Math World</entry>
+			</line>
+		</bullet>
+		<bullet>
+			<title>stacks</title>
+				<note>R, M, C#, Wolfram, all of my coding bookmarks</note>
+				<note>things i know vs. things i am tracking (FHIR, NLP)</note>
+		</bullet>
 	<section option="pitch">
-		<note>R-Publisher</note>
-		<note>Home Cloud PC</note>
-	</section>
-	<section option="lit">
-		<leadin>last three:</leadin>
-		<leadin>next three:</leadin>
+		<note></note>
 	</section>
 </content>
