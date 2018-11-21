@@ -4,12 +4,13 @@
 	<xsl:for-each select="section[@option = $sectionVal]/bullet">
 		<xsl:variable name="bullet" select="title/text()" />
 		<xsl:variable name="list" select="line" />
+		<!-- <xsl:value-of select="$list" /> --> <!-- all text from all nodes under <line> -->
 		<!-- 
 		need to verify that i'm setting the variable correctly,
 		then ... ! ... try this ...
 			make two variables, one with the bullet title, [check]
 			one with the bullet's a complete node... or perhaps the node as a fully formed html fragment. [nearly]
-			need to verify that the params remain intact at runtime.
+			need to verify that the params remain intact at runtime. [verifying]
 			call expandBullet with an onclick event and pass these params.
 			expandBullet basically takes the returned node and calls transformToFragment with the given node and the generic document
 			...or its passed the fully formed fragment and just clears and appends the correct sectionVal/bullet
@@ -17,9 +18,6 @@
 			and we basically tell expandBullet "put this fragment under this sectionVal/bullet"
 		-->
 		<h2><xsl:value-of select="title"/></h2>
-		<p>bullet: <xsl:value-of select="$bullet" /></p>
-		<h3>Next set</h3>
-		<p><xsl:value-of select="$list" /></p>
 		<xsl:for-each select="$list">
 			<p><xsl:value-of select="text()" /></p>
 		</xsl:for-each>
