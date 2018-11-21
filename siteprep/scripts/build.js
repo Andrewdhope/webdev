@@ -47,6 +47,7 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	return;
 }
 
-function expandBullet() {
-
+function expandBullet(bullet, list) {
+	var xsltProcessor ;
+	xsltProcessor = new XSLTProcessor();
 }
