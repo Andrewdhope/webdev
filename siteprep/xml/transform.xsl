@@ -22,6 +22,7 @@
 			<p><xsl:value-of select="text()" /></p>
 		</xsl:for-each>
 		<h3>Next set</h3>
+		<p><xsl:value-of select="$list" /></p>
 		<xsl:for-each select="$list">
 			<p><xsl:value-of select="text()" /></p>
 		</xsl:for-each>
