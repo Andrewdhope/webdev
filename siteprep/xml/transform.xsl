@@ -2,12 +2,16 @@
 <xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="content">
 	<xsl:for-each select="section[@option = $sectionVal]/bullet">
-		<xsl:variable name="bullet1" select="@title" />
-		<xsl:variable name="bullet2" select="title/text()" />
+		<xsl:variable name="bullet" select="title/text()" />
+		<xsl:variable name="list">
+			<xsl:for-each select="line">
+				<p><xsl:value-of select="text()" /></p>
+			</xsl:for-each>
+		</xsl:variable>
 		<!-- 
 		need to verify that i'm setting the variable correctly,
 		then ... ! ... try this ...
-			make two variables, one with the bullet title,
+			make two variables, one with the bullet title, [check]
 			one with the bullet's a complete node... or perhaps the node as a fully formed html fragment.
 			need to verify that the params remain intact at runtime.
 			call expandBullet with an onclick event and pass these params.
@@ -17,13 +21,12 @@
 			and we basically tell expandBullet "put this fragment under this sectionVal/bullet"
 		-->
 		<h2><xsl:value-of select="title"/></h2>
+		<p>bullet: <xsl:value-of select="$bullet" /></p>
 		<xsl:for-each select="line">
 			<p><xsl:value-of select="text()" /></p>
-			<p>bullet1</p>
-			<p><xsl:value-of select="$bullet1" /></p>
-			<p>bullet2</p>
-			<p><xsl:value-of select="$bullet2" /></p>
 		</xsl:for-each>
+		<h3>Next set</h3>
+		<xsl:value-of select="$list" />
 	</xsl:for-each>
 </xsl:template>
 <!-- 
