@@ -46,3 +46,7 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
  	content.appendChild(resultDocument); 
 	return;
 }
+
+function expandBullet() {
+
+}

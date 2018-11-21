@@ -7,7 +7,7 @@
 <!-- this can be goal-oriented, doesn't have to be strictly a statement of fact -->
 <!-- don't look back, look forward -->
 	<section option="interests">
-		<bullet>
+		<bullet title="design">
 			<title>Design</title>
 			<line>philosophy</line>
 			<line>objectives</line>
@@ -57,10 +57,6 @@
 	</section>
 	<section option="projects">
 		<!-- 
-		Database Design (enterprise architecture)
-		Technical Project Leadership (Hartford)
-		Innovation in Healthcare Delivery (PRO, ACO)(Scripps, Stanford, Partners)
-		Technical Support for Web Applications (MyChart, Mobile)
 		-->
 		<bullet>
 			<title>Healthcare</title>
