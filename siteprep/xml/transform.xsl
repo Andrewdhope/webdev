@@ -19,7 +19,9 @@
 		<h2><xsl:value-of select="title"/></h2>
 		<xsl:for-each select="line">
 			<p><xsl:value-of select="text()" /></p>
+			<p>bullet1</p>
 			<p><xsl:value-of select="$bullet1" /></p>
+			<p>bullet2</p>
 			<p><xsl:value-of select="$bullet2" /></p>
 		</xsl:for-each>
 	</xsl:for-each>
