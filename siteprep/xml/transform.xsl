@@ -18,9 +18,6 @@
 		-->
 		<h2><xsl:value-of select="title"/></h2>
 		<p>bullet: <xsl:value-of select="$bullet" /></p>
-		<xsl:for-each select="line">
-			<p><xsl:value-of select="text()" /></p>
-		</xsl:for-each>
 		<h3>Next set</h3>
 		<p><xsl:value-of select="$list" /></p>
 		<xsl:for-each select="$list">
