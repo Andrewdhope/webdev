@@ -3,7 +3,7 @@
 <xsl:template match="content">
 	<xsl:for-each select="section[@option = $sectionVal]/bullet">
 		<xsl:variable name="bullet" select="title/text()" />
-		<xsl:variable name="list" select="/line" />
+		<xsl:variable name="list" select="line" />
 		<!-- 
 		need to verify that i'm setting the variable correctly,
 		then ... ! ... try this ...
