@@ -47,7 +47,11 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	return;
 }
 
-function expandBullet(bullet, list) {
-	var xsltProcessor ;
+function expandBullet(bullet) {
+	var xsltProcessor, resultDocument, span ;
 	xsltProcessor = new XSLTProcessor();
+	// xsltProcessor.setParameter(null,"bullet",bullet);
+	// resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+	span = document.getElementById(bullet)
+	// xsltProcessor = new XSLTProcessor();
 }
