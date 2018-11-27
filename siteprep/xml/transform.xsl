@@ -2,7 +2,7 @@
 <xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="content">
 	<xsl:for-each select="section[@option = $sectionVal]/bullet">
-		<xsl:variable name="bullet" select="title/text()" />
+		<xsl:variable name="bullet" select="title/text()" /> <!-- add a trait to the bullet tag instead of relying on display title -->
 		<xsl:variable name="list" select="line" />
 		<!-- <xsl:value-of select="$list" /> --> <!-- all text from all nodes under <line> -->
 		<!-- 
