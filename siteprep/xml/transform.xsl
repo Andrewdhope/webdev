@@ -26,7 +26,7 @@
 			but this might not work since the variables are being defined within the loop.
 			
 		-->
-		<span class="bullet" id="$bullet">
+		<span class="bullet" id="{$bullet}">
 		<h2 onclick="expandBullet('{$bullet}')"><xsl:value-of select="title"/></h2>
 		<xsl:for-each select="$list">
 			<p><xsl:value-of select="text()" /></p>
