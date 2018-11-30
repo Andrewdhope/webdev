@@ -17,9 +17,9 @@
 				<xsl:for-each select="project">
 					<br/>
 					<xsl:variable name="link" select="link/text()" />
-					<a class="project" href="$link"><xsl:value-of select="text()" /></a>
+					<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
 					<xsl:for-each select="role">
-						<a class="role"><xsl:value-of select="text()" /></a>
+						<a class="role"><xsl:text>|</xsl:text><xsl:value-of select="text()" /></a>
 					</xsl:for-each>
 				</xsl:for-each>
 			</ul>
