@@ -3,24 +3,49 @@
 <xsl:template match="content">
 	<xsl:for-each select="section[@option = $sectionVal]/bullet">
 		<xsl:variable name="bullet" select="title/text()" /> <!-- add a trait to the bullet tag instead of relying on display title -->
-		<xsl:variable name="list" select="line" />
-		<!-- <xsl:value-of select="$list" /> --> <!-- all text from all nodes under <line> -->
-		<!-- 
-
-			
-		-->
+		<xsl:variable name="list" select="line" /> <!-- practicing with variables -->
+		
 		<span class="bullet" id="{$bullet}">
 		<h2 onclick="expandBullet('{$bullet}')"><xsl:value-of select="title"/></h2>
 		<xsl:for-each select="$list">
 			<ul class="line">
 				<xsl:value-of select="text()" />
 				<xsl:for-each select="project">
-					<br/>
-					<xsl:variable name="link" select="link/text()" />
-					<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
-					<xsl:for-each select="role">
-						<a class="role"><xsl:text>|</xsl:text><xsl:value-of select="text()" /></a>
-					</xsl:for-each>
+					<br/>					
+					
+					<xsl:choose>
+						<xsl:when test="count(link) &gt; 1">
+							<span class="multi-project"><xsl:value-of select="text()" /></span>
+							<xsl:for-each select="link">
+								<xsl:variable name="link" select="text()" />
+								<a class="project" href="{$link}">[#]</a>
+							</xsl:for-each>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:variable name="link" select="link/text()" />
+							<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
+						</xsl:otherwise>
+					</xsl:choose>
+					
+						<xsl:for-each select="detail">
+							<span class="detail"><xsl:value-of select="text()" /></span>
+						</xsl:for-each>
+						
+						<xsl:choose>
+							<xsl:when test="(count(role) = 1) AND (count(linkset) = 0)"> <!-- AND no linkset -->
+								<xsl:for-each select="role">
+									<span class="role"><xsl:value-of select="text()" /></span>
+								</xsl:for-each>
+							</xsl:when>
+							<xsl:otherwise>	
+								<div class="role-wrap">
+									<xsl:for-each select="role">
+										<span class="role"><xsl:value-of select="text()" /></span>
+									</xsl:for-each>
+								</div>
+							</xsl:otherwise>
+						<xsl:choose>
+						
 				</xsl:for-each>
 			</ul>
 		</xsl:for-each>

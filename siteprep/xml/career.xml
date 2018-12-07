@@ -36,9 +36,9 @@
 		<bullet>
 			<title>Engineering</title>
 			<note></note>
-			<line>dataset analysis</line>
+			<line>dataset evaluation</line>
 			<line>systems design</line>
-			<line>process improvement</line>
+			<line>process optimization</line>
 		</bullet>
 		<bullet>
 			<title>Statistics</title>
@@ -50,7 +50,7 @@
 			<title>Programming</title>
 			<note></note>
 			<line>analysis (R)</line>
-			<line>processing (M)</line>
+			<line>scripting (M)</line>
 			<line>development (C#)</line>
 			<line>presentation (XHTML)</line>
 		</bullet>
@@ -86,18 +86,18 @@
 				</project>
 			</line>
 			<line>Consulting
-				<detail>Population analytics</detail>
-				<detail>Regulatory reporting</detail>
-				<detail>Accountable care</detail>
-				<subline>Scripps Health
-					<location>San Deigo</location>
-				</subline>
-				<subline>Baptist Memorial Health Care
+				<project>Scripps Health
+					<role>Population analytics</role>
+					<location>San Diego</location>
+				</project>
+				<project>Baptist Memorial Health Care
+					<role>Accountable care</role>
 					<location>Memphis</location>
-				</subline>
-				<subline>Lexington Medical Center
+				</project>
+				<project>Lexington Medical Center
+					<role>Regulatory reporting</role>
 					<location>Columbia</location>
-				</subline>
+				</project>
 			</line>
 		</bullet>
 		<bullet>
@@ -114,14 +114,26 @@
 				</project>
 			</line>
 			<line>Johns Hopkins University
-				<detail>Data Science Specialization with R</detail>
-				<link>https://www.coursera.org/account/accomplishments/specialization/certificate/GKCFG624PGQ3</link>
+				<project>Data Science Specialization with R
+					<link>https://www.coursera.org/account/accomplishments/specialization/certificate/GKCFG624PGQ3</link>
+				</project>
+				<project>Capstone project (NLP)
+					<link>https://andrewdhope.shinyapps.io/guess-that-gram/</link>
+				</project>
 			</line>
 			<line>Independent development
-				<link>https://github.com/Andrewdhope</link>
-				<link>https://data.world/andrewdhope</link>
-				<link>https://javascript.info</link>
-				<link>http://opendatastructures.org</link>
+				<project>Repos
+					<linkset>
+						<link>https://github.com/andrewdhope</link>
+						<link>https://data.world/andrewdhope</link>
+					</linkset>
+				</project>
+				<project>Tutorials
+					<linkset>
+						<link>https://javascript.info</link>
+						<link>http://opendatastructures.org</link>
+					</linkset>
+				</project>
 			</line>
 		</bullet>
 		<bullet>
