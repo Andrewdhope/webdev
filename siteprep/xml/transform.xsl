@@ -21,15 +21,9 @@
 								<a class="project" href="{$link}">[#]</a>
 							</xsl:for-each>
 						</xsl:when>
-						<!--
-						<xsl:when test="count(link) = 1">
-							<xsl:variable name="link" select="text()" />
-							<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
-						</xsl:when>
-						-->
 						<xsl:otherwise>
-							<!-- what if there is a project but no link (consulting) -->
-							<a class="project"><xsl:value-of select="text()" /></a>
+							<xsl:variable name="link" select="link/text()" />
+							<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
 						</xsl:otherwise>
 					</xsl:choose>
 					
@@ -38,15 +32,15 @@
 					</xsl:for-each>
 					
 					<xsl:choose>
-						<xsl:when test="(count(role) &gt; 1) OR (count(linkset) &gt; 0)"> <!-- OR a linkset -->
+						<xsl:when test="(count(role) = 1)"> <!-- AND no linkset -->
+							<span class="role"><xsl:value-of select="role/text()" /></span>
+						</xsl:when>
+						<xsl:otherwise>	
 							<div class="role-wrap">
 								<xsl:for-each select="role">
 									<span class="role"><xsl:value-of select="text()" /></span>
 								</xsl:for-each>
 							</div>
-						</xsl:when>
-						<xsl:otherwise>	
-							<span class="role"><xsl:value-of select="role/text()" /></span>
 						</xsl:otherwise>
 					</xsl:choose>
 						
