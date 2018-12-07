@@ -21,10 +21,12 @@
 								<a class="project" href="{$link}">[#]</a>
 							</xsl:for-each>
 						</xsl:when>
+						<!--
 						<xsl:when test="count(link) = 1">
 							<xsl:variable name="link" select="text()" />
 							<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
 						</xsl:when>
+						-->
 						<xsl:otherwise>
 							<!-- what if there is a project but no link (consulting) -->
 							<a class="project"><xsl:value-of select="text()" /></a>
