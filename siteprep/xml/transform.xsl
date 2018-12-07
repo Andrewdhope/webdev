@@ -16,9 +16,11 @@
 					<xsl:choose>
 						<xsl:when test="count(linkset) = 1">
 							<span class="multi-project"><xsl:value-of select="text()" /></span>
-							<xsl:for-each select="linkset/link">
-								<!-- <xsl:variable name="link" select="text()" /> -->
-								<a class="project" href="https://google.com">[#]</a>
+							<xsl:for-each select="linkset">
+							<xsl:for-each select="link">
+								<xsl:variable name="link" select="text()" />
+								<a class="project" href="{$link}">[#]</a>
+							</xsl:for-each>
 							</xsl:for-each>
 						</xsl:when>
 						<xsl:when test="count(link) = 1">
