@@ -22,6 +22,7 @@
 							</xsl:for-each>
 						</xsl:when>
 						<xsl:when test="count(link) = 1">
+							<xsl:variable name="link" select="text()" />
 							<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
 						</xsl:when>
 						<xsl:otherwise>
