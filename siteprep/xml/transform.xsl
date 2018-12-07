@@ -42,7 +42,7 @@
 								</xsl:for-each>
 							</div>
 						</xsl:otherwise>
-					<xsl:choose>
+					</xsl:choose>
 						
 				</xsl:for-each>
 			</ul>
