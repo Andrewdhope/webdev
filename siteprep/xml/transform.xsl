@@ -26,7 +26,7 @@
 						</xsl:when>
 						<xsl:otherwise>
 							<!-- what if there is a project but no link (consulting) -->
-							<a class="project"><xsl:value-of select="text()" /></a>
+							<span class="project"><xsl:value-of select="text()" /></span>
 						</xsl:otherwise>
 					</xsl:choose>
 					
