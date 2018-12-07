@@ -27,24 +27,22 @@
 						</xsl:otherwise>
 					</xsl:choose>
 					
-						<xsl:for-each select="detail">
-							<span class="detail"><xsl:value-of select="text()" /></span>
-						</xsl:for-each>
-						
-						<xsl:choose>
-							<xsl:when test="(count(role) = 1) AND (count(linkset) = 0)"> <!-- AND no linkset -->
+					<xsl:for-each select="detail">
+						<span class="detail"><xsl:value-of select="text()" /></span>
+					</xsl:for-each>
+					
+					<xsl:choose>
+						<xsl:when test="(count(role) = 1)"> <!-- AND no linkset -->
+							<span class="role"><xsl:value-of select="role/text()" /></span>
+						</xsl:when>
+						<xsl:otherwise>	
+							<div class="role-wrap">
 								<xsl:for-each select="role">
 									<span class="role"><xsl:value-of select="text()" /></span>
 								</xsl:for-each>
-							</xsl:when>
-							<xsl:otherwise>	
-								<div class="role-wrap">
-									<xsl:for-each select="role">
-										<span class="role"><xsl:value-of select="text()" /></span>
-									</xsl:for-each>
-								</div>
-							</xsl:otherwise>
-						<xsl:choose>
+							</div>
+						</xsl:otherwise>
+					<xsl:choose>
 						
 				</xsl:for-each>
 			</ul>
@@ -52,7 +50,4 @@
 		</span>
 	</xsl:for-each>
 </xsl:template>
-<!-- 
-
--->
 </xsl:transform>
