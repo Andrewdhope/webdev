@@ -14,17 +14,20 @@
 					<br/>					
 					
 					<xsl:choose>
-						<xsl:when test="count(link) &gt; 1">
+						<xsl:when test="count(linkset) = 1">
 							<span class="multi-project"><xsl:value-of select="text()" /></span>
-							<xsl:for-each select="link">
-								<!-- need to loop through the linkset here -->
-								<!-- <xsl:variable name="link" select="text()" /> -->
-								<a class="project" href="https://google.com">[#]</a>
+							<xsl:for-each select="linkset/link">
+								<xsl:variable name="link" select="text()" />
+								<a class="project" href="{$link}">[#]</a>
 							</xsl:for-each>
 						</xsl:when>
-						<xsl:otherwise>
-							<xsl:variable name="link" select="link/text()" />
+						<xsl:when test="count(link) = 1">
+							<xsl:variable name="link" select="text()" />
 							<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
+						</xsl:when>
+						<xsl:otherwise>
+							<!-- what if there is a project but no link (consulting) -->
+							<a class="project"><xsl:value-of select="text()" /></a>
 						</xsl:otherwise>
 					</xsl:choose>
 					
@@ -33,15 +36,15 @@
 					</xsl:for-each>
 					
 					<xsl:choose>
-						<xsl:when test="(count(role) = 1)"> <!-- AND no linkset -->
-							<span class="role"><xsl:value-of select="role/text()" /></span>
-						</xsl:when>
-						<xsl:otherwise>	
+						<xsl:when test="(count(role) &gt; 1) OR (count(linkset) &gt; 0)"> <!-- OR a linkset -->
 							<div class="role-wrap">
 								<xsl:for-each select="role">
 									<span class="role"><xsl:value-of select="text()" /></span>
 								</xsl:for-each>
 							</div>
+						</xsl:when>
+						<xsl:otherwise>	
+							<span class="role"><xsl:value-of select="role/text()" /></span>
 						</xsl:otherwise>
 					</xsl:choose>
 						
