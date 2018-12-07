@@ -17,6 +17,7 @@
 						<xsl:when test="count(link) &gt; 1">
 							<span class="multi-project"><xsl:value-of select="text()" /></span>
 							<xsl:for-each select="link">
+								<!-- need to loop through the linkset here -->
 								<!-- <xsl:variable name="link" select="text()" /> -->
 								<a class="project" href="https://google.com">[#]</a>
 							</xsl:for-each>
