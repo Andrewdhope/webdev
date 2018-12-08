@@ -14,14 +14,15 @@
 					<br/>					
 					
 					<xsl:choose>
-						<xsl:when test="count(link) &gt; 1">
+						<xsl:when test="count(linkset) = 1">
 							<span class="multi-project"><xsl:value-of select="text()" /></span>
-							<xsl:for-each select="link">
-								<!-- need to loop through the linkset here -->
-								<!-- <xsl:variable name="link" select="text()" /> -->
-								<a class="project" href="https://google.com">[#]</a>
-							</xsl:for-each>
+								<xsl:for-each select="linkset/link">
+									<!-- need to loop through the linkset here -->
+									<!-- <xsl:variable name="link" select="text()" /> -->
+									<a class="project" href="https://google.com">[#]</a>
+								</xsl:for-each>
 						</xsl:when>
+						
 						<xsl:when test="count(link) = 1">
 							<xsl:element name="a">
 								<xsl:attribute name="class">
@@ -33,10 +34,9 @@
 								<xsl:value-of select="text()" />
 							</xsl:element>
 						</xsl:when>
-						<!-- add a condition for projects with a single link -->
+					
 						<xsl:otherwise>
 							<!-- this is for projects without links -->
-							<!-- change this to a span without a link -->
 							<span class="project"><xsl:value-of select="text()" /></span>
 						</xsl:otherwise>
 					</xsl:choose>
@@ -46,7 +46,7 @@
 					</xsl:for-each>
 					
 					<xsl:choose>
-						<xsl:when test="(count(role) = 1)"> <!-- AND no linkset -->
+						<xsl:when test="(count(role) = 1) AND (count(linkset) = 0)">
 							<span class="role"><xsl:value-of select="role/text()" /></span>
 						</xsl:when>
 						<xsl:otherwise>	
