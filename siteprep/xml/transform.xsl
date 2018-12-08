@@ -30,6 +30,7 @@
 								<xsl:attribute name="href">
 									<xsl:value-of select="link/text()" />
 								</xsl:attribute>
+								<xsl:text><xsl:value-of select="text()" /></xsl:text>
 							</xsl:element>
 						</xsl:when>
 						<!-- add a condition for projects with a single link -->
