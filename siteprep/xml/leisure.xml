@@ -121,6 +121,11 @@
 			</line>
 		</bullet>
 		<bullet>
+			<title>entries</entries>
+				<note>wikipedia content</notes>
+				<link>https://en.wikipedia.org/wiki/Liberalism</link>
+		</bullet>
+		<bullet>
 			<title>refs</title>
 			<line>techs
 				<entry>Cross Validated</entry>

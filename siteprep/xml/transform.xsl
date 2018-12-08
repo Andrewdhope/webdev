@@ -22,9 +22,15 @@
 								<a class="project" href="https://google.com">[#]</a>
 							</xsl:for-each>
 						</xsl:when>
-						<xsl:otherwise>
+						<xsl:when test="count(link) = 1">
 							<xsl:variable name="link" select="link/text()" />
-							<a class="project" href="{$link}"><xsl:value-of select="text()" /></a>
+							<a class="projectTest" href="{$link}"><xsl:value-of select="text()" /></a>
+						</xsl:when>
+						<!-- add a condition for projects with a single link -->
+						<xsl:otherwise>
+							<!-- this is for projects without links -->
+							<!-- change this to a span without a link -->
+							<span class="project"><xsl:value-of select="text()" /></span>
 						</xsl:otherwise>
 					</xsl:choose>
 					
