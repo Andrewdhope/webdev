@@ -46,7 +46,7 @@
 					</xsl:for-each>
 					
 					<xsl:choose>
-						<xsl:when test="(count(role) = 1) AND (count(linkset) = 0)">
+						<xsl:when test="(count(role) = 1)"> <!-- AND no linkest -->
 							<span class="role"><xsl:value-of select="role/text()" /></span>
 						</xsl:when>
 						<xsl:otherwise>	
