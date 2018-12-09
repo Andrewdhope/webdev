@@ -24,6 +24,9 @@
 										<xsl:attribute name="href">
 											<xsl:value-of select="text()" />
 										</xsl:attribute>
+										<xsl:attribute name="target">
+											<xsl:text>"_blank"</xsl:text>
+										</xsl:attribute>
 										<xml:text>[#]</xml:text>
 									</xsl:element>
 								</xsl:for-each>
@@ -36,6 +39,9 @@
 								</xsl:attribute>
 								<xsl:attribute name="href">
 									<xsl:value-of select="link/text()" />
+								</xsl:attribute>
+								<xsl:attribute name="target">
+									<xsl:text>"_blank"</xsl:text>
 								</xsl:attribute>
 								<xsl:value-of select="text()" />
 							</xsl:element>
