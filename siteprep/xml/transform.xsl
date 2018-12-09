@@ -29,7 +29,7 @@
 										<xsl:attribute name="target">
 											<xsl:text>"_blank"</xsl:text>
 										</xsl:attribute>
-										
+										<xml:text><xml:value-of select="$i" /></xml:text>
 										<xml:text>[#]</xml:text>
 									</xsl:element>
 								</xsl:for-each>
