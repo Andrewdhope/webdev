@@ -51,8 +51,19 @@
 						<span class="detail"><xsl:value-of select="text()" /></span>
 					</xsl:for-each>
 					
+					<xsl:if test="count(role) = 1">
+						<span class="role"><xsl:value-of select="role/text()" /></span>
+					</xsl:if>
+					<xsl:if test="count(role) &gt; 1">
+						<div class="role-wrap">
+							<xsl:for-each select="role">
+								<span class="role"><xsl:value-of select="text()" /></span>
+							</xsl:for-each>
+						</div>
+					</xsl:if>
+					<!--
 					<xsl:choose>
-						<xsl:when test="(count(role) = 1)"> <!-- AND no linkest -->
+						<xsl:when test="(count(role) = 1)">
 							<span class="role"><xsl:value-of select="role/text()" /></span>
 						</xsl:when>
 						<xsl:otherwise>	
@@ -63,6 +74,7 @@
 							</div>
 						</xsl:otherwise>
 					</xsl:choose>
+					-->
 						
 				</xsl:for-each>
 			</ul>
