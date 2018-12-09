@@ -12,7 +12,8 @@
 				<xsl:value-of select="text()" />
 				<xsl:for-each select="project">
 					<br/>					
-					
+				
+					<!-- projects with links -->
 					<xsl:choose>
 						<xsl:when test="count(linkset) = 1">
 							<span class="multi-project"><xsl:value-of select="text()" /></span>
@@ -52,11 +53,8 @@
 							<span class="project"><xsl:value-of select="text()" /></span>
 						</xsl:otherwise>
 					</xsl:choose>
-					
-					<xsl:for-each select="detail">
-						<span class="detail"><xsl:value-of select="text()" /></span>
-					</xsl:for-each>
-					
+										
+					<!-- roles -->
 					<xsl:if test="count(role) = 1">
 						<span class="role"><xsl:value-of select="role/text()" /></span>
 					</xsl:if>
@@ -68,21 +66,12 @@
 							</xsl:for-each>
 						</div>
 					</xsl:if>
-					<!--
-					<xsl:choose>
-						<xsl:when test="(count(role) = 1)">
-							<span class="role"><xsl:value-of select="role/text()" /></span>
-						</xsl:when>
-						<xsl:otherwise>	
-							<div class="role-wrap">
-								<xsl:for-each select="role">
-									<span class="role"><xsl:value-of select="text()" /></span>
-								</xsl:for-each>
-							</div>
-						</xsl:otherwise>
-					</xsl:choose>
-					-->
-						
+					
+					<!-- details -->
+					<xsl:for-each select="detail">
+						<span class="detail"><xsl:value-of select="text()" /></span>
+					</xsl:for-each>
+					
 				</xsl:for-each>
 			</ul>
 		</xsl:for-each>
