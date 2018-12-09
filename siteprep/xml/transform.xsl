@@ -17,9 +17,15 @@
 						<xsl:when test="count(linkset) = 1">
 							<span class="multi-project"><xsl:value-of select="text()" /></span>
 								<xsl:for-each select="linkset/link">
-									<!-- need to loop through the linkset here -->
-									<!-- <xsl:variable name="link" select="text()" /> -->
-									<a class="project" href="https://google.com">[#]</a>
+									<xsl:element name="a">
+										<xsl:attribute name="class">
+											<xsl:text>project</xsl:text>
+										</xsl:attribute>
+										<xsl:attribute name="href">
+											<xsl:value-of select="text()" />
+										</xsl:attribute>
+										<xml:text>[#]</xml:text>
+									</xsl:element>
 								</xsl:for-each>
 						</xsl:when>
 						
