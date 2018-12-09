@@ -18,7 +18,7 @@
 						<xsl:when test="count(linkset) = 1">
 							<span class="multi-project"><xsl:value-of select="text()" /></span>
 								<xsl:for-each select="linkset/link">
-									<xsl:variable name="i" select="position ()"/>
+									<xsl:variable name="i" select="position()"/>
 									<xsl:element name="a">
 										<xsl:attribute name="class">
 											<xsl:text>project</xsl:text>
