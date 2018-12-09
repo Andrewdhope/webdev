@@ -61,7 +61,7 @@
 						<span class="role"><xsl:value-of select="role/text()" /></span>
 					</xsl:if>
 					<!-- in some cases we want the roles in a rolewrap div below the project name -->
-					<xsl:if test="(count(role) &gt; 1)"> <!-- OR ((linkwrap) AND (role)) -->
+					<xsl:if test="(count(role) &gt; 1) or ((linkwrap) and (role))">
 						<div class="role-wrap">
 							<xsl:for-each select="role">
 								<span class="role"><xsl:value-of select="text()" /></span>
