@@ -30,7 +30,7 @@
 											<xsl:text>"_blank"</xsl:text>
 										</xsl:attribute>
 										<xml:text><xml:value-of select="$i" /></xml:text>
-										<xml:text>[#1]</xml:text>
+										<!-- <xml:text>[#1]</xml:text> -->
 									</xsl:element>
 								</xsl:for-each>
 						</xsl:when>
