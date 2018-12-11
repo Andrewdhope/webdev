@@ -17,10 +17,11 @@ General Steps
 - Design the framework [check]
 - Execute the framework [check]
 - Polish the framework []
-- Set up hosting [gh-pages?]
+- Set up hosting [gh-pages]
 - (loop) Work through details []
 
-Next steps: incorporate detail drill-downs.			
+Next steps: incorporate detail drill-downs.	
+https://www.w3schools.com/howto/howto_js_collapsible.asp
 	Project.com
 		role | role | role
 	CSS 

@@ -5,7 +5,7 @@
 		<xsl:variable name="bullet" select="title/text()" /> <!-- add a trait to the bullet tag instead of relying on display title -->
 		<xsl:variable name="list" select="line" /> <!-- practicing with variables -->
 		
-		<span class="bullet" id="{$bullet}">
+		<div class="bullet" id="{$bullet}">
 		<h2 onclick="expandBullet('{$bullet}')"><xsl:value-of select="title"/></h2>
 		<xsl:for-each select="$list">
 			<ul class="line">
@@ -29,9 +29,7 @@
 										<xsl:attribute name="target">
 											<xsl:text>"_blank"</xsl:text>
 										</xsl:attribute>
-										<xsl:text>[</xsl:text>
-										<xsl:value-of select="$i" />
-										<xsl:text>]</xsl:text>
+										<xsl:text>[</xsl:text><xsl:value-of select="$i" /><xsl:text>]</xsl:text>
 									</xsl:element>
 								</xsl:for-each>
 						</xsl:when>
@@ -78,7 +76,7 @@
 				</xsl:for-each>
 			</ul>
 		</xsl:for-each>
-		</span>
+		</div>
 	</xsl:for-each>
 </xsl:template>
 </xsl:transform>
