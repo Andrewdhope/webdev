@@ -21,7 +21,7 @@
 									<xsl:variable name="i" select="position()"/>
 									<xsl:element name="a">
 										<xsl:attribute name="class">
-											<xsl:text>project</xsl:text>
+											<xsl:text>multi-project</xsl:text>
 										</xsl:attribute>
 										<xsl:attribute name="href">
 											<xsl:value-of select="text()" />

@@ -51,6 +51,19 @@ ul {
 	padding-left: 20px;
 }
 
+li:before {
+	content: " - ";
+	padding-right: 10px;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* indentations */
+
 .bullet {
 	padding-left: 10%;
 }
@@ -63,15 +76,12 @@ ul {
 	padding-left: 10%;
 }
 
-li:before {
-	content: " - ";
-	padding-right: 10px;
+span.multi-project {
+	padding-left: 10%;
 }
 
-.group:after {
-	content: "";
-	display: table;
-	clear: both;
+.role {
+	padding-left: 10%;
 }
 
 /* --- FOOTER --- */
