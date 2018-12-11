@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="content">
-	<xsl:for-each select="section[@option = $sectionVal]/bullet">
-		<xsl:variable name="bullet" select="title/text()" /> <!-- add a trait to the bullet tag instead of relying on display title -->
-		<xsl:variable name="list" select="line" /> <!-- practicing with variables -->
-		
-		<div class="bullet" id="{$bullet}">
+<xsl:for-each select="section[@option = $sectionVal]/bullet">
+	<xsl:variable name="bullet" select="title/text()" /> <!-- add a trait to the bullet tag instead of relying on display title -->
+
+	<div class="bullet" id="{$bullet}">
 		<h2 onclick="expandBullet('{$bullet}')"><xsl:value-of select="title"/></h2>
-		<xsl:for-each select="$list">
-			<ul class="line">
+		<xsl:for-each select="line">
+			<div class="line">
+			<ul>
 				<xsl:value-of select="text()" />
 				<xsl:for-each select="project">
 					<br/>					
@@ -75,8 +75,9 @@
 					
 				</xsl:for-each>
 			</ul>
+			</div>
 		</xsl:for-each>
-		</div>
-	</xsl:for-each>
+	</div>
+</xsl:for-each>
 </xsl:template>
 </xsl:transform>
