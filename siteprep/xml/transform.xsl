@@ -11,8 +11,7 @@
 			<ul>
 				<xsl:value-of select="text()" />
 				<xsl:for-each select="project">
-					<br/>					
-				
+					<div class="project">
 					<!-- projects with links -->
 					<xsl:choose>
 						<xsl:when test="count(linkset) = 1">
@@ -36,9 +35,11 @@
 						
 						<xsl:when test="count(link) = 1">
 							<xsl:element name="a">
+								<!-- 
 								<xsl:attribute name="class">
 									<xsl:text>project</xsl:text>
 								</xsl:attribute>
+								-->
 								<xsl:attribute name="href">
 									<xsl:value-of select="link/text()" />
 								</xsl:attribute>
@@ -51,10 +52,11 @@
 					
 						<xsl:otherwise>
 							<!-- this is for projects without links -->
-							<span class="project"><xsl:value-of select="text()" /></span>
+							<!-- <span class="project"><xsl:value-of select="text()" /></span> -->
+							<span><xsl:value-of select="text()" /></span>
 						</xsl:otherwise>
 					</xsl:choose>
-										
+					
 					<!-- roles -->
 					<xsl:if test="count(role) = 1">
 						<span class="role"><xsl:value-of select="role/text()" /></span>
@@ -72,7 +74,7 @@
 					<xsl:for-each select="detail">
 						<span class="detail"><xsl:value-of select="text()" /></span>
 					</xsl:for-each>
-					
+				</div>	
 				</xsl:for-each>
 			</ul>
 			</div>
