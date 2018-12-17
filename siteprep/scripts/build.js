@@ -48,10 +48,11 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 }
 
 function expandBullet(bullet) {
-	var xsltProcessor, resultDocument, span ;
-	xsltProcessor = new XSLTProcessor();
-	// xsltProcessor.setParameter(null,"bullet",bullet);
-	// resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
-	span = document.getElementById(bullet)
-	// xsltProcessor = new XSLTProcessor();
-}
+		this.classList.toggle("active");
+		var content = this.firstChild;
+		if (content.style.display === "block") {
+			content.style.display = "none";
+		} else {
+			content.style.display = "block";
+		}
+	}
