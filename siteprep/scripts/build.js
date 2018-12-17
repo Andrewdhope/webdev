@@ -50,7 +50,7 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 function expandBullet(bullet) {
 		var header = document.getElementById(bullet);
 		header.classList.toggle("active");
-		var content = header.firstElementChild.nextSibling;
+		var content = header.firstElementChild.nextElementSibling;
 		if (content.style.display === "block") {
 			content.style.display = "none";
 		} else {
