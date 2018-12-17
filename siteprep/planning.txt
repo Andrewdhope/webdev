@@ -26,7 +26,7 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
 		role | role | role
 	CSS 
 		- Selected menu option.
-	Draft the LIFE side
+	set up the reactive menus
 	Execute the landing effects
 	Put resume somewhere... in Footer? Only if its bold enough.
 	Resume and GitHub link in header.
@@ -55,8 +55,9 @@ Ongoing input:
 - Names
 	+ Unbroken
 	+ DroveData
-	+ Tidytype Data
+	+ Tidytype Data inc.
 	
 - Domains
 	+ andrewdhope.com
 	+ andrewdhope.github.io
+	
