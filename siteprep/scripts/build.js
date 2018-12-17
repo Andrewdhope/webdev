@@ -48,7 +48,7 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 }
 
 function expandBullet(bullet) {
-		var header = getElementById(bullet);
+		var header = document.getElementById(bullet);
 		header.classList.toggle("active");
 		var content = header.firstChild.firstChild;
 		if (content.style.display === "block") {
