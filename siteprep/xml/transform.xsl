@@ -67,7 +67,9 @@
 						
 						<!-- details -->
 						<xsl:for-each select="detail">
-							<span class="detail"><xsl:value-of select="text()" /></span>
+							<!-- <span class="detail"> -->
+							<sup><xsl:value-of select="text()" /></sup>
+							<!-- </span> -->
 						</xsl:for-each>
 					</div>	
 				</xsl:for-each>
