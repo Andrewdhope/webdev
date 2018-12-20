@@ -6,7 +6,7 @@
 			<li>
 				<xsl:element name="a">
 					<xsl:attribute name="href">
-						<xsl:text>#<xsl:text/>
+						<xsl:text>#</xsl:text>
 					</xsl:attribute>
 					<xsl:attribute name="onclick">
 						<xsl:text>

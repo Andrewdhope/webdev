@@ -4,6 +4,7 @@ function ajaxLoad(path, callback, stylesheetPath, args) {
 	request.onreadystatechange = function() {
 		if (request.readyState == 4 && request.status == 200) {
 			xmlDoc = request.responseXML;
+			// check if args exist first
 			args.unshift(xmlDoc);
 			if (stylesheetPath) {
 				getStylesheet(stylesheetPath, callback, args); 
