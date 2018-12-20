@@ -4,17 +4,26 @@
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
 	<xsl:variable name="bullet" select="title/text()" /> <!-- add a trait to the bullet tag instead of relying on display title -->
 	<div class="bullet" id="{$bullet}">
-		<button onclick="expandBullet('{$bullet}')" class="collapsible">
-			<h2><xsl:value-of select="title"/></h2>
-		</button>
+		<h2 onclick="expandBullet('{$bullet}')" class="collapsible"><xsl:value-of select="title"/></h2>
 		<div class="line">
-		<ul>
 		<xsl:for-each select="line">
-			<li>
-				<xsl:value-of select="text()" />
+			<p><xsl:value-of select="text()" />
 				<xsl:for-each select="project">
 					<div class="project">
 						<xsl:choose>
+							<!-- projects with one link -->
+							<xsl:when test="count(link) = 1">
+								<xsl:element name="a">
+									<xsl:attribute name="href">
+										<xsl:value-of select="link/text()" />
+									</xsl:attribute>
+									<xsl:attribute name="target">
+										<xsl:text>"_blank"</xsl:text>
+									</xsl:attribute>
+									<xsl:value-of select="text()" />
+								</xsl:element>
+							</xsl:when>
+							
 							<!-- projects with multiple links -->
 							<xsl:when test="count(linkset) = 1">
 								<!-- project name -->
@@ -35,19 +44,6 @@
 										<xsl:text>[</xsl:text><xsl:value-of select="$i" /><xsl:text>]</xsl:text>
 									</xsl:element>
 								</xsl:for-each>
-							</xsl:when>
-							
-							<!-- projects with one link -->
-							<xsl:when test="count(link) = 1">
-								<xsl:element name="a">
-									<xsl:attribute name="href">
-										<xsl:value-of select="link/text()" />
-									</xsl:attribute>
-									<xsl:attribute name="target">
-										<xsl:text>"_blank"</xsl:text>
-									</xsl:attribute>
-									<xsl:value-of select="text()" />
-								</xsl:element>
 							</xsl:when>
 						
 							<!-- projects without links -->
@@ -75,9 +71,8 @@
 						</xsl:for-each>
 					</div>	
 				</xsl:for-each>
-			</li>
+			</p>
 		</xsl:for-each>
-		</ul>
 		</div>
 	</div>
 </xsl:for-each>

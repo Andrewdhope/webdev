@@ -70,7 +70,7 @@ li:before {
 
 .line {
 	padding-left: 10%;
-	display: block;
+	display: none;
 }
 
 .project {
