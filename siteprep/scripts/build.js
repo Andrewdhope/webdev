@@ -50,11 +50,11 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 function expandBullet(bullet) {
 		var header = document.getElementById(bullet);
 		header.classList.toggle("active");
-		// var content = header.getElementsByClassName("line");
-		var content = header.firstElementChild.nextElementSibling;
-		if (content.style.display === "block") {
-			content.style.display = "none";
+		var content = header.getElementsByClassName("line");
+		// var content = header.firstElementChild.nextElementSibling;
+		if (content[0].style.display === "block") {
+			content[0].style.display = "none";
 		} else {
-			content.style.display = "block";
+			content[0].style.display = "block";
 		}
 	}
