@@ -88,15 +88,15 @@
 			<line>Consulting
 				<project>Scripps Health
 					<role>Population analytics</role>
-					<location>San Diego</location>
+					<link>https://www.scripps.org/</link>
 				</project>
 				<project>Baptist Memorial Health Care
 					<role>Accountable care</role>
-					<location>Memphis</location>
+					<link>https://www.baptistonline.org/</link>
 				</project>
 				<project>Lexington Medical Center
 					<role>Regulatory reporting</role>
-					<location>Columbia</location>
+					<link>http://www.lexmed.com/</link>
 				</project>
 			</line>
 		</bullet>
