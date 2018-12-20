@@ -9,13 +9,8 @@
 						<xsl:text>#</xsl:text>
 					</xsl:attribute>
 					<xsl:attribute name="onclick">
-						<xsl:text>
-							ajaxLoad(xmlpath,buildCareer,xslpath,['
-						</xsl:text>
-						<xsl:value-of select="@option" />
-						<xsl:text>
-							'])
-						</xsl:text>
+						ajaxLoad(xmlpath,buildCareer,xslpath,['<xsl:value-of select="@option" />'])
+						
 					</xsl:attribute>
 					<xsl:value-of select="@option" />
 				</xsl:element>
