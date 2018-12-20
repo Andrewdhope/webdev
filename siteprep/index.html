@@ -14,21 +14,23 @@
 		<a>[</a>
 		<a class="split" href=# onclick="setPath('work')">work</a>
 		<a>|</a>
-		<a class="split" href=# onclick="setPath('life')">life</a>
+		<!-- testing with this life option -->
+		<a class="split" href=# onclick="ajaxLoad('xml/career.xml',buildMenu,'xml/loadMenu.xsl'">life</a>
+		<!-- <a class="split" href=# onclick="setPath('life')">life</a> -->
 		<a>]</a>
 	</div>
 </header>
 <!-- work loads the career menu, life loads the leisure menu --> 
 	<div class="group">
-		<section id="content">
-		SECTION
-		</section>
-		<nav>
+		<section id="content"></section>
+		<nav id="menu">
+			<!-- 
 			<ul>
 				<li><a href=# onclick="ajaxLoad('xml/career.xml',buildCareer,'xml/transform.xsl',['interests'])">interests</a></li>
 				<li><a href=# onclick="ajaxLoad('xml/career.xml',buildCareer,'xml/transform.xsl',['knowledge'])">knowledge</a></li>
 				<li><a href=# onclick="ajaxLoad('xml/career.xml',buildCareer,'xml/transform.xsl',['projects'])">projects</a></li>
 			</ul>
+			-->
 		</nav>
 	</div>
 <footer>

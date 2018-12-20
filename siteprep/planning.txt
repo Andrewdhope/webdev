@@ -16,7 +16,7 @@ General Steps
 		
 - Design the framework [check]
 - Execute the framework [check]
-- Polish the framework []
+- Polish the framework [getting there]
 - Set up hosting [gh-pages]
 - (loop) Work through details []
 
@@ -24,12 +24,15 @@ Next steps: incorporate detail drill-downs.
 https://www.w3schools.com/howto/howto_js_collapsible.asp
 	Project.com
 		role | role | role
+	>>>Set up the reactive menus
+	>>>Execute the landing effects (start simple)
 	CSS 
-		- Selected menu option.
-	set up the reactive menus
-	Execute the landing effects
+		- Selected menu option
+		- work the whitespace
+		- collapsibles (second level?)
 	Put resume somewhere... in Footer? Only if its bold enough.
 	Resume and GitHub link in header.
+	
 	
 Samples and References:
 http://steadystatedigital.com/
@@ -38,6 +41,7 @@ http://www.qualiaconsult.com/
 https://emitanaka.github.io/showcase/
 https://en.wikipedia.org/wiki/Systems_engineering
 https://www.w3schools.com/xml/dom_node.asp
+https://www.quackit.com/html_5/tags/
 
 JSON Resume
 

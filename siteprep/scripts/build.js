@@ -34,6 +34,17 @@ function getStylesheet(stylesheetPath, callback, args) {
 	return;
 }
 
+function buildMenu(xslDoc, xmlDoc) {
+	var xsltProcessor, resultDocument, content ;
+	xsltProcessor = new XSLTProcessor();
+	xsltProcessor.importStylesheet(xslDoc); 
+	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+	content = document.getElementById("menu");
+	content.innerHTML = ""; // 'clear and append'
+ 	content.appendChild(resultDocument); 
+	return;
+}
+
 function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	// null check on the stylesheet
 	var xsltProcessor, resultDocument, content ;
