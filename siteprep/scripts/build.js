@@ -17,17 +17,6 @@ function ajaxLoad(path, callback, stylesheetPath, args) {
 	request.send();
 }	
 
-// debugging function
-function ajaxReturn(path) { 
-	// caution - ajax sync requests are being deprecated
-	var request, xmlDoc ;
-	request = new XMLHttpRequest();
-	request.open("GET", path, false); // executes synchronously
-	request.send();
-	xmlDoc = request.responseXML;
-	return xmlDoc;
-}
-
 function getStylesheet(stylesheetPath, callback, args) {
 	// call ajaxLoad again to get an xsl doc and unshift it into the args parameter
 	ajaxLoad(stylesheetPath, callback, null, args); 

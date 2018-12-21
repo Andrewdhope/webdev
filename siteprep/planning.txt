@@ -32,6 +32,7 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
 		- collapsibles (second level?)
 	Put resume somewhere... in Footer? Only if its bold enough.
 	Resume and GitHub link in header.
+	...then the whole life section, but that will be fun
 	
 	
 Samples and References:

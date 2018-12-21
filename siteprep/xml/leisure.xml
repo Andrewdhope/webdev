@@ -34,7 +34,7 @@
 			</line>
 		</bullet>
 	</section>
-	<section option="actions">
+	<section option="activity">
 		<bullet>
 			<title>hikes</title>
 			<line>gear
@@ -138,7 +138,4 @@
 				<note>R, M, C#, Wolfram, all of my coding bookmarks</note>
 				<note>things i know vs. things i am tracking (FHIR, NLP)</note>
 		</bullet>
-	<section option="pitch">
-		<note></note>
-	</section>
 </content>
