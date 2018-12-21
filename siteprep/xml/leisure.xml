@@ -93,6 +93,7 @@
 			<title>more</title>
 				<notes>hoops: courts, arenas. games: poker, settlers, evolution. beach: blading, windsurfing. food: recipes, whiskey</notes>
 		</bullet>
+	</section>
 	<section option="ideas">
 		<bullet>
 			<title>books</title>
@@ -122,7 +123,7 @@
 			</line>
 		</bullet>
 		<bullet>
-			<title>pages</entries>
+			<title>pages</title>
 				<entry>Longreads
 					<link>https://longreads.com/</link>
 				</entry>
@@ -143,4 +144,5 @@
 				<note>R, M, C#, Wolfram, all of my coding bookmarks</note>
 				<note>things i know vs. things i am tracking (FHIR, NLP)</note>
 		</bullet>
+	</section>
 </content>
