@@ -96,7 +96,7 @@
 	<section option="ideas">
 		<bullet>
 			<title>books</title>
-				<line option="lit">
+				<line>lit
 					<!--use json for each book-->
 					<effect option="previous">
 						<entry>Superforecasting
@@ -109,21 +109,26 @@
 						<entry>The Signal and the Noise
 							<timer>started:</timer>
 						</entry>
-						<entry><entry>
 					</effect>
 				</line>
 		</bullet>
 		<bullet>
 			<title>blogs</title>
 			<line>laws
-				<link>https://thirty-thousand.org/</link>
-				<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
+				<entry>Apportionment
+					<link>https://thirty-thousand.org/</link>
+					<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
+				</entry>
 			</line>
 		</bullet>
 		<bullet>
-			<title>entries</entries>
-				<note>wikipedia content</notes>
-				<link>https://en.wikipedia.org/wiki/Liberalism</link>
+			<title>pages</entries>
+				<entry>Longreads
+					<link>https://longreads.com/</link>
+				</entry>
+				<entry>Wikipedia
+					<link>https://en.wikipedia.org/wiki/Liberalism</link>
+				</entry>
 		</bullet>
 		<bullet>
 			<title>refs</title>

@@ -7,7 +7,7 @@ function setPath(setting) {
 	}
 	
 	if (setting == "life") {
-		xmlpath = "xml/life.xml"
+		xmlpath = "xml/leisure.xml"
 		xslpath = "xml/transform.xsl"
 	}
 }
