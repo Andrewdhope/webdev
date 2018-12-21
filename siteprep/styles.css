@@ -10,6 +10,10 @@ header {
 	padding-top: 20px;
 }
 
+header span {
+	color: #cccccc;
+}
+
 /* split class to hold styles for the main branching option*/
 .split {
 	color: #cccccc;
