@@ -118,7 +118,20 @@
 					</entry>
 			</line>
 		</bullet>
-		<bullet>			
+		<bullet>
+			<title>tech</title>
+			<line>refs
+				<entry>Cross Validated</entry>
+				<entry>Portal:Statistics</entry>
+				<entry>Math World</entry>
+			</line>
+			<line>stacks
+				<note>R, M, C#, Wolfram, all of my coding bookmarks</note>
+				<note>things i know vs. things i am tracking (FHIR, NLP)</note>
+			</line>
+		</bullet>
+		<bullet>
+			<title>policy</title>
 			<line>theory
 				<entry>Liberalism
 					<link>https://en.wikipedia.org/wiki/Liberalism</link>
@@ -132,19 +145,6 @@
 					</linkset>
 				</entry>
 			</line>
-		</bullet>
-		<bullet>
-			<title>refs</title>
-			<line>tech
-				<entry>Cross Validated</entry>
-				<entry>Portal:Statistics</entry>
-				<entry>Math World</entry>
-			</line>
-		</bullet>
-		<bullet>
-			<title>stacks</title>
-				<note>R, M, C#, Wolfram, all of my coding bookmarks</note>
-				<note>things i know vs. things i am tracking (FHIR, NLP)</note>
 		</bullet>
 	</section>
 </content>
