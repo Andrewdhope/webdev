@@ -37,17 +37,17 @@
 	<section option="activity">
 		<bullet>
 			<title>hikes</title>
-			<line>gear
-				<entry>local
-					<link>https://sandiego.craigslist.org/d/sporting-goods/search/sga</link>
-				</entry>
-			</line>
 			<line>trails
 				<entry>info
 					<link>https://www.alltrails.com</link>
 				</entry>
 				<entry>local
 					<link>http://sandiegosierraclub.org/get-outdoors/hike/peaks-list/peak-list</link>
+				</entry>
+			</line>
+			<line>gear
+				<entry>used
+					<link>https://sandiego.craigslist.org/d/sporting-goods/search/sga</link>
 				</entry>
 			</line>
 		</bullet>
@@ -96,8 +96,8 @@
 	</section>
 	<section option="ideas">
 		<bullet>
-			<title>books</title>
-				<line>lit
+			<title>print</title>
+				<line>books
 					<!--use json for each book-->
 					<effect option="previous">
 						<entry>Superforecasting
@@ -112,28 +112,30 @@
 						</entry>
 					</effect>
 				</line>
+				<line>pages
+					<entry>Longreads
+						<link>https://longreads.com/</link>
+					</entry>
+			</line>
 		</bullet>
-		<bullet>
-			<title>blogs</title>
+		<bullet>			
+			<line>theory
+				<entry>Liberalism
+					<link>https://en.wikipedia.org/wiki/Liberalism</link>
+				</entry>
+			</line>
 			<line>laws
 				<entry>Apportionment
-					<link>https://thirty-thousand.org/</link>
-					<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
+					<linkset>
+						<link>https://thirty-thousand.org/</link>
+						<link>https://www.nytimes.com/interactive/2018/11/09/opinion/expanded-house-representatives-size.html</link>
+					</linkset>
 				</entry>
 			</line>
 		</bullet>
 		<bullet>
-			<title>pages</title>
-				<entry>Longreads
-					<link>https://longreads.com/</link>
-				</entry>
-				<entry>Wikipedia
-					<link>https://en.wikipedia.org/wiki/Liberalism</link>
-				</entry>
-		</bullet>
-		<bullet>
 			<title>refs</title>
-			<line>techs
+			<line>tech
 				<entry>Cross Validated</entry>
 				<entry>Portal:Statistics</entry>
 				<entry>Math World</entry>

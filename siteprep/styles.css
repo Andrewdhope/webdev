@@ -77,7 +77,7 @@ li:before {
 	display: none;
 }
 
-.project {
+.project, .entry{
 	padding-left: 10%;
 }
 
