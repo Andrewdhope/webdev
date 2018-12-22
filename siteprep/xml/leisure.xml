@@ -5,11 +5,12 @@
 		<bullet>
 			<title>sites</title>
 			<line>news
+				<entry>Twitter
+					<note>twitter lists</note>
+					<link>https://twitter.com/</link>
+				</entry>
 				<entry>Five Thirty Eight
 					<link>https://fivethirtyeight.com/</link>
-				</entry>
-				<entry>Twitter
-					<link>https://twitter.com/</link>
 				</entry>
 				<entry>The Onion
 					<link>https://www.theonion.com/</link>

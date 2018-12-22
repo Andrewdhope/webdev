@@ -4,7 +4,8 @@
 	<ul>
 		<xsl:for-each select="section">
 			<li>
-				<xsl:element name="span">
+				<xsl:element name="a">
+					<xsl:attribute name="href">#</xsl:attribute>
 					<xsl:attribute name="onclick">
 						ajaxLoad(xmlpath,buildCareer,xslpath,['<xsl:value-of select="@option" />'])
 					</xsl:attribute>
