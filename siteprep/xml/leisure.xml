@@ -5,9 +5,15 @@
 		<bullet>
 			<title>sites</title>
 			<line>news
-				<entry>Five Thirty Eight</entry>
-				<entry>Twitter (follow list?)</entry>
-				<entry>The Onion</entry>
+				<entry>Five Thirty Eight
+					<link>https://fivethirtyeight.com/</link>
+				</entry>
+				<entry>Twitter
+					<link>https://twitter.com/</link>
+				</entry>
+				<entry>The Onion
+					<link>https://www.theonion.com/</link>
+				</entry>
 			</line>
 		</bullet>
 		<bullet>
@@ -21,16 +27,28 @@
 		<bullet>
 			<title>casts</title>
 			<line>stories
-				<entry>Hardcore History</entry>
-				<entry>History of Rome</entry>
+				<entry>Hardcore History
+					<link>https://www.dancarlin.com/</link>
+				</entry>
+				<entry>History of Rome
+					<link>https://itunes.apple.com/us/podcast/the-history-of-rome/id261654474</link>
+				</entry>
 			</line>
 			<line>sports
-				<entry>Dunc'd On</entry>
-				<entry>Draft Sharks</entry>
+				<entry>Dunc'd On
+					<link>http://nateduncannba.com/podcast-archive/</link>
+				</entry>
+				<entry>Draft Sharks
+					<link>https://www.draftsharks.com</link>
+				</entry>
 			</line>
 			<line>jokes
-				<entry>Mike and Tome Eat Snacks</entry>
-				<entry>The Worst Idea of All Time</entry>	
+				<entry>Mike and Tome Eat Snacks
+					<link>http://matescast.com/</link>
+				</entry>
+				<entry>The Worst Idea of All Time
+					<link>http://www.worstideaofalltime.com/</link>
+				</entry>
 			</line>
 		</bullet>
 	</section>
@@ -82,7 +100,7 @@
 			</line>
 			<line>workouts
 				<entry>Nike run club
-				</entry>	
+				</entry>
 			</line>
 		</bullet>
 		<bullet>
@@ -121,9 +139,15 @@
 		<bullet>
 			<title>tech</title>
 			<line>refs
-				<entry>Cross Validated</entry>
-				<entry>Portal:Statistics</entry>
-				<entry>Math World</entry>
+				<entry>Cross Validated
+					<link>https://stats.stackexchange.com/</link>
+				</entry>
+				<entry>Portal:Statistics
+					<link>https://en.wikipedia.org/wiki/Portal:Statistics</link>
+				</entry>
+				<entry>Math World
+					<link>http://mathworld.wolfram.com/</link>
+				</entry>
 			</line>
 			<line>stacks
 				<note>R, M, C#, Wolfram, all of my coding bookmarks</note>
