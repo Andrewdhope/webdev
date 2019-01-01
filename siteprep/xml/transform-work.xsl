@@ -4,9 +4,7 @@
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
 	<xsl:variable name="bullet" select="title/text()" /> <!-- add a trait to the bullet tag instead of relying on display title -->
 	<div class="bullet" id="{$bullet}">
-		<button onclick="expandBullet('{$bullet}')" class="collapsible">
-			<h2><xsl:value-of select="title"/></h2>
-		</button>
+			<h2onclick="expandBullet('{$bullet}')" class="collapsible"><xsl:value-of select="title"/></h2>
 		<div class="line">
 		<xsl:for-each select="line">
 			<p><xsl:value-of select="text()" />
