@@ -14,11 +14,10 @@ function expandBullet(bullet) {
 
 function selectedMenu(option) {
 	var menulist = document.getElementsByClassName("menulist");
-	var items = menulist.childNodes;
-	for (i = 0; i < items.length; i++) {
-		items[i].className = "unselected";
-		if (items[i].nodeValue == option) {
-			items[i].className = "selected";
+	for (i = 0; i < menulist.length; i++) {
+		menulist[i].childNodes[0].className = "unselected";
+		if (menulist[i].childNodes[0].nodeValue == option) {
+			menulist[i].childNodes[0].className = "selected";
 		}
 	}
 }
