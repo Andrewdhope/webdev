@@ -9,7 +9,6 @@
 		<xsl:for-each select="line">
 			<p><xsl:value-of select="text()" />
 				<xsl:for-each select="project">
-					<div class="project">
 						<xsl:choose>
 							<!-- projects with one link -->
 							<xsl:when test="count(link) = 1">
@@ -70,8 +69,7 @@
 							<!-- <span class="detail"> -->
 							<sup><xsl:value-of select="text()" /></sup>
 							<!-- </span> -->
-						</xsl:for-each>
-					</div>	
+						</xsl:for-each>	
 				</xsl:for-each>
 			</p>
 		</xsl:for-each>

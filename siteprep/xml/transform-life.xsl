@@ -9,7 +9,6 @@
 		<xsl:for-each select="line">
 			<p><xsl:value-of select="text()" />
 				<xsl:for-each select="entry">
-					<div class="entry">
 						<xsl:choose>
 							<!-- entries with one link -->
 							<xsl:when test="count(link) = 1">
@@ -60,7 +59,6 @@
 							<sup><xsl:value-of select="text()" /></sup>
 							<!-- </span> -->
 						</xsl:for-each>
-					</div>	
 				</xsl:for-each>
 			</p>
 		</xsl:for-each>
