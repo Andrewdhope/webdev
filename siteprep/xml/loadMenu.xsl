@@ -7,7 +7,7 @@
 				<xsl:attribute name="class">menulist</xsl:attribute>
 				<xsl:element name="a">
 					<xsl:attribute name="href">#</xsl:attribute>
-					<xsl:attribute name="onclick">ajaxLoad(xmlpath,buildCareer,xslpath,['<xsl:value-of select="@option" />']);selectedMenu(['<xsl:value-of select="@option" />']</xsl:attribute>
+					<xsl:attribute name="onclick">ajaxLoad(xmlpath,buildCareer,xslpath,['<xsl:value-of select="@option" />']);selectedMenu(['<xsl:value-of select="@option" />'])</xsl:attribute>
 					<xsl:value-of select="@option" />
 				</xsl:element>
 			</xsl:element>
