@@ -59,6 +59,7 @@
 							<sup><xsl:value-of select="text()" /></sup>
 							<!-- </span> -->
 						</xsl:for-each>
+				<br />
 				</xsl:for-each>
 			</p>
 		</xsl:for-each>
