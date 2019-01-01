@@ -15,7 +15,7 @@ function expandBullet(bullet) {
 function selectedMenu(option) {
 	var menulist = document.getElementsByClassName("menulist");
 	for (i = 0; i < menulist.length; i++) {
-		menulist[i].childNodes[0].className = "unselected";
+		menulist[i].childNodes[0].className = "unselected"; // classList.toggle?
 		if (menulist[i].childNodes[0].childNodes[0].nodeValue == option) {
 			menulist[i].childNodes[0].className = "selected";
 		}

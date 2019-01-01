@@ -22,6 +22,12 @@ header span {
 	text-align: center;
 }
 
+/* --- MENU --- */
+
+li.menulist a.selected {
+	font-weight: bold;
+}
+
 /* --- GENERAL --- */ 
 
 a {
