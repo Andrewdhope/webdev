@@ -7,9 +7,9 @@
 		<h2 onclick="expandBullet('{$bullet}')" class="collapsible"><xsl:value-of select="title"/></h2>
 		<div class="line">
 		<xsl:for-each select="line">
-			<p><xsl:value-of select="text()" />
-				<xsl:for-each select="entry">
-					<br />
+			<h3><xsl:value-of select="text()" /></h3>
+			<xsl:for-each select="entry">
+				<div class="entry">
 					<xsl:choose>
 						<!-- entries with one link -->
 						<xsl:when test="count(link) = 1">
@@ -60,8 +60,8 @@
 						<sup><xsl:value-of select="text()" /></sup>
 						<!-- </span> -->
 					</xsl:for-each>
-				</xsl:for-each>
-			</p>
+				</div>
+			</xsl:for-each>
 		</xsl:for-each>
 		</div>
 	</div>
