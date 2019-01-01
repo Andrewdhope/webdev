@@ -46,15 +46,3 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
  	content.appendChild(resultDocument); 
 	return;
 }
-
-function expandBullet(bullet) {
-		// consider getting children instead of by class name
-		var header = document.getElementById(bullet);
-		header.classList.toggle("active");
-		var content = header.getElementsByClassName("line");
-		if (content[0].style.display === "block") {
-			content[0].style.display = "none";
-		} else {
-			content[0].style.display = "block";
-		}
-	}
