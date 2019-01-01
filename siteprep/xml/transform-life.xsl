@@ -9,57 +9,57 @@
 		<xsl:for-each select="line">
 			<p><xsl:value-of select="text()" />
 				<xsl:for-each select="entry">
-						<xsl:choose>
-							<!-- entries with one link -->
-							<xsl:when test="count(link) = 1">
+					<br />
+					<xsl:choose>
+						<!-- entries with one link -->
+						<xsl:when test="count(link) = 1">
+							<xsl:element name="a">
+								<xsl:attribute name="href">
+									<xsl:value-of select="link/text()" />
+								</xsl:attribute>
+								<xsl:attribute name="target">
+									<xsl:text>"_blank"</xsl:text>
+								</xsl:attribute>
+								<xsl:value-of select="text()" />
+							</xsl:element>
+						</xsl:when>
+						
+						<!-- entries with multiple links -->
+						<xsl:when test="count(linkset) = 1">
+							<!-- entry name -->
+							<span class="multi-entry"><xsl:value-of select="text()" /></span>
+							<!-- set of links --> 
+							<xsl:for-each select="linkset/link">
+								<xsl:variable name="i" select="position()"/>
 								<xsl:element name="a">
+									<xsl:attribute name="class">
+										<xsl:text>multi-entry</xsl:text>
+									</xsl:attribute>
 									<xsl:attribute name="href">
-										<xsl:value-of select="link/text()" />
+										<xsl:value-of select="text()" />
 									</xsl:attribute>
 									<xsl:attribute name="target">
 										<xsl:text>"_blank"</xsl:text>
 									</xsl:attribute>
-									<xsl:value-of select="text()" />
+									<xsl:text>[</xsl:text><xsl:value-of select="$i" /><xsl:text>]</xsl:text>
 								</xsl:element>
-							</xsl:when>
-							
-							<!-- entries with multiple links -->
-							<xsl:when test="count(linkset) = 1">
-								<!-- entry name -->
-								<span class="multi-entry"><xsl:value-of select="text()" /></span>
-								<!-- set of links --> 
-								<xsl:for-each select="linkset/link">
-									<xsl:variable name="i" select="position()"/>
-									<xsl:element name="a">
-										<xsl:attribute name="class">
-											<xsl:text>multi-entry</xsl:text>
-										</xsl:attribute>
-										<xsl:attribute name="href">
-											<xsl:value-of select="text()" />
-										</xsl:attribute>
-										<xsl:attribute name="target">
-											<xsl:text>"_blank"</xsl:text>
-										</xsl:attribute>
-										<xsl:text>[</xsl:text><xsl:value-of select="$i" /><xsl:text>]</xsl:text>
-									</xsl:element>
-								</xsl:for-each>
-							</xsl:when>
-						
-							<!-- entries without links -->
-							<xsl:otherwise>
-								<span><xsl:value-of select="text()" /></span>
-							</xsl:otherwise>
-						</xsl:choose>
-						
-						<!-- build out the remaining nodes: maxes, books -->
-						
-						<!-- details -->
-						<xsl:for-each select="detail">
-							<!-- <span class="detail"> -->
-							<sup><xsl:value-of select="text()" /></sup>
-							<!-- </span> -->
-						</xsl:for-each>
-				<br />
+							</xsl:for-each>
+						</xsl:when>
+					
+						<!-- entries without links -->
+						<xsl:otherwise>
+							<span><xsl:value-of select="text()" /></span>
+						</xsl:otherwise>
+					</xsl:choose>
+					
+					<!-- build out the remaining nodes: maxes, books -->
+					
+					<!-- details -->
+					<xsl:for-each select="detail">
+						<!-- <span class="detail"> -->
+						<sup><xsl:value-of select="text()" /></sup>
+						<!-- </span> -->
+					</xsl:for-each>
 				</xsl:for-each>
 			</p>
 		</xsl:for-each>
