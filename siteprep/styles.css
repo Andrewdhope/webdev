@@ -72,11 +72,11 @@ li:before {
 	clear: both;
 }
 
-h2:hover {
+h2:hover, h3:hover {
 	text-decoration: underline;
 }
 
-h2.collapsible {
+h2.collapsible, h3.collapsible {
 	cursor: pointer;
 }
 
@@ -91,7 +91,7 @@ h2.collapsible {
 	display: none;
 }
 
-.project, .effect{
+.project, .entry{
 	display: none;
 }
 

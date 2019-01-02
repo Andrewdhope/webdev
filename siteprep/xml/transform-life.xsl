@@ -8,7 +8,7 @@
 		<xsl:for-each select="line">
 			<xsl:variable name="line" select="normalize-space(text())" />
 			<div class="line" id="{$line}">	
-				<h3 onclick="expandLine('{$line}')"><xsl:value-of select="normalize-space(text())" /></h3>
+				<h3 onclick="expandLine('{$line}')" class="collapsible"><xsl:value-of select="normalize-space(text())" /></h3>
 				<xsl:for-each select="entry">
 					<div class="entry">
 						<xsl:choose>
