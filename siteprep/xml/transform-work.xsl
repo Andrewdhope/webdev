@@ -20,7 +20,19 @@
 		<xsl:for-each select="line">
 			<xsl:variable name="line" select="normalize-space(text())" />
 			<div class="line" id="{$line}">	
-				<h3 onclick="expandLine('{$line}')" class="collapsible"><xsl:value-of select="normalize-space(text())" /></h3>
+				<xsl:element name="h3">
+					<xsl:if test="count(project) = 0">
+						<xsl:attribute name="class">empty</xsl:attribute>
+					</xsl:if>
+					<xsl:if test="count(project) > 0">
+						<xsl:attribute name="class">collapsible</xsl:attribute>
+					</xsl:if>
+					<xsl:attribute name="onclick">
+						<xsl:text>expandLine('</xsl:text><xsl:value-of select="$line" /><xsl:text>')</xsl:text>
+					</xsl:attribute>
+					<xsl:value-of select="title"/>
+				</xsl:element>
+				<!-- <h3 onclick="expandLine('{$line}')" class="collapsible"><xsl:value-of select="normalize-space(text())" /></h3> -->
 				<xsl:for-each select="project">
 					<div class="project">
 						<xsl:choose>

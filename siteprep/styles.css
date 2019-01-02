@@ -76,7 +76,7 @@ h2:hover, h3:hover {
 	text-decoration: underline;
 }
 
-h2.empty:hover {
+h2.empty:hover, h3.empty:hover {
 	text-decoration: none;
 	/* use the empty class to control cursor and also for h3 */
 }
@@ -85,7 +85,7 @@ h2.collapsible, h3.collapsible {
 	cursor: pointer;
 }
 
-h2.empty {
+h2.empty, h3.empty` {
 	cursor: default;
 }
 
