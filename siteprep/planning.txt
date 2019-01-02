@@ -18,11 +18,9 @@ General Steps
 - Execute the framework [check]
 - Polish the framework [getting there]
 	+ onclick testing and fixes
-		- work/life should clear content section
-		- dont offer a new cursor if there aint content to expand
-		- 
+		- expansion indicators
 	+ basic styles
-	+ advanced styles
+	+ advanced styles, animations
 	+ content
 - Set up hosting [gh-pages]
 - (loop) Work through details []
@@ -71,4 +69,3 @@ Ongoing input:
 - Domains
 	+ andrewdhope.com
 	+ andrewdhope.github.io
-	

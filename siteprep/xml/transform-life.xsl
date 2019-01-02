@@ -27,10 +27,10 @@
 				<!-- using the expanded notation for the h3 element to add if statements -->
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">
-					<xsl:if test="count(project) = 0">
+					<xsl:if test="count(entry) = 0">
 						<xsl:attribute name="class">empty</xsl:attribute>
 					</xsl:if>
-					<xsl:if test="count(project) > 0">
+					<xsl:if test="count(entry) > 0">
 						<xsl:attribute name="class">collapsible</xsl:attribute>
 					</xsl:if>
 					<xsl:attribute name="onclick">

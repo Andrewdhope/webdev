@@ -72,8 +72,14 @@ li:before {
 	clear: both;
 }
 
+/* collapsible headers */
+
 h2:hover, h3:hover {
 	text-decoration: underline;
+}
+
+h2.collapsible, h3.collapsible {
+	cursor: pointer;
 }
 
 h2.empty:hover, h3.empty:hover {
@@ -81,12 +87,20 @@ h2.empty:hover, h3.empty:hover {
 	/* use the empty class to control cursor and also for h3 */
 }
 
-h2.collapsible, h3.collapsible {
-	cursor: pointer;
-}
-
 h2.empty, h3.empty` {
 	cursor: default;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /* indentations */
