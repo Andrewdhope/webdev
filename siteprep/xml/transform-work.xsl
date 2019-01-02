@@ -10,7 +10,7 @@
 			</xsl:if>
 			<xsl:attribute name="onclick">
 				<xsl:text>expandBullet(</xsl:text>
-				<xsl:value-of select="{$bullet}" />
+				<xsl:value-of select="$bullet" />
 				<xsl:text>)</xsl:text>
 			</xsl:attribute>
 			<xsl:attribute name="class">collapsible</xsl:attribute>
