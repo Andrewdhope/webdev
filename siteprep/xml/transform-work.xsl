@@ -8,7 +8,7 @@
 			<xsl:if test="count(line) = 0">
 				<xsl:attribute name="style">cursor: default</xsl:attribute>
 			</xsl:if>
-			<xsl:attribute name="onclick">expandBullet('{$bullet}')</xsl:attribute>
+			<xsl:attribute name="onclick">expandBullet(<xsl:value-of select='{$bullet}'></xsl:value-of>)</xsl:attribute>
 			<xsl:attribute name="class">collapsible</xsl:attribute>
 			<xsl:value-of select="title"/>
 		</xsl:element>
