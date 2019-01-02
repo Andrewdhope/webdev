@@ -85,6 +85,10 @@ h2.collapsible, h3.collapsible {
 	cursor: pointer;
 }
 
+h2.empty {
+	cursor: default;
+}
+
 /* indentations */
 
 .bullet {
