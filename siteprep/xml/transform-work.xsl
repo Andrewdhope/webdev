@@ -6,10 +6,10 @@
 	<div class="bullet" id="{$bullet}">
 		<xsl:element name="h2">
 			<xsl:if test="count(line) = 0">
-				<xsl:attribute name="style">"cursor: default"</xsl:attribute>
+				<xsl:attribute name="style">cursor: default</xsl:attribute>
 			</xsl:if>
-			<xsl:attribute name="onclick">"expandBullet('{$bullet}')"</xsl:attribute>
-			<xsl:attribute name="class">"collapsible"</xsl:attribute>
+			<xsl:attribute name="onclick">expandBullet('{$bullet}')</xsl:attribute>
+			<xsl:attribute name="class">collapsible</xsl:attribute>
 			<xsl:value-of select="title"/>
 		</xsl:element>
 		<!-- <h2 onclick="expandBullet('{$bullet}')" class="collapsible"><xsl:value-of select="title"/></h2> -->
