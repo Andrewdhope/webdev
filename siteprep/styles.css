@@ -78,6 +78,7 @@ h2:hover, h3:hover {
 
 h2.empty:hover {
 	text-decoration: none;
+	/* use the empty class to control cursor and also for h3 */
 }
 
 h2.collapsible, h3.collapsible {

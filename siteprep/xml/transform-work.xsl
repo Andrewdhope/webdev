@@ -10,11 +10,9 @@
 				<xsl:attribute name="class">empty</xsl:attribute>
 			</xsl:if>
 			<xsl:attribute name="onclick">
-				<xsl:text>expandBullet('</xsl:text>
-				<xsl:value-of select="$bullet" />
-				<xsl:text>')</xsl:text>
+				<xsl:text>expandBullet('</xsl:text><xsl:value-of select="$bullet" /><xsl:text>')</xsl:text>
 			</xsl:attribute>
-			<xsl:attribute name="class">collapsible</xsl:attribute>
+			<!-- <xsl:attribute name="class">collapsible</xsl:attribute> -->
 			<xsl:value-of select="title"/>
 		</xsl:element>
 		<!-- <h2 onclick="expandBullet('{$bullet}')" class="collapsible"><xsl:value-of select="title"/></h2> -->
