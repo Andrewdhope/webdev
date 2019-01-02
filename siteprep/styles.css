@@ -91,6 +91,10 @@ h2.collapsible {
 	display: none;
 }
 
+.project, .entry {
+	display: none;
+}
+
 /* --- FOOTER --- */
 
 footer {
