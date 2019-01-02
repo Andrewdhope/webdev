@@ -17,9 +17,10 @@ General Steps
 - Design the framework [check]
 - Execute the framework [check]
 - Polish the framework [getting there]
-	+ second level collapsibles
-		- normalize-space all over the damn place
 	+ onclick testing and fixes
+		- work/life should clear content section
+		- dont offer a new cursor if there aint content to expand
+		- 
 	+ basic styles
 	+ advanced styles
 	+ content

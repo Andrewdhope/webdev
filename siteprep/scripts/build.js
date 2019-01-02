@@ -24,13 +24,17 @@ function getStylesheet(stylesheetPath, callback, args) {
 }
 
 function buildMenu(xslDoc, xmlDoc) {
-	var xsltProcessor, resultDocument, content ;
+	var xsltProcessor, resultDocument, content, menu ;
 	xsltProcessor = new XSLTProcessor();
 	xsltProcessor.importStylesheet(xslDoc); 
 	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
-	content = document.getElementById("menu");
-	content.innerHTML = ""; // 'clear and append'
- 	content.appendChild(resultDocument); 
+	
+	content = document.getElementById("content");
+	content.innerHTML = ""; // clear content whenever menu is reloaded
+	
+	menu = document.getElementById("menu");
+	menu.innerHTML = ""; // 'clear and append'
+ 	menu.appendChild(resultDocument); 
 	return;
 }
 
