@@ -76,6 +76,10 @@ h2:hover, h3:hover {
 	text-decoration: underline;
 }
 
+h2.empty:hover {
+	text-decoration: none;
+}
+
 h2.collapsible, h3.collapsible {
 	cursor: pointer;
 }
