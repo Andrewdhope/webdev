@@ -6,7 +6,7 @@
 	<div class="bullet" id="{$bullet}">
 		<h2 onclick="expandBullet('{$bullet}')" class="collapsible"><xsl:value-of select="title"/></h2>
 		<xsl:for-each select="line">
-			<xsl:variable name="line" select="text()" />
+			<xsl:variable name="line" select="text()[normalize-space()]" />
 			<div class="line" id="{$line}">	
 				<h3 onclick="expandLine('{$line}')"><xsl:value-of select="text()" /></h3>
 				<xsl:for-each select="project">
