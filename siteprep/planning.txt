@@ -18,6 +18,7 @@ General Steps
 - Execute the framework [check]
 - Polish the framework [getting there]
 	+ second level collapsibles
+		- normalize-space all over the damn place
 	+ onclick testing and fixes
 	+ basic styles
 	+ advanced styles
