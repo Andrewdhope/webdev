@@ -3,7 +3,7 @@
 function expandBullet(bullet) {
 		// consider getting children instead of by class name
 		var header = document.getElementById(bullet);
-		header.classList.toggle("active");
+		// header.classList.toggle("active");
 		var content = header.getElementsByClassName("line");
 		for (i=0; i < content.length; i++) {
 			if (content[i].style.display == "block") {
@@ -16,13 +16,15 @@ function expandBullet(bullet) {
 
 function expandLine(line) {
 	var header = document.getElementById(line);
-	header.classList.toggle("active");
+	// header.classList.toggle("active");
 	var content = header.childNodes;
-	for (i=1; i < content.length; i++) {
-		if (content[i].style.display  == "block") {
-			content[i].style.display = "none";
-		} else {
-			content[i].style.display = "block";
+	for (i=0; i < content.length; i++) {
+		if (content[i].nodeType == 1 && content[i].className == "project") {
+			if (content[i].style.display  == "block") {
+				content[i].style.display = "none";
+			} else {
+				content[i].style.display = "block";
+			}
 		}
 	}
 	
