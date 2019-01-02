@@ -19,7 +19,7 @@ function expandLine(line) {
 	// header.classList.toggle("active");
 	var content = header.childNodes;
 	for (i=0; i < content.length; i++) {
-		if (content[i].nodeType == 1) {
+		if (content[i].nodeType == 1 && content[i].className == "project") {
 			if (content[i].style.display  == "block") {
 				content[i].style.display = "none";
 			} else {
