@@ -4,12 +4,14 @@
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
 	<xsl:variable name="bullet" select="normalize-space(title/text())" /> <!-- add a trait to the bullet tag instead of relying on display title -->
 	<div class="bullet" id="{$bullet}">
-		<xsl:element name="h2">
+		<xsl:element name="h2"><xsl:value-of select="title"/>
 			<xsl:if test="count(line) = 0">
-				<xsl:attribute name="style">"cursor: default;"</xsl:attribute>
+				<xsl:attribute name="style">"cursor: </xsl:attribute>
 			</xsl:if>
+			<xsl:attribute name="onclick">"expandBullet('{$bullet}')"</xsl:attribute>
+			<xsl:attribute name="class">"collapsible"</xsl:attribute>
 		</xsl:element>
-		<h2 onclick="expandBullet('{$bullet}')" class="collapsible"><xsl:value-of select="title"/></h2>
+		<!-- <h2 onclick="expandBullet('{$bullet}')" class="collapsible"><xsl:value-of select="title"/></h2> -->
 		<xsl:for-each select="line">
 			<xsl:variable name="line" select="normalize-space(text())" />
 			<div class="line" id="{$line}">	
