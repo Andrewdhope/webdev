@@ -30,7 +30,7 @@
 					<xsl:attribute name="onclick">
 						<xsl:text>expandLine('</xsl:text><xsl:value-of select="$line" /><xsl:text>')</xsl:text>
 					</xsl:attribute>
-					<xsl:value-of select="title"/>
+					<xsl:value-of select="normalize-space(text())"/>
 				</xsl:element>
 				<!-- <h3 onclick="expandLine('{$line}')" class="collapsible"><xsl:value-of select="normalize-space(text())" /></h3> -->
 				<xsl:for-each select="project">
