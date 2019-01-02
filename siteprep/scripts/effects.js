@@ -5,10 +5,12 @@ function expandBullet(bullet) {
 		var header = document.getElementById(bullet);
 		header.classList.toggle("active");
 		var content = header.getElementsByClassName("line");
-		if (content[0].style.display === "block") {
-			content[0].style.display = "none";
-		} else {
-			content[0].style.display = "block";
+		for (i=0; i < content.length; i++) {
+			if (content[i].style.display == "block") {
+				content[i].style.display = "none";
+			} else {
+				content[i].style.display = "block";
+			}
 		}
 	}
 
