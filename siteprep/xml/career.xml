@@ -61,7 +61,7 @@
 		<bullet>
 			<title>Healthcare</title>
 			<note>Use shortened names for the tiles, with a hover effect to display a logo, full business name, and link.</note>
-			<line>Partners
+			<line>Partners HealthCare
 				<project>Custom mobile application
 					<role>Design analyst</role>
 					<link>https://itunes.apple.com/us/app/partners-patient-gateway-mobile/id1175078347?mt=8</link>
@@ -71,7 +71,7 @@
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
 				</project>
 			</line>
-			<line>Hartford
+			<line>Hartford HealthCare
 				<project>Enterprise implementation
 					<role>Technical coordinator</role>
 					<role>Support lead</role>
@@ -79,7 +79,7 @@
 					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
 				</project>
 			</line>
-			<line>Stanford
+			<line>Stanford Health Care
 				<project>Patient scheduling
 					<role>Application engineer</role>
 					<link>https://mychart.stanfordhealthcare.org/MakeAppointment/OpenScheduling</link>
