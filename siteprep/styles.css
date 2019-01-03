@@ -94,24 +94,20 @@ h2.empty, h3.empty` {
 	cursor: default;
 }
 
+/* plus/minus signs for expand/collapse options */
+
+
 .collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795';
   font-size: 0.5em;
   color: #999999;
   margin-left: 5px;
 }
 
-.collapsible:after:hover {
-	text-decoration: none;
-}
-
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
 }
 
-.active:after:hover {
-	text-decoration: none;
-}	
 
 /* indentations */
 
