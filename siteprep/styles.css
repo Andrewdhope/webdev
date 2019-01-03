@@ -18,6 +18,7 @@ header span {
 .split {
 	color: #cccccc;
 }
+
 .centered { 
 	text-align: center;
 }
@@ -97,20 +98,16 @@ h2.empty, h3.empty` {
 
 /* plus/minus signs for expand/collapse options */
 
-
 .collapsible::after {
   content: '\02795';
   font-size: 0.5em;
   color: #999999;
   margin-left: 5px;
+  display: inline-block; /* prevents the pseudo-element from being underlined when hovered over */
 }
 
 .active::after {
   content: "\2796";
-}
-
-.active:hover::after {
-  text-decoration: none;
 }
 
 
