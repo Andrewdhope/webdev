@@ -94,18 +94,23 @@ h2.empty, h3.empty` {
 	cursor: default;
 }
 
+
 /* plus/minus signs for expand/collapse options */
 
 
-.collapsible:after {
+.collapsible::after {
   content: '\02795';
   font-size: 0.5em;
   color: #999999;
   margin-left: 5px;
 }
 
-.active:after {
+.active::after {
   content: "\2796";
+}
+
+.active:hover::after {
+  text-decoration: none;
 }
 
 
