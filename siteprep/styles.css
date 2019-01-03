@@ -99,12 +99,19 @@ h2.empty, h3.empty` {
   font-size: 0.5em;
   color: #999999;
   margin-left: 5px;
-  text-decoration: none;
+}
+
+.collapsible:after:hover {
+	text-decoration: none;
 }
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+.active:after:hover {
+	text-decoration: none;
+}	
 
 /* indentations */
 
