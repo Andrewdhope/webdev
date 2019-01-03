@@ -74,6 +74,10 @@ li:before {
 
 /* collapsible headers */
 
+h2, h3 {
+	display: inline-block;
+}
+
 h2:hover, h3:hover {
 	text-decoration: underline;
 }
@@ -84,7 +88,6 @@ h2.collapsible, h3.collapsible {
 
 h2.empty:hover, h3.empty:hover {
 	text-decoration: none;
-	/* use the empty class to control cursor and also for h3 */
 }
 
 h2.empty, h3.empty` {
@@ -93,9 +96,8 @@ h2.empty, h3.empty` {
 
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: white;
-  float: right;
+  font-size: 0.5em;
+  color: #999999;
   margin-left: 5px;
 }
 
