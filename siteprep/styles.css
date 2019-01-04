@@ -1,5 +1,6 @@
 body {
 	font-family: Ubuntu, Courier;
+	background-color: #4CAF50;
 }
 
 /* --- HEADER --- */
@@ -46,15 +47,15 @@ section#content {
 	width: 75%;
 	float: left;
 	box-sizing: border-box;
-	background-color: #3A4E7A;
-	color: #999999;
+	background-color: #4CAF50;
+	color: #cccccc;
 }
 
 nav {
 	width: 25%;
 	float: right;
-	background-color: #4E2F60;
-	color: #999999;
+	background-color: #4CAF50;
+	color: #cccccc;
 }
 
 ul {
@@ -101,7 +102,7 @@ h2.empty, h3.empty` {
 .collapsible::after {
   content: '\02795';
   font-size: 0.5em;
-  color: #999999;
+  color: #cccccc;
   margin-left: 5px;
   display: inline-block; /* prevents the pseudo-element from being underlined when hovered over */
 }
