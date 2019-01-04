@@ -17,8 +17,6 @@ General Steps
 - Design the framework [check]
 - Execute the framework [check]
 - Polish the framework [getting there]
-	+ onclick testing and fixes
-		- expansion indicators
 	+ basic styles
 	+ advanced styles, animations
 	+ content
@@ -31,7 +29,6 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
 		role | role | role
 	
 	CSS 
-		- second level collapsibles
 		- general palette
 		- landing page
 		- animations
