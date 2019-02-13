@@ -139,6 +139,10 @@
 		</bullet>
 		<bullet>
 			<title>tech</title>
+			<line>stacks
+				<note>R, M, C#, Wolfram, all of my coding bookmarks</note>
+				<note>things i know vs. things i am tracking (FHIR, NLP)</note>
+			</line>
 			<line>refs
 				<entry>Cross Validated
 					<link>https://stats.stackexchange.com/</link>
@@ -150,19 +154,15 @@
 					<link>http://mathworld.wolfram.com/</link>
 				</entry>
 			</line>
-			<line>stacks
-				<note>R, M, C#, Wolfram, all of my coding bookmarks</note>
-				<note>things i know vs. things i am tracking (FHIR, NLP)</note>
-			</line>
 		</bullet>
 		<bullet>
-			<title>policy</title>
+			<title>law</title>
 			<line>theory
 				<entry>Liberalism
 					<link>https://en.wikipedia.org/wiki/Liberalism</link>
 				</entry>
 			</line>
-			<line>laws
+			<line>policy
 				<entry>Apportionment
 					<linkset>
 						<link>https://thirty-thousand.org/</link>
