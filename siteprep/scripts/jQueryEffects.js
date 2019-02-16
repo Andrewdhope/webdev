@@ -1,6 +1,6 @@
 function jBounceUp() {
 		$("header").addClass("up")
-			.animate({padding-top: '20px', slow})
+			.animate({padding-top: '20px', "slow"})
 			.animate({bottom: '90%'}, "slow", function() {
 				$("header").removeClass("down")
 				ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])
