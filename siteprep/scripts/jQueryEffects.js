@@ -1,4 +1,5 @@
 function jBounceUp() {
+	if document.getElementByTagName("header")[0].classList.contains("down") {
 		$("header").addClass("up")
 			.animate({bottom: '90%'}, "slow", function() {
 				ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])
@@ -7,5 +8,5 @@ function jBounceUp() {
 			
 		// if the class is flagged, just call ajaxLoad
 		// else set the attribute flag (addClass), and call animate with ajaxLoad as a callback
-		
+	}	
 }
