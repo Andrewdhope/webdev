@@ -1,9 +1,9 @@
 function jBounceUp() {
-	// if document.getElementsByTagName("header")[0].classList.contains("down")
 		$("header").addClass("up")
+			.animate({padding-top: '20px', slow})
 			.animate({bottom: '90%'}, "slow", function() {
-				ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])
 				$("header").removeClass("down")
+				ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])
 			});
 			
 		// if the class is flagged, just call ajaxLoad
