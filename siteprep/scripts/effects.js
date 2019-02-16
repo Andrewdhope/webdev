@@ -42,7 +42,3 @@ function selectedMenu(option) {
 		}
 	}
 }
-
-function bounceUp() {
-
-}

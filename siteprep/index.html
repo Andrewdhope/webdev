@@ -3,9 +3,11 @@
 <meta charset="UTF-8">
 <!-- https://www.w3schools.com/howto/howto_website.asp -->
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="scripts/vars.js"></script>
 	<script src="scripts/build.js"></script>
 	<script src="scripts/effects.js"></script>
+	<script src="scripts/jQueryEffects.js"></script>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 </head>
@@ -14,9 +16,9 @@
 <header>
 	<div class="centered">
 		<span>[</span>
-		<a class="split" href=# onclick="bounceUp(); setPath('work'); ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])">work</a>
+		<a class="split" href=# onclick="setPath('work'); jBounceUp(); ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])">work</a>
 		<span>|</span>
-		<a class="split" href=# onclick="bounceUp(); setPath('life'); ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])">life</a>
+		<a class="split" href=# onclick="setPath('life'); jBounceUp(); ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])">life</a>
 		<span>]</span>
 	</div>
 </header>

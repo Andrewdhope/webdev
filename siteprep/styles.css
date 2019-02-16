@@ -13,7 +13,7 @@ header {
 	bottom: 50%;
 	right: 50%;
 	transform: translateX(50%) translateY(50%);
-	/* on-click >> add the padding (bounce effect?), increase bottom to 90%, then remove position, bottom, right, and transform */
+	/* on-click >> add the padding (bounce effect?), increase bottom to 90%, then remove position, bottom, right, and transform, and toggle a class so it only applies to the first click */
 }
 
 header span {
