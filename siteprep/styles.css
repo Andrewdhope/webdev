@@ -8,7 +8,14 @@ body {
 header {
 	/* border: 3px solid; */ 
 	background-color: #4CAF50;
-	/* padding-top: 20px; */
+}
+
+header.up {
+	padding-top: 20px;
+	bottom: 50%:
+}
+
+header.down {
 	position: absolute;
 	bottom: 50%;
 	right: 50%;
