@@ -1,11 +1,11 @@
 function jBounceUp() {
 		$("header").addClass("up")
-			.animate({paddingTop: '20px'}, "slow")
-			.animate({bottom: '90%'}, "slow", function() {
+			//.animate({paddingTop: '20px'}, "slow")
+			.animate({bottom: '100%'}, "slow", function() {
 				$("header").removeClass("down")
 				ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])
 			});
 			
 		// if the class is flagged, just call ajaxLoad
-		// else set the attribute flag (addClass), and call animate with ajaxLoad as a callback
+		// little hitch at the top, but looking sweet overall
 }

@@ -12,8 +12,7 @@ header {
 
 header.up {
 	padding-top: 0px;
-	bottom: 50%;
-	transform: translateY(50%);
+	/* bottom: 50%; */
 }
 
 header.down {
