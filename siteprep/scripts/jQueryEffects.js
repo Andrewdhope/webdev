@@ -1,5 +1,5 @@
 function jBounceUp() {
-	if document.getElementByTagName("header")[0].classList.contains("down") {
+	if document.getElementsByTagName("header")[0].classList.contains("down") {
 		$("header").addClass("up")
 			.animate({bottom: '90%'}, "slow", function() {
 				ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])
