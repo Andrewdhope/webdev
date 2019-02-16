@@ -1,5 +1,5 @@
 function jBounceUp() {
-		$("header")..addClass("up")
+		$("header").addClass("up")
 			.css("padding-top","20px")
 			.animate({bottom: '90%'}, "slow", "ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])")
 			.css("transform": "none", "position": "static", "right": "0%");
