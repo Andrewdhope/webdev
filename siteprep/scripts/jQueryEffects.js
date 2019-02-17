@@ -4,7 +4,7 @@ function jBounceUp() {
 	} else {
 		$("header").addClass("up")
 			
-			/* padding here set to [(height of the header element)+2*(body's top margin)+2*(desired padding after animation)] */
+			/* padding here should equal (height of the header element)+2*(body's top margin)+2*(desired padding after animation) */
 			.animate({paddingTop: '55.2px'}, "slow") 
 			
 			.animate({bottom: '100%'}, "slow", function() {
@@ -15,5 +15,4 @@ function jBounceUp() {
 				ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])
 			});		
 	}
-		// if the class is flagged, just call ajaxLoad
 }

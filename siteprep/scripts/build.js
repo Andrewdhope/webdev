@@ -29,12 +29,17 @@ function buildMenu(xslDoc, xmlDoc) {
 	xsltProcessor.importStylesheet(xslDoc); 
 	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
 	
-	content = document.getElementById("content");
-	content.innerHTML = ""; // clear content whenever menu is reloaded
+	// content = document.getElementById("content");
+	// content.innerHTML = ""; // clear content whenever menu is reloaded
+	$("#content").html("");
 	
-	menu = document.getElementById("menu");
-	menu.innerHTML = ""; // 'clear and append'
- 	menu.appendChild(resultDocument); 
+	// menu = document.getElementById("menu");
+	// menu.innerHTML = ""; // 'clear and append'
+	$("#menu").html("");
+	
+ 	// menu.appendChild(resultDocument); 
+	$("#menu").append(resultDocument);
+	
 	return;
 }
 
@@ -45,8 +50,12 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	xsltProcessor.importStylesheet(xslDoc); 
 	xsltProcessor.setParameter(null,"sectionVal",sectionVal); 
 	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+	
 	content = document.getElementById("content");
-	content.innerHTML = ""; // 'clear and append'
- 	content.appendChild(resultDocument); 
+	// content.innerHTML = ""; // 'clear and append'
+	$("#content").html("");
+ 	// content.appendChild(resultDocument); 
+	$("#content").append(resultDocument);
+	
 	return;
 }
