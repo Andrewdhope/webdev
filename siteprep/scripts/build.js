@@ -38,7 +38,7 @@ function buildMenu(xslDoc, xmlDoc) {
 	$("#menu").html("");
 	
  	// menu.appendChild(resultDocument); 
-	$("#menu").append(resultDocument).hide.slideDown();
+	$("#menu").append(resultDocument).hide().slideDown();
 	
 	return;
 }
