@@ -38,7 +38,7 @@ function buildMenu(xslDoc, xmlDoc) {
 	$("#menu").html("");
 	
  	// menu.appendChild(resultDocument); 
-	$("#menu").append(resultDocument);
+	$("#menu").append(resultDocument).hide.slideDown();
 	
 	return;
 }
@@ -55,7 +55,7 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	// content.innerHTML = ""; // 'clear and append'
 	$("#content").html("");
  	// content.appendChild(resultDocument); 
-	$("#content").append(resultDocument);
+	$("#content").append(resultDocument).hide().slideDown();
 	
 	return;
 }
