@@ -19,7 +19,6 @@ header.down {
 	bottom: 50%;
 	right: 50%;
 	transform: translateX(50%) translateY(50%);
-	/* on-click >> add the padding (bounce effect?), increase bottom to 90%, then remove position, bottom, right, and transform, and toggle a class so it only applies to the first click */
 }
 
 header span {
@@ -59,6 +58,8 @@ section#content {
 	float: left;
 	box-sizing: border-box;
 	background-color: #4CAF50;
+	border-width: 0px 0px 1px 1px;
+	border-style: dotted;
 	color: #cccccc;
 }
 
@@ -66,6 +67,9 @@ nav {
 	width: 25%;
 	float: right;
 	background-color: #4CAF50;
+	border-width: 0px 1px 1px 0px;
+	border-style: dotted;
+	box-sizing: border-box;
 	color: #cccccc;
 }
 

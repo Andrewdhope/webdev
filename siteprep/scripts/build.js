@@ -35,7 +35,7 @@ function buildMenu(xslDoc, xmlDoc) {
 	
 	// menu = document.getElementById("menu");
 	// menu.innerHTML = ""; // 'clear and append'
-	$("#menu").html("");
+	$("#menu").html(""); // 'clear and append' (with jQuery)
 	
  	// menu.appendChild(resultDocument); 
 	$("#menu").append(resultDocument).hide().slideDown();
@@ -51,9 +51,9 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	xsltProcessor.setParameter(null,"sectionVal",sectionVal); 
 	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
 	
-	content = document.getElementById("content");
+	// content = document.getElementById("content");
 	// content.innerHTML = ""; // 'clear and append'
-	$("#content").html("");
+	$("#content").html(""); // 'clear and append' (with jQuery)
  	// content.appendChild(resultDocument); 
 	$("#content").append(resultDocument).hide().slideDown();
 	
