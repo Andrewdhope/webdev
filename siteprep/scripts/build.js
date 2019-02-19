@@ -59,6 +59,9 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	// content = document.getElementById("content");
 	// content.innerHTML = ""; // 'clear and append'
 	$("#content").slideUp("slow", function() {
+		if (!document.getElementById("content").classList.contains("border")) {
+			$("#content").addClass("border")
+		}
 		$("#content").html("");
 		$("#content").append(resultDocument).slideDown();
 		}
