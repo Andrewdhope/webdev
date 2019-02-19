@@ -10,7 +10,7 @@ function jBounceUp() {
 			.animate({bottom: '100%'}, "slow", function() {
 				
 				/* paddingTop effects are needed to seamlessly switch the header element from absoute to static position. */
-				$("header").removeClass("down").css({paddingTop: '10px'}) 
+				$("header").removeClass("down").css({"paddingTop": "10px", "paddingBottom": "10px"}) 
 			});	
 				
 			ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // this will start before the header animation completes (but it takes a few)

@@ -12,6 +12,7 @@ header {
 
 header.up {
 	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 header.down {
