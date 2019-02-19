@@ -10,6 +10,7 @@ function jBounceUp() {
 			.animate({bottom: '100%'}, "slow", function() {
 				
 				/* paddingTop effects are needed to seamlessly switch the header element from absoute to static position. */
+				/* paddingBottom added just to give the next divs some breathing room. */
 				$("header").removeClass("down").css({"paddingTop": "10px", "paddingBottom": "10px"}) 
 			});	
 				

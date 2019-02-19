@@ -6,7 +6,6 @@ body {
 /* --- HEADER --- */
 
 header {
-	/* border: 3px solid; */ 
 	background-color: #4CAF50;
 }
 
@@ -64,7 +63,7 @@ section#content {
 
 section#content.border {
 	border-width: 0px 0px 1px 1px;
-	border-style: dotted;
+	border-style: dashed;
 }
 
 nav#menu {
@@ -77,7 +76,7 @@ nav#menu {
 
 nav#menu.border {
 	border-width: 0px 1px 1px 0px;
-	border-style: dotted;
+	border-style: dashed;
 }
 
 ul {
