@@ -31,9 +31,9 @@ function buildMenu(xslDoc, xmlDoc) {
 	
 	// content = document.getElementById("content");
 	// content.innerHTML = ""; // clear content whenever menu is reloaded
-	$("#content").slideUp(400, function() {
+	$("#content").slideUp("slow", function() {
 		$("#content").html("");
-		$("#menu").slideUp(400, function() {
+		$("#menu").slideUp("slow", function() {
 			$("#menu").html("");
 			$("#menu").append(resultDocument).slideDown();
 			}); // 'slide up, clear, and append'
@@ -58,7 +58,7 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	
 	// content = document.getElementById("content");
 	// content.innerHTML = ""; // 'clear and append'
-	$("#content").slideUp(400, function() {
+	$("#content").slideUp("slow", function() {
 		$("#content").html("");
 		$("#content").append(resultDocument).slideDown();
 		}

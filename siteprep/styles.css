@@ -57,20 +57,27 @@ section#content {
 	width: 75%;
 	float: left;
 	box-sizing: border-box;
-	background-color: #4CAF50;
 	border-width: 0px 0px 1px 1px;
 	border-style: dotted;
+	background-color: #4CAF50;
 	color: #cccccc;
 }
 
-nav {
+section#content.border {
+
+}
+
+nav#menu {
 	width: 25%;
 	float: right;
 	background-color: #4CAF50;
-	border-width: 0px 1px 1px 0px;
-	border-style: dotted;
 	box-sizing: border-box;
 	color: #cccccc;
+}
+
+nav#menu.border {
+	border-width: 0px 1px 1px 0px;
+	border-style: dotted;
 }
 
 ul {
