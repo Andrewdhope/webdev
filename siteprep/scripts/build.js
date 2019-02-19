@@ -34,6 +34,9 @@ function buildMenu(xslDoc, xmlDoc) {
 	$("#content").slideUp("slow", function() {
 		$("#content").html("");
 		$("#menu").slideUp("slow", function() {
+				if (!document.getElementById("menu").classList.contains("border")) {
+				$("#menu").addClass("border")
+			}
 			$("#menu").html("");
 			$("#menu").append(resultDocument).slideDown();
 			}); // 'slide up, clear, and append'
