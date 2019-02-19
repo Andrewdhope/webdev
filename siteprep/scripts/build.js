@@ -31,14 +31,19 @@ function buildMenu(xslDoc, xmlDoc) {
 	
 	// content = document.getElementById("content");
 	// content.innerHTML = ""; // clear content whenever menu is reloaded
-	$("#content").html("");
+	$("#content").slideUp(400, function() {
+		$("#content").html("");
+		$("#menu").slideUp(400, function() {
+			$("#menu").html("");
+			$("#menu").append(resultDocument).slideDown();
+			}); // 'slide up, clear, and append'
+		}
+	); // clear content whenever menu is reloaded
 	
 	// menu = document.getElementById("menu");
 	// menu.innerHTML = ""; // 'clear and append'
-	$("#menu").html(""); // 'clear and append' (with jQuery)
 	
  	// menu.appendChild(resultDocument); 
-	$("#menu").append(resultDocument).hide().slideDown();
 	
 	return;
 }
@@ -53,9 +58,13 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	
 	// content = document.getElementById("content");
 	// content.innerHTML = ""; // 'clear and append'
-	$("#content").html(""); // 'clear and append' (with jQuery)
- 	// content.appendChild(resultDocument); 
-	$("#content").append(resultDocument).hide().slideDown();
+	$("#content").slideUp(400, function() {
+		$("#content").html("");
+		$("#content").append(resultDocument).slideDown();
+		}
+	); // 'slide up, clear, and append'
+ 	
+	// content.appendChild(resultDocument); 
 	
 	return;
 }
