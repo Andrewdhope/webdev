@@ -34,8 +34,9 @@ function buildMenu(xslDoc, xmlDoc) {
 	$("#content").slideUp("slow", function() {
 		$("#content").html("");
 		$("#menu").slideUp("slow", function() {
+				// start showing the border after one of the menu options is first clicked
 				if (!document.getElementById("menu").classList.contains("border")) {
-				$("#menu").addClass("border")
+					$("#menu").addClass("border")
 			}
 			$("#menu").html("");
 			$("#menu").append(resultDocument).slideDown();
@@ -62,6 +63,7 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 	// content = document.getElementById("content");
 	// content.innerHTML = ""; // 'clear and append'
 	$("#content").slideUp("slow", function() {
+		// start showing the border after one of the menu options is first clicked
 		if (!document.getElementById("content").classList.contains("border")) {
 			$("#content").addClass("border")
 		}
