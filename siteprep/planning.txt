@@ -17,8 +17,9 @@ General Steps
 - Design the framework [check]
 - Execute the framework [check]
 - Polish the framework [getting there]
-	+ basic styles
-	+ advanced styles, animations
+	+ basic styles [check]
+	+ animations [check]
+	+ advanced styles
 	+ content
 - Set up hosting [gh-pages]
 - (loop) Work through details []
