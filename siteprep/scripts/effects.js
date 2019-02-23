@@ -3,6 +3,8 @@
 function expandBullet(bullet) {
 		// consider getting children instead of by class name
 		var header = document.getElementById(bullet);
+		// set height to 0 with jquery
+		// $("#bullet").css({"height": "0px"})
 		var title = header.childNodes[1];
 		title.classList.toggle("active");
 		var content = header.getElementsByClassName("line");
@@ -13,6 +15,7 @@ function expandBullet(bullet) {
 				content[i].style.display = "block";
 			}
 		}
+		// $("#bullet").animate({height: "100%"}, "slow")
 	}
 
 function expandLine(line) {

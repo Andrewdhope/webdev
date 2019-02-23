@@ -10,7 +10,8 @@
 		<bullet>
 			<title>Design</title>
 			<line>philosophy</line>
-				<entry>
+				<entry>Usability heuristics
+					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 				</entry>
 			<line>objectives</line>
 			<line>innovation</line>
@@ -23,9 +24,9 @@
 		</bullet>
 		<bullet>
 			<title>Modeling</title>
-			<line>simulation</line>
-			<line>forecasting</line>
-			<line>decision</line>
+			<line>simulate</line>
+			<line>forecast</line>
+			<line>conclude</line>
 			<line></line>
 		</bullet>
 	</section>
