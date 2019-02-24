@@ -27,6 +27,7 @@ function expandBullet(bullet) {
 	if (title.classList.contains("active")) {
 		$("#" + bullet + " div.line").hide().slideDown()
 	}
+}
 
 function expandLine(line) {
 	var header = document.getElementById(line);
