@@ -33,6 +33,7 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
 		- general palette
 		- landing page
 		- animations
+			+ element IDs should not contain spaces (Partners Healthcare)
 	Put resume somewhere... in Footer? Only if its bold enough.
 	Resume and GitHub link in header.
 	
