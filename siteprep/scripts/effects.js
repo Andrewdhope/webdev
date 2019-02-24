@@ -3,10 +3,18 @@
 function expandBullet(bullet) {
 		// consider getting children instead of by class name
 		var header = document.getElementById(bullet);
-		// set height to 0 with jquery
-		// $("#bullet").css({"height": "0px"})
+
 		var title = header.childNodes[1];
-		title.classList.toggle("active");
+		
+		if (title.classList.contains("active")) {
+			$("#" + bullet + " div.line").slideUp()
+			title.classList.remove("active") // change the "-" to "+"
+		} else {
+			title.classList.add("active")
+		}
+		
+		// title.classList.toggle("active"); // change the "+" to "-"
+		
 		var content = header.getElementsByClassName("line");
 		for (i=0; i < content.length; i++) {
 			if (content[i].style.display == "block") {
@@ -15,7 +23,9 @@ function expandBullet(bullet) {
 				content[i].style.display = "block";
 			}
 		}
-		// $("#bullet").animate({height: "100%"}, "slow")
+		
+	if (title.classList.contains("active")) {
+		$("#" + bullet + " div.line").hide().slideDown()
 	}
 
 function expandLine(line) {
