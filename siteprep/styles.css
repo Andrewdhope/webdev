@@ -118,6 +118,7 @@ h2.empty, h3.empty` {
 }
 
 .lineset {
+	display: none; /* needed for slideDown */
 	border-style: dashed;
 	border-width: 0px 0px 0px 1px;
 }
