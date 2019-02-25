@@ -23,7 +23,13 @@
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
-			<xsl:variable name="line" select="substring-before(text(), " ")" />	
+			<xsl:variable name="line" select="normalize-space(text())" />
+			
+			<xsl:if test="contains($line, ' ')">
+				<xsl:variable name="line" select="substring-before(text(), ' ')" />
+			</xsl:if>
+					
+			
 			<div class="line" id="{$line}">
 			
 				<!-- using the expanded notation for the h3 element to add if statements -->
