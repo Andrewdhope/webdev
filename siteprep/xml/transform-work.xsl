@@ -25,6 +25,10 @@
 			<xsl:for-each select="line">
 			<xsl:variable name="line" select="normalize-space(text())" /> 
 			
+			<xsl:if test="contains($line, ' ')">
+				<xsl:variable name="line" select="substring-before($line, ' ')">
+			</xsl:if>
+			
 			<!-- element IDs shouldn't contain spaces, can use substring-before but with XSLT 2.0 -->
 			<div class="line" id="{$line}"> 
 			
