@@ -9,11 +9,14 @@ function expandBullet(bullet) {
 	// this approach would look slightly better if the lines had a containing div
 	// then I could also put in the proper border effect as well
 	if (title.classList.contains("active")) {
-		$("#" + bullet + " div.lineset").slideUp()
+		$("#" + bullet + " div.lineset").slideUp("slow", function(){
+			$("#" + bullet + " div.line").hide()
+		})
 		title.classList.remove("active") // change the "-" to "+"
 	} else {
-		$("#" + bullet + " div.lineset").hide().slideDown()
 		title.classList.add("active")
+		$("#" + bullet + " div.line").show()
+		$("#" + bullet + " div.lineset").slideDown("slow")
 	}
 
 	/* 
