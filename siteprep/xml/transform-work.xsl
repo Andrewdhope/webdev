@@ -25,7 +25,7 @@
 			<xsl:for-each select="line">
 			<xsl:variable name="line" select="normalize-space(text())" /> 
 			
-			<xsl:if test="contains($line, ' ')">
+			<xsl:if test="contains($line,' ')">
 				<xsl:variable name="line" select="substring-before($line,' ')">
 			</xsl:if>
 			
