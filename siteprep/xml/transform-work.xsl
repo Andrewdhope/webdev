@@ -23,11 +23,16 @@
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
-			<xsl:variable name="line" select="normalize-space(text())" /> 
+			<xsl:variable name="linetest" select="normalize-space(text())" /> 
 			
-			<xsl:if test="contains($line,' ')">
-				<xsl:variable name="line" select="substring-before($line,' ')">
-			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="contains($line,' ')">
+					<xsl:variable name="line" select="substring-before($linetest,' ')" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:variable name="line" select="$linetest" />
+				</xsl:otherwise>
+			</xsl:choose>
 			
 			<!-- element IDs shouldn't contain spaces, can use substring-before but with XSLT 2.0 -->
 			<div class="line" id="{$line}"> 
