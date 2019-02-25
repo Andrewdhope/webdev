@@ -23,7 +23,7 @@
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
-			<xsl:variable name="line" select="strip-space(text())" />	
+			<xsl:variable name="line" select="substring-before(text(), " ")" />	
 			<div class="line" id="{$line}">
 			
 				<!-- using the expanded notation for the h3 element to add if statements -->
