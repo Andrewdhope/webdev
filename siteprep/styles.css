@@ -117,11 +117,6 @@ h2.empty, h3.empty` {
 	cursor: default;
 }
 
-.lineset {
-	border-left: 1px;
-	border-style: dashed;
-}
-
 /* plus/minus signs for expand/collapse options */
 
 .collapsible::after {
