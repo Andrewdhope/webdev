@@ -119,7 +119,7 @@ h2.empty, h3.empty` {
 
 .lineset {
 	border-style: dashed;
-	border-left: 1px;
+	border-left-width: 1px;
 }
 
 /* plus/minus signs for expand/collapse options */
