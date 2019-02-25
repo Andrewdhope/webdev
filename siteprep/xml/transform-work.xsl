@@ -26,7 +26,7 @@
 			<xsl:variable name="linetest" select="normalize-space(text())" /> 
 			
 			<xsl:choose>
-				<xsl:when test="contains($line,' ')">
+				<xsl:when test="contains($linetest,' ')">
 					<xsl:variable name="line" select="substring-before($linetest,' ')" />
 				</xsl:when>
 				<xsl:otherwise>
