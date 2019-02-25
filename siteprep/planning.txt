@@ -23,6 +23,7 @@ General Steps
 	+ content
 - Set up hosting [gh-pages]
 - (loop) Work through details []
+- Refine code (JSON?)
 
 Next steps: incorporate detail drill-downs.	
 https://www.w3schools.com/howto/howto_js_collapsible.asp
@@ -34,7 +35,6 @@ https://www.w3schools.com/howto/howto_js_collapsible.asp
 		- landing page
 		- animations
 			+ element IDs should not contain spaces (Partners Healthcare)
-			+ expand the bottom padding
 
 	Put resume somewhere... in Footer? Only if its bold enough.
 	Resume and GitHub link in header.
