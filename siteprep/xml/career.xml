@@ -10,6 +10,7 @@
 		<bullet>
 			<title>Design</title>
 			<line>philosophy</line>
+				<!-- not included in transform-work b/c it isn't a project  -->
 				<entry>Usability heuristics
 					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 				</entry>

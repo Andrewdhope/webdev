@@ -20,7 +20,9 @@
 			<xsl:value-of select="title"/> <!-- actual value of the header -->
 		</xsl:element>
 		
-		<xsl:for-each select="line">
+		<div class="lineset">
+		
+			<xsl:for-each select="line">
 			<xsl:variable name="line" select="normalize-space(text())" />	
 			<div class="line" id="{$line}">	
 			
@@ -106,6 +108,7 @@
 				</xsl:for-each>
 			</div>
 		</xsl:for-each>
+		</div> <!-- lineset -->
 	</div>
 </xsl:for-each>
 </xsl:template>
