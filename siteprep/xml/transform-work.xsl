@@ -23,24 +23,10 @@
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
-			<xsl:variable name="line1" select="normalize-space(text())" />
+			<xsl:variable name="line" select="normalize-space(text())" /> 
 			
-			<xsl:choose>
-				<xsl:when test="contains($line, ' ')">
-					<xsl:variable name="line" select="substring-before($line1, ' ')" />
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:variable name="line" select="normalize-space($line1)" />
-				</xsl:otherwise>
-			</xsl:choose>		
-			
-			<!--
-			<xsl:if test="contains($line, ' ')">
-				<xsl:variable name="line" select="substring-before($line, ' ')" />
-			</xsl:if>
-			-->
-			
-			<div class="line" id="{$line}">
+			<!-- element IDs shouldn't contain spaces, can use substring-before but with XSLT 2.0 -->
+			<div class="line" id="{$line}"> 
 			
 				<!-- using the expanded notation for the h3 element to add if statements -->
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->

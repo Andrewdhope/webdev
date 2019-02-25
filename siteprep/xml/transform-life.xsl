@@ -24,6 +24,8 @@
 		
 			<xsl:for-each select="line">
 			<xsl:variable name="line" select="normalize-space(text())" />
+			
+			<!-- element IDs shouldn't contain spaces, can use substring-before but with XSLT 2.0 -->
 			<div class="line" id="{$line}">	
 				
 				<!-- using the expanded notation for the h3 element to add if statements -->
