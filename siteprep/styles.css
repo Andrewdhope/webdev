@@ -70,7 +70,7 @@ section#content.border {
 nav#menu {
 	width: 25%;
 	float: right;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	background-color: green;
 	box-sizing: border-box;
 	color: #cccccc;
@@ -153,6 +153,10 @@ h2.empty, h3.empty` {
 
 .project, .entry{
 	display: none;
+}
+
+.project a {
+	padding-left: 5%;
 }
 
 /* --- FOOTER --- */

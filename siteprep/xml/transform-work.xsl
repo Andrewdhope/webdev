@@ -23,8 +23,8 @@
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
-			<xsl:variable name="line" select="normalize-space(text())" />	
-			<div class="line" id="{$line}">	
+			<xsl:variable name="line" select="strip-space(text())" />	
+			<div class="line" id="{$line}">
 			
 				<!-- using the expanded notation for the h3 element to add if statements -->
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->

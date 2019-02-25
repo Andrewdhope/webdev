@@ -6,7 +6,6 @@ function expandBullet(bullet) {
 
 	var title = header.childNodes[1];
 	
-	// this approach would look slightly better if the lines had a containing div
 	// then I could also put in the proper border effect as well
 	if (title.classList.contains("active")) {
 		$("#" + bullet + " div.lineset").slideUp("slow", function(){
@@ -21,7 +20,7 @@ function expandBullet(bullet) {
 
 	/* 
 	
-	// here is the JS method for showing and hiding each of the lines
+	// JS method for showing and hiding each of the lines
 	// replaced wit jQuery approach in 2/2019
 	
 	var content = header.getElementsByClassName("line");
@@ -41,7 +40,6 @@ function expandLine(line) {
 	var title = header.childNodes[1];
 	
 	// this approach would look slightly better if the lines had a containing div
-	// then i could also put in the proper border effect as well
 	// HTML element ids should not contain spaces ("Partners Healthcare")
 	if (title.classList.contains("active")) {
 		$("[id='" + line + "'] div.project").slideUp()
