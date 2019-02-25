@@ -23,12 +23,22 @@
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
-			<xsl:variable name="line" select="normalize-space(text())" />
+			<xsl:variable name="line1" select="normalize-space(text())" />
 			
+			<xsl:choose>
+				<xsl:when test="contains($line, ' ')">
+					<xsl:variable name="line" select="substring-before($line1, ' ')" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:variable name="line" select="normalize-space($line1)" />
+				</xsl:otherwise>
+			</xsl:choose>		
+			
+			<!--
 			<xsl:if test="contains($line, ' ')">
 				<xsl:variable name="line" select="substring-before($line, ' ')" />
 			</xsl:if>
-					
+			-->
 			
 			<div class="line" id="{$line}">
 			
