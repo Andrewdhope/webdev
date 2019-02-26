@@ -40,10 +40,8 @@
 			<!-- element IDs shouldn't contain spaces, can use substring-before but with XSLT 2.0 -->
 			<!-- <xsl:attribute name="id"><xsl:sequence select="upper-case($line)" /></xsl:attribute> -->
 			<!-- <div class="line"> -->
-			<!-- <div class="line" id="{$line}">	-->
+			<div class="line" id="{$line}">
 			
-			<div class="line">
-			<xsl:attribute name="id"><xsl:sequence select="upper-case($line)" /></xsl:attribute>
 				<!-- using the expanded notation for the h3 element to add if statements -->
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">
