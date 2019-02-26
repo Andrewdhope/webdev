@@ -31,7 +31,7 @@
 					<xsl:variable name="line" select="substring-before($linetest,' ')" />
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:variable name="line" select="$linetest" />
+					<xsl:variable name="line" select="normalize-space($linetest)" />
 				</xsl:otherwise>
 			</xsl:choose>
 			
