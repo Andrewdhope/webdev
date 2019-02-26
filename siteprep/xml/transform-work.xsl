@@ -39,7 +39,7 @@
 			
 			<!-- element IDs shouldn't contain spaces, can use substring-before but with XSLT 2.0 -->
 			<div class="line">
-				<xsl:attribute name="id" select="upper-case($line)" />
+				<xsl:attribute name="id"><xsl:value-of select="upper-case($line)" /></xsl:attribute>
 			<!-- <div class="line" id="{$line}"> -->
 			
 				<!-- using the expanded notation for the h3 element to add if statements -->
