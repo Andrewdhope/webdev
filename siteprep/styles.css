@@ -152,15 +152,13 @@ h2.empty, h3.empty` {
 	display: none;
 }
 
-.project, .entry{
+.project, .entry {
 	display: none;
-}
-
-.project {
 	padding: 1px 0px 1px 0px;
 }
 
-.project a {
+
+.project a, .entry a {
 	padding-left: 5%;
 	padding-right: 1%;
 }
@@ -187,27 +185,27 @@ h2.empty, h3.empty` {
 	border-left-style: dashed;
 }
 
-span.multi-project {
+span.multi-project, span.multi-entry {
 	padding-left: 5%;
 }
 
-a.multi-project {
+a.multi-project, a.multi-entry {
 	padding-left: 1%;
 	padding-right: 0%;
 }
 
-.project .multi-project:link, .project .multi-project:visited {
+.project .multi-project:link, .project .multi-project:visited, .entry .multi-entry:link, .entry .multi-entry:visited  {
 	text-decoration: none;
 }
 
-.project a.multi-project:hover {
+.project a.multi-project:hover, .entry a.multi-entry:hover {
 	text-decoration: underline;
 }
 
 
 /* general effects */
 
-.project a:link, .project a:visited {
+.project a:link, .project a:visited, .entry a:link, .entry a:visited {
 	text-decoration: underline;
 }
 
