@@ -19,27 +19,15 @@ General Steps
 - Polish the framework [getting there]
 	+ basic styles [check]
 	+ animations [check]
-	+ advanced styles
+	+ advanced styles [check]
 	+ content
+		- resume links
+		- placeholders
 - Set up hosting [gh-pages]
 - (loop) Work through details []
-- Refine code (XLST 2.0, JSON?)
-
-Next steps: incorporate detail drill-downs.	
-https://www.w3schools.com/howto/howto_js_collapsible.asp
-	Project.com
-		role | role | role
-	
-	CSS 
-		- general palette
-		- landing page
-		- animations
-			+ element IDs should not contain spaces (Partners Healthcare)
-				- might need XSLT 2.0 to address this (substring-before)
-
-	Put resume somewhere... in Footer? Only if its bold enough.
-	Resume and GitHub link in header.
-	
+	+ hit counter
+	+ XSL 2.0 (element IDs)
+	+ start JSON
 	
 	
 Samples and References:
@@ -62,7 +50,6 @@ Ongoing input:
 	+ Forecasting, Decision Science
 	+ Clinical Data Mining
 	+ Cognitive Systems Engineering
-	
 
 - Names
 	+ Unbroken

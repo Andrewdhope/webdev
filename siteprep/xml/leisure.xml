@@ -89,7 +89,11 @@
 		</bullet>
 		<bullet>
 			<title>runs</title>
-			<line>PRs
+			<line>workouts
+				<entry>Nike Run Club
+				</entry>
+			</line>
+			<line>records
 				<entry>13.1
 					<value>2:08:12</value>
 					<date>November 2018</date>
@@ -97,10 +101,6 @@
 				<entry>5K
 					<value>20:59</value>
 					<date>November 2001</date>
-				</entry>
-			</line>
-			<line>workouts
-				<entry>Nike run club
 				</entry>
 			</line>
 		</bullet>
