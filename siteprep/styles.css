@@ -169,12 +169,18 @@ h2.empty, h3.empty` {
 
 .role-wrap {
 	padding-left: 5%;
+	margin: 1px 0px 0px 1px;
 }
 
 .role-wrap .role {
 	padding-left: 1%;
 	padding-right: 1%;
 	border-left-width: 0px;
+}
+
+.role-wrap .role:first-child {
+	border-left-width: 1px;
+	border-left-style: dashed;
 }
 
 
