@@ -156,6 +156,10 @@ h2.empty, h3.empty` {
 	display: none;
 }
 
+.project {
+	padding: 1px 0px 1px 0px;
+}
+
 .project a {
 	padding-left: 5%;
 	padding-right: 1%;
@@ -181,6 +185,30 @@ h2.empty, h3.empty` {
 .role-wrap .role:first-child {
 	border-left-width: 1px;
 	border-left-style: dashed;
+}
+
+span.multi-project {
+	padding-left: 5%;
+}
+
+a.multi-project {
+	padding-left: 1%;
+	padding-right: 0%;
+}
+
+.project .multi-project:link, .project .multi-project:visited {
+	text-decoration: none;
+}
+
+.project a.multi-project:hover {
+	text-decoration: underline;
+}
+
+
+/* general effects */
+
+.project a:link, .project a:visited {
+	text-decoration: underline;
 }
 
 
