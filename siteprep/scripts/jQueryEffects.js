@@ -5,7 +5,7 @@ function jBounceUp() {
 		$("header").addClass("up")
 			
 			/* padding here should equal (height of the header element)+2*(body's top margin)+2*(desired padding after animation) */
-			.animate({paddingTop: '55.2px'}, "slow")
+			.animate({paddingTop: '87.2px'}, "slow")
 			
 			.animate({bottom: '100%'}, "slow", function() {
 				

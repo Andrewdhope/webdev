@@ -13,9 +13,11 @@ function expandBullet(bullet) {
 		})
 		title.classList.remove("active") // change the "-" to "+"
 	} else {
-		title.classList.add("active")
-		$("#" + bullet + " div.line").show()
-		$("#" + bullet + " div.lineset").slideDown("slow")
+		if (!title.classList.contains("empty")) {
+			title.classList.add("active")
+			$("#" + bullet + " div.line").show()
+			$("#" + bullet + " div.lineset").slideDown("slow")
+		}
 	}
 
 	/* 
@@ -46,9 +48,9 @@ function expandLine(line) {
 		$("[id='" + line + "'] div.entry").slideUp()
 		title.classList.remove("active") // change the "-" to "+"
 	} else {
-		title.classList.add("active")
-		$("[id='" + line + "'] div.project").hide().slideDown()
-		$("[id='" + line + "'] div.entry").hide().slideDown()
+			title.classList.add("active")
+			$("[id='" + line + "'] div.project").hide().slideDown()
+			$("[id='" + line + "'] div.entry").hide().slideDown()
 	}
 	
 	/*
