@@ -8,7 +8,7 @@
 <!-- don't look back, look forward -->
 	<section option="interests">
 		<bullet>
-			<title>Design</title>
+			<title>design</title>
 			<line>philosophy</line>
 				<!-- not included in transform-work b/c it isn't a project  -->
 				<entry>Usability heuristics
@@ -18,13 +18,13 @@
 			<line>innovation</line>
 		</bullet>
 		<bullet>
-			<title>Mining</title>
+			<title>mining</title>
 			<line>structure</line>
 			<line>evaluation</line>
 			<line>payload</line>
 		</bullet>
 		<bullet>
-			<title>Modeling</title>
+			<title>modeling</title>
 			<line>simulate</line>
 			<line>forecast</line>
 			<line>conclude</line>
@@ -37,20 +37,20 @@
 			<line></line>
 		</bullet> -->
 		<bullet>
-			<title>Engineering</title>
+			<title>engineering</title>
 			<note></note>
 			<line>dataset evaluation</line>
 			<line>systems design</line>
 			<line>process optimization</line>
 		</bullet>
 		<bullet>
-			<title>Statistics</title>
+			<title>statistics</title>
 			<line>regression</line>
 			<line>inference</line>
 			<line>visualization</line>
 		</bullet>
 		<bullet>
-			<title>Programming</title>
+			<title>programming</title>
 			<note></note>
 			<line>analysis (R)</line>
 			<line>scripting (M)</line>
@@ -62,43 +62,43 @@
 		<!-- 
 		-->
 		<bullet>
-			<title>Healthcare</title>
+			<title>healthcare</title>
 			<note>Use shortened names for the tiles, with a hover effect to display a logo, full business name, and link.</note>
 			<line>Partners HealthCare
-				<project>Custom mobile application
-					<role>Design analyst</role>
+				<project>patient mobile application
+					<role>design analyst</role>
 					<link>https://itunes.apple.com/us/app/partners-patient-gateway-mobile/id1175078347?mt=8</link>
 				</project>
-				<project>Patient reported outcome measures
-					<role>Application engineer</role>
+				<project>patient reported outcome measures
+					<role>application engineer</role>
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
 				</project>
 			</line>
-			<line>Hartford HealthCare
-				<project>Enterprise implementation
-					<role>Technical coordinator</role>
-					<role>Support lead</role>
-					<role>Vendor architect</role>
+			<line>hartford HealthCare
+				<project>enterprise implementation
+					<role>technical coordinator</role>
+					<role>support lead</role>
+					<role>vendor architect</role>
 					<link>https://hartfordhealthcare.org/about-us/careconnect/epic-electronic-health-record</link>
 				</project>
 			</line>
 			<line>Stanford Health Care
-				<project>Patient scheduling
-					<role>Application engineer</role>
+				<project>patient scheduling
+					<role>application engineer</role>
 					<link>https://mychart.stanfordhealthcare.org/MakeAppointment/OpenScheduling</link>
 				</project>
 			</line>
-			<line>Consulting
+			<line>consulting
 				<project>Scripps Health
-					<role>Population analytics</role>
+					<role>population analytics</role>
 					<link>https://www.scripps.org/</link>
 				</project>
 				<project>Baptist Memorial Health Care
-					<role>Accountable care</role>
+					<role>accountable care</role>
 					<link>https://www.baptistonline.org/</link>
 				</project>
 				<project>Lexington Medical Center
-					<role>Regulatory reporting</role>
+					<role>regulatory reporting</role>
 					<link>http://www.lexmed.com/</link>
 				</project>
 			</line>
@@ -120,18 +120,18 @@
 				<project>Data Science Specialization with R
 					<link>https://www.coursera.org/account/accomplishments/specialization/certificate/GKCFG624PGQ3</link>
 				</project>
-				<project>Capstone project (NLP)
+				<project>capstone project (NLP)
 					<link>https://andrewdhope.shinyapps.io/guess-that-gram/</link>
 				</project>
 			</line>
-			<line>Independent development
-				<project>Repos
+			<line>independent development
+				<project>repos
 					<linkset>
 						<link>https://github.com/andrewdhope</link>
 						<link>https://data.world/andrewdhope</link>
 					</linkset>
 				</project>
-				<project>Tutorials
+				<project>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
 						<link>http://opendatastructures.org</link>
@@ -140,14 +140,14 @@
 			</line>
 		</bullet>
 		<bullet>
-			<title>Leadership</title>
+			<title>leadership</title>
 			<note>Could use another example here. Maybe try joining something.</note>
-			<line>Structured</line>
-			<line>Empowering</line>
-			<line>Adaptable</line>
+			<line>structured</line>
+			<line>empowering</line>
+			<line>adaptable</line>
 		</bullet>
 		<bullet>
-			<title>Service</title>
+			<title>service</title>
 		</bullet>
 	</section>
 </content>

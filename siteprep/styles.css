@@ -37,6 +37,10 @@ header span {
 
 /* --- MENU --- */
 
+li.menulist {
+	padding: 1px 0px 1px 0px;
+}
+
 li.menulist a.selected {
 	font-weight: bold;
 }
@@ -158,7 +162,7 @@ h2.empty, h3.empty` {
 }
 
 
-.project a, .entry a {
+.project a, .entry a, .entry span {
 	padding-left: 5%;
 	padding-right: 1%;
 }
@@ -187,10 +191,11 @@ h2.empty, h3.empty` {
 
 span.multi-project, span.multi-entry {
 	padding-left: 5%;
+	padding-right: 0%;
 }
 
 a.multi-project, a.multi-entry {
-	padding-left: 1%;
+	padding-left: 0.5%;
 	padding-right: 0%;
 }
 
