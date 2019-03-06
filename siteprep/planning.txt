@@ -20,10 +20,12 @@ General Steps
 	+ basic styles [check]
 	+ animations [check]
 	+ advanced styles [check]
+		- icons
 	+ content
 		- resume links
+		- footer
 		- placeholders
-- Set up hosting [gh-pages]
+- Set up hosting [gh-pages] -- PUBLISH
 - (loop) Work through details []
 	+ hit counter
 	+ XSL 2.0 (element IDs)

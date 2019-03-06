@@ -137,11 +137,13 @@ h2.empty, h3.empty` {
   font-size: 0.5em;
   color: #cccccc;
   margin-left: 5px;
+  vertical-align: middle;
   display: inline-block; /* prevents the pseudo-element from being underlined when hovered over */
 }
 
 .active::after {
   content: "\2796";
+  vertical-align: middle;
 }
 
 
@@ -220,4 +222,15 @@ a.multi-project, a.multi-entry {
 footer {
 	text-align: right;
 	font-size: x-small; /* check */
+	position: fixed;
+	bottom: 6px;
+	right: 24px;
+	width: 100%;
+	font-family: ubuntu, courier;
+	color: #ccc;
+}
+
+footer p {
+	margin: 0px;
+	color: green;
 }
