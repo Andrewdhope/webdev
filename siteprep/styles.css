@@ -1,5 +1,10 @@
+html {
+	height: 100%;
+}
+
 body {
-	margin: 24px;
+	margin: 24px 24px 12px 24px;
+	min-height: calc(100vh - 36px); /* subtract the top and bottom margins */
 	font-family: Ubuntu, Courier;
 	background-color: green;
 }
@@ -100,6 +105,12 @@ li:before {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+.group {
+	/* should get the 99.2 value dynamically */
+	/* top and bottom margins on the body + total height of header with padding + total height of footer with padding */
+	min-height: calc(100vh - 98.4px) 
 }
 
 /* collapsible headers */
@@ -220,12 +231,10 @@ a.multi-project, a.multi-entry {
 /* --- FOOTER --- */
 
 footer {
+	width: 100%;
+	margin-top: 12px;
 	text-align: right;
 	font-size: x-small; /* check */
-	position: fixed;
-	bottom: 6px;
-	right: 24px;
-	width: 100%;
 	font-family: ubuntu, courier;
 	color: #ccc;
 }
