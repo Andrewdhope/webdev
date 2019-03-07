@@ -231,6 +231,6 @@ footer {
 }
 
 footer p {
+	display: none;
 	margin: 0px;
-	color: green;
 }
