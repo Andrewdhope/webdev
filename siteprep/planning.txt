@@ -20,11 +20,16 @@ General Steps
 	+ basic styles [check]
 	+ animations [check]
 	+ advanced styles [check]
-		- icons
+		- icons []
 	+ content
 		- resume links
-		- footer
+		- footer [check]
 		- placeholders
+	+ testing
+		- pqa
+		- browsers
+		- mobile
+		- resolution
 - Set up hosting [gh-pages] -- PUBLISH
 - (loop) Work through details []
 	+ hit counter
