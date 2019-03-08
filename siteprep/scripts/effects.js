@@ -11,12 +11,12 @@ function expandBullet(bullet) {
 		$("#" + bullet + " div.lineset").slideUp("slow", function(){
 			$("#" + bullet + " div.line").hide()
 		})
-		$("#" + bullet + " span").html("expand_more")
+		$("#" + bullet + " span:first").html("expand_more")
 		title.classList.remove("active") // change the "-" to "+"
 	} else {
 		if (!title.classList.contains("empty")) {
 			title.classList.add("active")
-			$("#" + bullet + " span").html("expand_less")
+			$("#" + bullet + " span:first").html("expand_less")
 			$("#" + bullet + " div.line").show()
 			$("#" + bullet + " div.lineset").slideDown("slow")
 		}
@@ -48,11 +48,11 @@ function expandLine(line) {
 	if (title.classList.contains("active")) {
 		$("[id='" + line + "'] div.project").slideUp()
 		$("[id='" + line + "'] div.entry").slideUp()
-		$("[id='" + line + "'] span").html("expand_more")
+		$("[id='" + line + "'] span:first").html("expand_more")
 		title.classList.remove("active")
 	} else {
 		title.classList.add("active")
-		$("[id='" + line + "'] span").html("expand_less")
+		$("[id='" + line + "'] span:first").html("expand_less")
 		$("[id='" + line + "'] div.project").hide().slideDown()
 		$("[id='" + line + "'] div.entry").hide().slideDown()
 	}

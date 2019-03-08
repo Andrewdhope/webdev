@@ -158,8 +158,12 @@ h2.empty, h3.empty` {
 }
 
 /* expand_more and expand_less icons */
-span.material-icons {
+div.bullet span.material-icons {
 	vertical-align: text-bottom;
+}
+
+div.line span.material-icons {
+	vertical-align: middile;
 }
 
 /* indentations */
