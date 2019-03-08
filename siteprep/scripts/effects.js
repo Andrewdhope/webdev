@@ -50,6 +50,7 @@ function expandLine(line) {
 		title.classList.remove("active") // change the "-" to "+"
 	} else {
 			title.classList.add("active")
+			$("[id='" + line + "'] span").html("expand_less")
 			$("[id='" + line + "'] div.project").hide().slideDown()
 			$("[id='" + line + "'] div.entry").hide().slideDown()
 	}

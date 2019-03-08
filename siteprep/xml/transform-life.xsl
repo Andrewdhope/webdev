@@ -47,6 +47,10 @@
 					<xsl:value-of select="normalize-space(text())"/> <!-- actual value of the header -->
 				</xsl:element>
 				
+				<xsl:if test="count(entry) > 0">
+					<span class="material-icons">expand_more</span>
+				</xsl:if>
+				
 				<xsl:for-each select="entry">
 					<div class="entry">
 						<xsl:choose>
