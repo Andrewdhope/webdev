@@ -21,6 +21,10 @@ General Steps
 	+ animations [check]
 	+ advanced styles [check]
 		- icons []
+			+ first, put a span in place on all the collapsible divs
+			+ when we add the active class, then we clear and reset the innerHTML of the span
+			+ when we clear the active class, then we clear and re-reset the innerHTML of the span
+			+ but only for collapsibles
 	+ content
 		- resume links
 		- footer [check]

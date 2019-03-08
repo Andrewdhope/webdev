@@ -20,6 +20,10 @@
 			<xsl:value-of select="title"/> <!-- actual value of the header -->
 		</xsl:element>
 		
+		<xsl:if test="count(line) > 0">
+			<span class="material-icons">expand_more</span>
+		</xsl:if>
+		
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
