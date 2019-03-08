@@ -143,19 +143,21 @@ h2.empty, h3.empty` {
 
 /* plus/minus signs for expand/collapse options */
 
+/*
 .collapsible::after {
   content: '\02795';
   font-size: 0.5em;
   color: #cccccc;
   margin-left: 5px;
   vertical-align: middle;
-  display: inline-block; /* prevents the pseudo-element from being underlined when hovered over */
+  display: inline-block; 
 }
 
 .active::after {
   content: "\2796";
   vertical-align: middle;
 }
+*/
 
 /* expand_more and expand_less icons */
 div.bullet span.material-icons {
@@ -163,7 +165,7 @@ div.bullet span.material-icons {
 }
 
 div.line span.material-icons {
-	vertical-align: middile;
+	vertical-align: middle;
 }
 
 /* indentations */
