@@ -157,6 +157,9 @@ h2.empty, h3.empty` {
   vertical-align: middle;
 }
 
+.collapsible span.material-icons {
+	vertical-align: text-bottom;
+}
 
 /* indentations */
 

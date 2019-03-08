@@ -46,7 +46,7 @@ function expandLine(line) {
 	if (title.classList.contains("active")) {
 		$("[id='" + line + "'] div.project").slideUp()
 		$("[id='" + line + "'] div.entry").slideUp()
-		// just change the innerHTML of an already-positioned span (in xsl) to "expand_more" or "expand_less"
+		$("[id='" + line + "'] span").html("expand_more")
 		title.classList.remove("active") // change the "-" to "+"
 	} else {
 			title.classList.add("active")
