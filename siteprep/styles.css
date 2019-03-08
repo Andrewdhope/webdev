@@ -157,7 +157,8 @@ h2.empty, h3.empty` {
   vertical-align: middle;
 }
 
-.collapsible span.material-icons {
+/* expand_more and expand_less icons */
+span.material-icons {
 	vertical-align: text-bottom;
 }
 
