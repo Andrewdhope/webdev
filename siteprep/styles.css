@@ -253,3 +253,7 @@ footer p {
 	display: none;
 	margin: 0px;
 }
+
+footer p.footlinks {
+	float: left;
+}
