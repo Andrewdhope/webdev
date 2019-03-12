@@ -4,16 +4,12 @@ html {
 
 body {
 	margin: 24px 24px 12px 24px;
-	min-height: calc(100vh - 36px); /* subtract the top and bottom margins */
+	min-height: calc(100vh - 36px); /* html height minus margin-top and margin-bottom */
 	font-family: Ubuntu, Courier;
 	background-color: green;
 }
 
 /* --- HEADER --- */
-
-header {
-	background-color: green;
-}
 
 header.up {
 	padding-top: 0px;
@@ -25,13 +21,14 @@ header.down {
 	bottom: 50%;
 	right: 50%;
 	transform: translateX(50%) translateY(50%);
+	/* standard method to center an element with absolute position */
 }
 
 header span {
 	color: #cccccc;
 }
 
-/* split class to hold styles for the main branching option*/
+/* split class to hold styles for the main branching option */
 .split {
 	color: #cccccc;
 }
@@ -81,8 +78,8 @@ nav#menu {
 	width: 25%;
 	float: right;
 	padding-bottom: 5px;
-	background-color: green;
 	box-sizing: border-box;
+	background-color: green;
 	color: #cccccc;
 }
 
@@ -91,15 +88,17 @@ nav#menu.border {
 	border-style: dashed;
 }
 
-ul {
+nav#menu ul {
 	list-style-type: none;
 	padding-left: 20px;
 }
 
-li:before {
+nav#menu li:before {
 	content: " - ";
 	padding-right: 10px;
 }
+
+/* positioning of the group class to keep the footer stuck to the bottom */
 
 .group:after {
 	content: "";
@@ -108,7 +107,7 @@ li:before {
 }
 
 .group {
-	/* should get the 99.2 value dynamically */
+	/* should get the 98.4 value dynamically */
 	/* top and bottom margins on the body + total height of header with padding + total height of footer with padding */
 	min-height: calc(100vh - 98.4px) 
 }
@@ -141,25 +140,8 @@ h2.empty, h3.empty` {
 	border-width: 0px 0px 0px 1px;
 }
 
-/* plus/minus signs for expand/collapse options */
-
-/*
-.collapsible::after {
-  content: '\02795';
-  font-size: 0.5em;
-  color: #cccccc;
-  margin-left: 5px;
-  vertical-align: middle;
-  display: inline-block; 
-}
-
-.active::after {
-  content: "\2796";
-  vertical-align: middle;
-}
-*/
-
 /* expand_more and expand_less icons */
+
 div.bullet span.material-icons {
 	vertical-align: text-bottom;
 }
@@ -175,12 +157,12 @@ div.line span.material-icons {
 }
 
 .line {
+	display: none; /* needed for jQuery effects */
 	padding-left: 10%;
-	display: none;
 }
 
 .project, .entry {
-	display: none;
+	display: none; /* needed for jQuery effects */
 	padding: 1px 0px 1px 0px;
 }
 
@@ -222,6 +204,8 @@ a.multi-project, a.multi-entry {
 	padding-right: 0%;
 }
 
+/* general effects */
+
 .project .multi-project:link, .project .multi-project:visited, .entry .multi-entry:link, .entry .multi-entry:visited  {
 	text-decoration: none;
 }
@@ -230,13 +214,9 @@ a.multi-project, a.multi-entry {
 	text-decoration: underline;
 }
 
-
-/* general effects */
-
 .project a:link, .project a:visited, .entry a:link, .entry a:visited {
 	text-decoration: underline;
 }
-
 
 /* --- FOOTER --- */
 
@@ -244,12 +224,12 @@ footer {
 	width: 100%;
 	margin-top: 12px;
 	text-align: right;
-	font-size: x-small; /* check */
+	font-size: x-small;
 	font-family: ubuntu, courier;
 	color: #ccc;
 }
 
-footer p {
+footer p.copyright {
 	display: none;
 	margin: 0px;
 }

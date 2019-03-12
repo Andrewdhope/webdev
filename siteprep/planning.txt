@@ -35,6 +35,7 @@ General Steps
 	+ content
 	+ hit counter
 	+ XSL 2.0 (element IDs)
+	+ dynamic spacing (vh)
 	+ start JSON
 	
 	
