@@ -1,3 +1,4 @@
+// scripts to load html result documents from xml documents and xsl stylesheets
 
 // ajaxLoad
 // standard ajax call using the XMLHttpRequest object
@@ -26,6 +27,7 @@ function ajaxLoad(path, callback, stylesheetPath, args) {
 	request.send();
 }	
 
+
 // getStylesheet
 // call ajaxLoad again to get an xsl doc and unshift it into the args parameter
 // the xsl stylesheet path takes the place of the xml document in this call, with the stylesheet parameter null 
@@ -34,6 +36,7 @@ function getStylesheet(stylesheetPath, callback, args) {
 	ajaxLoad(stylesheetPath, callback, null, args); 
 	return;
 }
+
 
 // buildMenu
 // as a callback function, this takes an xsl stylesheet in the first parameter, 
@@ -60,15 +63,9 @@ function buildMenu(xslDoc, xmlDoc) {
 		}
 	);
 	
-	// -- javascript replaced by jQuery -- // 
-	// content = document.getElementById("content");
-	// content.innerHTML = ""; // clear content whenever menu is reloaded
-	// menu = document.getElementById("menu");
-	// menu.innerHTML = ""; // 'clear and append'
- 	// menu.appendChild(resultDocument); 
-	
 	return;
 }
+
 
 // buildContent // TODO: rename
 // as a callback function, this takes an xsl stylesheet in the first parameter, 
@@ -91,11 +88,6 @@ function buildCareer(xslDoc, xmlDoc, sectionVal) {
 		$("#content").append(resultDocument).slideDown();
 		}
 	); 
- 	
-	// -- javascript replaced by jQuery -- // 
-	// content = document.getElementById("content");
-	// content.innerHTML = ""; // 'clear and append'
-	// content.appendChild(resultDocument); 
 	
 	return;
 }
