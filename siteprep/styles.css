@@ -4,7 +4,7 @@ html {
 
 body {
 	margin: 24px 24px 12px 24px;
-	min-height: calc(100vh - 36px); /* html height minus margin-top and margin-bottom */
+	min-height: calc(100vh - 36px); /* html height minus margin-top and margin-bottom */ /* TODO: calculate dynamically */
 	font-family: Ubuntu, Courier;
 	background-color: green;
 }
@@ -107,7 +107,7 @@ nav#menu li:before {
 }
 
 .group {
-	/* should get the 98.4 value dynamically */
+	/* TODO: should get the 98.4 value dynamically */
 	/* top and bottom margins on the body + total height of header with padding + total height of footer with padding */
 	min-height: calc(100vh - 98.4px) 
 }
