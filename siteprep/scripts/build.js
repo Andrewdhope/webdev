@@ -39,8 +39,7 @@ function getStylesheet(stylesheetPath, callback, args) {
 
 
 // buildMenu
-// as a callback function, this takes an xsl stylesheet in the first parameter, 
-//  and the xml document as the second
+// the callback functions take an xsl stylesheet in the first parameter and the xml document in the second
 function buildMenu(xslDoc, xmlDoc) {
 	var xsltProcessor, resultDocument, content, menu ;
 	xsltProcessor = new XSLTProcessor();
@@ -49,8 +48,9 @@ function buildMenu(xslDoc, xmlDoc) {
 	
 	// 'slide up, clear, and append'
 	
-	// slide the content side up before re-loading the navigation menu
-	$("#content").slideUp("slow", function() {
+	
+	$("#content").slideUp("slow", function() // slide the content side up before re-loading the navigation menu
+		{
 		$("#content").html(""); // clear content
 		$("#menu").slideUp("slow", function() {
 			// start showing the border after one of the menu options is first clicked
@@ -68,8 +68,7 @@ function buildMenu(xslDoc, xmlDoc) {
 
 
 // buildContent
-// as a callback function, this takes an xsl stylesheet in the first parameter, 
-//  and the xml document as the second
+// the callback functions take an xsl stylesheet in the first parameter and the xml document in the second
 function buildContent(xslDoc, xmlDoc, sectionVal) {
 	// null check on the stylesheet
 	var xsltProcessor, resultDocument, content ;
