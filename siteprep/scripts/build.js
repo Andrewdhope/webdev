@@ -2,7 +2,7 @@
 
 // ajaxLoad
 // standard ajax call using the XMLHttpRequest object
-// this function is used to retrieve both xml documents and xsl stylesheets
+// this function is used to retrieve both xml documents and xsl stylesheets,
 //  by calling the ajaxLoad function a second time when a stylesheet is needed
 function ajaxLoad(path, callback, stylesheetPath, args) { 
 	var request, xmlDoc ;
@@ -49,7 +49,7 @@ function buildMenu(xslDoc, xmlDoc) {
 	
 	// 'slide up, clear, and append'
 	
-	// \slide the content side up before re-loading the navigation menu
+	// slide the content side up before re-loading the navigation menu
 	$("#content").slideUp("slow", function() {
 		$("#content").html(""); // clear content
 		$("#menu").slideUp("slow", function() {
@@ -67,10 +67,10 @@ function buildMenu(xslDoc, xmlDoc) {
 }
 
 
-// buildContent // TODO: rename
+// buildContent
 // as a callback function, this takes an xsl stylesheet in the first parameter, 
 //  and the xml document as the second
-function buildCareer(xslDoc, xmlDoc, sectionVal) {
+function buildContent(xslDoc, xmlDoc, sectionVal) {
 	// null check on the stylesheet
 	var xsltProcessor, resultDocument, content ;
 	xsltProcessor = new XSLTProcessor();
