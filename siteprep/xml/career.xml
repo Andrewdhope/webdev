@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content>
-<!-- interests, knowledge, projects -->
-<!-- aim to highlight 3-5 for each -->
-<!-- these should chronicle my professional career, but focus on my ideal landing spot -->
-<!-- a little vague is ok, it is a *supplement* to the resume -->
-<!-- this can be goal-oriented, doesn't have to be strictly a statement of fact -->
 <!-- don't look back, look forward -->
 	<section option="interests">
 		<bullet>
@@ -38,7 +33,6 @@
 		</bullet> -->
 		<bullet>
 			<title>engineering</title>
-			<note></note>
 			<line>dataset evaluation</line>
 			<line>systems design</line>
 			<line>process optimization</line>
@@ -51,7 +45,6 @@
 		</bullet>
 		<bullet>
 			<title>programming</title>
-			<note></note>
 			<line>analysis (R)</line>
 			<line>scripting (M)</line>
 			<line>development (C#)</line>
@@ -59,11 +52,9 @@
 		</bullet>
 	</section>
 	<section option="projects">
-		<!-- 
-		-->
 		<bullet>
 			<title>healthcare</title>
-			<note>Use shortened names for the tiles, with a hover effect to display a logo, full business name, and link.</note>
+			<!-- Use shortened names for the tiles (or not), with a hover effect to display a logo, full business name, and link. -->
 			<line>Partners HealthCare
 				<project>patient mobile application
 					<role>design analyst</role>
@@ -141,10 +132,9 @@
 		</bullet>
 		<bullet>
 			<title>leadership</title>
-			<note>Could use another example here. Maybe try joining something.</note>
-			<line>structured</line>
-			<line>empowering</line>
-			<line>adaptable</line>
+				<line>structured</line>
+				<line>empowering</line>
+				<line>adaptable</line>
 		</bullet>
 		<bullet>
 			<title>service</title>
