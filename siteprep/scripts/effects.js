@@ -1,5 +1,6 @@
 // scripts to modify styles and animations
 
+
 // expandBullet
 // change the icon and slide the content up/down
 function expandBullet(bullet) {
@@ -26,11 +27,12 @@ function expandBullet(bullet) {
 	}
 }
 
+
 // expandLine
 // change the icon and slide the content up/down
 function expandLine(line) {
 	var header = document.getElementById(line);
-	var title = header.childNodes[1]; div.project or div.entry
+	var title = header.childNodes[1]; // div.project or div.entry
 	
 	// this approach would look slightly better if the lines had a containing div
 	// TODO: html element ids should not contain spaces ("Partners Healthcare")
@@ -46,6 +48,7 @@ function expandLine(line) {
 		$("[id='" + line + "'] div.entry").hide().slideDown("slow")
 	}
 }
+
 
 // selectedMenu
 // on-menu-click, style the selected menu option, and unstyle all other menu options

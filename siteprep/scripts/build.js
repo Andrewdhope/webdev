@@ -47,8 +47,6 @@ function buildMenu(xslDoc, xmlDoc) {
 	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
 	
 	// 'slide up, clear, and append'
-	
-	
 	$("#content").slideUp("slow", function() // slide the content side up before re-loading the navigation menu
 		{
 		$("#content").html(""); // clear content
