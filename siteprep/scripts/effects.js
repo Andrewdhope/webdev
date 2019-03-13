@@ -30,7 +30,7 @@ function expandBullet(bullet) {
 // change the icon and slide the content up/down
 function expandLine(line) {
 	var header = document.getElementById(line);
-	var title = header.childNodes[1]; div.project or div.entry
+	var title = header.childNodes[1]; // div.project or div.entry
 	
 	// this approach would look slightly better if the lines had a containing div
 	// TODO: html element ids should not contain spaces ("Partners Healthcare")
