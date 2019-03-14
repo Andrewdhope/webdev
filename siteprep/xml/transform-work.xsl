@@ -27,9 +27,8 @@
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
-			<!-- element IDs shouldn't contain spaces, can use substring-before but with XSLT 2.0 -->
+			<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />
-			<!-- <xsl:variable name="line" select="normalize-space(text())" /> -->
 			
 			<div class="line" id="{$line}">
 			
