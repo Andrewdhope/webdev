@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:transform version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="content">
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
 	<xsl:variable name="bullet" select="normalize-space(title/text())" /> <!-- add a trait to the bullet tag instead of relying on display title -->

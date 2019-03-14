@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:transform version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="content">
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
 	<xsl:variable name="bullet" select="normalize-space(title/text())" /> <!-- add a trait to the bullet tag instead of relying on display title -->
@@ -27,23 +27,10 @@
 		<div class="lineset">
 		
 			<xsl:for-each select="line">
-			<xsl:variable name="line" select="normalize-space(text())" />
-			<!-- <xsl:variable name="linetest" select="normalize-space(text())" /> -->
-			
-			<!-- something about immutability of variables...
-			<xsl:choose>
-				<xsl:when test="contains($linetest,' ')">
-					<xsl:variable name="line" select="substring-before($linetest,' ')" />
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:variable name="line" select="$linetest" />
-				</xsl:otherwise>
-			</xsl:choose>
-			-->
-			
 			<!-- element IDs shouldn't contain spaces, can use substring-before but with XSLT 2.0 -->
-			<!-- <xsl:attribute name="id"><xsl:sequence select="upper-case($line)" /></xsl:attribute> -->
-			<!-- <div class="line"> -->
+			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />
+			<!-- <xsl:variable name="line" select="normalize-space(text())" /> -->
+			
 			<div class="line" id="{$line}">
 			
 				<!-- using the expanded notation for the h3 element to add if statements -->
