@@ -98,8 +98,17 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 	// IE only
 	if (window.ActiveXObject !== undefined) // IE Only
 	{
-		var resultDocumentIE
-		resultDocumentIE = xmlDoc.transformNode(xslDoc);
+		var template = new ActiveXObject('Msxml2.XslTemplate');
+		template.stylesheet = xslDoc;
+		var proc = template.createProcessor();
+		proc.input = xmlDoc;
+		proc.addParameter('sectionVal', sectionVal);
+		proc.transform();
+		
+		var resultDocumentIE = proc.output;
+		
+		// var resultDocumentIE
+		// resultDocumentIE = xmlDoc.transformNode(xslDoc);
 	}
 	else // better browsers
 	{
