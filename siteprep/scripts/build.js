@@ -75,7 +75,7 @@ function buildMenu(xslDoc, xmlDoc) {
 			$("#menu").html(""); // clear menu
 			if (window.ActiveXObject !== undefined) // IE Only
 			{
-				$("#menu").html(resultDocumentIE).slideDown; 
+				$("#menu").append(resultDocumentIE).slideDown; 
 			}
 			else // better browsers
 			{
