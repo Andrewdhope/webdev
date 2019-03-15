@@ -73,16 +73,16 @@ function buildMenu(xslDoc, xmlDoc) {
 				$("#menu").addClass("border")
 			}
 			$("#menu").html(""); // clear menu
+			
 			if (window.ActiveXObject !== undefined) // IE Only
-			{
-				$("#menu").html(resultDocumentIE).slideDown(); // i can get here, but need to figure out the document
-				// $("#menu").html("<ul><li>a</li></ul>").slideDown(); 
-			}
+				{
+					$("#menu").html(resultDocumentIE).slideDown(); // i can get here, but need to figure out the document
+				}
 			else // better browsers
-			{
-				$("#menu").append(resultDocument).slideDown(); // append
-			}
-
+				{
+					$("#menu").append(resultDocument).slideDown(); // append
+				}
+			
 			}); 
 		}
 	);
@@ -94,12 +94,20 @@ function buildMenu(xslDoc, xmlDoc) {
 // buildContent
 // the callback functions take an xsl stylesheet in the first parameter and the xml document in the second
 function buildContent(xslDoc, xmlDoc, sectionVal) {
-	// null check on the stylesheet
-	var xsltProcessor, resultDocument, content ;
-	xsltProcessor = new XSLTProcessor();
-	xsltProcessor.importStylesheet(xslDoc); 
-	xsltProcessor.setParameter(null,"sectionVal",sectionVal); 
-	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+	
+	// IE only
+	if (window.ActiveXObject !== undefined) // IE Only
+	{
+		var resultDocumentIE
+		resultDocumentIE = xmlDoc.transformNode(xslDoc);
+	}
+	else // better browsers
+	{
+		var xsltProcessor, resultDocument, content, menu ;
+		xsltProcessor = new XSLTProcessor();
+		xsltProcessor.importStylesheet(xslDoc); 
+		resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+	}
 	
 	// 'slide up, clear, and append'
 	$("#content").slideUp("slow", function() {
@@ -107,9 +115,16 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 		if (!document.getElementById("content").classList.contains("border")) {
 			$("#content").addClass("border")
 		}
-		$("#content").html("");
-		// IE option here
-		$("#content").append(resultDocument).slideDown();
+		$("#content").html(""); // clear content
+		
+		if (window.ActiveXObject !== undefined) // IE Only
+			{
+				$("#content").html(resultDocumentIE).slideDown(); // i can get here, but need to figure out the document
+			}
+		else // better browsers
+			{
+				$("#content").append(resultDocument).slideDown(); // append
+			}
 		}
 	); 
 	
