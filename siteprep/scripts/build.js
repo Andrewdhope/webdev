@@ -7,13 +7,13 @@
 function ajaxLoad(path, callback, stylesheetPath, args) { 
 	var request, xmlDoc ;
 	if (window.ActiveXObject !== undefined) // IE Only
-	{
-		request = new ActiveXObject("Msxml2.XMLHTTP");
-	}
+		{
+			request = new ActiveXObject("Msxml2.XMLHTTP");
+		}
 	else // better browsers
-	{
-		request = new XMLHttpRequest();
-	}
+		{
+			request = new XMLHttpRequest();
+		}
 	request.onreadystatechange = function() {
 		if (request.readyState == 4 && request.status == 200) {
 			xmlDoc = request.responseXML;
@@ -57,7 +57,7 @@ function buildMenu(xslDoc, xmlDoc) {
 	}
 	else // better browsers
 	{
-		var xsltProcessor, resultDocument, content, menu ;
+		var xsltProcessor, resultDocument ;
 		xsltProcessor = new XSLTProcessor();
 		xsltProcessor.importStylesheet(xslDoc); 
 		resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
@@ -103,9 +103,10 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 	}
 	else // better browsers
 	{
-		var xsltProcessor, resultDocument, content, menu ;
+		var xsltProcessor, resultDocument ;
 		xsltProcessor = new XSLTProcessor();
-		xsltProcessor.importStylesheet(xslDoc); 
+		xsltProcessor.importStylesheet(xslDoc);
+		xsltProcessor.setParameter(null,"sectionVal",sectionVal); 		
 		resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
 	}
 	

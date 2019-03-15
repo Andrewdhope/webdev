@@ -26,14 +26,13 @@ General Steps
 		- footer [check]
 		- placeholders [2]
 	+ testing [1]
-		- pqa, comments
+		- pqa
 		- browsers
 		- mobile
-		- resolution
+		- dynamic spacing (vh)
 - Set up hosting [gh-pages] -- PUBLISH [3]
 - (loop) Work through details []
 	+ content
-	+ dynamic spacing (vh)
 	
 	
 Samples and References:
