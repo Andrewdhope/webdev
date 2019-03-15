@@ -76,7 +76,7 @@ function buildMenu(xslDoc, xmlDoc) {
 			if (window.ActiveXObject !== undefined) // IE Only
 			{
 				// $("#menu").html(resultDocumentIE).slideDown; // i can get here, but need to figure out the document
-				$("#menu").html("<ul><li>a</li></ul>).slideDown; 
+				$("#menu").html("<ul><li>a</li></ul>").slideDown; 
 			}
 			else // better browsers
 			{
