@@ -35,7 +35,6 @@ function expandLine(line) {
 	var title = header.childNodes[1]; // div.project or div.entry
 	
 	// this approach would look slightly better if the lines had a containing div
-	// TODO: html element ids should not contain spaces ("Partners Healthcare")
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("[id='" + line + "'] span:first").html("expand_more")

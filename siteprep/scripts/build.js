@@ -6,15 +6,22 @@
 //  by calling the ajaxLoad function a second time when a stylesheet is needed
 function ajaxLoad(path, callback, stylesheetPath, args) { 
 	var request, xmlDoc ;
-	request = new XMLHttpRequest();
+	if (window.ActiveXObject !== undefined) // IE Only
+	{
+		request = new ActiveXObject("Msxml2.XMLHTTP");
+	}
+	else // better browsers
+	{
+		request = new XMLHttpRequest();
+	}
 	request.onreadystatechange = function() {
 		if (request.readyState == 4 && request.status == 200) {
 			xmlDoc = request.responseXML;
 			args.unshift(xmlDoc); // the xml document will be the first argument, unless it is unshifted by an xsl stylesheet
 			if (stylesheetPath) {
 				// this passes the execution to getStylesheet, 
-				//  which will call ajaxLoad, unshift the stylesheet,
-				// 	and execute the callback (by hitting the else below)
+				//  which re-calls ajaxLoad, unshifts the stylesheet,
+				// 	and executes the callback (by hitting the else below)
 				getStylesheet(stylesheetPath, callback, args); 
 			}
 			else {
@@ -41,10 +48,20 @@ function getStylesheet(stylesheetPath, callback, args) {
 // buildMenu
 // the callback functions take an xsl stylesheet in the first parameter and the xml document in the second
 function buildMenu(xslDoc, xmlDoc) {
-	var xsltProcessor, resultDocument, content, menu ;
-	xsltProcessor = new XSLTProcessor();
-	xsltProcessor.importStylesheet(xslDoc); 
-	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+	
+	// IE only
+	if (window.ActiveXObject !== undefined) // IE Only
+	{
+		var resultDocumentIE
+		resultDocumentIE = xmlDoc.transformNode(xslDoc);
+	}
+	else // better browsers
+	{
+		var xsltProcessor, resultDocument, content, menu ;
+		xsltProcessor = new XSLTProcessor();
+		xsltProcessor.importStylesheet(xslDoc); 
+		resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);
+	}
 	
 	// 'slide up, clear, and append'
 	$("#content").slideUp("slow", function() // slide the content side up before re-loading the navigation menu
@@ -56,7 +73,15 @@ function buildMenu(xslDoc, xmlDoc) {
 				$("#menu").addClass("border")
 			}
 			$("#menu").html(""); // clear menu
-			$("#menu").append(resultDocument).slideDown(); // append
+			if (window.ActiveXObject !== undefined) // IE Only
+			{
+				$("#menu").html(resultDocumentIE).slideDown; 
+			}
+			else // better browsers
+			{
+				$("#menu").append(resultDocument).slideDown(); // append
+			}
+
 			}); 
 		}
 	);
@@ -82,6 +107,7 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 			$("#content").addClass("border")
 		}
 		$("#content").html("");
+		// IE option here
 		$("#content").append(resultDocument).slideDown();
 		}
 	); 

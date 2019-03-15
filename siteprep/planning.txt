@@ -33,7 +33,6 @@ General Steps
 - Set up hosting [gh-pages] -- PUBLISH [3]
 - (loop) Work through details []
 	+ content
-	+ XSL 2.0 (element IDs)
 	+ dynamic spacing (vh)
 	
 	
