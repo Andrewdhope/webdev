@@ -116,20 +116,6 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 		
 		var resultDocumentIE = xslprocess.output;
 		
-		/*
-		var template = new ActiveXObject('Msxml2.XslTemplate');
-		template.stylesheet = xslDoc;
-		
-		var proc = template.createProcessor();
-		proc.input = xmlDoc;
-		proc.addParameter('sectionVal', sectionVal);
-		proc.transform();
-		
-		var resultDocumentIE = proc.output;
-		*/
-		
-		// var resultDocumentIE
-		// resultDocumentIE = xmlDoc.transformNode(xslDoc);
 	}
 	else // better browsers
 	{
@@ -150,7 +136,7 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 		
 		if (window.ActiveXObject !== undefined) // IE Only
 			{
-				$("#content").html(resultDocumentIE).slideDown(); // i can get here, but need to figure out the document
+				$("#content").append(resultDocumentIE).slideDown(); // i can get here, but need to figure out the document
 			}
 		else // better browsers
 			{
