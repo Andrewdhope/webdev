@@ -50,7 +50,7 @@ function getStylesheet(stylesheetPath, callback, args) {
 function buildMenu(xslDoc, xmlDoc) {
 	
 	// IE only
-	if (window.ActiveXObject !== undefined) // IE Only
+	if (window.ActiveXObject !== undefined) // IE only
 	{
 		var resultDocumentIE
 		resultDocumentIE = xmlDoc.transformNode(xslDoc);
@@ -74,9 +74,9 @@ function buildMenu(xslDoc, xmlDoc) {
 			}
 			$("#menu").html(""); // clear menu
 			
-			if (window.ActiveXObject !== undefined) // IE Only
+			if (window.ActiveXObject !== undefined) // IE only
 				{
-					$("#menu").html(resultDocumentIE).slideDown(); // i can get here, but need to figure out the document
+					$("#menu").append(resultDocumentIE).slideDown(); // append
 				}
 			else // better browsers
 				{
@@ -96,14 +96,12 @@ function buildMenu(xslDoc, xmlDoc) {
 function buildContent(xslDoc, xmlDoc, sectionVal) {
 	
 	// IE only
-	if (window.ActiveXObject !== undefined) // IE Only
+	if (window.ActiveXObject !== undefined) // IE only
 	{	
 		var xsldocument = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
-		// xsldocument.async = false; // ??
 		xsldocument.load(xslDoc);
 		
 		var xmldocument = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
-		// xmldocument.async = false; // ??
 		xmldocument.load(xmlDoc);
 		
 		var xsltemplate = new ActiveXObject("Msxml2.XSLTemplate.6.0");
@@ -115,7 +113,6 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 		xslprocess.transform();
 		
 		var resultDocumentIE = xslprocess.output;
-		
 	}
 	else // better browsers
 	{
@@ -134,7 +131,7 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 		}
 		$("#content").html(""); // clear content
 		
-		if (window.ActiveXObject !== undefined) // IE Only
+		if (window.ActiveXObject !== undefined) // IE only
 			{
 				$("#content").append(resultDocumentIE).slideDown(); // i can get here, but need to figure out the document
 			}
