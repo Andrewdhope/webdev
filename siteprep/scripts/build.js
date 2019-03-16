@@ -104,13 +104,14 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 		xsldocument.load(xslDoc);
 		
 		var xsltemplate = new ActiveXObject("Msxml2.XSLTemplate.6.0");
+		
 		xsltemplate.stylesheet = xsldocument		
 		
 		var xmldocument = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
 		xmldocument.async = false // ??
 		xmldocument.load(xmlDoc);
 		
-		var xslprocess = xslt.createProcessor();
+		var xslprocess = xsltemplate.createProcessor();
 		xslprocess.input = xmldocument;
 		xslprocess.addParameter('sectionVal', sectionVal);
 		xslprocess.transform();
