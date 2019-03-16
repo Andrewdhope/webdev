@@ -25,11 +25,11 @@ General Steps
 		- resume links [check]
 		- footer [check]
 		- placeholders [2]
-	+ testing
+	+ testing [check]
 		- pqa
 		- browsers
 		- mobile
-		- dynamic spacing (vh) [1]
+		- dynamic spacing (vh)
 - Set up hosting [gh-pages] -- PUBLISH [3]
 - (loop) Work through details []
 	+ content

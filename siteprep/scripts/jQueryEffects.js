@@ -6,23 +6,26 @@
 // when either link option is clicked, the header slides to the top of the screen,
 //  and the appropriate menu options load
 function jBounceUp() {
+	/* paddingTop effects are needed to seamlessly switch the header element from absoute to static position. */
+	/* padding here should equal (height of the header element)+2*(body's top margin)+2*(desired padding after animation) */
+	/* get this padding value dynamically... */
+	
+	var styles = window.getComputedStyle(document.documentElement); // get all styles
+	var headerheight = styles.getPropertyValue('--header-height'); // convert css variable to js
+	var bodymargintop = styles.getPropertyValue('--body-margin-top'); // convert css variable to js
+	var totalpaddingint = parseInt(headerheight) + parseInt(bodymargintop) + 20; // convert to integers and add 20
+	var totalpaddingpx = totalpaddingint+"px"; // convert to string and append px
+	var animatePadding = {'paddingTop': totalpaddingpx}; // make a jQuery PlainObject for the animate function
+
+
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
 		ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']);
 	} else {
+			
 		$("header").addClass("up")
 			
-			/* paddingTop effects are needed to seamlessly switch the header element from absoute to static position. */
-			/* padding here should equal (height of the header element)+2*(body's top margin)+2*(desired padding after animation) */
-			/* get this padding value dynamically... */
-			
-			var styles = window.getComputedStyle(document.documentElement); // get all styles
-			var headerheight = styles.getPropertyValue('--header-height'); // convert css variable to js
-			var bodymargintop = styles.getPropertyValue('--body-margin-top'); // convert css variable to js
-			var totalpaddingint = parseInt(headerheight) + parseInt(bodymargintop) + 20; // convert to integers and add 20
-			var totalpaddingpx = totalpaddingint+"px"; // convert to string and append px
-			var animatePadding = {paddingTop: totalpaddingpx}; // make a jQuery PlainObject for the animate function
-			.animate(animatePadding, "slow");
+			.animate(animatePadding, "slow")
 			
 			.animate({bottom: '100%'}, "slow", function() {
 				
