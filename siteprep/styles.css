@@ -1,15 +1,26 @@
+:root {
+	--body-margin-top: 24px;
+	--body-margin-bottom: 12px;
+	--header-height: 18px;
+	--footer-height: 12px;
+}
+
 html {
 	height: 100%;
 }
 
 body {
 	margin: 24px 24px 12px 24px;
-	min-height: calc(100vh - 36px); /* html height minus margin-top and margin-bottom */ /* TODO: calculate dynamically */
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom)); 
 	font-family: Ubuntu, Courier;
 	background-color: green;
 }
 
 /* --- HEADER --- */
+
+header {
+	height: var(--header-height);
+}
 
 header.up {
 	padding-top: 0px;
@@ -35,6 +46,7 @@ header span {
 
 .centered { 
 	text-align: center;
+	height: inherit;
 }
 
 /* --- MENU --- */
@@ -109,7 +121,7 @@ nav#menu li:before {
 .group {
 	/* TODO: should get the 98.4 value dynamically */
 	/* top and bottom margins on the body + total height of header with padding + total height of footer with padding */
-	min-height: calc(100vh - 98.4px) 
+	min-height: calc(100vh - 98px);
 }
 
 /* collapsible headers */
@@ -222,6 +234,7 @@ a.multi-project, a.multi-entry {
 
 footer {
 	width: 100%;
+	height: var(--footer-height);
 	margin-top: 12px;
 	text-align: right;
 	font-size: x-small;
