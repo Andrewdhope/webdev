@@ -99,11 +99,11 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 	if (window.ActiveXObject !== undefined) // IE Only
 	{	
 		var xsldocument = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
-		xsldocument.async = false; // ??
+		// xsldocument.async = false; // ??
 		xsldocument.load(xslDoc);
 		
 		var xmldocument = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
-		xmldocument.async = false; // ??
+		// xmldocument.async = false; // ??
 		xmldocument.load(xmlDoc);
 		
 		var xsltemplate = new ActiveXObject("Msxml2.XSLTemplate.6.0");
