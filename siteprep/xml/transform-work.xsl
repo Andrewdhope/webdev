@@ -3,10 +3,8 @@
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
-	<xsl:variable name="bullet" select="normalize-space(title/text())" /> <!-- add a trait to the bullet tag instead of relying on display title -->
+	<xsl:variable name="bullet" select="normalize-space(title/text())" />
 	<div class="bullet" id="{$bullet}">
-	
-		<!-- using the expanded notation for the h2 element to add if statements -->
 		<!-- assign a class (collapsible, empty) based on whether there is content under this bullet -->
 		<xsl:element name="h2">
 			<xsl:if test="count(line) = 0">
@@ -32,8 +30,6 @@
 			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />
 			
 			<div class="line" id="{$line}">
-			
-				<!-- using the expanded notation for the h3 element to add if statements -->
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">
 					<xsl:if test="count(project) = 0">
@@ -111,15 +107,13 @@
 						
 						<!-- details -->
 						<xsl:for-each select="detail">
-							<!-- <span class="detail"> -->
 							<sup><xsl:value-of select="normalize-space(text())" /></sup>
-							<!-- </span> -->
 						</xsl:for-each>	
 					</div>	
 				</xsl:for-each>
 			</div>
 		</xsl:for-each>
-		</div> <!-- lineset -->
+		</div>
 	</div>
 </xsl:for-each>
 </xsl:template>
