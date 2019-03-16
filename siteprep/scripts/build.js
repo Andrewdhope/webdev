@@ -98,20 +98,16 @@ function buildContent(xslDoc, xmlDoc, sectionVal) {
 	// IE only
 	if (window.ActiveXObject !== undefined) // IE Only
 	{	
-				
 		var xsldocument = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
 		xsldocument.async = false; // ??
 		xsldocument.load(xslDoc);
 		
-		var xsltemplate = new ActiveXObject("Msxml2.XSLTemplate.6.0");
-		xsltemplate.stylesheet = xsldocument;
-		
-		//xslprocess.input = xsldocument;
-		//xslprocess.addParameter('sectionVal', sectionVal);	
-		
 		var xmldocument = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.6.0");
 		xmldocument.async = false; // ??
 		xmldocument.load(xmlDoc);
+		
+		var xsltemplate = new ActiveXObject("Msxml2.XSLTemplate.6.0");
+		xsltemplate.stylesheet = xsldocument;
 		
 		var xslprocess = xsltemplate.createProcessor();
 		xslprocess.input = xmldocument;
