@@ -16,7 +16,7 @@ function jBounceUp() {
 	var bodymargintop = styles.getPropertyValue('--body-margin-top'); // convert css variable to js
 	var totalpaddingint = parseInt(headerheight) + 2*parseInt(bodymargintop) + 20; // convert to integers and add 20
 	var totalpaddingpx = totalpaddingint+"px"; // convert to string and append px
-	var animatePadding = {'paddingTop': totalpaddingpx}; // make a jQuery PlainObject for the animate function
+	var animatePadding = {paddingTop: totalpaddingpx}; // make a jQuery PlainObject for the animate function
 
 
 	// if the header is already up, just load the menu
