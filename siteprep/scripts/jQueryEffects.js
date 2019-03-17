@@ -31,7 +31,7 @@ function jBounceUp() {
 			// *sigh* IE workaround
 			if (window.ActiveXObject !== undefined)
 			{
-				$("header").animate({paddingTop: "86px"}, "slow"); // need to hardcode the paddingTop value for IE
+				$("header").animate({paddingTop: "66px"}, "slow"); // need to hardcode the paddingTop value for IE
 			}
 			else // better browsers
 			{
