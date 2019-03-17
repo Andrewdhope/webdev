@@ -8,8 +8,11 @@
 function jBounceUp() {
 
 	/* paddingTop effects are needed to seamlessly switch the header element from absoute to static position. */
-	/* padding here should equal (height of the header element)+2*(body's top margin)+2*(desired padding after animation) */
+	/* without proper padding, the header will have a little hitch at the end of its animation */
+	/* paddingTop here should equal (height of the header element)+2*(body's top margin)+2*(desired padding after animation) */
 	/* building variables to convert existing css variables into JS so we can get this padding value dynamically... */
+	
+	/* sadly, the css variables are not well supported by IE and thus the animation hitch still exists in that browser */
 	
 	var styles = window.getComputedStyle(document.documentElement); // get all styles
 	var headerheight = styles.getPropertyValue('--header-height'); // convert css variable to js
@@ -18,7 +21,6 @@ function jBounceUp() {
 	var totalpaddingpx = totalpaddingint+"px"; // convert to string and append px
 	var animatePadding = {paddingTop: totalpaddingpx}; // make a jQuery PlainObject for the animate function
 
-
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
 		ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']);
@@ -26,12 +28,20 @@ function jBounceUp() {
 			
 		$("header").addClass("up")
 			
+			// *sigh* IE workaround
+			if (window.ActiveXObject !== undefined)
+			{
+			.animate({paddingTop: "86px", "slow") // use the PlainObject constructed above
+			}
+			else 
+			{
+			// better browsers
 			.animate(animatePadding, "slow") // use the PlainObject constructed above
+			}
+			
 			
 			.animate({bottom: '100%'}, "slow", function() {
-				
-				/* paddingTop effects are needed to seamlessly switch the header element from absoute to static position. */
-				/* without proper padding, the header will have a little hitch at the end of its animation */
+			
 				/* paddingBottom added just to give the next divs some breathing room. */
 				$("header").removeClass("down").css({"paddingTop": "10px", "paddingBottom": "10px"})
 				
