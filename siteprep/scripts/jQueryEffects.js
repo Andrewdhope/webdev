@@ -26,17 +26,17 @@ function jBounceUp() {
 		ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']);
 	} else {
 			
-		$("header").addClass("up")
+		$("header").addClass("up");
 			
 			// *sigh* IE workaround
 			if (window.ActiveXObject !== undefined)
 			{
-			$("header").animate({paddingTop: "86px", "slow") // use the PlainObject constructed above
+			$("header").animate({paddingTop: "86px"}, "slow"); // use the PlainObject constructed above
 			}
 			else 
 			{
 			// better browsers
-			$("header").animate(animatePadding, "slow") // use the PlainObject constructed above
+			$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
 			}
 			
 			
