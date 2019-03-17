@@ -12,7 +12,7 @@ function jBounceUp() {
 	/* paddingTop here should equal (height of the header element)+2*(body's top margin)+2*(desired padding after animation) */
 	/* building variables to convert existing css variables into JS so we can get this padding value dynamically... */
 	
-	/* sadly, the css variables are not well supported by IE and thus the animation hitch still exists in that browser */
+	/* sadly, the css variables are not well supported by IE so there is a workaround to hardcode paddingTop */
 	
 	var styles = window.getComputedStyle(document.documentElement); // get all styles
 	var headerheight = styles.getPropertyValue('--header-height'); // convert css variable to js
@@ -31,16 +31,16 @@ function jBounceUp() {
 			// *sigh* IE workaround
 			if (window.ActiveXObject !== undefined)
 			{
-			.animate({paddingTop: "86px", "slow") // use the PlainObject constructed above
+			$("header").animate({paddingTop: "86px", "slow") // use the PlainObject constructed above
 			}
 			else 
 			{
 			// better browsers
-			.animate(animatePadding, "slow") // use the PlainObject constructed above
+			$("header").animate(animatePadding, "slow") // use the PlainObject constructed above
 			}
 			
 			
-			.animate({bottom: '100%'}, "slow", function() {
+			$("header").animate({bottom: '100%'}, "slow", function() {
 			
 				/* paddingBottom added just to give the next divs some breathing room. */
 				$("header").removeClass("down").css({"paddingTop": "10px", "paddingBottom": "10px"})
