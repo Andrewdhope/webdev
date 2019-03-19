@@ -22,8 +22,24 @@
 		</bullet>
 		<bullet>
 			<title>shows</title>
-			<!-- A current node and an all time node -->
-			<!-- Simpsons, Better Call Saul, Westworld, Good Place -->
+				<!-- figure out some content for the links -->
+				<line>current
+					<entry>Better Call Saul
+					</entry>
+					<entry>Westworld
+					</entry>
+					<entry>The Good Place
+						<!-- <link>https://www.newyorker.com/magazine/2017/02/06/dystopia-in-the-good-place</link> -->
+					</entry>
+				</line>
+				<line>former
+					<entry>The Simpsons
+						<linkset>
+							<link>https://twitter.com/SimpsonsQOTD</link>
+							<link>https://www.youtube.com/watch?v=KqFNbCcyFkk</link>
+						</linkset>
+					</entry>
+				</line>
 		</bullet>
 		<bullet>
 			<title>casts</title>
@@ -118,22 +134,24 @@
 			<title>print</title>
 				<line>books
 					<!--use json for each book-->
-					<effect option="previous">
-						<entry>Superforecasting
-							<timer>finished:</timer>
-						</entry>
-						<entry>Blood Meridian</entry>
-						<entry>House of Leaves</entry>
-					</effect>
-					<effect option="next">
-						<entry>The Signal and the Noise
-							<timer>started:</timer>
-						</entry>
-					</effect>
+					<!--add a timer effect-->
+					<entry>reading
+						<link>A Brief History of Seven Killings</link>
+					</entry>
+					<entry>read
+						<linkset>
+							<link>Wind/Pinball</link>
+							<link>Chronicles, Volume One</link>
+							<link>The Book of Tokyo - A City in Short Fiction</link>
+						</linkset>
+					</entry>
 				</line>
 				<line>pages
 					<entry>Longreads
 						<link>https://longreads.com/</link>
+					</entry>
+					<entry>Longreads
+						<link>https://theathletic.com/</link>
 					</entry>
 			</line>
 		</bullet>
