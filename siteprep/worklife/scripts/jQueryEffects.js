@@ -31,9 +31,10 @@ function jBounceUp() {
 			// *sigh* IE workaround
 			if (window.ActiveXObject !== undefined)
 			{
-				$("header").animate({paddingTop: "60px"}, "slow"); // need to hardcode the paddingTop value for IE
+				$("header").animate({paddingTop: "62px"}, "slow"); // need to hardcode the paddingTop value for IE
 				// for some reason the 'magic value' for IE is different than other browsers
-				// most browsers succeed with 86px (from formula above). Seems that IE requires 26 fewer pixels...?
+				// most browsers succeed with 86px (see formula above), but it seems that IE requires 24 fewer pixels...?
+				// ...one problem with hardcoding is you can't really trace why its set that way
 			}
 			else // better browsers
 			{

@@ -1,0 +1,17 @@
+Lessons learned from this journey -- 
+
+AJAX is cool but not that well supported
+Firefox, Chrome, Safari (the "better browsers") support the same XSLTProcessor object, however, they only support XSLT version 1.0
+XSLT 2.0 was released in 2006 or so, yet it isn't acknowledged by the major browsers...
+...XSL 2.0 has some useful features like string manipulation that would have been nice to have...
+
+And IE... Oh boy. Really disappointed with the number of workarounds.
+First, it uses its own XSLT processor -- msxml2.XMLHTTP.
+This alternate processor has a more convoluted way of setting a parameter within the xsl file.
+
+There was also an issue with utilizing CSS variables (which could be very nice to work with) in IE. Its JS engine pretends they're not there.
+
+I think the way to avoid the issue of different XSLT processor standards is to define the XSL stylesheet from within the XML doc that its styling.
+I wanted to load and combine the stylesheet and document on the fly, which I like, but IE doesn't support well.
+
+But I think the better answer is to prefer JSON over AJAX and figure out what the JS-only version of the same approach would be
