@@ -15,7 +15,11 @@
 		</bullet>
 		<bullet>
 			<title>mining</title>
-			<line>structure</line>
+			<line>structure
+				<project>warehousing
+					<link>http://www.essai.rnu.tn/Ebook/Informatique/The%20Data%20Warehouse%20Toolkit,%203rd%20Edition.pdf</link>
+				</project>
+			</line>
 			<line>evaluation</line>
 			<line>payload</line>
 		</bullet>

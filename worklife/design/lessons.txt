@@ -15,3 +15,7 @@ I think the way to avoid the issue of different XSLT processor standards is to d
 I wanted to load and combine the stylesheet and document on the fly, which I like, but IE doesn't support well.
 
 But I think the better answer is to prefer JSON over AJAX and figure out what the JS-only version of the same approach would be
+
+===
+
+make xml element names very generic

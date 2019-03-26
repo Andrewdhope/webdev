@@ -28,11 +28,11 @@ General Steps
 	+ testing [check]
 		- pqa
 		- browsers
-		- mobile
 		- dynamic spacing (vh)
-- Set up hosting [gh-pages] -- PUBLISH [3]
+- Set up hosting [check] [3]
 - (loop) Work through details []
 	+ content
+		- animations
 	
 	
 Samples and References:
