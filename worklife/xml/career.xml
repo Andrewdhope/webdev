@@ -27,11 +27,6 @@
 		</bullet>
 	</section>
 	<section option="knowledge">
-		<!-- <bullet> 
-			<title>healthcare</title>
-			<note></note>
-			<line></line>
-		</bullet> -->
 		<bullet>
 			<title>engineering</title>
 			<line>dataset evaluation</line>
@@ -51,7 +46,7 @@
 		<bullet>
 			<title>programming</title>
 			<line>analysis (R)</line>
-			<line>scripting (M)</line>
+			<line>scripting (M)</line> <!-- http://mumps.sourceforge.net/docs.html -->
 			<line>development (C#)</line>
 			<line>presentation (XHTML)</line>
 		</bullet>
