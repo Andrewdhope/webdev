@@ -4,10 +4,12 @@
 	<section option="interests">
 		<bullet>
 			<title>design</title>
-			<line>philosophy</line>
+			<line>philosophy
+				<!-- may be better to label as an entry rather than a project -->
 				<project>usability heuristics
 					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 				</project>
+			</line>
 			<line>objectives</line>
 			<line>innovation</line>
 		</bullet>
@@ -40,7 +42,11 @@
 			<title>statistics</title>
 			<line>regression</line>
 			<line>inference</line>
-			<line>visualization</line>
+			<line>visualization
+				<project>Data Visualization Society
+					<link>https://www.datavisualizationsociety.com/</link>
+				</project>
+			</line>
 		</bullet>
 		<bullet>
 			<title>programming</title>
