@@ -5,8 +5,7 @@
 		<bullet>
 			<title>design</title>
 			<line>philosophy</line>
-				<!-- probably more appropriate as an <entry>  -->
-				<project>Usability heuristics
+				<project>usability heuristics
 					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 				</project>
 			<line>objectives</line>
