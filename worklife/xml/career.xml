@@ -20,15 +20,17 @@
 					<link>http://www.essai.rnu.tn/Ebook/Informatique/The%20Data%20Warehouse%20Toolkit,%203rd%20Edition.pdf</link>
 				</project>
 			</line>
-			<line>extraction</line>
+			<line>extraction
 				<project>tidy
 					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
 				</project>
-			<line>payload</line>
+			</line>
+			<line>payload
 				<!-- confidence? inference? -->
 				<project>analysis
 					<link>https://moderndive.com/</link>
 				</project>
+			</line>
 		</bullet>
 		<bullet>
 			<title>modeling</title>
