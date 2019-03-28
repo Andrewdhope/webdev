@@ -9,8 +9,12 @@
 					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 				</project>
 			</line>
-			<line>objectives</line>
+			<line>objectives
 				<!-- an example of a clearly defined objective that is the key to the whole thing -->
+				<project>tidy data
+					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
+				</project>
+			</line>
 			<line>innovation
 				<project>A New Kind of Science
 					<link>https://www.wolframscience.com/nks/</link>
@@ -25,10 +29,16 @@
 				</project>
 			</line>
 			<line>extraction
+				<project>Tidyverse
+					<link>https://www.tidyverse.org/</link>
+				</project>
+				<project>MapReduce
+					<link>https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html</link>
+				</project>
 			</line>
 			<line>payload
-				<project>tidy data
-					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
+				<project>A Layered Grammar of Graphics
+					<link>https://vita.had.co.nz/papers/layered-grammar.pdf</link>
 				</project>
 			</line>
 		</bullet>
@@ -63,9 +73,6 @@
 				</project>
 			</line>
 			<line>visualization
-				<project>A Layered Grammar of Graphics
-					<link>https://vita.had.co.nz/papers/layered-grammar.pdf</link>
-				</project>
 				<project>Data Visualization Society
 					<link>https://www.datavisualizationsociety.com/</link>
 				</project>
