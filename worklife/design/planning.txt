@@ -32,7 +32,7 @@ General Steps
 - Set up hosting [check] [3]
 - (loop) Work through details []
 	+ content
-		- animations
+		- animations (canvas)
 	
 	
 Samples and References:
@@ -44,6 +44,7 @@ https://emitanaka.github.io/showcase/
 https://en.wikipedia.org/wiki/Systems_engineering
 https://www.w3schools.com/xml/dom_node.asp
 https://www.quackit.com/html_5/tags/
+https://davidwalsh.name/canvas-demos
 
 Ongoing input:
 - Titles
