@@ -20,14 +20,25 @@
 					<link>http://www.essai.rnu.tn/Ebook/Informatique/The%20Data%20Warehouse%20Toolkit,%203rd%20Edition.pdf</link>
 				</project>
 			</line>
-			<line>evaluation</line>
+			<line>extraction</line>
+				<project>tidy
+					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
+				</project>
 			<line>payload</line>
+				<!-- confidence? inference? -->
+				<project>analysis
+					<link>https://moderndive.com/</link>
+				</project>
 		</bullet>
 		<bullet>
 			<title>modeling</title>
-			<line>simulate</line>
-			<line>forecast</line>
-			<line>conclude</line>
+			<line>simulation</line>
+			<line>forecasting
+				<project>Forecasting: Principles and Practice
+					<link>https://otexts.com/fpp2/</link>
+				</projcet>
+			</line>
+			<line>evaluation</line>
 		</bullet>
 	</section>
 	<section option="knowledge">
@@ -39,8 +50,16 @@
 		</bullet>
 		<bullet>
 			<title>statistics</title>
-			<line>regression</line>
-			<line>inference</line>
+			<line>regression
+				<project>The Elements of Statistical Learning
+					<link>https://web.stanford.edu/~hastie/Papers/ESLII.pdf</link>
+				</project>
+			</line>
+			<line>inference
+				<project>Computer Age Statistical Inference
+					<link>https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf</link>
+				</project>
+			</line>
 			<line>visualization
 				<project>Data Visualization Society
 					<link>https://www.datavisualizationsociety.com/</link>
