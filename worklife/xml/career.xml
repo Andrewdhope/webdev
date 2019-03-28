@@ -21,14 +21,13 @@
 				</project>
 			</line>
 			<line>extraction
-				<project>tidy
-					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
+				<project>analysis
+					<link>https://moderndive.com/</link>
 				</project>
 			</line>
 			<line>payload
-				<!-- confidence? inference? -->
-				<project>analysis
-					<link>https://moderndive.com/</link>
+				<project>tidy data
+					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
 				</project>
 			</line>
 		</bullet>
