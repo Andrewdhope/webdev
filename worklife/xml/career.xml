@@ -5,13 +5,17 @@
 		<bullet>
 			<title>design</title>
 			<line>philosophy
-				<!-- may be better to label as an entry rather than a project -->
 				<project>usability heuristics
 					<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 				</project>
 			</line>
 			<line>objectives</line>
-			<line>innovation</line>
+				<!-- an example of a clearly defined objective that is the key to the whole thing -->
+			<line>innovation
+				<project>A New Kind of Science
+					<link>https://www.wolframscience.com/nks/</link>
+				</project>
+			</line>
 		</bullet>
 		<bullet>
 			<title>mining</title>
@@ -21,9 +25,6 @@
 				</project>
 			</line>
 			<line>extraction
-				<project>analysis
-					<link>https://moderndive.com/</link>
-				</project>
 			</line>
 			<line>payload
 				<project>tidy data
@@ -62,6 +63,9 @@
 				</project>
 			</line>
 			<line>visualization
+				<project>A Layered Grammar of Graphics
+					<link>https://vita.had.co.nz/papers/layered-grammar.pdf</link>
+				</project>
 				<project>Data Visualization Society
 					<link>https://www.datavisualizationsociety.com/</link>
 				</project>
@@ -69,10 +73,10 @@
 		</bullet>
 		<bullet>
 			<title>programming</title>
-			<line>analysis (R)</line>
+			<line>analysis (R)</line> <!-- https://moderndive.com/ -->
 			<line>scripting (M)</line> <!-- http://mumps.sourceforge.net/docs.html -->
-			<line>development (C#)</line>
-			<line>presentation (XHTML)</line>
+			<line>development (C#)</line> <!-- https://docs.microsoft.com/en-us/dotnet/csharp/ -->
+			<line>presentation (XHTML)</line> <!-- https://css-tricks.com/ -->
 		</bullet>
 	</section>
 	<section option="projects">

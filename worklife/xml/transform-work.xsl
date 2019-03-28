@@ -33,6 +33,7 @@
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">
 					<xsl:if test="count(project) = 0">
+						<!-- if count(link) > 0, class is collapsible -->
 						<xsl:attribute name="class">empty</xsl:attribute>
 					</xsl:if>
 					<xsl:if test="count(project) > 0">
@@ -41,6 +42,7 @@
 					<xsl:attribute name="onclick">
 						<xsl:text>expandLine('</xsl:text><xsl:value-of select="$line" /><xsl:text>')</xsl:text>
 					</xsl:attribute>
+					<!-- if count(link) > 0, put an href into the h3 -->
 					<xsl:value-of select="normalize-space(text())"/> <!-- actual value of the header -->
 				</xsl:element>
 			
