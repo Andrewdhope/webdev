@@ -10,13 +10,15 @@
 				</entry>
 			</line>
 			<line>objectives
-				<!-- an example of a clearly defined objective that is the key to the whole thing -->
-				<entry>tidy data
+				<entry>documented
 					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
 				</entry>
+				<entry>measurable
+					<link>https://kpi.org/</link>
+				</entry>				
 			</line>
 			<line>innovation
-				<entry>A New Kind of Science
+				<entry>computational
 					<link>https://www.wolframscience.com/nks/</link>
 				</entry>
 			</line>
@@ -68,7 +70,11 @@
 					<link>https://moderndive.com/</link>
 				</entry>
 			<line>systems design</line>
+				<entry>.NET
+				</entry>
 			<line>process optimization</line>
+				<entry>Lean
+				</entry>
 		</bullet>
 		<bullet>
 			<title>statistics</title>
