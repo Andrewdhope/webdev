@@ -32,10 +32,10 @@
 			<div class="line" id="{$line}">
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">
-					<xsl:if test="count(entry) = 0">
+					<xsl:if test="count(project) = 0">
 						<xsl:attribute name="class">empty</xsl:attribute>
 					</xsl:if>
-					<xsl:if test="count(entry) > 0">
+					<xsl:if test="count(project) > 0">
 						<xsl:attribute name="class">collapsible</xsl:attribute>
 					</xsl:if>
 					<xsl:attribute name="onclick">
@@ -44,14 +44,14 @@
 					<xsl:value-of select="normalize-space(text())"/> <!-- actual value of the header -->
 				</xsl:element>
 			
-				<xsl:if test="count(entry) > 0">
+				<xsl:if test="count(project) > 0">
 					<span class="material-icons">expand_more</span>
 				</xsl:if>
 				
-				<xsl:for-each select="entry">
-					<div class="entry">
+				<xsl:for-each select="project">
+					<div class="project">
 						<xsl:choose>
-							<!-- entries with one link -->
+							<!-- projects with one link -->
 							<xsl:when test="count(link) = 1">
 								<xsl:element name="a">
 									<xsl:attribute name="href">
@@ -64,16 +64,16 @@
 								</xsl:element>
 							</xsl:when>
 							
-							<!-- entries with multiple links -->
+							<!-- projects with multiple links -->
 							<xsl:when test="count(linkset) = 1">
-								<!-- entry name -->
-								<span class="multi-entry"><xsl:value-of select="normalize-space(text())" /></span>
+								<!-- project name -->
+								<span class="multi-project"><xsl:value-of select="normalize-space(text())" /></span>
 								<!-- set of links --> 
 								<xsl:for-each select="linkset/link">
 									<xsl:variable name="i" select="position()"/>
 									<xsl:element name="a">
 										<xsl:attribute name="class">
-											<xsl:text>multi-entry</xsl:text>
+											<xsl:text>multi-project</xsl:text>
 										</xsl:attribute>
 										<xsl:attribute name="href">
 											<xsl:value-of select="normalize-space(text())" />
@@ -86,7 +86,7 @@
 								</xsl:for-each>
 							</xsl:when>
 						
-							<!-- entries without links -->
+							<!-- projects without links -->
 							<xsl:otherwise>
 								<span><xsl:value-of select="normalize-space(text())" /></span>
 							</xsl:otherwise>
@@ -96,7 +96,7 @@
 						<xsl:if test="count(role) = 1">
 							<span class="role"><xsl:value-of select="normalize-space(role/text())" /></span>
 						</xsl:if>
-						<!-- in some cases we want the roles in their own div below the entry name -->
+						<!-- in some cases we want the roles in their own div below the project name -->
 						<xsl:if test="(count(role) &gt; 1) or ((linkwrap) and (role))">
 							<div class="role-wrap">
 								<xsl:for-each select="role">
