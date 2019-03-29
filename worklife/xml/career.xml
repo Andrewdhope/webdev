@@ -37,8 +37,13 @@
 				</project>
 			</line>
 			<line>payload
-				<project>A Layered Grammar of Graphics
-					<link>https://vita.had.co.nz/papers/layered-grammar.pdf</link>
+				<project>interfaces
+					<link>http://www.json.org/</link>
+					<link>https://cran.r-project.org/web/packages/rjson/index.html</link>
+					<link>https://www.hl7.org/fhir/summary.html</link>
+				</project>
+				<project>pipelines
+					<link>https://aws.amazon.com/datapipeline/</link>
 				</project>
 			</line>
 		</bullet>
@@ -73,6 +78,9 @@
 				</project>
 			</line>
 			<line>visualization
+				<project>A Layered Grammar of Graphics
+					<link>https://vita.had.co.nz/papers/layered-grammar.pdf</link>
+				</project>
 				<project>Data Visualization Society
 					<link>https://www.datavisualizationsociety.com/</link>
 				</project>
