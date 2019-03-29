@@ -14,12 +14,12 @@
 					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
 				</entry>
 				<entry>measurable
-					<link>https://kpi.org/</link>
+					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
 				</entry>				
 			</line>
 			<line>innovation
 				<entry>computational
-					<link>https://www.wolframscience.com/nks/</link>
+					<link>https://www.wolframscience.com/nks/p27--how-do-simple-programs-behave/</link>
 				</entry>
 			</line>
 		</bullet>
@@ -41,6 +41,7 @@
 			<line>payload
 				<entry>pipelines
 					<link>https://aws.amazon.com/datapipeline/</link>
+					<!-- http://www.wolfram.com/notebooks/?source=frontpage-features -->
 				</entry>
 				<entry>interfaces
 					<linkset>
@@ -53,13 +54,25 @@
 		</bullet>
 		<bullet>
 			<title>modeling</title>
-			<line>simulation</line>
+			<line>simulation
+				<entry>platform
+					<link>http://www.wolfram.com/language/?source=nav</link>
+				</entry>
+			</line>	
 			<line>forecasting
 				<entry>Forecasting: Principles and Practice
 					<link>https://otexts.com/fpp2/</link>
 				</entry>
 			</line>
-			<line>calibration</line>
+			<line>calibration
+				<entry>linkset
+					<linkset>
+						<link>https://stats.stackexchange.com/</link>
+						<link>https://en.wikipedia.org/wiki/Portal:Statistics</link>
+						<link>http://mathworld.wolfram.com/</link>
+					</linkset>
+				</entry>
+			</line>
 		</bullet>
 	</section>
 	<section option="knowledge">
