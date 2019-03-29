@@ -64,6 +64,9 @@
 		<bullet>
 			<title>engineering</title>
 			<line>dataset evaluation</line>
+				<entry>https://moderndive.com/
+					<link>https://moderndive.com/</link>
+				</entry>
 			<line>systems design</line>
 			<line>process optimization</line>
 		</bullet>
@@ -92,30 +95,29 @@
 			<title>programming</title>
 			<line>analysis
 				<entry>R
-					<link>https://moderndive.com/</link>
+					<link>https://swirlstats.com/</link>
 				</entry>
-			</line> <!-- https://moderndive.com/ -->
+			</line>
 			<line>scripting
 				<entry>M
 					<link>http://mumps.sourceforge.net/docs.html</link>
 				</entry>
-			</line> <!-- http://mumps.sourceforge.net/docs.html -->
+			</line>
 			<line>development
 				<entry>C#
 					<link>https://docs.microsoft.com/en-us/dotnet/csharp/</link>
 				</entry>
-			</line> <!-- https://docs.microsoft.com/en-us/dotnet/csharp/ -->
+			</line>
 			<line>presentation
 				<entry>HTML5
 					<link>https://css-tricks.com/</link>
 				</entry>
-			</line> <!-- https://css-tricks.com/ -->
+			</line>
 		</bullet>
 	</section>
-	<section option="entrys">
+	<section option="projects">
 		<bullet>
 			<title>healthcare</title>
-			<!-- Use shortened names for the tiles (or not), with a hover effect to display a logo, full business name, and link. -->
 			<line>Partners HealthCare
 				<entry>patient mobile application
 					<role>design analyst</role>
