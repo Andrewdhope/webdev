@@ -60,12 +60,12 @@
 				</entry>
 			</line>	
 			<line>forecasting
-				<entry>Forecasting: Principles and Practice
+				<entry>principles
 					<link>https://otexts.com/fpp2/</link>
 				</entry>
 			</line>
 			<line>calibration
-				<entry>linkset
+				<entry>methods
 					<linkset>
 						<link>https://stats.stackexchange.com/</link>
 						<link>https://en.wikipedia.org/wiki/Portal:Statistics</link>
@@ -78,16 +78,21 @@
 	<section option="knowledge">
 		<bullet>
 			<title>engineering</title>
-			<line>dataset evaluation</line>
+			<line>dataset evaluation
 				<entry>https://moderndive.com/
 					<link>https://moderndive.com/</link>
 				</entry>
-			<line>systems design</line>
-				<entry>.NET
+			</line>	
+			<line>systems design
+				<entry>https://dotnet.microsoft.com/
+					<link>https://dotnet.microsoft.com/</link>
 				</entry>
-			<line>process optimization</line>
-				<entry>Lean
+			</line>
+			<line>process optimization
+				<entry>https://www.iise.org/details.aspx?id=835
+					<link>https://www.iise.org/details.aspx?id=835</link>
 				</entry>
+			</line>
 		</bullet>
 		<bullet>
 			<title>statistics</title>
