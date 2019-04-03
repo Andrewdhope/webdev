@@ -105,13 +105,18 @@
 				<link>https://www.instagram.com/hypecourts/?hl=en</link>
 			</line>
 			<line>arenas
-				<value>mem, mke, minn, chi, lac, ind</value>
-				<date></date>
+				<entry>mem, mke, minn, chi, lac, ind
+					<link></link>
+				</entry>
 			</line>
 		</bullet>
 		<bullet>
 			<title>lifts</title>
 			<line>maxes
+				<entry>clean
+					<value>225#</value>
+					<date>December 2016</date>
+				</entry>
 				<entry>squat
 					<value>325#</value>
 					<date>February 2019</date>
@@ -123,10 +128,6 @@
 				<entry>deadlift
 					<value>405#</value>
 					<date>November 2016</date>
-				</entry>
-				<entry>clean
-					<value>225#</value>
-					<date>December 2016</date>
 				</entry>
 			</line>
 		</bullet>

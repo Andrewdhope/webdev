@@ -106,7 +106,7 @@
 						
 							<!-- entries without links -->
 							<xsl:otherwise>
-								<span><xsl:value-of select="normalize-space(text())" /></span>
+								<span class="nolink"><xsl:value-of select="normalize-space(text())" /></span>
 							</xsl:otherwise>
 						</xsl:choose>
 						
@@ -126,7 +126,7 @@
 						<!-- value-dates -->
 						<xsl:if test="count(value) = 1">
 							<span class="value"><xsl:value-of select="normalize-space(value/text())" /></span>
-							<span class="date"> ; <xsl:value-of select="normalize-space(date/text())" /></span>
+							<span class="date"><xsl:value-of select="normalize-space(date/text())" /></span>
 						</xsl:if>
 						
 						<!-- details -->

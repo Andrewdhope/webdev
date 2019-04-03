@@ -182,11 +182,11 @@ div.line span.material-icons {
 	padding-left: 5%;
 }
 
-.entry a {
+.entry a, .entry span {
 	padding-right: 1%;
 }
 
-span.role, span.value {
+span.role {
 	padding-left: 1%;
 	border-left-width: 1px;
 	border-left-style: dashed;
