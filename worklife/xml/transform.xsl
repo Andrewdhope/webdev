@@ -41,13 +41,30 @@
 					<xsl:attribute name="onclick">
 						<xsl:text>expandLine('</xsl:text><xsl:value-of select="$line" /><xsl:text>')</xsl:text>
 					</xsl:attribute>
-					<xsl:value-of select="normalize-space(text())"/> <!-- actual value of the header -->
+					<xsl:if test="count(link[1]) = 0">
+						<!-- actual value of the header -->
+						<xsl:value-of select="normalize-space(text())"/> 
+					</xsl:if>
+					
+					<!-- add an option for the line-header to be a standalone link -->
+					<xsl:if test="count(link[1]) = 1">
+						<xsl:element name="a">
+							<xsl:attribute name="href">
+								<xsl:value-of select="normalize-space(link/text())" />
+							</xsl:attribute>
+							<xsl:attribute name="target">
+								<xsl:text>"_blank"</xsl:text>
+							</xsl:attribute>
+							<xsl:value-of select="normalize-space(text())" />
+						</xsl:element>
+					</xsl:if>
+					<!-- could add a multi-entry linkset option if needed -->
 				</xsl:element>
 			
 				<xsl:if test="count(entry) > 0">
 					<span class="material-icons">expand_more</span>
 				</xsl:if>
-				
+								
 				<xsl:for-each select="entry">
 					<div class="entry">
 						<xsl:choose>

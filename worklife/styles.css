@@ -175,14 +175,14 @@ div.line span.material-icons {
 	padding-left: 10%;
 }
 
-.project, .entry {
+.entry {
 	display: none; /* needed for jQuery effects */
-	padding: 1px 0px 1px 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 5%;
 }
 
-
 .entry a {
-	padding-left: 5%;
 	padding-right: 1%;
 }
 
@@ -193,7 +193,6 @@ span.role {
 }
 
 .role-wrap {
-	padding-left: 5%;
 	margin: 1px 0px 0px 1px;
 }
 
@@ -208,27 +207,26 @@ span.role {
 	border-left-style: dashed;
 }
 
-span.multi-project, span.multi-entry {
-	padding-left: 5%;
+span.multi-entry {
 	padding-right: 0%;
 }
 
-a.multi-project, a.multi-entry {
+a.multi-entry {
 	padding-left: 0.5%;
 	padding-right: 0%;
 }
 
 /* general effects */
 
-.project .multi-project:link, .project .multi-project:visited, .entry .multi-entry:link, .entry .multi-entry:visited  {
+.entry .multi-entry:link, .entry .multi-entry:visited  {
 	text-decoration: none;
 }
 
-.project a.multi-project:hover, .entry a.multi-entry:hover {
+.entry a.multi-entry:hover {
 	text-decoration: underline;
 }
 
-.project a:link, .project a:visited, .entry a:link, .entry a:visited {
+.entry a:link, .entry a:visited {
 	text-decoration: underline;
 }
 

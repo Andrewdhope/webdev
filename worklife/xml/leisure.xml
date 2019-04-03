@@ -87,6 +87,29 @@
 			</line>
 		</bullet>
 		<bullet>
+			<title>hoops</title>
+			<!-- need to make the line-link option -->
+			<line>squad
+				<link>https://www.reddit.com/r/bostonceltics/</link>
+			</line>
+			<line>draft
+				<link>https://www.nbadraft.net/</link>
+			</line>
+			<line>news
+				<link>https://twitter.com/nateduncannba/lists/nba-newsbreakers?lang=en</link>
+			</line>
+			<line>courts
+				<link>https://www.instagram.com/hypecourts/?hl=en</link>
+			</line>
+			<line>stats
+				<link>https://www.basketball-reference.com/</link>
+			</line>
+			<line>arenas
+				<value>mem, mke, minn, chi, lac, ind</value>
+				<date></date>
+			</line>
+		</bullet>
+		<bullet>
 			<title>lifts</title>
 			<line>maxes
 				<entry>squat
@@ -135,10 +158,10 @@
 				<line>books
 					<!--use json for each book-->
 					<!--add a timer effect-->
-					<entry>reading
+					<entry>current
 						<link>https://en.wikipedia.org/wiki/Steppenwolf_(novel)</link>
 					</entry>
-					<entry>read
+					<entry>recent
 						<linkset>
 							<link>https://en.wikipedia.org/wiki/A_Brief_History_of_Seven_Killings</link>
 							<link>https://en.wikipedia.org/wiki/Hear_the_Wind_Sing</link>

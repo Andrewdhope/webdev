@@ -7,13 +7,8 @@ General Steps
 - Accumulate my recent resume content into a consolidated draft
 	+ The site is essentially a web resume
 	+ It will differ though. It will portray my interests and experiences in more general terms.
-		- Take my current HIT skills and boil them into more general engineering, technology and implementation philosophies.
-			+ Lean culture.
-			+ Conversational capacity.
-			+ Complete solutions. 
-			+ Quality measurement.
-		- Join the value-based care movement while separating from Epic.
-		
+		- Take my current skills and boil them into more general engineering, technology and implementation philosophies.
+			
 - Design the framework [check]
 - Execute the framework [check]
 - Polish the framework [check]
@@ -32,7 +27,19 @@ General Steps
 - Set up hosting [check] [3]
 - (loop) Work through details []
 	+ content
+		- start by filling out the current framework
+			+ set up the line-link option
+			+ set up the value/date display
+			+ stuff that i care about
+			+ then try some shit with styles
+				- be sure to maintain the terminal-vibe (no images)
 		- animations (canvas)
+		- rss feeds (twitter, craigslist, podcasts)
+			+ could get descriptions or summaries via rss
+			+ would need a server-side app to get the data (C#?)
+			+ or try the rss2json api and see how that goes
+			+ or experiment with iframes to host some content
+		- favicon!
 	
 	
 Samples and References:

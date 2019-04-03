@@ -41,7 +41,6 @@
 			<line>payload
 				<entry>pipelines
 					<link>https://aws.amazon.com/datapipeline/</link>
-					<!-- http://www.wolfram.com/notebooks/?source=frontpage-features -->
 				</entry>
 				<entry>interfaces
 					<linkset>
@@ -85,7 +84,11 @@
 			</line>	
 			<line>systems design
 				<entry>framework
-					<link>https://dotnet.microsoft.com/</link>
+					<linkset>
+						<link>https://dotnet.microsoft.com/</link>
+						<link>https://rubyonrails.org/</link>
+						<link>https://wiki.debian.org/LaMp</link>
+					</linkset>
 				</entry>
 			</line>
 			<line>process optimization
@@ -198,7 +201,7 @@
 				<entry>Data Science Specialization with R
 					<link>https://www.coursera.org/account/accomplishments/specialization/certificate/GKCFG624PGQ3</link>
 				</entry>
-				<entry>capstone entry (NLP)
+				<entry>capstone project (NLP)
 					<link>https://andrewdhope.shinyapps.io/guess-that-gram/</link>
 				</entry>
 			</line>
