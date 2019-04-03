@@ -16,9 +16,37 @@
 					<link>https://www.theonion.com/</link>
 				</entry>
 			</line>
+			<line>food
+				<link>https://www.sandiegomagazine.com/Restaurants/</link>
+			</line>
 		</bullet>
 		<bullet>
 			<title>tunes</title>
+			<line>tools
+				<entry>MusicBee
+					<link>https://getmusicbee.com/</link>
+				</entry>
+				<entry>Picard
+					<link>https://picard.musicbrainz.org/</link>
+				</entry>
+				<entry>Play
+					<link>https://support.google.com/googleplaymusic/answer/1075570?hl=en</link>
+				</entry>
+			</line>
+			<line>venues
+				<entry>The Observatory
+					<link>http://www.observatorysd.com/</link>
+				</entry>
+				<entry>The Majestic
+					<link>http://majesticmadison.com/</link>
+				</entry>
+				<entry>Belvedere's
+					<link>http://www.belvederesultradive.com/</link>
+				</entry>
+				<entry>Metro
+					<link>https://metrochicago.com/info/</link>
+				</entry>
+			</line>
 		</bullet>
 		<bullet>
 			<title>shows</title>
@@ -142,10 +170,6 @@
 					<value>2:08:12</value>
 					<date>November 2018</date>
 				</entry>
-				<entry>5K
-					<value>20:59</value>
-					<date>November 2001</date>
-				</entry>
 			</line>
 		</bullet>
 		<bullet>
@@ -154,7 +178,7 @@
 		</bullet>
 		<bullet>
 			<title>more</title>
-				<!-- hoops: courts, arenas. games: poker, settlers, evolution. beach: blading, windsurfing. food: recipes, whiskey -->
+				<!-- games: poker, settlers, evolution. beach: blading, windsurfing. food: recipes, whiskey -->
 		</bullet>
 	</section>
 	<section option="ideas">
@@ -185,11 +209,24 @@
 		</bullet>
 		<bullet>
 			<title>tech</title>
-			<line>stacks
-				<!-- R, M, C#, Wolfram, all of my coding bookmarks -->
-				<!-- things i know vs. things i am tracking (FHIR, NLP)-->
+			<line>pop
+				<entry>Wired
+					<link>https://www.wired.com/category/ideas/</link>
+				</entry>
+				<entry>Scientific American
+						<link>https://scientificamerican.com/sustainability/</link>
+					</entry>
 			</line>
-			<line>refs
+			<line>trade
+				<entry>R-bloggers
+					<link>https://www.r-bloggers.com/</link>
+				</entry>
+				<entry>KDnuggets
+					<link>https://www.kdnuggets.com/</link>
+				</entry>
+				<entry>HIStalk
+					<link>https://histalk2.com/</link>
+				</entry>
 			</line>
 		</bullet>
 		<bullet>

@@ -29,11 +29,13 @@ General Steps
 	+ content
 		- start by filling out the current framework
 			+ set up the line-link option [check]
-			+ set up the value/date display 
-			+ stuff that i care about, content first
+			+ set up the value/date display [chcek]
+			+ curate content first	
+				- arena dates, sites (food > cook, dine, drink), tunes (blogs, charts, write-ups)
 			+ then try some shit with styles
 				- be sure to maintain the terminal-vibe (no images)
-				- horizonal dropdown (hoops)
+				- horizonal dropdown (hoops, arenas)
+					+ a <longways> node
 		- animations (canvas)
 		- rss feeds (twitter, craigslist, podcasts)
 			+ could get descriptions or summaries via rss
