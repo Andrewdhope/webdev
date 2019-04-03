@@ -37,12 +37,13 @@
 					</xsl:if>
 					<xsl:if test="count(entry) > 0">
 						<xsl:attribute name="class">collapsible</xsl:attribute>
+						<xsl:attribute name="onclick">
+							<xsl:text>expandLine('</xsl:text><xsl:value-of select="$line" /><xsl:text>')</xsl:text>
+						</xsl:attribute>
 					</xsl:if>
-					<xsl:attribute name="onclick">
-						<xsl:text>expandLine('</xsl:text><xsl:value-of select="$line" /><xsl:text>')</xsl:text>
-					</xsl:attribute>
+					
+					<!-- value of the header when it is not a standalone link -->
 					<xsl:if test="count(link[1]) = 0">
-						<!-- actual value of the header -->
 						<xsl:value-of select="normalize-space(text())"/> 
 					</xsl:if>
 					
@@ -120,6 +121,12 @@
 									<span class="role"><xsl:value-of select="normalize-space(text())" /></span>
 								</xsl:for-each>
 							</div>
+						</xsl:if>
+						
+						<!-- value-dates -->
+						<xsl:if test="count(value) = 1">
+							<span class="value"><xsl:value-of select="normalize-space(value/text())" /></span>
+							<span class="date"> ; <xsl:value-of select="normalize-space(date/text())" /></span>
 						</xsl:if>
 						
 						<!-- details -->

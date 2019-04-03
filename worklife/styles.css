@@ -186,7 +186,7 @@ div.line span.material-icons {
 	padding-right: 1%;
 }
 
-span.role {
+span.role, span.value {
 	padding-left: 1%;
 	border-left-width: 1px;
 	border-left-style: dashed;
@@ -226,7 +226,7 @@ a.multi-entry {
 	text-decoration: underline;
 }
 
-.entry a:link, .entry a:visited {
+.entry a:link, .entry a:visited, .line a:link, .line a:visited {
 	text-decoration: underline;
 }
 

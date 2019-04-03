@@ -28,11 +28,12 @@ General Steps
 - (loop) Work through details []
 	+ content
 		- start by filling out the current framework
-			+ set up the line-link option
-			+ set up the value/date display
-			+ stuff that i care about
+			+ set up the line-link option [check]
+			+ set up the value/date display 
+			+ stuff that i care about, content first
 			+ then try some shit with styles
 				- be sure to maintain the terminal-vibe (no images)
+				- horizonal dropdown (hoops)
 		- animations (canvas)
 		- rss feeds (twitter, craigslist, podcasts)
 			+ could get descriptions or summaries via rss
