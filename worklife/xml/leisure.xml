@@ -18,7 +18,7 @@
 			</line>
 			<line>food
 				<entry>dine
-					<link>https://www.sandiegomagazine.com/Restaurants/</link>
+					<link>https://www.pacificsandiego.com/eat-drink-puff/restaurants/</link>
 				</entry>
 				<entry>drink
 					<link>http://www.allthingswhisky.com/</link>
@@ -184,6 +184,10 @@
 			<line>workouts
 				<entry>Nike Run Club
 				</entry>
+				<entry>Mission Trails
+				</entry>
+				<entry>Fiesta Island
+				</entry>
 			</line>
 			<line>records
 				<entry>13.1
@@ -197,8 +201,25 @@
 			<!-- camping, touring, visiting -->
 		</bullet>
 		<bullet>
-			<title>more</title>
-				<!-- games: poker, settlers, evolution. beach: blading, windsurfing. food: recipes, whiskey -->
+			<title>games</title>
+				<entry>chess
+					<link>https://www.chess.com/</link>
+				</entry>
+				<entry>backgammon
+					<link>http://www.bkgm.com/rules.html</link>
+				</entry>
+				<entry>yahtzee
+					<link>https://cardgames.io/yahtzee/</link>
+				</entry>
+				<entry>the fued
+					<link>https://familyfeudhelper.wordpress.com/category/game-questions/</link>
+				</entry>
+				<entry>poker
+					<link>https://www.merriam-webster.com/dictionary/poker</link>
+				</entry>
+				<entry>cards
+					<link>https://bicyclecards.com/how-to-play/pitch/</link><!-- https://cardgames.io/ -->
+				</entry>
 		</bullet>
 	</section>
 	<section option="ideas">

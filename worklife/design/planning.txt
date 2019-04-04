@@ -19,30 +19,29 @@ General Steps
 	+ content
 		- resume links [check]
 		- footer [check]
-		- placeholders [2]
+		- placeholders [check]
 	+ testing [check]
 		- pqa
 		- browsers
 		- dynamic spacing (vh)
-- Set up hosting [check] [3]
+- Set up hosting [check] [check]
 - (loop) Work through details []
 	+ content
 		- start by filling out the current framework
 			+ set up the line-link option [check]
 			+ set up the value/date display [chcek]
 			+ curate content first	
-				- sites (food > cook, dine, drink), tunes (blogs, charts, write-ups)
 			+ then try some shit with styles
 				- be sure to maintain the terminal-vibe (no images)
 				- horizonal dropdown (hoops, arenas)
-					+ a <longways> node
+[2]					+ a <longways> node
 		- animations (canvas)
 		- rss feeds (twitter, craigslist, podcasts)
 			+ could get descriptions or summaries via rss
 			+ would need a server-side app to get the data (C#?)
 			+ or try the rss2json api and see how that goes
 			+ or experiment with iframes to host some content
-		- favicon!
+[3]		- favicon!
 	
 	
 Samples and References:

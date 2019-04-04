@@ -86,8 +86,10 @@
 				<entry>framework
 					<linkset>
 						<link>https://dotnet.microsoft.com/</link>
+						<!-- 
 						<link>https://rubyonrails.org/</link>
 						<link>https://wiki.debian.org/LaMp</link>
+						-->
 					</linkset>
 				</entry>
 			</line>
@@ -218,10 +220,14 @@
 						<link>http://opendatastructures.org</link>
 					</linkset>
 				</entry>
+				<entry>portfolio
+					<link>https://andrewdhope.com/</link>
+				</entry>
 			</line>
 		</bullet>
 		<bullet>
 			<title>leadership</title>
+				<!-- dig through and commit quotes -->
 				<line>structured</line>
 				<line>empowering</line>
 				<line>adaptable</line>
