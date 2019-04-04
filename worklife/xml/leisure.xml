@@ -29,7 +29,7 @@
 				<entry>Picard
 					<link>https://picard.musicbrainz.org/</link>
 				</entry>
-				<entry>Play
+				<entry>Google Play
 					<link>https://support.google.com/googleplaymusic/answer/1075570?hl=en</link>
 				</entry>
 			</line>
@@ -43,7 +43,7 @@
 				<entry>Belvedere's
 					<link>http://www.belvederesultradive.com/</link>
 				</entry>
-				<entry>Metro
+				<entry>The Metro
 					<link>https://metrochicago.com/info/</link>
 				</entry>
 			</line>
@@ -133,8 +133,23 @@
 				<link>https://www.instagram.com/hypecourts/?hl=en</link>
 			</line>
 			<line>arenas
-				<entry>mem, mke, minn, chi, lac, ind
-					<link></link>
+				<entry>Bucks
+					<link>https://www.basketball-reference.com/boxscores/201502070MIL.html</link>
+				</entry>
+				<entry>Timberwolves
+					<link>https://www.basketball-reference.com/boxscores/201401040MIN.html</link>
+				</entry>
+				<entry>Bulls
+					<link>https://www.basketball-reference.com/boxscores/201501030CHI.html</link>
+				</entry>
+				<entry>Pacers
+					<link>https://www.basketball-reference.com/boxscores/201611120IND.html</link>
+				</entry>
+				<entry>Clippers
+					<link>https://www.basketball-reference.com/boxscores/201712090LAC.html</link>
+				</entry>
+				<entry>Grizzlies
+					<link>https://www.basketball-reference.com/boxscores/201811270MEM.html</link>
 				</entry>
 			</line>
 		</bullet>
