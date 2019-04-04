@@ -17,7 +17,12 @@
 				</entry>
 			</line>
 			<line>food
-				<link>https://www.sandiegomagazine.com/Restaurants/</link>
+				<entry>dine
+					<link>https://www.sandiegomagazine.com/Restaurants/</link>
+				</entry>
+				<entry>drink
+					<link>http://www.allthingswhisky.com/</link>
+				</entry>
 			</line>
 		</bullet>
 		<bullet>
@@ -136,7 +141,7 @@
 				<entry>Bucks
 					<link>https://www.basketball-reference.com/boxscores/201502070MIL.html</link>
 				</entry>
-				<entry>Timberwolves
+				<entry>Wolves
 					<link>https://www.basketball-reference.com/boxscores/201401040MIN.html</link>
 				</entry>
 				<entry>Bulls
