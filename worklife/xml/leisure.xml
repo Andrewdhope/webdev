@@ -202,24 +202,24 @@
 		</bullet>
 		<bullet>
 			<title>games</title>
-				<entry>chess
+				<line>chess
 					<link>https://www.chess.com/</link>
-				</entry>
-				<entry>backgammon
+				</line>
+				<line>backgammon
 					<link>http://www.bkgm.com/rules.html</link>
-				</entry>
-				<entry>yahtzee
+				</line>
+				<line>yahtzee
 					<link>https://cardgames.io/yahtzee/</link>
-				</entry>
-				<entry>the fued
+				</line>
+				<line>the fued
 					<link>https://familyfeudhelper.wordpress.com/category/game-questions/</link>
-				</entry>
-				<entry>poker
+				</line>
+				<line>poker
 					<link>https://www.merriam-webster.com/dictionary/poker</link>
-				</entry>
-				<entry>cards
-					<link>https://bicyclecards.com/how-to-play/pitch/</link><!-- https://cardgames.io/ -->
-				</entry>
+				</line>
+				<line>cards
+					<link>https://bicyclecards.com/how-to-play/pitch/</link>
+				</line>
 		</bullet>
 	</section>
 	<section option="ideas">
