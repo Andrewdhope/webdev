@@ -25,10 +25,10 @@
 		</xsl:if>
 		
 		<div class="lineset">
-			<xsl:if test="@line-orientation='vert'">
+			<xsl:if test="@list-orientation='vert'">
 				<xsl:attribute name="class">vert</xsl:attribute>
 			</xsl:if>
-			<xsl:if test="@line-orientation='horiz'">
+			<xsl:if test="@list-orientation='horiz'">
 				<xsl:attribute name="class">horiz</xsl:attribute>
 			</xsl:if>
 			<!-- add either the horiz or vert class based on the bullet's attribute value -->
