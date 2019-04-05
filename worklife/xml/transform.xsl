@@ -3,7 +3,8 @@
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
-	<xsl:variable name="bullet" select="normalize-space(title/text())" />
+	<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
+	<xsl:variable name="bullet" select="translate(normalize-space(title/text()),' ','_')" />
 	<div class="bullet" id="{$bullet}">
 		<!-- assign a class (collapsible, empty) based on whether there is content under this bullet -->
 		<xsl:element name="h2">
@@ -24,7 +25,13 @@
 		</xsl:if>
 		
 		<div class="lineset">
-		
+			<xsl:if test="@line-orientation='vert'">
+				<xsl:attribute name="line-orientation">vert</xsl:attribute>
+			</xsl:if>
+			<xsl:if test="@line-orientation='horiz'">
+				<xsl:attribute name="line-orientation">horiz</xsl:attribute>
+			</xsl:if>
+			<!-- add either the horiz or vert class based on the bullet's attribute value -->
 			<xsl:for-each select="line">
 			<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />

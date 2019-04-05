@@ -2,7 +2,7 @@
 <content>
 <!-- don't look back, look forward -->
 	<section option="media">
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>sites</title>
 			<line>news
 				<entry>Twitter
@@ -25,7 +25,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>tunes</title>
 			<line>tools
 				<entry>MusicBee
@@ -53,7 +53,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>shows</title>
 				<!-- figure out some content for the links -->
 				<line>current
@@ -74,7 +74,7 @@
 					</entry>
 				</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>casts</title>
 			<line>stories
 				<entry>Hardcore History
@@ -103,7 +103,7 @@
 		</bullet>
 	</section>
 	<section option="activity">
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>hikes</title>
 			<line>trails
 				<entry>info
@@ -119,7 +119,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="horiz">
 			<title>hoops</title>
 			<!-- utilizing standalone links (no entry nodes) -->
 			<line>squad
@@ -158,11 +158,9 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>lifts</title>
-			<line>routines
-				<link>https://www.instagram.com/strengthcoachtherapy/?hl=en</link>
-			</line>
+			<!-- <line>routines<link>https://www.instagram.com/strengthcoachtherapy/?hl=en</link></line> -->
 			<line>maxes
 				<entry>clean
 					<value>225#</value>
@@ -182,7 +180,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>runs</title>
 			<line>routes
 				<entry>Nike Run Club
@@ -201,11 +199,11 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>trips</title>
 			<!-- camping, touring, visiting -->
 		</bullet>
-		<bullet>
+		<bullet list-orientation="horiz">
 			<title>games</title>
 				<line>chess
 					<link>https://www.chess.com/</link>
@@ -228,7 +226,7 @@
 		</bullet>
 	</section>
 	<section option="ideas">
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>print</title>
 				<line>books
 					<!--use json for each book-->
@@ -253,7 +251,7 @@
 					</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>tech</title>
 			<line>pop
 				<entry>Wired
@@ -275,7 +273,7 @@
 				</entry>
 			</line>
 		</bullet>
-		<bullet>
+		<bullet list-orientation="vert">
 			<title>law</title>
 			<line>theory
 				<entry>liberalism

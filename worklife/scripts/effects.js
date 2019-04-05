@@ -22,6 +22,9 @@ function expandBullet(bullet) {
 			title.classList.add("active")
 			$("#" + bullet + " span:first").html("expand_less")	
 			$("#" + bullet + " span.line").show()
+			if ($("#" + bullet + " div.lineset").hasClass("vert")) {
+				$("#" + bullet + " span.line").css({"display": "block"})
+			}
 			$("#" + bullet + " div.lineset").slideDown("slow")
 		}
 	}
