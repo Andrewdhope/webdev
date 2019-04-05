@@ -13,7 +13,7 @@ function expandBullet(bullet) {
 		title.classList.remove("active")
 		$("#" + bullet + " span:first").html("expand_more")
 		$("#" + bullet + " div.lineset").slideUp("slow", function(){
-			$("#" + bullet + " div.line").hide()
+			$("#" + bullet + " span.line").hide()
 		})		
 	
 	} else {
@@ -21,7 +21,7 @@ function expandBullet(bullet) {
 		{
 			title.classList.add("active")
 			$("#" + bullet + " span:first").html("expand_less")	
-			$("#" + bullet + " div.line").show()
+			$("#" + bullet + " span.line").show()
 			$("#" + bullet + " div.lineset").slideDown("slow")
 		}
 	}
@@ -38,12 +38,10 @@ function expandLine(line) {
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("[id='" + line + "'] span:first").html("expand_more")
-		$("[id='" + line + "'] div.project").slideUp("slow")
 		$("[id='" + line + "'] div.entry").slideUp("slow")
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
-		$("[id='" + line + "'] div.project").hide().slideDown("slow")
 		$("[id='" + line + "'] div.entry").hide().slideDown("slow")
 	}
 }

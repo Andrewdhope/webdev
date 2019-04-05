@@ -29,12 +29,12 @@ General Steps
 	+ content
 		- start by filling out the current framework
 			+ set up the line-link option [check]
-			+ set up the value/date display [chcek]
-			+ curate content first	
+			+ set up the value/date display [check]
+			+ curate content first [check]
 			+ then try some shit with styles
 				- be sure to maintain the terminal-vibe (no images)
-				- horizonal dropdown (hoops, arenas)
-[2]					+ a <longways> node
+				- horizonal dropdown (hoops, arenas, games)
+[2]					+ a <horiz> node
 		- animations (canvas)
 		- rss feeds (twitter, craigslist, podcasts)
 			+ could get descriptions or summaries via rss

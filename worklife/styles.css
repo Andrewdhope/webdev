@@ -156,11 +156,11 @@ h2.empty, h3.empty` {
 
 /* expand_more and expand_less icons */
 
-div.bullet span.material-icons {
+.bullet span.material-icons {
 	vertical-align: text-bottom;
 }
 
-div.line span.material-icons {
+.line span.material-icons {
 	vertical-align: middle;
 }
 
