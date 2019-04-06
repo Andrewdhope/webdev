@@ -25,13 +25,15 @@
 		</xsl:if>
 		
 		<div class="lineset">
+			
+			<!-- add either the horiz or vert class based on the bullet's attribute value -->
 			<xsl:if test="@list-orientation='vert'">
 				<xsl:attribute name="class">lineset vert</xsl:attribute>
 			</xsl:if>
 			<xsl:if test="@list-orientation='horiz'">
 				<xsl:attribute name="class">lineset horiz</xsl:attribute>
 			</xsl:if>
-			<!-- add either the horiz or vert class based on the bullet's attribute value -->
+			
 			<xsl:for-each select="line">
 			<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />
