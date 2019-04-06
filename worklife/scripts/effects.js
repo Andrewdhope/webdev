@@ -6,7 +6,7 @@
 function expandBullet(bullet) {
 	// consider getting children instead of by class name
 	var header = document.getElementById(bullet);
-	var title = header.childNodes[1]; // first div.line
+	var title = header.childNodes[1]; // h2
 	
 	// change the icon and slide the content up/down
 	if (title.classList.contains("active")) {

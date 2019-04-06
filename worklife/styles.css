@@ -175,6 +175,16 @@ h2.empty, h3.empty` {
 	padding-left: 10%;
 }
 
+/* doing some hard-coding for the two horizontal linesets */
+.horiz .line:first-of-type {
+	padding-left: 10%;
+}
+
+/* do this algorithmically if the use case expands */
+.horiz .line {
+	padding-left: 9%;
+}
+
 .entry {
 	display: none; /* needed for jQuery effects */
 	padding-top: 1px;
