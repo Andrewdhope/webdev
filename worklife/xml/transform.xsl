@@ -149,7 +149,7 @@
 								<xsl:for-each select="detail">
 									<sup><xsl:value-of select="normalize-space(text())" /></sup>
 								</xsl:for-each>	
-							</span>
+							</div>
 						</xsl:for-each>
 					</div>
 				</xsl:if>
