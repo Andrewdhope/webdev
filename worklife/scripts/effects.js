@@ -38,7 +38,7 @@ function expandBullet(bullet) {
 // change the icon and slide the content up/down
 function expandLine(line) {
 	var header = document.getElementById(line);
-	var title = header.childNodes[0]; // h3
+	var title = header.childNodes[1]; // h3
 	
 	// this approach would look slightly better if the lines had a containing div
 	if (title.classList.contains("active")) {
