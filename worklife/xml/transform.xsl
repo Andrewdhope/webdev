@@ -38,7 +38,7 @@
 			<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />
 			
-			<span class="line" id="{$line}">
+			<div class="line" id="{$line}">
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">
 					<xsl:if test="count(entry) = 0">
@@ -153,7 +153,7 @@
 						</xsl:for-each>
 					</div>
 				</xsl:if>
-			</span>
+			</div>
 		</xsl:for-each>
 		</div>
 	</div>

@@ -12,8 +12,8 @@ function expandBullet(bullet) {
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("#" + bullet + " span:first").html("expand_more")
-		$("#" + bullet + " div.lineset").slideUp("slow", function(){
-			$("#" + bullet + " span.line").hide()
+		$("#" + bullet + " .lineset").slideUp("slow", function(){
+			$("#" + bullet + " .line").hide()
 		})		
 	
 	} else {
@@ -21,14 +21,14 @@ function expandBullet(bullet) {
 		{
 			title.classList.add("active")
 			$("#" + bullet + " span:first").html("expand_less")	
-			$("#" + bullet + " span.line").show()
-			if ($("#" + bullet + " div.lineset").hasClass("vert")) {
-				$("#" + bullet + " span.line").css({"display": "block"})
+			$("#" + bullet + " .line").show()
+			if ($("#" + bullet + " .lineset").hasClass("vert")) {
+				$("#" + bullet + " .line").css({"display": "block"})
 			}
-			if ($("#" + bullet + " div.lineset").hasClass("horiz")) {
-				$("#" + bullet + " span.line").css({"display": "inline"})
+			if ($("#" + bullet + " .lineset").hasClass("horiz")) {
+				$("#" + bullet + " .line").css({"display": "inline"})
 			}
-			$("#" + bullet + " div.lineset").slideDown("slow")
+			$("#" + bullet + " .lineset").slideDown("slow")
 		}
 	}
 }
@@ -50,7 +50,7 @@ function expandLine(line) {
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
-		$("[id='" + line + "'] .entry").show()
+		$("[id='" + line + "'] .entry").show() // showing divs causes the downward expansion (??)
 		if ($("[id='" + line + "'] .entryset").hasClass("vert")) {
 				$("[id='" + line + "'] .entry").css({"display": "block"})
 			}
