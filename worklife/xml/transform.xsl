@@ -76,7 +76,7 @@
 				</xsl:if>
 								
 				<xsl:for-each select="entry">
-					<div class="entry">
+					<span class="entry">
 						<xsl:choose>
 							<!-- entries with one link -->
 							<xsl:when test="count(link) = 1">
@@ -142,7 +142,7 @@
 						<xsl:for-each select="detail">
 							<sup><xsl:value-of select="normalize-space(text())" /></sup>
 						</xsl:for-each>	
-					</div>	
+					</span>	
 				</xsl:for-each>
 			</span>
 		</xsl:for-each>

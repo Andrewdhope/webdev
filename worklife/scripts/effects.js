@@ -41,11 +41,11 @@ function expandLine(line) {
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("[id='" + line + "'] span:first").html("expand_more")
-		$("[id='" + line + "'] div.entry").slideUp("slow")
+		$("[id='" + line + "'] span.entry").slideUp("slow")
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
-		$("[id='" + line + "'] div.entry").hide().slideDown("slow")
+		$("[id='" + line + "'] span.entry").hide().slideDown("slow")
 	}
 }
 
