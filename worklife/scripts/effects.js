@@ -25,6 +25,9 @@ function expandBullet(bullet) {
 			if ($("#" + bullet + " div.lineset").hasClass("vert")) {
 				$("#" + bullet + " span.line").css({"display": "block"})
 			}
+			if ($("#" + bullet + " div.lineset").hasClass("horiz")) {
+				$("#" + bullet + " span.line").css({"display": "inline"})
+			}
 			$("#" + bullet + " div.lineset").slideDown("slow")
 		}
 	}
@@ -50,6 +53,9 @@ function expandLine(line) {
 		$("[id='" + line + "'] span.entry").show()
 		if ($("[id='" + line + "'] .entryset").hasClass("vert")) {
 				$("[id='" + line + "'] span.entry").css({"display": "block"})
+			}
+		if ($("[id='" + line + "'] .entryset").hasClass("horiz")) {
+				$("[id='" + line + "'] span.entry").css({"display": "inline"})
 			}
 		$("[id='" + line + "'] .entryset").slideDown("slow")
 	}
