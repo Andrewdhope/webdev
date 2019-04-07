@@ -41,20 +41,17 @@ function expandLine(line) {
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("[id='" + line + "'] span:first").html("expand_more")
-		$("[id='" + line + "'] span.entryset").slideUp("slow", function() {
+		$("[id='" + line + "'] .entryset").slideUp("slow", function() {
 			$("[id='" + line + "'] span.entry").hide()
 		})
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
 		$("[id='" + line + "'] span.entry").show()
-		if ($("[id='" + line + "'] span.entryset").hasClass("vert")) {
+		if ($("[id='" + line + "'] .entryset").hasClass("vert")) {
 				$("[id='" + line + "'] span.entry").css({"display": "block"})
 			}
-		if ($("[id='" + line + "'] span.entryset").hasClass("horiz")) {
-				$("[id='" + line + "'] span.entryset").css({"display": "block"})
-			}
-		$("[id='" + line + "'] span.entryset").slideDown("slow")
+		$("[id='" + line + "'] .entryset").slideDown("slow")
 	}
 }
 
