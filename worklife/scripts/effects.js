@@ -45,10 +45,11 @@ function expandLine(line) {
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
+		$("[id='" + line + "'] span.entry").show()
 		if ($("[id='" + line + "'] div.entryset").hasClass("vert")) {
 				$("[id='" + line + "'] span.entry").css({"display": "block"})
 			}
-		$("[id='" + line + "'] span.entry").hide().slideDown("slow")
+		$("[id='" + line + "'] div.entryset").slideDown("slow")
 	}
 }
 

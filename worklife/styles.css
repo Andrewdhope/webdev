@@ -192,6 +192,10 @@ h2.empty, h3.empty` {
 	padding-left: 5%;
 }
 
+.entryset {
+	display: none; /* needed for jQuery effects */
+}
+
 .entry a, .entry span {
 	padding-right: 1%;
 }
