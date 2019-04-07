@@ -40,7 +40,6 @@ function expandLine(line) {
 	var header = document.getElementById(line);
 	var title = header.childNodes[1]; // h3
 	
-	// this approach would look slightly better if the lines had a containing div
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("[id='" + line + "'] span:first").html("expand_more")
@@ -50,13 +49,28 @@ function expandLine(line) {
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
-		$("[id='" + line + "'] .entry").show() // showing divs causes the downward expansion (??)
+		$("[id='" + line + "'] .entry").show() 
 		if ($("[id='" + line + "'] .entryset").hasClass("vert")) {
 				$("[id='" + line + "'] .entry").css({"display": "block"})
 			}
-		if ($("[id='" + line + "'] .entryset").hasClass("horiz")) {
+			
+		// workaround
+		// my xsl doc can create the entryset as a div or a span
+		// a div works better for the vertical orientation
+		// this workaround converts the div to a span for the horizontal orientation
+		if ($("[id='" + line + "'] div.entryset").hasClass("horiz")) {	
+				// create a span, move entries into it, and remove the div
+				$("[id='" + line + "']").append("<span class='entryset horiz'>")
+				$("[id='" + line + "'] span.entryset").append($("[id='" + line + "'] div.entryset .entry"))
+				$("[id='" + line + "'] div.entryset").remove()
+		}
+		
+		// execute the normal animation once the entryset is converted to a span
+		// TODO: something about the inline display causes a significant hitch (arenas)
+		if ($("[id='" + line + "'] span.entryset").hasClass("horiz")) {
 				$("[id='" + line + "'] .entry").css({"display": "inline"})
 			}
+			
 		$("[id='" + line + "'] .entryset").slideDown("slow")
 	}
 }

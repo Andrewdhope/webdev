@@ -73,6 +73,7 @@
 			
 				<xsl:if test="count(entry) > 0">
 					<span class="material-icons">expand_more</span>				
+									
 					<div class="entryset">
 					
 						<xsl:if test="../@list-orientation='vert'">
