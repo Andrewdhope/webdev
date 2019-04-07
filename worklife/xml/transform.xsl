@@ -73,7 +73,7 @@
 			
 				<xsl:if test="count(entry) > 0">
 					<span class="material-icons">expand_more</span>				
-					<div class="entryset">
+					<span class="entryset">
 					
 						<xsl:if test="../@list-orientation='vert'">
 							<xsl:attribute name="class">entryset vert</xsl:attribute>
@@ -151,7 +151,7 @@
 								</xsl:for-each>	
 							</span>
 						</xsl:for-each>
-					</div>
+					</span>
 				</xsl:if>
 			</span>
 		</xsl:for-each>
