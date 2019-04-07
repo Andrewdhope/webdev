@@ -73,20 +73,16 @@
 			
 				<xsl:if test="count(entry) > 0">
 					<span class="material-icons">expand_more</span>
-					<div class="entryset">
-					<!-- add either the horiz or vert class based on the bullet's attribute value -->
-					<xsl:if test="../@list-orientation='vert'">
-						<xsl:attribute name="class">entryset vert</xsl:attribute>
-					</xsl:if>
-					<xsl:if test="../@list-orientation='horiz'">
-						<xsl:attribute name="class">entryset horiz</xsl:attribute>
-					</xsl:if>
-					<!-- div ends below, using another instance of this conditional -->
 				</xsl:if>
-				
-			
+							
 					<xsl:for-each select="entry">				
 						<span class="entry">
+							<xsl:if test="../../@list-orientation='vert'">
+								<xsl:attribute name="class">entry vert</xsl:attribute>
+							</xsl:if>
+							<xsl:if test="../../@list-orientation='horiz'">
+								<xsl:attribute name="class">entry horiz</xsl:attribute>
+							</xsl:if>
 							<xsl:choose>
 								<!-- entries with one link -->
 								<xsl:when test="count(link) = 1">
@@ -154,9 +150,6 @@
 							</xsl:for-each>	
 						</span>
 					</xsl:for-each>
-				<xsl:if test="count(entry) > 0">
-					</div>
-				</xsl:if>
 			</span>
 		</xsl:for-each>
 		</div>
