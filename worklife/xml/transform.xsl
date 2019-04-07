@@ -74,76 +74,86 @@
 				<xsl:if test="count(entry) > 0">
 					<span class="material-icons">expand_more</span>
 				</xsl:if>
-								
-				<xsl:for-each select="entry">
-					<span class="entry">
-						<xsl:choose>
-							<!-- entries with one link -->
-							<xsl:when test="count(link) = 1">
-								<xsl:element name="a">
-									<xsl:attribute name="href">
-										<xsl:value-of select="normalize-space(link/text())" />
-									</xsl:attribute>
-									<xsl:attribute name="target">
-										<xsl:text>"_blank"</xsl:text>
-									</xsl:attribute>
-									<xsl:value-of select="normalize-space(text())" />
-								</xsl:element>
-							</xsl:when>
-							
-							<!-- entries with multiple links -->
-							<xsl:when test="count(linkset) = 1">
-								<!-- entry name -->
-								<span class="multi-entry"><xsl:value-of select="normalize-space(text())" /></span>
-								<!-- set of links --> 
-								<xsl:for-each select="linkset/link">
-									<xsl:variable name="i" select="position()"/>
+				
+				<div class="entryset">
+					<!-- add either the horiz or vert class based on the bullet's attribute value -->
+					<xsl:if test="../@list-orientation='vert'">
+						<xsl:attribute name="class">entryset vert</xsl:attribute>
+					</xsl:if>
+					<xsl:if test="../@list-orientation='horiz'">
+						<xsl:attribute name="class">entryset horiz</xsl:attribute>
+					</xsl:if>
+			
+					<xsl:for-each select="entry">				
+						<span class="entry">
+							<xsl:choose>
+								<!-- entries with one link -->
+								<xsl:when test="count(link) = 1">
 									<xsl:element name="a">
-										<xsl:attribute name="class">
-											<xsl:text>multi-entry</xsl:text>
-										</xsl:attribute>
 										<xsl:attribute name="href">
-											<xsl:value-of select="normalize-space(text())" />
+											<xsl:value-of select="normalize-space(link/text())" />
 										</xsl:attribute>
 										<xsl:attribute name="target">
 											<xsl:text>"_blank"</xsl:text>
 										</xsl:attribute>
-										<xsl:text>[</xsl:text><xsl:value-of select="$i" /><xsl:text>]</xsl:text>
+										<xsl:value-of select="normalize-space(text())" />
 									</xsl:element>
-								</xsl:for-each>
-							</xsl:when>
-						
-							<!-- entries without links -->
-							<xsl:otherwise>
-								<span class="nolink"><xsl:value-of select="normalize-space(text())" /></span>
-							</xsl:otherwise>
-						</xsl:choose>
-						
-						<!-- roles -->
-						<xsl:if test="count(role) = 1">
-							<span class="role"><xsl:value-of select="normalize-space(role/text())" /></span>
-						</xsl:if>
-						<!-- in some cases we want the roles in their own div below the entry name -->
-						<xsl:if test="(count(role) &gt; 1) or ((linkwrap) and (role))">
-							<div class="role-wrap">
-								<xsl:for-each select="role">
-									<span class="role"><xsl:value-of select="normalize-space(text())" /></span>
-								</xsl:for-each>
-							</div>
-						</xsl:if>
-						
-						<!-- value-dates -->
-						<xsl:if test="count(value) = 1">
-							<span class="value"><xsl:value-of select="normalize-space(value/text())" /></span>
-							<span class="date"><xsl:value-of select="normalize-space(date/text())" /></span>
-						</xsl:if>
-						
-						<!-- details -->
-						<xsl:for-each select="detail">
-							<sup><xsl:value-of select="normalize-space(text())" /></sup>
-						</xsl:for-each>	
-					</span>	
-				</xsl:for-each>
+								</xsl:when>
+								
+								<!-- entries with multiple links -->
+								<xsl:when test="count(linkset) = 1">
+									<!-- entry name -->
+									<span class="multi-entry"><xsl:value-of select="normalize-space(text())" /></span>
+									<!-- set of links --> 
+									<xsl:for-each select="linkset/link">
+										<xsl:variable name="i" select="position()"/>
+										<xsl:element name="a">
+											<xsl:attribute name="class">
+												<xsl:text>multi-entry</xsl:text>
+											</xsl:attribute>
+											<xsl:attribute name="href">
+												<xsl:value-of select="normalize-space(text())" />
+											</xsl:attribute>
+											<xsl:attribute name="target">
+												<xsl:text>"_blank"</xsl:text>
+											</xsl:attribute>
+											<xsl:text>[</xsl:text><xsl:value-of select="$i" /><xsl:text>]</xsl:text>
+										</xsl:element>
+									</xsl:for-each>
+								</xsl:when>
+							
+								<!-- entries without links -->
+								<xsl:otherwise>
+									<span class="nolink"><xsl:value-of select="normalize-space(text())" /></span>
+								</xsl:otherwise>
+							</xsl:choose>
+							
+							<!-- roles -->
+							<xsl:if test="count(role) = 1">
+								<span class="role"><xsl:value-of select="normalize-space(role/text())" /></span>
+							</xsl:if>
+							<!-- in some cases we want the roles in their own div below the entry name -->
+							<xsl:if test="(count(role) &gt; 1) or ((linkwrap) and (role))">
+								<div class="role-wrap">
+									<xsl:for-each select="role">
+										<span class="role"><xsl:value-of select="normalize-space(text())" /></span>
+									</xsl:for-each>
+								</div>
+							</xsl:if>
+							
+							<!-- value-dates -->
+							<xsl:if test="count(value) = 1">
+								<span class="value"><xsl:value-of select="normalize-space(value/text())" /></span>
+								<span class="date"><xsl:value-of select="normalize-space(date/text())" /></span>
+							</xsl:if>
+							
+							<!-- details -->
+							<xsl:for-each select="detail">
+								<sup><xsl:value-of select="normalize-space(text())" /></sup>
+							</xsl:for-each>	
+						</span>
+					</xsl:for-each>
+				</div>
 			</span>
 		</xsl:for-each>
 		</div>
