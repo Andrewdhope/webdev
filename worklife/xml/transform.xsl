@@ -83,7 +83,7 @@
 						</xsl:if>
 								
 						<xsl:for-each select="entry">				
-							<span class="entry">
+							<div class="entry">
 								<xsl:choose>
 									<!-- entries with one link -->
 									<xsl:when test="count(link) = 1">

@@ -45,22 +45,22 @@ function expandLine(line) {
 		title.classList.remove("active")
 		$("[id='" + line + "'] span:first").html("expand_more")
 		$("[id='" + line + "'] .entryset").slideUp("slow", function() {
-			$("[id='" + line + "'] span.entry").hide()
+			$("[id='" + line + "'] .entry").hide()
 		})
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
-		$("[id='" + line + "'] span.entry").show()
+		$("[id='" + line + "'] .entry").show()
 		if ($("[id='" + line + "'] .entryset").hasClass("vert")) {
-				$("[id='" + line + "'] span.entry").css({"display": "block"})
+				$("[id='" + line + "'] .entry").css({"display": "block"})
 			}
 		if ($("[id='" + line + "'] .entryset").hasClass("horiz")) {
-				$("[id='" + line + "'] span.entry").css({"display": "inline"})
+				$("[id='" + line + "'] .entry").css({"display": "inline"})
 			}
 		$("[id='" + line + "'] .entryset").slideDown("slow")
 	}
 }
-
+	
 
 // selectedMenu
 // on-menu-click, style the selected menu option, and unstyle all other menu options
