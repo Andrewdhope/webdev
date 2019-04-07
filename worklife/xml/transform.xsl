@@ -74,15 +74,18 @@
 				<xsl:if test="count(entry) > 0">
 					<span class="material-icons">expand_more</span>
 				</xsl:if>
+				
+				<div class="entryset">
+				
+					<xsl:if test="../@list-orientation='vert'">
+						<xsl:attribute name="class">entryset vert</xsl:attribute>
+					</xsl:if>
+					<xsl:if test="../@list-orientation='horiz'">
+						<xsl:attribute name="class">entryset horiz</xsl:attribute>
+					</xsl:if>
 							
 					<xsl:for-each select="entry">				
 						<span class="entry">
-							<xsl:if test="../../@list-orientation='vert'">
-								<xsl:attribute name="class">entry vert</xsl:attribute>
-							</xsl:if>
-							<xsl:if test="../../@list-orientation='horiz'">
-								<xsl:attribute name="class">entry horiz</xsl:attribute>
-							</xsl:if>
 							<xsl:choose>
 								<!-- entries with one link -->
 								<xsl:when test="count(link) = 1">
@@ -150,6 +153,7 @@
 							</xsl:for-each>	
 						</span>
 					</xsl:for-each>
+				</div>
 			</span>
 		</xsl:for-each>
 		</div>
