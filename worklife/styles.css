@@ -194,11 +194,12 @@ h2.empty, h3.empty` {
 
 .entryset {
 	display: none; /* needed for jQuery effects */
-	padding-left: 5%;
+	padding-left: 10%;
 }
 
 .entryset.horiz {
 	width: 100%; /* want this to fill 100% of lineset div */
+	padding-left: 5%;
 }
 
 .entry a, .entry span {
