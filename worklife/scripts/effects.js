@@ -49,7 +49,7 @@ function expandLine(line) {
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
-		$("[id='" + line + "'] .entry").show() 
+		$("[id='" + line + "'] .entry").show()
 		if ($("[id='" + line + "'] .entryset").hasClass("vert")) {
 				$("[id='" + line + "'] .entry").css({"display": "block"})
 			}
