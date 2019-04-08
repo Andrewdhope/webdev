@@ -79,7 +79,7 @@
 			
 			<xsl:if test="count(entry) > 0">
 				<div class="entryset">
-				
+					
 					<!-- set vertical or horizontal orientation for the dropdown list -->
 					<xsl:if test="../@list-orientation='vert'">
 						<xsl:attribute name="class">entryset vert</xsl:attribute>

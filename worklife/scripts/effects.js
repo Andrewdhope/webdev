@@ -50,14 +50,18 @@ function expandLine(line) {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
 		$("[id='" + line + "']").next(".entryset").children(".entry").show()
-		if ($("[id='" + line + "']").next(".entryset").hasClass("vert")) {
-				$("[id='" + line + "']").next(".entryset").children(".entry").css({"display": "block"})
-			}
 		
+		// dyanmic sizing for the entryset dropdown
+		// when horizontal, the entryset dropdown with align with the right edge of the last .line div
 		if ($("[id='" + line + "']").next(".entryset").hasClass("horiz")) {
-				$("[id='" + line + "']").next(".entryset").children(".entry").css({"display": "inline"})
-			}
-			
+			var w = $("[id='" + line + "']").outerWidth()
+			$("[id='" + line + "']").prevAll(".line").each(function() {
+				w = w + $(this).outerWidth() + 3 // add extra 3px to account for spacing between inline divs
+			})
+			$("[id='" + line + "']").next(".entryset")
+			$("[id='" + line + "']").next(".entryset").outerWidth(w)
+		}
+ 
 		$("[id='" + line + "']").next(".entryset").slideDown("slow")
 	}
 }

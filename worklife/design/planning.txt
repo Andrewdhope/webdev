@@ -41,7 +41,7 @@ General Steps
 			+ would need a server-side app to get the data (C#?)
 			+ or try the rss2json api and see how that goes
 			+ or experiment with iframes to host some content
-[3]		- favicon!
+		- favicon [check]
 	
 	
 Samples and References:

@@ -103,11 +103,14 @@
 		<bullet list-orientation="vert">
 			<title>hikes</title>
 			<line>trails
-				<entry>info
+				<entry>maps
 					<link>https://www.alltrails.com</link>
 				</entry>
 				<entry>local
 					<link>http://sandiegosierraclub.org/get-outdoors/hike/peaks-list/peak-list</link>
+				</entry>
+				<entry>seas
+					<link>https://www.sailflow.com/spot/83533</link>
 				</entry>
 			</line>
 			<line>gear
