@@ -34,7 +34,7 @@
 				<entry>MusicBrainz Picard
 					<link>https://picard.musicbrainz.org/</link>
 				</entry>
-				<entry>Google Play Music Manager
+				<entry>Music Manager
 					<link>https://support.google.com/googleplaymusic/answer/1075570?hl=en</link>
 				</entry>
 			</line>
@@ -59,7 +59,6 @@
 					<entry>Westworld
 					</entry>
 					<entry>The Good Place
-						<!-- <link>https://www.newyorker.com/magazine/2017/02/06/dystopia-in-the-good-place</link> -->
 					</entry>
 				</line>
 				<line>former
@@ -101,22 +100,20 @@
 	</section>
 	<section option="activity">
 		<bullet list-orientation="vert">
-			<title>hikes</title>
-			<line>trails
-				<entry>maps
+			<title>maps</title>
+			<line>peaks
+				<entry>trails
 					<link>https://www.alltrails.com</link>
 				</entry>
 				<entry>local
 					<link>http://sandiegosierraclub.org/get-outdoors/hike/peaks-list/peak-list</link>
 				</entry>
-				<entry>seas
-					<link>https://www.sailflow.com/spot/83533</link>
-				</entry>
+			</line>
+			<line>seas
+				<link>https://www.sailflow.com/spot/83533</link>
 			</line>
 			<line>gear
-				<entry>used
-					<link>https://sandiego.craigslist.org/d/sporting-goods/search/sga</link>
-				</entry>
+				<link>https://sandiego.craigslist.org/d/sporting-goods/search/sga</link>
 			</line>
 		</bullet>
 		<bullet list-orientation="horiz">
@@ -160,7 +157,20 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>lifts</title>
-			<!-- <line>routines<link>https://www.instagram.com/strengthcoachtherapy/?hl=en</link></line> -->
+			<line>routines
+				<entry>prehab
+					<link>https://www.instagram.com/strengthcoachtherapy/?hl=en</link>
+				</entry>
+				<entry>resistance
+					<link>http://www.100swimmingworkouts.com/</link>
+				</entry>
+				<entry>vert
+					<link>http://www.dunkcalculator.com/</link>
+				</entry>
+				<entry>gains
+					<link>https://www.crossfit.com</link>
+				</entry>
+			</line>
 			<line>maxes
 				<entry>clean
 					<value>225#</value>

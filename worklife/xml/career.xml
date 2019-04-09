@@ -45,7 +45,7 @@
 				<entry>interfaces
 					<linkset>
 						<link>http://www.json.org/</link>
-						<link>https://cran.r-entry.org/web/packages/rjson/index.html</link>
+						<link>https://cran.r-project.org/web/packages/rjson/index.html</link>
 						<link>https://www.hl7.org/fhir/summary.html</link>
 					</linkset>
 				</entry>
@@ -86,10 +86,6 @@
 				<entry>framework
 					<linkset>
 						<link>https://dotnet.microsoft.com/</link>
-						<!-- 
-						<link>https://rubyonrails.org/</link>
-						<link>https://wiki.debian.org/LaMp</link>
-						-->
 					</linkset>
 				</entry>
 			</line>

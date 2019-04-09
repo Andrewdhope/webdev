@@ -33,8 +33,7 @@ General Steps
 			+ curate content first [check]
 			+ then try some shit with styles
 				- be sure to maintain the terminal-vibe (no images)
-				- horizonal dropdown (hoops, arenas, games)
-[2]					+ a <horiz> node
+				- horizonal dropdown (hoops, arenas, games) [check]
 		- animations (canvas)
 		- rss feeds (twitter, craigslist, podcasts)
 			+ could get descriptions or summaries via rss
@@ -43,6 +42,9 @@ General Steps
 			+ or experiment with iframes to host some content
 		- favicon [check]
 	
+- one last round of content: media
+- commit
+- update plans
 	
 Samples and References:
 http://steadystatedigital.com/
