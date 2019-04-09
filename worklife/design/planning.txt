@@ -44,7 +44,7 @@ General Steps
 		
 - let content settle
 	+ indentation
-- update planning doc
+- update planning docs
 - release
 	
 Samples and References:
