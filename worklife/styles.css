@@ -152,6 +152,7 @@ h2.empty, h3.empty` {
 	display: none; /* needed for slideDown */
 	border-style: dashed;
 	border-width: 0px 0px 0px 1px;
+	padding-left: 5%;
 }
 
 /* expand_more and expand_less icons */
@@ -172,7 +173,7 @@ h2.empty, h3.empty` {
 
 .line {
 	display: none; /* needed for jQuery effects */
-	padding-left: 9%; /* 9% connects the content better 10% */
+	padding-left: 5%; 
 }
 
 .entry {
@@ -185,10 +186,6 @@ h2.empty, h3.empty` {
 
 .entryset {
 	display: none; /* needed for jQuery effects */
-	padding-left: 10%;
-}
-
-.entryset.horiz {
 	padding-left: 5%;
 }
 

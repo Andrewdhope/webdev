@@ -41,6 +41,11 @@ General Steps
 			+ or try the rss2json api and see how that goes
 			+ or experiment with iframes to host some content
 		- favicon [check]
+		
+- let content settle
+	+ indentation
+- update planning doc
+- release
 	
 Samples and References:
 http://steadystatedigital.com/
