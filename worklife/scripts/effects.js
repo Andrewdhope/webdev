@@ -53,13 +53,26 @@ function expandLine(line) {
 		
 		// dyanmic sizing for the entryset dropdown
 		// when horizontal, the entryset dropdown with align with the right edge of the last .line div
-		if ($("[id='" + line + "']").next(".entryset").hasClass("horiz")) {
-			var w = $("[id='" + line + "']").outerWidth() 
+		if ($("[id='" + line + "']").parent(".lineset").hasClass("horiz")) {
+			var w = $("[id='" + line + "']").outerWidth() // initialize width var with the width of the current line
+			
+			// then loop back through all previous lines and add their outer width to w
 			$("[id='" + line + "']").prevAll(".line").each(function() {
 				w = w + $(this).outerWidth() + 4 // add extra 4px to account for spacing between inline divs
 			})
-			$("[id='" + line + "']").next(".entryset")
-			$("[id='" + line + "']").next(".entryset").outerWidth(w)
+			
+			// if the sum of line widths > the lineset width, then there is a linebreak in the lineset div
+			// show the entryset with normal vertical orientation in this case
+			if (w > $("[id='" + line + "']").parent(".lineset").outerWidth()) {
+				$("[id='" + line + "']").next(".entryset").removeClass("horiz")
+			}
+			else {
+				if (!($("[id='" + line + "']").next(".entryset").hasClass("horiz"))) {
+					$("[id='" + line + "']").next(".entryset").addClass("horiz") 
+				}
+				// align the edge of the entryset with the right edge of the last .line div
+				$("[id='" + line + "']").next(".entryset").outerWidth(w)
+			}
 		}
  
 		$("[id='" + line + "']").next(".entryset").slideDown("slow")

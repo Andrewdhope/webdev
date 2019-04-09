@@ -172,17 +172,7 @@ h2.empty, h3.empty` {
 
 .line {
 	display: none; /* needed for jQuery effects */
-	padding-left: 10%;
-}
-
-/* doing some hard-coding for the two horizontal linesets */
-.horiz .line:first-of-type {
-	padding-left: 10%;
-}
-
-/* do this algorithmically if the use case expands */
-.horiz .line {
-	padding-left: 9%;
+	padding-left: 9%; /* 9% connects the content better 10% */
 }
 
 .entry {

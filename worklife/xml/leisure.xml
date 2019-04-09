@@ -6,8 +6,7 @@
 			<title>sites</title>
 			<line>news
 				<entry>Twitter
-					<!-- twitter lists -->
-					<link>https://twitter.com/</link>
+					<link>https://twitter.com/</link> <!-- https://twitter.com/atul/lists/tech-bloggers-reporters -->
 				</entry>
 				<entry>Five Thirty Eight
 					<link>https://fivethirtyeight.com/</link>
@@ -34,6 +33,9 @@
 				<entry>MusicBee
 					<link>https://getmusicbee.com/</link>
 				</entry>
+				<entry>MP3Million
+					<link>https://www.mp3million.com/</link>
+				</entry>
 				<entry>MusicBrainz Picard
 					<link>https://picard.musicbrainz.org/</link>
 				</entry>
@@ -45,11 +47,17 @@
 				<entry>The Observatory
 					<link>http://www.observatorysd.com/</link>
 				</entry>
+				<entry>Omnia
+					<link>https://omniaclubs.com/san-diego/</link>
+				</entry>
+				<entry>Viejas
+					<link>https://as.sdsu.edu/viejas_arena/events/</link>
+				</entry>
+				<entry>Humphreys
+					<link>http://humphreysconcerts.com/schedule.cfm</link>
+				</entry>
 				<entry>The Majestic
 					<link>http://majesticmadison.com/</link>
-				</entry>
-				<entry>Belvedere's
-					<link>http://www.belvederesultradive.com/</link>
 				</entry>
 			</line>
 		</bullet>

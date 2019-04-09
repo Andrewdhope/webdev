@@ -42,10 +42,6 @@ General Steps
 			+ or experiment with iframes to host some content
 		- favicon [check]
 	
-- one last round of content: media
-- commit
-- update plans
-	
 Samples and References:
 http://steadystatedigital.com/
 https://www.alltrails.com/about
