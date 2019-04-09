@@ -6,14 +6,14 @@
 function expandBullet(bullet) {
 	// consider getting children instead of by class name
 	var header = document.getElementById(bullet);
-	var title = header.childNodes[1]; // first div.line
+	var title = header.childNodes[1]; // h2
 	
 	// change the icon and slide the content up/down
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("#" + bullet + " span:first").html("expand_more")
-		$("#" + bullet + " div.lineset").slideUp("slow", function(){
-			$("#" + bullet + " div.line").hide()
+		$("#" + bullet + " .lineset").slideUp("slow", function(){
+			$("#" + bullet + " .line").hide()
 		})		
 	
 	} else {
@@ -21,8 +21,14 @@ function expandBullet(bullet) {
 		{
 			title.classList.add("active")
 			$("#" + bullet + " span:first").html("expand_less")	
-			$("#" + bullet + " div.line").show()
-			$("#" + bullet + " div.lineset").slideDown("slow")
+			$("#" + bullet + " .line").show()
+			if ($("#" + bullet + " .lineset").hasClass("vert")) {
+				$("#" + bullet + " .line").css({"display": "block"})
+			}
+			if ($("#" + bullet + " .lineset").hasClass("horiz")) {
+				$("#" + bullet + " .line").css({"display": "inline"})
+			}
+			$("#" + bullet + " .lineset").slideDown("slow")
 		}
 	}
 }
@@ -32,22 +38,34 @@ function expandBullet(bullet) {
 // change the icon and slide the content up/down
 function expandLine(line) {
 	var header = document.getElementById(line);
-	var title = header.childNodes[1]; // div.project or div.entry
+	var title = header.childNodes[1]; // h3
 	
-	// this approach would look slightly better if the lines had a containing div
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
 		$("[id='" + line + "'] span:first").html("expand_more")
-		$("[id='" + line + "'] div.project").slideUp("slow")
-		$("[id='" + line + "'] div.entry").slideUp("slow")
+		$("[id='" + line + "']").next(".entryset").slideUp("slow", function() { // all entryset siblings
+			$("[id='" + line + "']").next(".entryset").children(".entry").hide() // all entryset sibling children
+		})
 	} else {
 		title.classList.add("active")
 		$("[id='" + line + "'] span:first").html("expand_less")
-		$("[id='" + line + "'] div.project").hide().slideDown("slow")
-		$("[id='" + line + "'] div.entry").hide().slideDown("slow")
+		$("[id='" + line + "']").next(".entryset").children(".entry").show()
+		
+		// dyanmic sizing for the entryset dropdown
+		// when horizontal, the entryset dropdown with align with the right edge of the last .line div
+		if ($("[id='" + line + "']").next(".entryset").hasClass("horiz")) {
+			var w = $("[id='" + line + "']").outerWidth() 
+			$("[id='" + line + "']").prevAll(".line").each(function() {
+				w = w + $(this).outerWidth() + 4 // add extra 4px to account for spacing between inline divs
+			})
+			$("[id='" + line + "']").next(".entryset")
+			$("[id='" + line + "']").next(".entryset").outerWidth(w)
+		}
+ 
+		$("[id='" + line + "']").next(".entryset").slideDown("slow")
 	}
 }
-
+	
 
 // selectedMenu
 // on-menu-click, style the selected menu option, and unstyle all other menu options
