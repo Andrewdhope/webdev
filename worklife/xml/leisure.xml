@@ -12,6 +12,9 @@
 				<entry>Five Thirty Eight
 					<link>https://fivethirtyeight.com/</link>
 				</entry>
+				<entry>The Upshot
+					<link>https://www.nytimes.com/section/upshot</link>
+				</entry>
 				<entry>The Onion
 					<link>https://www.theonion.com/</link>
 				</entry>
@@ -55,10 +58,13 @@
 				<!-- figure out some content for the links -->
 				<line>current
 					<entry>Better Call Saul
+						<link>https://www.imdb.com/title/tt3032476/plotsummary?ref_=tt_stry_pl</link>
 					</entry>
 					<entry>Westworld
+						<link>https://www.imdb.com/title/tt0475784/plotsummary?ref_=tt_stry_pl</link>
 					</entry>
 					<entry>The Good Place
+						<link>https://www.imdb.com/title/tt4955642/plotsummary?ref_=tt_stry_pl</link>
 					</entry>
 				</line>
 				<line>former
