@@ -186,9 +186,9 @@ h2.empty, h3.empty` {
 
 .entryset {
 	display: none; /* needed for jQuery effects */
-	padding-left: 5%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 7.5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 /* a few tailored styles for the arenas dropdown */

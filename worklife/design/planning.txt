@@ -43,7 +43,7 @@ General Steps
 		- favicon [check]
 		
 - let content settle
-	+ indentation
+	+ indentation (7.5% on work, 5% on life)
 - update planning docs
 - release
 	
