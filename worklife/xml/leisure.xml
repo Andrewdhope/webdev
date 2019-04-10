@@ -22,7 +22,7 @@
 				<entry>dine
 					<link>https://www.pacificsandiego.com/eat-drink-puff/restaurants/</link>
 				</entry>
-				<entry>drink
+				<entry>dram
 					<link>http://www.allthingswhisky.com/</link>
 				</entry>
 			</line>
@@ -64,7 +64,7 @@
 		<bullet list-orientation="vert">
 			<title>shows</title>
 				<!-- figure out some content for the links -->
-				<line>current
+				<line>modern
 					<entry>Better Call Saul
 						<link>https://www.imdb.com/title/tt3032476/plotsummary?ref_=tt_stry_pl</link>
 					</entry>
@@ -75,7 +75,7 @@
 						<link>https://www.imdb.com/title/tt4955642/plotsummary?ref_=tt_stry_pl</link>
 					</entry>
 				</line>
-				<line>former
+				<line>classic
 					<entry>The Simpsons
 						<linkset>
 							<link>https://twitter.com/SimpsonsQOTD</link>
