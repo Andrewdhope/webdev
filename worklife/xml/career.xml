@@ -123,7 +123,7 @@
 			</line>
 			<line>scripting
 				<entry>M
-					<link>http://mumps.sourceforge.net/docs.html</link>
+					<link>http://mumps.sourceforge.net/docs.html</link> <!-- F#? -->
 				</entry>
 			</line>
 			<line>development
@@ -211,6 +211,7 @@
 				<entry>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
+						<link>https://fsharp.org/about/index.html</link>
 						<link>http://opendatastructures.org</link>
 					</linkset>
 				</entry>
