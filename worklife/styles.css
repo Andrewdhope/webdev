@@ -16,6 +16,7 @@ body {
 	margin-right: 24px;
 	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
 	font-family: Ubuntu, Courier;
+	font-size: large;
 	background-color: green;
 }
 
