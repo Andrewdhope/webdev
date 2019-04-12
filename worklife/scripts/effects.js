@@ -4,7 +4,7 @@
 // expandBullet
 // change the icon and slide the content up/down
 function expandBullet(bullet) {
-	// consider getting children instead of by class name
+
 	var header = document.getElementById(bullet);
 	var title = header.childNodes[1]; // h2
 	
@@ -22,6 +22,8 @@ function expandBullet(bullet) {
 			title.classList.add("active")
 			$("#" + bullet + " span:first").html("expand_less")	
 			$("#" + bullet + " .line").show()
+			
+			// display lines vertically or horizontally based on the flag set in xml
 			if ($("#" + bullet + " .lineset").hasClass("vert")) {
 				$("#" + bullet + " .line").css({"display": "block"})
 			}
@@ -52,7 +54,7 @@ function expandLine(line) {
 		$("[id='" + line + "']").next(".entryset").children(".entry").show()
 		
 		// dyanmic sizing for the entryset dropdown
-		// when horizontal, the entryset dropdown with align with the right edge of the last .line div
+		// when horizontal, the entryset dropdown will align with the right edge of the last .line div
 		if ($("[id='" + line + "']").parent(".lineset").hasClass("horiz")) {
 			var w = $("[id='" + line + "']").outerWidth() // initialize width var with the width of the current line
 			

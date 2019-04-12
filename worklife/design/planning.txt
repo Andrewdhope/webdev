@@ -43,7 +43,6 @@ General Steps
 		- favicon [check]
 		
 - let content settle
-- update planning docs, comments
 - release!
 	
 Samples and References:
