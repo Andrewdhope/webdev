@@ -255,7 +255,7 @@ footer {
 	height: var(--footer-height);
 	margin-top: 12px;
 	text-align: right;
-	font-size: x-small;
+	font-size: small;
 	font-family: ubuntu, courier;
 	color: #ccc;
 }
