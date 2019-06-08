@@ -179,6 +179,10 @@
 					<role>population analytics</role>
 					<link>https://www.scripps.org/</link>
 				</entry>
+				<entry>UC Davis Health
+					<role>telehealth</role>
+					<link>https://health.ucdavis.edu/cht/clinic/index.html</link>
+				</entry>
 				<entry>Baptist Memorial Health Care
 					<role>accountable care</role>
 					<link>https://www.baptistonline.org/</link>
@@ -222,6 +226,7 @@
 						<link>https://javascript.info</link>
 						<link>https://fsharp.org/about/index.html</link>
 						<link>http://opendatastructures.org</link>
+						<link>https://www.coursera.org/specializations/gis</link>
 					</linkset>
 				</entry>
 				<entry>showcase
