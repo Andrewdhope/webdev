@@ -121,6 +121,7 @@
 			<line>peaks
 				<entry>maps
 					<link>https://www.alltrails.com</link>
+					<link></link>
 				</entry>
 				<entry>local
 					<link>http://sandiegosierraclub.org/get-outdoors/hike/peaks-list/peak-list</link>
@@ -147,6 +148,9 @@
 			</line>
 			<line>stats
 				<link>https://www.basketball-reference.com/</link>
+			</line>
+			<line>sheets
+				<link>https://www.spotrac.com/</link>
 			</line>
 			<line>courts
 				<link>https://www.instagram.com/hypecourts/?hl=en</link>
@@ -321,4 +325,5 @@
 			</line>
 		</bullet>
 	</section>
+	<!-- https://geology.com/ -->
 </content>
