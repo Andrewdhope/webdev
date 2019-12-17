@@ -269,7 +269,7 @@ footer p.footlinks {
 	float: left;
 }
 
-a.ga :hover {
+a.ga, a.ga:hover {
 	text-decoration: none;
 	cursor: text;
 }
