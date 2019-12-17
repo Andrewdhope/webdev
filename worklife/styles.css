@@ -271,5 +271,5 @@ footer p.footlinks {
 
 a.ga :hover {
 	text-decoration: none;
-	cursor: default;
+	cursor: text;
 }
