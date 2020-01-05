@@ -44,7 +44,7 @@ General Steps
 		
 - let content settle
 - release!
-	
+
 Samples and References:
 http://steadystatedigital.com/
 http://www.qualiaconsult.com/
@@ -53,6 +53,18 @@ https://emitanaka.github.io/showcase/
 https://www.w3schools.com/xml/dom_node.asp
 https://www.quackit.com/html_5/tags/
 https://davidwalsh.name/canvas-demos
+https://dribbble.com/
+
+Next Level:
+https://getcoleman.com/
+https://caferati.me/
+http://ejosue.com/
+https://www.taniarascia.com/
+https://derektorsani.com/
+http://www.jamestgreen.com/
+http://www.erondu.com/
+https://wilsonminer.com/
+
 
 Ongoing input:
 - Titles
