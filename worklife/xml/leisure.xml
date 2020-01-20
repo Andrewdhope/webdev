@@ -276,35 +276,27 @@
 					<entry>Longreads
 						<link>https://longreads.com/</link>
 					</entry>
+					<entry>Wired
+						<link>https://www.wired.com/category/ideas/</link>
+					</entry>
 					<entry>The Athletic
 						<link>https://theathletic.com/</link>
 					</entry>
-					<entry>ProPublica
-						<link>https://www.propublica.org/</link>
-					</entry>
-			</line>
+				</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>tech</title>
-			<line>pop
-				<entry>Wired
-					<link>https://www.wired.com/category/ideas/</link>
-				</entry>
-				<entry>Scientific American
-						<link>https://scientificamerican.com/sustainability/</link>
+				<line>trade
+					<entry>KDnuggets
+						<link>https://www.kdnuggets.com/</link>
 					</entry>
-			</line>
-			<line>trade
-				<entry>R-bloggers
-					<link>https://www.r-bloggers.com/</link>
-				</entry>
-				<entry>KDnuggets
-					<link>https://www.kdnuggets.com/</link>
-				</entry>
-				<entry>HIStalk
-					<link>https://histalk2.com/</link>
-				</entry>
-			</line>
+					<entry>R-bloggers
+						<link>https://www.r-bloggers.com/</link>
+					</entry>
+					<entry>HIStalk
+						<link>https://histalk2.com/</link>
+					</entry>
+				</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>law</title>
