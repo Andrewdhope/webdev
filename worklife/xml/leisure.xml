@@ -262,13 +262,13 @@
 				<line>books
 					<!--use json for each book-->
 					<entry>current
-						<link>https://en.wikipedia.org/wiki/The_Grapes_of_Wrath</link>
+						<link>https://en.wikipedia.org/wiki/Democracy_in_America</link>
 					</entry>
 					<entry>recent
 						<linkset>
-							<link>https://en.wikipedia.org/wiki/Bury_My_Heart_at_Wounded_Knee</link>
-							<link>https://en.wikipedia.org/wiki/The_Long_Valley</link>
-							<link>https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude</link>
+							<link>https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo</link>
+							<link>https://en.wikipedia.org/wiki/Eric_D._Walrond</link>
+							<link>https://en.wikipedia.org/wiki/The_Grapes_of_Wrath</link>
 						</linkset>
 					</entry>
 				</line>
