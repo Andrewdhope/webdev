@@ -260,7 +260,6 @@
 		<bullet list-orientation="vert">
 			<title>print</title>
 				<line>books
-					<!--use json for each book-->
 					<entry>current
 						<link>https://en.wikipedia.org/wiki/Democracy_in_America</link>
 					</entry>
@@ -324,4 +323,5 @@
 	<!-- https://geology.com/ -->
 	<!-- https://explorable.com/ -->
 	<!-- https://nca2018.globalchange.gov/ -->
+	<!-- https://eff.org/ -->
 </content>
