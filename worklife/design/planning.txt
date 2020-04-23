@@ -67,13 +67,15 @@ https://wilsonminer.com/
 
 
 Ongoing input:
-- Titles
-	+ Data Engineer | Healthcare
+- Titles (sub out pipe for dots?)
+	+ Data Engineer | Digital Healthcare
 	+ Systems Engineer | Healthcare Delivery
 	+ Solutions Architect | Health Systems
 	+ Forecasting, Decision Science
-	+ Clinical Data Mining
+	+ Clinical Data Mining, Clinical Data Aggregation
 	+ Cognitive Systems Engineering
+	+ quantitative healthcare delivery
+	+ data driven design, data driven development
 
 - Names
 	+ Unbroken

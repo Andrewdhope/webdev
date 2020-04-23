@@ -22,10 +22,12 @@
 			</line>
 			<line>innovation
 				<entry>computational
-					<link>https://www.wolframscience.com/nks/p27--how-do-simple-programs-behave/</link>
+					<!-- new -->
+					<link>https://www.wolframscience.com/nks/p30--how-do-simple-programs-behave/</link>
 				</entry>
-				<entry>sustainable
-					<link>http://www.rebuildbydesign.org/our-work/sandy-projects</link>
+				<!-- new -->
+				<entry>fundamental
+					<link>https://www.wolframphysics.org/</link>
 				</entry>
 			</line>
 		</bullet>
@@ -33,7 +35,8 @@
 			<title>mining</title>
 			<line>structure
 				<entry>warehousing
-					<link>http://www.essai.rnu.tn/Ebook/Informatique/The%20Data%20Warehouse%20Toolkit,%203rd%20Edition.pdf</link>
+					<!-- new -->
+					<link>http://aatinegar.com/wp-content/uploads/2016/05/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf</link>
 				</entry>
 			</line>
 			<line>extraction
@@ -50,7 +53,7 @@
 				</entry>
 				<entry>interfaces
 					<linkset>
-						<link>http://www.json.org/</link>
+						<link>https://www.json.org/</link>
 						<link>https://www.hl7.org/fhir/summary.html</link>
 					</linkset>
 				</entry>
@@ -60,9 +63,13 @@
 			<title>modeling</title>
 			<line>simulation
 				<entry>platform
-					<link>http://www.wolfram.com/language/uses/</link>
+					<!-- new -->
+					<linkset>
+						<link>https://www.wolfram.com/language/uses/</link>
+						<link>https://www.tidymodels.org/</link>
+					</linkset>
 				</entry>
-			</line>	
+			</line>
 			<line>forecasting
 				<entry>principles
 					<link>https://otexts.com/fpp2/</link>
@@ -120,7 +127,12 @@
 				<entry>Data Visualization Society
 					<link>https://www.datavisualizationsociety.com/</link>
 				</entry>
-				<!-- https://r-graphics.org/ -->
+				<!-- new -->
+				<entry>more
+					<linkset>
+						<link>https://r-graphics.org/</link>
+					</linkset>
+				</entry>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
@@ -142,7 +154,11 @@
 			</line>
 			<line>presentation
 				<entry>HTML5
-					<link>https://css-tricks.com/</link>
+					<!-- new -->
+					<linkset>
+						<link>https://developer.mozilla.org/en-US/</link>
+						<link>https://css-tricks.com/</link>
+					</linkset>
 				</entry>
 			</line>
 		</bullet>
@@ -189,22 +205,24 @@
 				</entry>
 				<entry>Lexington Medical Center
 					<role>regulatory reporting</role>
-					<link>http://www.lexmed.com/</link>
+					<link>https://www.lexmed.com/</link>
 				</entry>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>engineering</title>
-			<note></note>
 			<line>University of Pittsburgh
 				<entry>Bachelor of Science in Industrial Engineering
 					<detail>cum laude</detail>
 					<link>https://www.engineering.pitt.edu/Departments/Industrial/</link>
 				</entry>
+				<!-- new -->
+				<!--
 				<entry>Curtiss-Wright Electro-Mechanical Division
 					<role>Engineering co-op</role>
 					<link>https://www.cw-ems.com/emd/</link>
 				</entry>
+				-->
 			</line>
 			<line>Johns Hopkins University
 				<entry>Data Science Specialization with R
@@ -225,7 +243,7 @@
 					<linkset>
 						<link>https://javascript.info</link>
 						<link>https://fsharp.org/about/index.html</link>
-						<link>http://opendatastructures.org</link>
+						<link>https://opendatastructures.org</link>
 						<link>https://www.coursera.org/specializations/gis</link>
 					</linkset>
 				</entry>
@@ -236,13 +254,14 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>leadership</title>
-				<!-- dig through and commit quotes -->
+				<!-- dig through and commit quotes (reviews.txt) -->
 				<line>structured</line>
 				<line>empowering</line>
 				<line>adaptable</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>service</title>
+				<!-- https://www.aclu.org/ --> 
 		</bullet>
 	</section>
 </content>
