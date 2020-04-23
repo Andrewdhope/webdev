@@ -62,7 +62,7 @@
 		<bullet list-orientation="vert">
 			<title>modeling</title>
 			<line>simulation
-				<entry>platform
+				<entry>platforms
 					<!-- new -->
 					<linkset>
 						<link>https://www.wolfram.com/language/uses/</link>
