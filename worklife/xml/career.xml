@@ -4,7 +4,6 @@
 	<section option="interests">
 		<bullet list-orientation="vert">
 			<title>design</title>
-			<!-- think how to clarify this section -->
 			<line>philosophy
 				<entry>iteration
 					<link>https://www.designcouncil.org.uk/news-opinion/design-process-what-double-diamond</link>
@@ -15,7 +14,6 @@
 			</line>
 			<line>objectives
 				<entry>documented
-					<!-- new -->
 					<link>https://www.range.co/blog/better-tech-specs</link>
 				</entry>
 				<entry>measurable
@@ -24,7 +22,6 @@
 			</line>
 			<line>innovation
 				<entry>computational
-					<!-- new -->
 					<link>https://www.wolframscience.com/nks/p30--how-do-simple-programs-behave/</link>
 				</entry>
 			</line>
@@ -33,7 +30,6 @@
 			<title>mining</title>
 			<line>structure
 				<entry>warehousing
-					<!-- new -->
 					<link>http://aatinegar.com/wp-content/uploads/2016/05/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf</link>
 				</entry>
 			</line>
@@ -61,7 +57,6 @@
 			<title>modeling</title>
 			<line>simulation
 				<entry>platforms
-					<!-- new -->
 					<linkset>
 						<link>https://www.wolfram.com/language/uses/</link>
 						<link>https://www.tidymodels.org/</link>
@@ -146,7 +141,6 @@
 			</line>
 			<line>presentation
 				<entry>HTML5
-					<!-- new -->
 					<linkset>
 						<link>https://developer.mozilla.org/en-US/</link>
 						<link>https://css-tricks.com/</link>
@@ -208,13 +202,6 @@
 					<detail>cum laude</detail>
 					<link>https://www.engineering.pitt.edu/Departments/Industrial/</link>
 				</entry>
-				<!-- new -->
-				<!--
-				<entry>Curtiss-Wright Electro-Mechanical Division
-					<role>Engineering co-op</role>
-					<link>https://www.cw-ems.com/emd/</link>
-				</entry>
-				-->
 			</line>
 			<line>Johns Hopkins University
 				<entry>Data Science Specialization with R
@@ -257,7 +244,6 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>service</title>
-				<!-- https://www.aclu.org/ --> 
 		</bullet>
 	</section>
 </content>

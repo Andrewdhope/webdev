@@ -276,7 +276,6 @@
 					</entry><entry>Longreads
 						<link>https://longreads.com/</link>
 					</entry>
-					<!-- new -->
 					<entry>The Atlantic
 						<link>https://theatlantic.com/</link>
 					</entry>
@@ -287,7 +286,6 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>tech</title>
-				<!-- new -->
 				<line>science
 					<entry>Climate
 						<link>https://nca2018.globalchange.gov/</link>
@@ -315,7 +313,6 @@
 					<entry>Health Affairs
 						<link>https://www.healthaffairs.org</link>
 					</entry>
-					<!-- new -->
 					<entry>Digital Medicine
 						<link>https://www.nature.com/npjdigitalmed/</link>
 					</entry>
@@ -338,7 +335,6 @@
 						<link>https://en.wikipedia.org/wiki/Congressional_Apportionment_Amendment</link>
 					</linkset>
 				</entry>
-				<!-- new -->	
 				<entry>privacy
 					<link>https://eff.org/</link>
 				</entry>
