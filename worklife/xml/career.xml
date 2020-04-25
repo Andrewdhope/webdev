@@ -16,12 +16,7 @@
 			<line>objectives
 				<entry>documented
 					<!-- new -->
-					<!-- one great or three ok -->
-					<linkset>
-						<link>https://www.range.co/blog/better-tech-specs</link>
-						<link>https://plan.io/blog/technical-documentation</link>
-						<link>https://www.gartner.com/en/information-technology/glossary/dfx-design-for-x</link>
-					</linkset>
+					<link>https://www.range.co/blog/better-tech-specs</link>
 				</entry>
 				<entry>measurable
 					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
@@ -236,15 +231,16 @@
 						<link>https://data.world/andrewdhope</link>
 					</linkset>
 				</entry>
+				<entry>extensions
+					<linkset>
+						<link>https://chrome.google.com/webstore/detail/nba-salary-search/alkkhcmnofcbjloojjeghnpmjofpgifd</link>
+					</linkset>
+				</entry>
 				<entry>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
 						<link>https://fsharp.org/about/index.html</link>
 						<link>https://opendatastructures.org</link>
-						<!-- new -->
-						<!--
-						<link>https://www.coursera.org/specializations/gis</link>
-						-->
 					</linkset>
 				</entry>
 				<entry>showcase

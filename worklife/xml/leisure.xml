@@ -254,10 +254,6 @@
 					<link>https://bicyclecards.com/how-to-play/pitch/</link>
 				</line>
 		</bullet>
-		<bullet list-orientation="vert">
-			<title>chords</title>
-			<!-- link to a directory, or a repo -->
-		</bullet>
 	</section>
 	<section option="ideas">
 		<bullet list-orientation="vert">
@@ -301,6 +297,9 @@
 					</entry>
 					<entry>Physics
 						<link>https://www.wolframphysics.org/</link>
+					</entry>
+					<entry>Sustainability
+						<link>https://www.scientificamerican.com/sustainability/</link>
 					</entry>
 					<entry>Research
 						<link>https://explorable.com/</link>
