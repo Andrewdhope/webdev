@@ -152,6 +152,7 @@
 	<section option="projects">
 		<bullet list-orientation="vert">
 			<title>healthcare</title>
+			<!-- https://www.mychart.com/  https://apporchard.epic.com/  https://www.ehrn.org/ -->
 			<line>Hartford HealthCare
 				<entry>enterprise implementation
 					<role>technical coordinator</role>
