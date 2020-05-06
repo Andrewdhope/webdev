@@ -135,6 +135,14 @@ nav#menu li:before {
 
 /* collapsible headers */
 
+h2 {
+	font-size: calc(1.2rem + 1vw);
+}
+
+h3 {
+	font-size: calc(1rem + 1vw);
+}
+
 h2, h3 {
 	display: inline-block;
 }
@@ -256,6 +264,10 @@ a.multi-entry {
 
 .entry a:link, .entry a:visited, .line a:link, .line a:visited {
 	text-decoration: underline;
+}
+
+sup {
+	white-space: nowrap; 
 }
 
 /* --- FOOTER --- */
