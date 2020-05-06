@@ -15,12 +15,9 @@ body {
 	margin-left: 24px;
 	margin-right: 24px;
 	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
+	font-size: large;
 	font-family: Ubuntu, Courier;
 	background-color: green;
-}
-
-@media (min-width: 500px) {
-	body {font-size: 2vw;}
 }
 
 /* --- HEADER --- */
@@ -109,7 +106,7 @@ nav#menu.border {
 
 nav#menu ul {
 	list-style-type: none;
-	padding-left: 20px;
+	padding-left: 10%;
 }
 
 nav#menu li:before {
@@ -117,10 +114,10 @@ nav#menu li:before {
 	padding-right: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	nav#menu {width: 35%;}
 	section#content {width: 65%;}
-	nav#menu ul {padding-left: 0px;}
+	nav#menu ul {padding-left: 0%;}
 }
 
 /* positioning of the group class to keep the footer stuck to the bottom */
