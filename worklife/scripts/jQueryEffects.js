@@ -17,8 +17,9 @@ function jBounceUp() {
 	var styles = window.getComputedStyle(document.documentElement); // get all styles
 	var headerheight = styles.getPropertyValue('--header-height'); // convert css variable to js
 	var bodymargintop = styles.getPropertyValue('--body-margin-top'); // convert css variable to js
-	var headerpadding = styles.getPropertyValue('--header-padding-total'); // convert css variable to js
-	var totalpaddingint = parseInt(headerheight) + 2*parseInt(bodymargintop) + 2*parseInt(headerpadding); // convert to integers and sum vh values. 
+	var headerpaddingtop = styles.getPropertyValue('--header-padding-top'); // convert css variable to js
+	var headerpaddingbottom = styles.getPropertyValue('--header-padding-top'); // convert css variable to js
+	var totalpaddingint = parseInt(headerheight) + 2*parseInt(bodymargintop) + parseInt(headerpaddingtop) + parseInt(headerpaddingbottom); // convert to integers and sum vh values. 
 	var totalpaddingvh = totalpaddingint+"vh"; // convert to string and append vh
 	var animatePadding = {paddingTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
 
@@ -46,7 +47,7 @@ function jBounceUp() {
 			$("header").animate({bottom: '100%'}, "slow", function() {
 			
 				/* paddingBottom added just to give the next divs some breathing room. */
-				$("header").removeClass("down").css({"paddingTop": headerpadding, "paddingBottom": headerpadding}) // headerpaddingtotal 
+				$("header").removeClass("down").css({"paddingTop": headerpaddingtop, "paddingBottom": headerpaddingbottom}) // headerpaddingtotal 
 				
 				$("footer p").slideDown("100") /* also deploy the footer */
 			});	

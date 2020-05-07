@@ -3,7 +3,8 @@
 	--body-margin-top: 2vh;
 	--body-margin-bottom: 2vh;
 	--header-height: 1.5vh;
-	--header-padding-total: 2vh; 
+	--header-padding-top: 1vh;
+	--header-padding-bottom: 2vh;
 	--footer-height: 2vh;
 	--footer-margin: 2vh;
 }
@@ -145,7 +146,7 @@ nav#menu li:before {
 
 .group {
 	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
-	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - (2*var(--header-padding-total)) - var(--footer-height) - var(--footer-margin));
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - var(--header-padding-top) -var(--header-padding-bottom) - var(--footer-height) - var(--footer-margin));
 }
 
 /* collapsible headers */
