@@ -139,11 +139,11 @@ nav#menu li:before {
 /* collapsible headers */
 
 h2 {
-	font-size: calc(1.2rem + 1vw);
+	font-size: calc(1rem + 1vw);
 }
 
 h3 {
-	font-size: calc(1rem + 1vw);
+	font-size: calc(1rem + 0.5vw);
 }
 
 h2, h3 {
@@ -199,7 +199,7 @@ h2.empty, h3.empty` {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	padding-left: 5%;
-	padding-right: 23px; /* originally for the arenas dropdown */
+	padding-right: 1%; /* originally for the arenas dropdown */
 }
 
 .entryset {
