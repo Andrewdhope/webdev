@@ -3,19 +3,10 @@
 	--body-margin-top: 4vh;
 	--body-margin-bottom: 2vh;
 	--header-height: 1.5vh;
-	--header-padding-total: 4vh; /* needs to match jBounceUp */
+	--header-padding-total: 2vh; 
 	--footer-height: 2vh;
 	--footer-margin: 2vh;
 }
-
-/*
-:root {
-	--body-margin-top: 24px;
-	--body-margin-bottom: 12px;
-	--header-height: 18px;
-	--footer-height: 12px;
-}
-*/
 
 html {
 	height: 100%;
@@ -24,8 +15,8 @@ html {
 body {
 	margin-top: var(--body-margin-top);
 	margin-bottom: var(--body-margin-bottom);
-	margin-left: 24px;
-	margin-right: 24px;
+	margin-left: 2vw;
+	margin-right: 2vw;
 	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
 	font-size: large;
 	font-family: Ubuntu, Courier;
@@ -142,7 +133,7 @@ nav#menu li:before {
 
 .group {
 	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
-	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - var(--header-padding-total) - var(--footer-height) - var(--footer-margin));
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - (2*var(--header-padding-total)) - var(--footer-height) - var(--footer-margin));
 }
 
 /* collapsible headers */
