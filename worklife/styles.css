@@ -31,6 +31,7 @@ body {
 
 header {
 	height: var(--header-height);
+	font-size: x-large;
 }
 
 header.up {
@@ -86,7 +87,7 @@ a:hover {
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 1%;
+	padding-bottom: 4%;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -128,7 +129,7 @@ nav#menu li:before {
 	div.line {width: max-content;}
 	div.line {padding-left: 2.5%;}
 	div.entryset {width: max-content;}
-	div.entryset {padding-left: 5%;}
+	div.entryset {padding-left: 10%;}
 	div.entry {width: max-content;}
 	div.entry {padding-left: 0%;}
 	div.entry {white-space: nowrap;}
