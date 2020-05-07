@@ -23,6 +23,10 @@ body {
 	background-color: green;
 }
 
+@media (max-width: 600px) {
+	body {font-size: small;}
+}
+
 /* --- HEADER --- */
 
 header {
@@ -121,6 +125,13 @@ nav#menu li:before {
 	nav#menu {width: 35%;}
 	section#content {width: 65%;}
 	nav#menu ul {padding-left: 0%;}
+	div.line {width: max-content;}
+	div.line {padding-left: 2.5%;}
+	div.entryset {width: max-content;}
+	div.entryset {padding-left: 5%;}
+	div.entry {width: max-content;}
+	div.entry {padding-left: 0%;}
+	div.entry {white-space: nowrap;}
 }
 
 /* positioning of the group class to keep the footer stuck to the bottom */
@@ -181,6 +192,11 @@ h2.empty, h3.empty` {
 
 .line span.material-icons {
 	vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+	span.material-icons {font-size: 12px;}
+	.bullet span.material-icons {vertical-align: initial;}
 }
 
 /* indentations */
