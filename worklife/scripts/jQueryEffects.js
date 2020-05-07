@@ -17,9 +17,9 @@ function jBounceUp() {
 	var styles = window.getComputedStyle(document.documentElement); // get all styles
 	var headerheight = styles.getPropertyValue('--header-height'); // convert css variable to js
 	var bodymargintop = styles.getPropertyValue('--body-margin-top'); // convert css variable to js
-	var totalpaddingint = parseInt(headerheight) + 2*parseInt(bodymargintop) + 20; // convert to integers and add 20
-	var totalpaddingpx = totalpaddingint+"px"; // convert to string and append px
-	var animatePadding = {paddingTop: totalpaddingpx}; // make a jQuery PlainObject for the animate function
+	var totalpaddingint = parseInt(headerheight) + 2*parseInt(bodymargintop) + 2; // convert to integers and sum vh values
+	var totalpaddingvh = totalpaddingint+"vh"; // convert to string and append vh
+	var animatePadding = {paddingTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
 
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
@@ -45,7 +45,7 @@ function jBounceUp() {
 			$("header").animate({bottom: '100%'}, "slow", function() {
 			
 				/* paddingBottom added just to give the next divs some breathing room. */
-				$("header").removeClass("down").css({"paddingTop": "10px", "paddingBottom": "10px"})
+				$("header").removeClass("down").css({"paddingTop": "1vh", "paddingBottom": "1vh"})
 				
 				$("footer p").slideDown("100") /* also deploy the footer */
 			});	

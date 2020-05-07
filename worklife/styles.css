@@ -1,9 +1,20 @@
+
+:root {
+	--body-margin-top: 4vh;
+	--body-margin-bottom: 2vh;
+	--header-height: 1.5vh;
+	--footer-height: 2vh;
+	--footer-margin: 2vh;
+}
+
+/*
 :root {
 	--body-margin-top: 24px;
 	--body-margin-bottom: 12px;
 	--header-height: 18px;
 	--footer-height: 12px;
 }
+*/
 
 html {
 	height: 100%;
@@ -129,8 +140,8 @@ nav#menu li:before {
 }
 
 .group {
-	/* top and bottom margins on the body + total height of header with padding + total height of footer with margin */
-	min-height: calc(100vh - 98px);
+	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - 2vh - var(--footer-height) - var(--footer-margin));
 }
 
 /* collapsible headers */
@@ -279,7 +290,7 @@ sup {
 footer {
 	width: 100%;
 	height: var(--footer-height);
-	margin-top: 12px;
+	margin-top: var(--footer-margin);
 	text-align: right;
 	font-size: small;
 	font-family: ubuntu, courier;
