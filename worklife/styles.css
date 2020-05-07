@@ -82,7 +82,7 @@ a:hover {
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 50px;
+	padding-bottom: 1%;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -96,7 +96,7 @@ section#content.border {
 nav#menu {
 	width: 25%;
 	float: right;
-	padding-bottom: 10px;
+	padding-bottom: 1%;
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
