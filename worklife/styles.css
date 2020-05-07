@@ -24,10 +24,6 @@ body {
 	background-color: green;
 }
 
-@media (max-width: 600px) {
-	body {font-size: small;}
-}
-
 /* --- HEADER --- */
 
 header {
@@ -132,6 +128,7 @@ nav#menu li:before {
 	div.entryset {padding-left: 10%;}
 	div.entry {width: max-content;}
 	div.entry {padding-left: 0%;}
+	div.entry {font-size: small;}
 	div.entry {white-space: nowrap;}
 }
 
