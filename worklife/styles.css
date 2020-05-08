@@ -7,6 +7,7 @@
 	--header-padding-bottom: 2vh;
 	--footer-height: 2vh;
 	--footer-margin: 2vh;
+	/* update IE workarounds below */
 }
 
 html {
@@ -230,7 +231,7 @@ h2.empty, h3.empty` {
 
 .entryset {
 	display: none; /* needed for jQuery effects */
-	padding-left: 7.5%;
+	padding-left: 5%;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
