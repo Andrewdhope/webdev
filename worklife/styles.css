@@ -127,20 +127,6 @@ nav#menu li:before {
 	padding-right: 10px;
 }
 
-@media (max-width: 600px) {
-	nav#menu {width: 35%;}
-	section#content {width: 65%;}
-	nav#menu ul {padding-left: 0%;}
-	.line {width: max-content;}
-	.line {padding-left: 2.5%;}
-	.entryset {width: max-content;}
-	.entryset {padding-left: 10%;}
-	.entry {width: max-content;}
-	.entry {padding-left: 0%;}
-	.entry {font-size: small;}
-	.entry {white-space: nowrap;}
-}
-
 /* positioning of the group class to keep the footer stuck to the bottom */
 
 .group:after {
@@ -205,11 +191,6 @@ h2.empty, h3.empty` {
 	vertical-align: middle;
 }
 
-@media (max-width: 600px) {
-	span.material-icons {font-size: 12px;}
-	.bullet span.material-icons {vertical-align: initial;}
-}
-
 /* indentations */
 
 .bullet {
@@ -231,7 +212,7 @@ h2.empty, h3.empty` {
 
 .entryset {
 	display: none; /* needed for jQuery effects */
-	padding-left: 5%;
+	padding-left: 7.5%;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -302,10 +283,6 @@ sup {
 
 /* --- FOOTER --- */
 
-@media (max-width: 1024px) {
-	footer p.copyright {visibility: hidden;} 
-}
-
 footer {
 	width: 100%;
 	height: var(--footer-height);
@@ -332,4 +309,30 @@ footer p.footlinks {
 a.ga, a.ga:hover {
 	text-decoration: none;
 	cursor: text;
+}
+
+/* Responsive overrides */
+
+@media (max-width: 1024px) {
+	footer p.copyright {visibility: hidden;} 
+}
+
+@media (max-width: 600px) {
+	nav#menu {width: 35%;}
+	section#content {width: 65%;}
+	nav#menu ul {padding-left: 0%;}
+	.bullet {padding-left: 2.5%}
+	.line {width: max-content;}
+	.line {padding-left: 2.5%;}
+	.entryset {width: max-content;}
+	.entryset {padding-left: 7.5%;}
+	.entry {width: max-content;}
+	.entry {padding-left: 0%;}
+	.entry {font-size: small;}
+	.entry {white-space: nowrap;}
+}
+
+@media (max-width: 600px) {
+	span.material-icons {font-size: 12px;}
+	.bullet span.material-icons {vertical-align: initial;}
 }
