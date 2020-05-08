@@ -23,16 +23,19 @@ body {
 	font-family: Ubuntu, Courier;
 	background-color: green;
 }
-
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	body { min-height:96vh; }
+	body { margin-top: 2vh; margin-bottom: 2vh; min-height:96vh; }
 }
 
 /* --- HEADER --- */
 
 header {
 	height: var(--header-height);
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	header { min-height:1.5vh; }
 }
 
 header.up {
@@ -149,7 +152,6 @@ nav#menu li:before {
 	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
 	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - var(--header-padding-top) - var(--header-padding-bottom) - var(--footer-height) - var(--footer-margin));
 }
-
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.group { min-height:87.5vh; }
@@ -311,6 +313,10 @@ footer {
 	font-size: small;
 	font-family: ubuntu, courier;
 	color: #ccc;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	footer { height:2vh; margin-top: 2vh;}
 }
 
 footer p {
