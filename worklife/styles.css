@@ -24,6 +24,11 @@ body {
 	background-color: green;
 }
 
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	body { min-height:96vh; }
+}
+
 /* --- HEADER --- */
 
 header {
@@ -122,14 +127,14 @@ nav#menu li:before {
 	nav#menu {width: 35%;}
 	section#content {width: 65%;}
 	nav#menu ul {padding-left: 0%;}
-	div.line {width: max-content;}
-	div.line {padding-left: 2.5%;}
-	div.entryset {width: max-content;}
-	div.entryset {padding-left: 10%;}
-	div.entry {width: max-content;}
-	div.entry {padding-left: 0%;}
-	div.entry {font-size: small;}
-	div.entry {white-space: nowrap;}
+	.line {width: max-content;}
+	.line {padding-left: 2.5%;}
+	.entryset {width: max-content;}
+	.entryset {padding-left: 10%;}
+	.entry {width: max-content;}
+	.entry {padding-left: 0%;}
+	.entry {font-size: small;}
+	.entry {white-space: nowrap;}
 }
 
 /* positioning of the group class to keep the footer stuck to the bottom */
@@ -143,6 +148,11 @@ nav#menu li:before {
 .group {
 	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
 	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - var(--header-padding-top) - var(--header-padding-bottom) - var(--footer-height) - var(--footer-margin));
+}
+
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.group { min-height:87.5vh; }
 }
 
 /* collapsible headers */
