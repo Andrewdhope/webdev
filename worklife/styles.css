@@ -321,10 +321,12 @@ a.ga, a.ga:hover {
 	nav#menu {width: 35%;}
 	section#content {width: 65%;}
 	nav#menu ul {padding-left: 0%;}
+	.bullet {padding-left: 5%;}
+	.lineset {padding-left: 5%;}
 	.line {width: max-content;}
 	.line {padding-left: 2.5%;}
 	.entryset {width: max-content;}
-	.entryset {padding-left: 7.5%;}
+	.entryset {padding-left: 5%;}
 	.entry {width: max-content;}
 	.entry {padding-left: 0%;}
 	.entry {font-size: small;}
