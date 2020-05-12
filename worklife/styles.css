@@ -46,10 +46,11 @@ header.up {
 
 header.down {
 	position: absolute;
-	bottom: 50%;
+	bottom: 60%;
 	right: 50%;
-	transform: translateX(50%) translateY(50%);
+	transform: translateX(50%) translateY(100%);
 	/* standard method to center an element with absolute position */
+	height: 60%;
 }
 
 header span {
@@ -336,4 +337,15 @@ a.ga, a.ga:hover {
 @media (max-width: 600px) {
 	span.material-icons {font-size: 12px;}
 	.bullet span.material-icons {vertical-align: initial;}
+}
+
+/* test lab */
+.title  {
+	color: #ccc;
+	font-size: 5vw;
+	letter-spacing: 6px;
+}
+
+.subtitle {
+	text-align: center;
 }
