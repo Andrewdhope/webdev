@@ -374,13 +374,6 @@ header.up .centered {
 	margin: 0;
 }
 
-
-@media (max-width: 600px) {
-	header.up .title {display: inline-block;}
-	header.up .subtitle {display: none;} 
-	header.up .centered {top: inherit; position: inherit;}
-}
-
 header.down {
 	position: absolute;
 	bottom: 60%;
@@ -395,4 +388,13 @@ header.down .title {
 
 header.down .subtitle {
 	display: inline-block;
+}
+
+
+@media (max-width: 600px) {
+	header.up .title {display: inline-block;}
+	header.up .subtitle {display: none;} 
+	header.up .centered {top: inherit; position: inherit;}
+	header.down .subtitle {display: none;}
+	header.down .centered {position: relative; width: 100%; right: unset; margin-right: 0px;}
 }
