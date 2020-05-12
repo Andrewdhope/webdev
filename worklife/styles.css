@@ -339,12 +339,9 @@ a.ga, a.ga:hover {
 }
 
 /* testing grounds */
-.titlewrap {
-	display: inline-block;
-}
 
 .title  {
-	display: inline-block;
+	display: block;
 	color: #ccc;
 	font-size: 5vw;
 	letter-spacing: 1.5vw;
@@ -370,7 +367,7 @@ header.up {
 }
 
 header.up .subtitle {
-	display: block;
+	display: inline-block;
 }
 
 header.up .centered {
