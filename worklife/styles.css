@@ -339,7 +339,7 @@ a.ga, a.ga:hover {
 	.bullet span.material-icons {vertical-align: initial;}
 }
 
-/* test lab */
+/* testing grounds */
 .title  {
 	color: #ccc;
 	font-size: 5vw;
@@ -348,4 +348,8 @@ a.ga, a.ga:hover {
 
 .subtitle {
 	text-align: center;
+}
+
+.centered {
+	padding-top: 2vh;
 }
