@@ -355,7 +355,7 @@ a.ga, a.ga:hover {
 	display: inline-block;
 	position: absolute;
 	right: 0;
-	margin-right: 3vw; /* match to .title letter-spacing (*2?) */
+	margin-right: 1.5vw; /* match to .title letter-spacing */
 }
 
 header.up {
