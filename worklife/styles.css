@@ -376,6 +376,7 @@ header.up .centered {
 
 
 @media (max-width: 600px) {
+	header.up .title {display: inline-block;}
 	header.up .subtitle {display: none;} 
 	header.up .centered {top: inherit; position: inherit;}
 }
