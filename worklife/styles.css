@@ -46,11 +46,10 @@ header.up {
 
 header.down {
 	position: absolute;
-	bottom: 60%;
+	bottom: 50%;
 	right: 50%;
-	transform: translateX(50%) translateY(100%);
+	transform: translateX(50%) translateY(50%);
 	/* standard method to center an element with absolute position */
-	height: 60%;
 }
 
 header span {
@@ -340,16 +339,63 @@ a.ga, a.ga:hover {
 }
 
 /* testing grounds */
+.titlewrap {
+	display: inline-block;
+}
+
 .title  {
+	display: inline-block;
 	color: #ccc;
 	font-size: 5vw;
-	letter-spacing: 6px;
+	letter-spacing: 1.5vw;
 }
 
 .subtitle {
-	text-align: center;
+	text-align: left;
 }
 
 .centered {
-	padding-top: 2vh;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	margin-right: 3vw; /* match to .title letter-spacing (*2?) */
+}
+
+header.up {
+	position: relative;
+	width: 100%;
+	height: inherit;
+	padding-top: 1vh;
+	padding-bottom: 2vh;
+}
+
+header.up .subtitle {
+	display: block;
+}
+
+header.up .centered {
+	top: 50%;
+	margin: 0;
+}
+
+
+@media (max-width: 600px) {
+	header.up .subtitle {display: none;} 
+	header.up .centered {top: inherit; position: inherit;}
+}
+
+header.down {
+	position: absolute;
+	bottom: 60%;
+	right: 50%;
+	transform: translateX(50%) translateY(100%);
+	/* standard method to center an element with absolute position */
+}
+
+header.down .title {
+	padding-bottom: 1vh;
+}
+
+header.down .subtitle {
+	display: inline-block;
 }
