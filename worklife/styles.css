@@ -30,10 +30,19 @@ body {
 	body { margin-top: 2vh; margin-bottom: 2vh; min-height:96vh; }
 }
 
+#wrapper {
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
+	margin-bottom: calc(0 - var(--footer-height) - var(--footer-margin);
+}
+
+#push {
+	height: calc(var(--footer-height) + var(--footer-margin))
+}
+
 /* --- HEADER --- */
 
 header {
-	height: var(--header-height); 
+	/* height: var(--header-height); */
 }
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -140,9 +149,12 @@ nav#menu li:before {
 	clear: both;
 }
 
+
 .group {
 	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
-	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - var(--header-padding-top) - var(--header-padding-bottom) - var(--title-padding-bottom) - var(--footer-height) - var(--footer-margin));
+/*
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-padding-top) - var(--header-padding-bottom) - var(--title-padding-bottom) - var(--footer-height) - var(--footer-margin));
+*/
 }
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -297,6 +309,7 @@ footer {
 	font-family: ubuntu, courier;
 	color: #ccc;
 }
+
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	footer { height:2vh; margin-top: 2vh;}
