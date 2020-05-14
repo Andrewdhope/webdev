@@ -32,7 +32,7 @@ body {
 
 #wrapper {
 	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
-	margin-bottom: calc(0 - var(--footer-height) - var(--footer-margin);
+	margin-bottom: calc(0 - var(--footer-height) - var(--footer-margin));
 }
 
 #push {
