@@ -5,6 +5,7 @@
 	--header-height: 10vh;
 	--header-padding-top: 1vh;
 	--header-padding-bottom: 2vh;
+	--title-padding-bottom: 1vh;
 	--footer-height: 2vh;
 	--footer-margin: 2vh;
 	/* update IE workarounds below */
@@ -59,6 +60,11 @@ header {
 .title {	
 	font-size: 5vw;
 	letter-spacing: 1.5vw;
+	padding-bottom: var(--title-padding-bottom)
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.title { padding-bottom: 1vh;}
 }
 
 /* split class to hold styles for the main branching option */
@@ -144,11 +150,11 @@ nav#menu li:before {
 
 .group {
 	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
-	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - var(--header-padding-top) - var(--header-padding-bottom) - var(--footer-height) - var(--footer-margin));
+	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-height) - var(--header-padding-top) - var(--header-padding-bottom) - var(--title-padding-bottom) - var(--footer-height) - var(--footer-margin));
 }
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.group { min-height:78vh; }
+	.group { min-height:77vh; }
 }
 
 /* collapsible headers */
