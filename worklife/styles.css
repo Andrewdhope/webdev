@@ -347,6 +347,10 @@ a.ga, a.ga:hover {
 
 /* testing grounds */
 
+.title {
+	padding-bottom: 0vh;
+}
+
 .centered {
 	display: inline-block;
 	position: absolute;
@@ -361,14 +365,6 @@ header.down {
 	width: 50%;
 	transform: translateX(50%) translateY(50%);
 	/* standard method to center an element with absolute position */
-}
-
-header.down .title {
-	padding-bottom: 1vh;
-}
-
-header.up .centered {
-	padding-right: 2vw;
 }
 
 @media (max-width: 800px) {
