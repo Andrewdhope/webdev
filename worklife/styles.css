@@ -45,13 +45,14 @@ header.up {
 	padding-bottom: 0px;
 }
 
+/*
 header.down {
 	position: absolute;
 	bottom: 50%;
 	right: 50%;
 	transform: translateX(50%) translateY(50%);
-	/* standard method to center an element with absolute position */
 }
+*/
 
 header {
 	color: #cccccc;

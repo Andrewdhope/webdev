@@ -40,10 +40,10 @@ function jBounceUp() {
 			}
 			
 			$("header").animate({bottom: '100%', transform: 'translateX(50%) translateY(0%)'}, "slow", function() {
-				$("centered").css({"paddingRight": '2vw'}); // broken
-				$("header").animate({width: '100%'}, "slow", function() { 
-					/* paddingBottom added just to give the next divs some breathing room. */
-					$("header").removeClass("down").css({"paddingTop": headerpaddingtop, "paddingBottom": headerpaddingbottom}) // headerpaddingtotal 
+				$(".centered").animate({paddingRight: '2vw'}, "slow"); // broken
+				$("header").animate({width: '96%'}, "slow", function() { 
+					$("header").removeClass("down").css({width: '100%'})
+					$("header").css({"paddingTop": headerpaddingtop, "paddingBottom": headerpaddingbottom}) // headerpaddingtotal 
 					$("footer p").slideDown("100") /* also deploy the footer */
 					ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // takes a few seconds
 				});
