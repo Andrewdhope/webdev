@@ -40,7 +40,7 @@ function jBounceUp() {
 			}
 			
 			$("header").animate({bottom: '100%', transform: 'translateX(50%) translateY(0%)'}, "slow", function() {
-				$(".centered").animate({paddingRight: '2vw'}, "slow"); // broken
+				$(".centered").animate({paddingRight: '2vw'}, "slow");
 				$("header").animate({width: '96%'}, "slow", function() { 
 					$("header").removeClass("down").css({width: '100%'})
 					$("header").css({"paddingTop": headerpaddingtop, "paddingBottom": headerpaddingbottom}) // headerpaddingtotal 

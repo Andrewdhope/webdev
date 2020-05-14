@@ -33,7 +33,7 @@ body {
 /* --- HEADER --- */
 
 header {
-	/* height: var(--header-height); */
+	height: var(--header-height); 
 }
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -44,15 +44,6 @@ header.up {
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
-
-/*
-header.down {
-	position: absolute;
-	bottom: 50%;
-	right: 50%;
-	transform: translateX(50%) translateY(50%);
-}
-*/
 
 header {
 	color: #cccccc;
