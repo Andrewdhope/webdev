@@ -366,17 +366,24 @@ a.ga, a.ga:hover {
 	display: inline-block;
 	position: absolute;
 	right: 0;
-	padding-right: 3.5vw;
+	padding-right: 1.5vw;
 }
 
+header.down {
+	width: 50%;
+	height: 10vh;
+	transform: translateX(50%);
+	padding-top: 40vh;
+}
+ /*
 header.down {
 	position: absolute;
 	bottom: 50%;
 	right: 50%;
 	width: 50%;
 	transform: translateX(50%) translateY(50%);
-	/* standard method to center an element with absolute position */
 }
+*/
 
 @media (max-width: 800px) {
 	header.up .title {display: inline-block;}
