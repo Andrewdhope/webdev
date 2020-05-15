@@ -21,7 +21,7 @@ function jBounceUp() {
 	var headerpaddingbottom = styles.getPropertyValue('--header-padding-bottom'); // convert css variable to js
 	var totalpaddingint = parseInt(headerheight) + 2*parseInt(bodymargintop) + parseInt(headerpaddingtop) + parseInt(headerpaddingbottom); // convert to integers and sum vh values. 
 	var totalpaddingvh = totalpaddingint+"vh"; // convert to string and append vh
-	var animatePadding = {paddingTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
+	var animatePadding = {marginTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
 
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
@@ -36,14 +36,15 @@ function jBounceUp() {
 			}
 			else // better browsers
 			{
-				$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
+			//	$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
 			}
 			
-			$("header").animate({bottom: '100%', transform: 'translateX(50%) translateY(0%)'}, "slow", function() {
-				$(".centered").animate({paddingRight: '2vw'}, "slow");
-				$("header").animate({width: '96%'}, "slow", function() { 
+			$("header").animate({paddingTop: '0vh'}, "slow", function() {
+				// $(".centered").animate({paddingRight: '2vw'}, "slow");
+				// $("header").css({transform: 'translateX(0%)'}, "slow");
+				$("#wrapper").animate({width: '100%'}, "slow", function() { 
 					$("header").removeClass("down").css({width: '100%'})
-					$("header").css({"paddingTop": headerpaddingtop, "paddingBottom": headerpaddingbottom}) // headerpaddingtotal 
+					// $("header").css({"paddingTop": headerpaddingtop, "paddingBottom": headerpaddingbottom}) // headerpaddingtotal 
 					$("footer p").slideDown("100") /* also deploy the footer */
 					ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // takes a few seconds
 				});

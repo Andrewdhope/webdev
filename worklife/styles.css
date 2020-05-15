@@ -31,8 +31,10 @@ body {
 }
 
 #wrapper {
-	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom));
+	/* min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom)); */
 	margin-bottom: calc(0vh - var(--footer-height) - var(--footer-margin));
+	width: 50%;
+	margin: 0 auto;
 }
 
 #push {
@@ -364,15 +366,18 @@ a.ga, a.ga:hover {
 
 .centered {
 	display: inline-block;
-	position: absolute;
 	right: 0;
+	float: right;
 	padding-right: 1.5vw;
 }
 
 header.down {
-	width: 50%;
-	height: 10vh;
+	/*
+	width: 50%; 
 	transform: translateX(50%);
+	*/
+	height: 10vh;
+
 	padding-top: 40vh;
 }
  /*
