@@ -31,7 +31,7 @@ function jBounceUp() {
 		// *sigh* IE workaround
 		if (window.ActiveXObject !== undefined)
 		{
-			$("header").animate({paddingTop: "6.5vh"}, "slow"); // need to hardcode the paddingTop value for IE
+			$("header").animate({paddingTop: "44vh"}, "slow"); // need to hardcode the paddingTop value for IE
 			// ...one problem with hardcoding is you can't really trace why its set that way
 		}
 		else // better browsers
@@ -44,7 +44,7 @@ function jBounceUp() {
 			$("#wrapper").animate({width: '100%'}, "slow") 
 			$("footer p").slideDown("100") 
 			$(".centered").animate({paddingRight: '0vw'}, "slow", function() {
-				$("header").removeClass("down").css({width: '100%'}) // .down deprecated
+				$("header").removeClass("down").css({width: '100%'}) // .down class deprecated
 			});
 		});	
 	}
