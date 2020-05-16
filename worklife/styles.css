@@ -37,10 +37,6 @@ body {
 	margin: 0 auto;
 }
 
-#push {
-	height: calc(var(--footer-height) + var(--footer-margin))
-}
-
 /* --- HEADER --- */
 
 header {
@@ -64,12 +60,12 @@ header {
 	color: #cccccc;
 }
 
-/*
-.centered { 
-	text-align: center;
-	height: inherit;
+.centered {
+	display: inline-block;
+	right: 0;
+	float: right;
+	padding-right: 1.5vw;
 }
-*/
 
 /* --- MENU --- */
 
@@ -336,17 +332,6 @@ a.ga, a.ga:hover {
 }
 
 /* testing grounds */
-
-.title {
-	padding-bottom: 1vh;
-}
-
-.centered {
-	display: inline-block;
-	right: 0;
-	float: right;
-	padding-right: 1.5vw;
-}
 
 @media (max-width: 800px) {
 	header.up .title {display: inline-block;}
