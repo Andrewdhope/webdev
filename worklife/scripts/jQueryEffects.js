@@ -15,39 +15,37 @@ function jBounceUp() {
 	/* sadly, the css variables are not well supported by IE so there is a workaround to hardcode paddingTop */
 	
 	var styles = window.getComputedStyle(document.documentElement); // get all styles
-	var headerheight = styles.getPropertyValue('--header-height'); // convert css variable to js
-	var bodymargintop = styles.getPropertyValue('--body-margin-top'); // convert css variable to js
 	var headerpaddingtop = styles.getPropertyValue('--header-padding-top'); // convert css variable to js
 	var headerpaddingbottom = styles.getPropertyValue('--header-padding-bottom'); // convert css variable to js
-	// removed parseInt(headerheight) from totalpaddingint
-	var totalpaddingint = 2*parseInt(bodymargintop) + parseInt(headerpaddingtop) + parseInt(headerpaddingbottom); // convert to integers and sum vh values. 
+	var totalpaddingint = parseInt(headerpaddingtop) + 2*parseInt(headerpaddingbottom) // controls how much the header dips before rising
 	var totalpaddingvh = totalpaddingint+"vh"; // convert to string and append vh
-	var animatePadding = {marginTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
+	var animatePadding = {paddingTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
 
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
 		ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']);
 	} else {
-			
-			// *sigh* IE workaround
-			if (window.ActiveXObject !== undefined)
-			{
-				$("header").animate({paddingTop: "6.5vh"}, "slow"); // need to hardcode the paddingTop value for IE
-				// ...one problem with hardcoding is you can't really trace why its set that way
-			}
-			else // better browsers
-			{
-			//	$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
-			}
-			
-			$("header").animate({paddingTop: '0vh', marginTop: '0vh'}, "slow", function() {
-				$("#wrapper").animate({width: '100%'}, "slow", function() { 
-					$(".centered").animate({paddingRight: '0vw'}, "slow")
-					$("header").removeClass("down").css({width: '100%'})
-					// $("header").css({"paddingTop": headerpaddingtop, "paddingBottom": headerpaddingbottom}) // headerpaddingtotal 
-					$("footer p").slideDown("100") /* also deploy the footer */
-					ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // takes a few seconds
-				});
-			});	
+	
+		$("header").addClass("up");
+		
+		// *sigh* IE workaround
+		if (window.ActiveXObject !== undefined)
+		{
+			$("header").animate({paddingTop: "6.5vh"}, "slow"); // need to hardcode the paddingTop value for IE
+			// ...one problem with hardcoding is you can't really trace why its set that way
+		}
+		else // better browsers
+		{
+			$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
+		}
+		
+		$("header").animate({paddingTop: '0vh'}, "slow", function() {
+		ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // takes a few seconds, async
+			$("#wrapper").animate({width: '100%'}, "slow") 
+			$("footer p").slideDown("100") 
+			$(".centered").animate({paddingRight: '0vw'}, "slow", function() {
+				$("header").removeClass("down").css({width: '100%'}) // .down deprecated
+			});
+		});	
 	}
 }

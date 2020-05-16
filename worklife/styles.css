@@ -3,7 +3,7 @@
 	--body-margin-top: 2vh;
 	--body-margin-bottom: 2vh;
 	--header-height: 10vh;
-	--header-padding-top: 1vh;
+	--header-padding-top: 40vh;
 	--header-padding-bottom: 2vh;
 	--title-padding-bottom: 1vh;
 	--footer-height: 2vh;
@@ -44,20 +44,9 @@ body {
 /* --- HEADER --- */
 
 header {
-	/* height: var(--header-height); */
-}
-/* IE10+ workaround */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	header { min-height:1.5vh; }
-}
-
-header.up {
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-
-header {
 	color: #cccccc;
+	padding-top: var(--header-padding-top);
+	padding-bottom: var(--header-padding-bottom);
 }
 
 .title {	
@@ -149,18 +138,6 @@ nav#menu li:before {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-
-.group {
-	/* 100vh - top and bottom margins on the body - total height of header after animated padding - total height of footer with margin) */
-/*
-	min-height: calc(100vh - var(--body-margin-top) - var(--body-margin-bottom) - var(--header-padding-top) - var(--header-padding-bottom) - var(--title-padding-bottom) - var(--footer-height) - var(--footer-margin));
-*/
-}
-/* IE10+ workaround */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.group { min-height:77vh; }
 }
 
 /* collapsible headers */
@@ -370,25 +347,6 @@ a.ga, a.ga:hover {
 	float: right;
 	padding-right: 1.5vw;
 }
-
-header.down {
-	/*
-	width: 50%; 
-	transform: translateX(50%);
-	*/
-	height: 10vh;
-
-	padding-top: 40vh;
-}
- /*
-header.down {
-	position: absolute;
-	bottom: 50%;
-	right: 50%;
-	width: 50%;
-	transform: translateX(50%) translateY(50%);
-}
-*/
 
 @media (max-width: 800px) {
 	header.up .title {display: inline-block;}
