@@ -50,7 +50,7 @@ header {
 
 
 .title {	
-	font-size: 5vw;
+	font-size: 5vh;
 	letter-spacing: 1.5vw;
 	padding-bottom: var(--title-padding-bottom)
 }
