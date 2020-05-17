@@ -178,11 +178,11 @@
 
 	/* expand_more and expand_less icons */
 
-	.bullet span.material-icons {
+	.bullet .material-icons {
 		vertical-align: text-bottom;
 	}
 
-	.line span.material-icons {
+	.line .material-icons {
 		vertical-align: middle;
 	}
 
@@ -333,11 +333,8 @@
 		.entry {white-space: nowrap; padding-bottom: 1vh;}
 		.subtitle { font-size: calc(1rem - 0.5vw);}
 		.centered { font-size: calc(1rem - 0.5vw);}
+		.material-icons {font-size: 12px;}
+		.bullet .material-icons {vertical-align: initial;}
 		footer { font-size: calc(1rem - 0.5vw);}
-	}
-
-	@media (max-width: 600px) {
-		span.material-icons {font-size: 12px;}
-		.bullet span.material-icons {vertical-align: initial;}
 	}
 
