@@ -38,12 +38,11 @@ function jBounceUp() {
 		}
 		
 		$("header").animate({paddingTop: '0vh'}, "slow", function() {
-		ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // takes a few seconds, async
+			ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // takes a few seconds, async
 			$("#wrapper").animate({width: '100%'}, "slow") 
-			$("footer p").slideDown("100") 
 			$(".centered").animate({paddingRight: '0vw'}, "slow", function() {
-				$(".subtitle").fadeIn("100") 
-				$("header").removeClass("down").css({width: '100%'}) // .down class deprecated
+				$("footer p").slideDown("100")
+				$(".subtitle").fadeIn("10") 
 			});
 		});	
 	}
