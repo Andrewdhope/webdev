@@ -42,7 +42,8 @@ function jBounceUp() {
 			$("#wrapper").animate({width: '100%'}, "slow") 
 			$(".centered").animate({paddingRight: '0vw'}, "slow", function() {
 				$("footer p").slideDown("100")
-				$(".subtitle").fadeIn("10") 
+				$(".subtitle").fadeIn("10")
+				$("header").removeClass("down")
 			});
 		});	
 	}
