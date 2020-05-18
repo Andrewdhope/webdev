@@ -65,7 +65,7 @@
 	}
 
 	.centered {
-		display: inline-block;
+		display: inline;
 		float: right;
 		padding-right: 1.5vw;
 	}
