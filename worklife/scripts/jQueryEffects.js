@@ -42,6 +42,7 @@ function jBounceUp() {
 			$("#wrapper").animate({width: '100%'}, "slow") 
 			$("footer p").slideDown("100") 
 			$(".centered").animate({paddingRight: '0vw'}, "slow", function() {
+				$(".subtitle").fadeIn("100") 
 				$("header").removeClass("down").css({width: '100%'}) // .down class deprecated
 			});
 		});	
