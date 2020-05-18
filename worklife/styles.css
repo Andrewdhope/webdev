@@ -27,7 +27,7 @@
 
 	#wrapper {
 		min-height: calc(100vh - 2*var(--body-margin-top) - 2*var(--body-margin-bottom));
-		width: 45vw;
+		width: max-content;
 		margin: 0 auto;
 	}
 	/* IE10+ workaround */
