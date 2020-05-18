@@ -228,7 +228,7 @@
 		padding-right: 1%;
 	}
 
-	span.role {
+	.role {
 		padding-left: 1%;
 		border-left-width: 1px;
 		border-left-style: dashed;
@@ -310,8 +310,8 @@
 	/* Responsive overrides */
 	
 	@media (max-width: 850px) {
-		header.down .subtitle {display: none;}
-		span.role { display: block; padding-left: 2.5%; margin-top: 2.5%;}
+		.subtitle {display: none;}
+		.role { display: block; padding-left: 2.5%; margin-top: 2.5%;}
 		.role-wrap .role { display: block; border-left-width: 1px; border-left-style: dashed; padding-left: 2.5%; margin-top: 2.5%; margin-bottom: 2.5%;}
 	}
 
