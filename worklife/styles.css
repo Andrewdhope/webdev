@@ -315,6 +315,7 @@
 	/* Responsive overrides */
 	
 	@media (max-width: 850px) {
+		.down .subtitle {display: none;}
 		.role { display: block; padding-left: 2.5%; margin-top: 2.5%;}
 		.role-wrap .role { display: block; border-left-width: 1px; border-left-style: dashed; padding-left: 2.5%; margin-top: 2.5%; margin-bottom: 2.5%;}
 	}
@@ -335,9 +336,9 @@
 		.entry {white-space: nowrap; padding-bottom: 1vh;}
 		.subtitle { font-size: calc(1rem - 0.5vw); vertical-align: top;}
 		.centered { font-size: calc(1rem - 0.5vw);}
-		.subtitle {display: none;} /* trying this here */
 		.material-icons {font-size: 12px;}
 		.bullet .material-icons {vertical-align: initial;}
+		.subtitle {display: none;} /* trying this here */
 		footer { font-size: calc(1rem - 0.5vw);}
 		footer p.copyright {visibility: hidden;} 
 	}
