@@ -16,7 +16,7 @@ function jBounceUp() {
 	let headerpaddingtop = styles.getPropertyValue('--header-padding-top'); // convert css variable to js
 	let headerpaddingbottomvh = styles.getPropertyValue('--header-padding-bottom-vh'); // convert css variable to js
 	let headerpaddingbottomvw = styles.getPropertyValue('--header-padding-bottom-vw'); // convert css variable to js
-	let totalpaddingint = parseInt(headerpaddingtop) + parseInt(headerpaddingbottomvh) + parseInt(headerpaddingbottomvw) // controls how much the header dips before rising
+	let totalpaddingint = parseInt(headerpaddingtop) + parseInt(headerpaddingbottomvh) + 2*parseInt(headerpaddingbottomvw) // controls how much the header dips before rising
 	let totalpaddingvh = totalpaddingint+"vh"; // convert to string and append vh
 	let animatePadding = {paddingTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
 
@@ -30,6 +30,7 @@ function jBounceUp() {
 		// *sigh* IE workaround
 		if (window.ActiveXObject !== undefined)
 		{
+		//	abandoning the initial animation for IE. It worked fairly well but had issues with the width of the wrapper. Animation is still in Edge. 
 		//	$("header").animate({paddingTop: "44vh"}, "slow"); // need to hardcode the paddingTop value for IE (from totalpaddingvint) 
 	
 		}

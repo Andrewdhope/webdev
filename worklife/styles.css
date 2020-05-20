@@ -46,9 +46,9 @@
 
 	/* IE10+ workaround */
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		/* abandon the animation for IE, just start at the top */
+		/* abandon the animation for IE, just start with the header up */
 		/* give extra padding-bottom for IE, better spread than squished */
-		header { padding-top: 0vh; padding-bottom: calc(2vh + 2vw); } 
+		header { padding-top: 0vh; padding-bottom: calc(2.5vh + 2.5vw); } 
 	}
 
 
