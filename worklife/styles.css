@@ -1,355 +1,360 @@
 
-	:root {
-		--body-margin-top: 2vh;
-		--body-margin-bottom: 2vh;
-		--header-height: 10vh; 
-		--header-padding-top: 40vh;
-		--header-padding-bottom-vh: 1.5vh;
-		--header-padding-bottom-vw: 1.5vw;
-		--title-padding-bottom: 1vh;
-		--footer-height: 2vh;
-		--footer-margin: 2vh;
-		/* update IE workarounds below */
-	}
+:root {
+	--body-margin-top: 2vh;
+	--body-margin-bottom: 2vh;
+	--header-height: 10vh; 
+	--header-padding-top: 40vh;
+	--header-padding-bottom-vh: 1.5vh;
+	--header-padding-bottom-vw: 1.5vw;
+	--title-padding-bottom: 1vh;
+	--footer-height: 2vh;
+	--footer-margin: 2vh;
+	/* update IE workarounds below */
+}
 
-	body {
-		margin-top: var(--body-margin-top);
-		margin-bottom: var(--body-margin-bottom);
-		margin-left: 2vw;
-		margin-right: 2vw;
-		font-size: calc(1rem + 0.25vw);
-		font-family: Ubuntu, Courier;
-		background-color: green;
-	}
-	/* IE10+ workaround */
-	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		body { margin-top: 2vh; margin-bottom: 2vh; }
-	}
+html {
+	height: -webkit-fill-available;
+}
 
-	#wrapper {
-		min-height: calc(100vh - 2*var(--body-margin-top) - 2*var(--body-margin-bottom));
-		width: max-content;
-		margin: 0 auto;
-	}
-	/* IE10+ workaround */
-	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		#wrapper { min-height: 92vh; } 
-	}
+body {
+	min-height: -webkit-fill-available;
+	margin-top: var(--body-margin-top);
+	margin-bottom: var(--body-margin-bottom);
+	margin-left: 2vw;
+	margin-right: 2vw;
+	font-size: calc(1rem + 0.25vw);
+	font-family: Ubuntu, Courier;
+	background-color: green;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	body { margin-top: 2vh; margin-bottom: 2vh; }
+}
 
-	/* --- HEADER --- */
+#wrapper {
+	min-height: calc(100vh - 2*var(--body-margin-top) - 2*var(--body-margin-bottom));
+	width: max-content;
+	margin: 0 auto;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	#wrapper { min-height: 92vh; } 
+}
 
-	header {
-		color: #cccccc;
-		padding-top: var(--header-padding-top);
-		padding-bottom: calc(1rem + var(--header-padding-bottom-vh) + var(--header-padding-bottom-vw));
-	}
+/* --- HEADER --- */
 
-	/* IE10+ workaround */
-	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		/* abandon the animation for IE, just start with the header up */
-		/* give extra padding-bottom for IE, better spread than squished */
-		header { padding-top: 0vh; padding-bottom: calc(2.5vh + 2.5vw); } 
-	}
+header {
+	color: #cccccc;
+	padding-top: var(--header-padding-top);
+	padding-bottom: calc(1rem + var(--header-padding-bottom-vh) + var(--header-padding-bottom-vw));
+}
+
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	/* abandon the animation for IE, just start with the header up */
+	/* give extra padding-bottom for IE, better spread than squished */
+	header { padding-top: 0vh; padding-bottom: calc(2.5vh + 2.5vw); } 
+}
 
 
-	.title {	
-		font-size: calc(1rem + 3vw);
-		letter-spacing: 1.5vw;
-		padding-bottom: var(--title-padding-bottom)
-	}
-	/* IE10+ workaround */
-	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		.title { padding-bottom: 1vh; }
-	}
+.title {	
+	font-size: calc(1rem + 3vw);
+	letter-spacing: 1.5vw;
+	padding-bottom: var(--title-padding-bottom)
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.title { padding-bottom: 1vh; }
+}
 
-	/* split class to hold styles for the main branching option */
-	.split {
-		color: #cccccc;
-	}
+/* split class to hold styles for the main branching option */
+.split {
+	color: #cccccc;
+}
 
-	.centered {
-		display: inline;
-		float: right;
-		padding-right: 1.5vw;
-	}
-	/* IE10+ workaround */
-	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		.centered { padding-right: 0vw; }
-	}
+.centered {
+	display: inline;
+	float: right;
+	padding-right: 1.5vw;
+}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.centered { padding-right: 0vw; }
+}
 
-	
-	.subtitle {
-		float: left;
-	}
 
-	/* --- MENU --- */
+.subtitle {
+	float: left;
+}
 
-	li.menulist {
-		padding: 1px 0px 1px 0px;
-	}
+/* --- MENU --- */
 
-	li.menulist a.selected {
-		font-weight: bold;
-	}
+li.menulist {
+	padding: 1px 0px 1px 0px;
+}
 
-	/* --- GENERAL --- */ 
+li.menulist a.selected {
+	font-weight: bold;
+}
 
-	a {
-		color: #cccccc;
-		text-decoration: none;
-	}
+/* --- GENERAL --- */ 
 
-	a:hover {
-		text-decoration: underline;
-	}
+a {
+	color: #cccccc;
+	text-decoration: none;
+}
 
-	/* --- BODY --- */ 
-	
-	section#content {
-		width: 75%;
-		float: left;
-		padding-bottom: 4%;
-		box-sizing: border-box;
-		background-color: green;
-		color: #cccccc;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	section#content.border {
-		border-width: 0px 0px 1px 1px;
-		border-style: dashed;
-	}
+/* --- BODY --- */ 
 
-	nav#menu {
-		width: 25%;
-		float: right;
-		padding-bottom: 1%;
-		box-sizing: border-box;
-		background-color: green;
-		color: #cccccc;
-	}
+section#content {
+	width: 75%;
+	float: left;
+	padding-bottom: 4%;
+	box-sizing: border-box;
+	background-color: green;
+	color: #cccccc;
+}
 
-	nav#menu.border {
-		border-width: 0px 1px 1px 0px;
-		border-style: dashed;
-	}
+section#content.border {
+	border-width: 0px 0px 1px 1px;
+	border-style: dashed;
+}
 
-	nav#menu ul {
-		list-style-type: none;
-		padding-left: 10%;
-	}
+nav#menu {
+	width: 25%;
+	float: right;
+	padding-bottom: 1%;
+	box-sizing: border-box;
+	background-color: green;
+	color: #cccccc;
+}
 
-	nav#menu li:before {
-		content: " - ";
-		padding-right: 10px;
-	}
+nav#menu.border {
+	border-width: 0px 1px 1px 0px;
+	border-style: dashed;
+}
 
-	/* positioning of the group class to keep the footer stuck to the bottom */
+nav#menu ul {
+	list-style-type: none;
+	padding-left: 10%;
+}
 
-	.group:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+nav#menu li:before {
+	content: " - ";
+	padding-right: 10px;
+}
 
-	/* collapsible headers */
+/* positioning of the group class to keep the footer stuck to the bottom */
 
-	h2 {
-		font-size: calc(1rem + 1vw);
-	}
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
-	h3 {
-		font-size: calc(1rem + 0.5vw); 
-	}
+/* collapsible headers */
 
-	h2, h3 {
-		display: inline-block;
-	}
+h2 {
+	font-size: calc(1rem + 1vw);
+}
 
-	h2:hover, h3:hover {
-		text-decoration: underline;
-	}
+h3 {
+	font-size: calc(1rem + 0.5vw); 
+}
 
-	h2.collapsible, h3.collapsible {
-		cursor: pointer;
-	}
+h2, h3 {
+	display: inline-block;
+}
 
-	h2.empty:hover, h3.empty:hover {
-		text-decoration: none;
-	}
+h2:hover, h3:hover {
+	text-decoration: underline;
+}
 
-	h2.empty, h3.empty` {
-		cursor: default;
-	}
+h2.collapsible, h3.collapsible {
+	cursor: pointer;
+}
 
-	.lineset {
-		display: none; /* needed for slideDown */
-		border-style: dashed;
-		border-width: 0px 0px 0px 1px;
-		padding-left: 5%;
-	}
+h2.empty:hover, h3.empty:hover {
+	text-decoration: none;
+}
 
-	/* expand_more and expand_less icons */
+h2.empty, h3.empty` {
+	cursor: default;
+}
 
-	.bullet .material-icons {
-		vertical-align: text-bottom;
-	}
+.lineset {
+	display: none; /* needed for slideDown */
+	border-style: dashed;
+	border-width: 0px 0px 0px 1px;
+	padding-left: 5%;
+}
 
-	.line .material-icons {
-		vertical-align: middle;
-	}
+/* expand_more and expand_less icons */
 
-	/* indentations */
+.bullet .material-icons {
+	vertical-align: text-bottom;
+}
 
-	.bullet {
-		padding-left: 10%;
-	}
+.line .material-icons {
+	vertical-align: middle;
+}
 
-	.line {
-		display: none; /* needed for jQuery effects */
-		padding-left: 5%; 
-	}
+/* indentations */
 
-	.entry {
-		display: none; /* needed for jQuery effects */
-		padding-top: 1px;
-		padding-bottom: 1px;
-		padding-left: 5%;
-		padding-right: 1%; /* originally for the arenas dropdown */
-	}
+.bullet {
+	padding-left: 10%;
+}
 
-	.entryset {
-		display: none; /* needed for jQuery effects */
-		padding-left: 7.5%;
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
+.line {
+	display: none; /* needed for jQuery effects */
+	padding-left: 5%; 
+}
 
-	/* a few tailored styles for the arenas dropdown */
-	#hoops .entryset.horiz  {
-		text-align: right;  
-		border-right-width: 1px;
-		border-right-style: dashed;
-		padding-left: 0px;
-	}
+.entry {
+	display: none; /* needed for jQuery effects */
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 5%;
+	padding-right: 1%; /* originally for the arenas dropdown */
+}
 
-	#arenas {
-		white-space: nowrap; /* don't wrap the dropdown arrow */
-	}
+.entryset {
+	display: none; /* needed for jQuery effects */
+	padding-left: 7.5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
-	.entry a, .entry span {
-		padding-right: 1%;
-	}
+/* a few tailored styles for the arenas dropdown */
+#hoops .entryset.horiz  {
+	text-align: right;  
+	border-right-width: 1px;
+	border-right-style: dashed;
+	padding-left: 0px;
+}
 
-	.role {
-		padding-left: 1%;
-		border-left-width: 1px;
-		border-left-style: dashed;
-	}
+#arenas {
+	white-space: nowrap; /* don't wrap the dropdown arrow */
+}
 
-	.role-wrap {
-		margin: 1px 0px 0px 1px;
-	}
+.entry a, .entry span {
+	padding-right: 1%;
+}
 
-	.role-wrap .role {
-		padding-left: 1%;
-		padding-right: 1%;
-		border-left-width: 0px;
-	}
+.role {
+	padding-left: 1%;
+	border-left-width: 1px;
+	border-left-style: dashed;
+}
 
-	.role-wrap .role:first-child {
-		border-left-width: 1px;
-		border-left-style: dashed;
-	}
+.role-wrap {
+	margin: 1px 0px 0px 1px;
+}
 
-	span.multi-entry {
-		padding-right: 0%;
-	}
+.role-wrap .role {
+	padding-left: 1%;
+	padding-right: 1%;
+	border-left-width: 0px;
+}
 
-	a.multi-entry {
-		padding-left: 0.5%;
-		padding-right: 0%;
-	}
+.role-wrap .role:first-child {
+	border-left-width: 1px;
+	border-left-style: dashed;
+}
 
-	/* general effects */
+span.multi-entry {
+	padding-right: 0%;
+}
 
-	.entry .multi-entry:link, .entry .multi-entry:visited  {
-		text-decoration: none;
-	}
+a.multi-entry {
+	padding-left: 0.5%;
+	padding-right: 0%;
+}
 
-	.entry a.multi-entry:hover {
-		text-decoration: underline;
-	}
+/* general effects */
 
-	.entry a:link, .entry a:visited, .line a:link, .line a:visited {
-		text-decoration: underline;
-	}
+.entry .multi-entry:link, .entry .multi-entry:visited  {
+	text-decoration: none;
+}
 
-	sup {
-		white-space: nowrap; 
-	}
+.entry a.multi-entry:hover {
+	text-decoration: underline;
+}
 
-	/* --- FOOTER --- */
+.entry a:link, .entry a:visited, .line a:link, .line a:visited {
+	text-decoration: underline;
+}
 
-	footer {
-		width: 100%;
-		height: var(--footer-height);
-		margin-top: var(--footer-margin);
-		text-align: right;
-		font-size: calc(1rem - 0.25vw);
-		font-family: ubuntu, courier;
-		color: #ccc;
-	}
+sup {
+	white-space: nowrap; 
+}
 
-	/* IE10+ workaround */
-	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		footer { height:2vh; margin-top: 2vh;}
-	}
+/* --- FOOTER --- */
 
-	footer p {
-		display: none;
-		margin: 0px;
-	}
+footer {
+	width: 100%;
+	height: var(--footer-height);
+	margin-top: var(--footer-margin);
+	text-align: right;
+	font-size: calc(1rem - 0.25vw);
+	font-family: ubuntu, courier;
+	color: #ccc;
+}
 
-	footer p.footlinks {
-		float: left;
-	}
+/* IE10+ workaround */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	footer { height:2vh; margin-top: 2vh;}
+}
 
-	a.ga, a.ga:hover {
-		text-decoration: none;
-		cursor: text;
-	}
+footer p {
+	display: none;
+	margin: 0px;
+}
 
-	/* Responsive overrides */
-	
-	@media (max-width: 850px) {
-		.down .subtitle {display: none;}
-		.role { display: block; padding-left: 2.5%; margin-top: 2.5%;}
-		.role-wrap .role { display: block; border-left-width: 1px; border-left-style: dashed; padding-left: 2.5%; margin-top: 2.5%; margin-bottom: 2.5%;}
-	}
-	
-	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 850px) {
-		/* dont hide the subtitle in IE, since the header will start on top */
-		.down .subtitle {display: block;}
-	}
-	
-	@media (max-width: 600px) {
-		nav#menu {width: 35%;}
-		section#content {width: 65%;}
-		nav#menu ul {padding-left: 0%; margin-block-start: auto;}
-		.bullet {padding-left: 7.5%;}
-		.lineset {padding-left: 5%;}
-		.line {width: max-content;}
-		.line {padding-left: 2.5%;}
-		.entryset {width: max-content;}
-		.entryset {padding-left: 7.5%;}
-		.entry {width: max-content;}
-		.entry {padding-left: 0%;}
-		.entry {font-size: calc(1rem - 0.5vw);}
-		.entry {white-space: nowrap; padding-bottom: 1vh;}
-		.subtitle { font-size: calc(1rem - 0.5vw); vertical-align: top;}
-		.centered { font-size: calc(1rem - 0.5vw);}
-		.material-icons {font-size: 12px;}
-		.bullet .material-icons {vertical-align: middle;}
-		footer { font-size: calc(1rem - 0.5vw);}
-		footer p.copyright {visibility: hidden;} 
-	}
+footer p.footlinks {
+	float: left;
+}
+
+a.ga, a.ga:hover {
+	text-decoration: none;
+	cursor: text;
+}
+
+/* Responsive overrides */
+
+@media (max-width: 850px) {
+	.down .subtitle {display: none;}
+	.role { display: block; padding-left: 2.5%; margin-top: 2.5%;}
+	.role-wrap .role { display: block; border-left-width: 1px; border-left-style: dashed; padding-left: 2.5%; margin-top: 2.5%; margin-bottom: 2.5%;}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 850px) {
+	/* dont hide the subtitle in IE, since the header will start on top */
+	.down .subtitle {display: block;}
+}
+
+@media (max-width: 600px) {
+	nav#menu {width: 35%;}
+	section#content {width: 65%;}
+	nav#menu ul {padding-left: 0%; margin-block-start: auto;}
+	.bullet {padding-left: 7.5%;}
+	.lineset {padding-left: 5%;}
+	.line {width: max-content;}
+	.line {padding-left: 2.5%;}
+	.entryset {width: max-content;}
+	.entryset {padding-left: 7.5%;}
+	.entry {width: max-content;}
+	.entry {padding-left: 0%;}
+	.entry {font-size: calc(1rem - 0.5vw);}
+	.entry {white-space: nowrap; padding-bottom: 1vh;}
+	.subtitle { font-size: calc(1rem - 0.5vw); vertical-align: top;}
+	.centered { font-size: calc(1rem - 0.5vw);}
+	.material-icons {font-size: 12px;}
+	.bullet .material-icons {vertical-align: middle;}
+	footer { font-size: calc(1rem - 0.5vw);}
+	footer p.copyright {visibility: hidden;} 
+}
