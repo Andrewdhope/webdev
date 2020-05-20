@@ -40,7 +40,6 @@
 	header {
 		color: #cccccc;
 		padding-top: var(--header-padding-top);
-		padding-bottom: var(--header-padding-bottom);
 	}
 
 	/* IE10+ workaround */
@@ -69,6 +68,10 @@
 		float: right;
 		padding-right: 1.5vw;
 	}
+	
+	.subtitle {
+		float: left;
+	}
 
 	/* --- MENU --- */
 
@@ -93,6 +96,10 @@
 
 	/* --- BODY --- */ 
 
+	.group {
+		padding-top: var(--header-padding-bottom); /* change to --group-padding-top
+	}
+	
 	section#content {
 		width: 75%;
 		float: left;
