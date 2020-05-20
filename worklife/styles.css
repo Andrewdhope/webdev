@@ -4,8 +4,8 @@
 		--body-margin-bottom: 2vh;
 		--header-height: 10vh; 
 		--header-padding-top: 40vh;
-		--header-padding-bottom-vh: 1vh;
-		--header-padding-bottom-vw: 1vw;
+		--header-padding-bottom-vh: 1.5vh;
+		--header-padding-bottom-vw: 1.5vw;
 		--title-padding-bottom: 1vh;
 		--footer-height: 2vh;
 		--footer-margin: 2vh;
@@ -46,7 +46,7 @@
 
 	/* IE10+ workaround */
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		header { padding-top: 40vh; padding-bottom: 2vh; }
+		header { padding-top: 40vh; padding-bottom: calc(1.5vh + 1.5vw); }
 	}
 
 
