@@ -337,8 +337,7 @@
 		.subtitle { font-size: calc(1rem - 0.5vw); vertical-align: top;}
 		.centered { font-size: calc(1rem - 0.5vw);}
 		.material-icons {font-size: 12px;}
-		.bullet .material-icons {vertical-align: initial;}
-		.subtitle {display: none;} /* trying this here */
+		.bullet .material-icons {vertical-align: middle;}
 		footer { font-size: calc(1rem - 0.5vw);}
 		footer p.copyright {visibility: hidden;} 
 	}
