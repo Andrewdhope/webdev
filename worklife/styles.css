@@ -40,6 +40,7 @@
 	header {
 		color: #cccccc;
 		padding-top: var(--header-padding-top);
+		padding-bottom: var(--header-padding-bottom);
 	}
 
 	/* IE10+ workaround */
