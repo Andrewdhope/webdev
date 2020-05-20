@@ -72,6 +72,11 @@
 		float: right;
 		padding-right: 1.5vw;
 	}
+	/* IE10+ workaround */
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		.centered { padding-right: 0vw; }
+	}
+
 	
 	.subtitle {
 		float: left;
