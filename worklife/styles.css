@@ -46,7 +46,9 @@
 
 	/* IE10+ workaround */
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		header { padding-top: 40vh; padding-bottom: calc(2vh + 2vw); } /* give extra padding for IE, better spread than squished */
+		/* abandon the animation for IE, just start at the top */
+		/* give extra padding-bottom for IE, better spread than squished */
+		header { padding-top: 0vh; padding-bottom: calc(2vh + 2vw); } 
 	}
 
 
@@ -319,7 +321,11 @@
 		.role { display: block; padding-left: 2.5%; margin-top: 2.5%;}
 		.role-wrap .role { display: block; border-left-width: 1px; border-left-style: dashed; padding-left: 2.5%; margin-top: 2.5%; margin-bottom: 2.5%;}
 	}
-
+	
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 850px) {
+		.down .subtitle {display: block;)
+	}
+	
 	@media (max-width: 600px) {
 		nav#menu {width: 35%;}
 		section#content {width: 65%;}
