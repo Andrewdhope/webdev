@@ -46,7 +46,7 @@
 
 	/* IE10+ workaround */
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-		header { padding-top: 40vh; padding-bottom: calc(1.5vh + 1.5vw); }
+		header { padding-top: 40vh; padding-bottom: calc(2vh + 2vw); } /* give extra padding for IE, better spread than squished */
 	}
 
 
