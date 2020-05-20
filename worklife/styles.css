@@ -329,7 +329,7 @@
 	
 	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 850px) {
 		/* dont hide the subtitle in IE, since the header will start on top */
-		.down .subtitle {display: block;)
+		.down .subtitle {display: block;}
 	}
 	
 	@media (max-width: 600px) {
