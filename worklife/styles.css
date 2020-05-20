@@ -97,7 +97,7 @@
 	/* --- BODY --- */ 
 
 	.group {
-		padding-top: var(--header-padding-bottom); /* change to --group-padding-top
+		padding-top: var(--header-padding-bottom); /* change to --group-padding-top */
 	}
 	
 	section#content {
