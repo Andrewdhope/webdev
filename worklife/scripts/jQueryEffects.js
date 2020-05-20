@@ -14,8 +14,9 @@ function jBounceUp() {
 	
 	let styles = window.getComputedStyle(document.documentElement); // get all styles
 	let headerpaddingtop = styles.getPropertyValue('--header-padding-top'); // convert css variable to js
-	let headerpaddingbottom = styles.getPropertyValue('--header-padding-bottom'); // convert css variable to js
-	let totalpaddingint = parseInt(headerpaddingtop) + 2*parseInt(headerpaddingbottom) // controls how much the header dips before rising
+	let headerpaddingbottomvh = styles.getPropertyValue('--header-padding-bottom-vh'); // convert css variable to js
+	let headerpaddingbottomvw = styles.getPropertyValue('--header-padding-bottom-vw'); // convert css variable to js
+	let totalpaddingint = parseInt(headerpaddingtop) + parseInt(headerpaddingbottomvh) + parseInt(headerpaddingbottomvw) // controls how much the header dips before rising
 	let totalpaddingvh = totalpaddingint+"vh"; // convert to string and append vh
 	let animatePadding = {paddingTop: totalpaddingvh}; // make a jQuery PlainObject for the animate function
 

@@ -4,7 +4,8 @@
 		--body-margin-bottom: 2vh;
 		--header-height: 10vh; 
 		--header-padding-top: 40vh;
-		--header-padding-bottom: calc(1vh + 1vw);
+		--header-padding-bottom-vh: 1vh;
+		--header-padding-bottom-vw: 1vw;
 		--title-padding-bottom: 1vh;
 		--footer-height: 2vh;
 		--footer-margin: 2vh;
@@ -40,7 +41,7 @@
 	header {
 		color: #cccccc;
 		padding-top: var(--header-padding-top);
-		padding-bottom: calc(1rem + var(--header-padding-bottom));
+		padding-bottom: calc(1rem + var(--header-padding-bottom-vh) + var(--header-padding-bottom-vw));
 	}
 
 	/* IE10+ workaround */
