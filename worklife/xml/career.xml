@@ -93,8 +93,8 @@
 			<line>systems design
 				<entry>framework
 					<link>https://dotnet.microsoft.com/</link>
-					<!-- https://serverless.css-tricks.com/services/major -->
 				</entry>
+				<!-- https://serverless.css-tricks.com/services/major -->
 			</line>
 			<line>process optimization
 				<entry>strategy
@@ -124,6 +124,7 @@
 				<entry>Data Visualization Society
 					<link>https://www.datavisualizationsociety.com/</link>
 				</entry>
+				<!-- https://r-graphics.org/ -->
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
@@ -146,8 +147,8 @@
 			<line>presentation
 				<entry>HTML5
 					<linkset>
-						<link>https://developer.mozilla.org/en-US/</link>
 						<link>https://css-tricks.com/</link>
+						<link>https://developer.mozilla.org/en-US/</link>
 					</linkset>
 				</entry>
 			</line>
@@ -174,6 +175,7 @@
 					<role>application engineer</role>
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
 				</entry>
+				<!-- https://www.opennotes.org/about/ -->
 			</line>
 			<line>Stanford Health Care
 				<entry>patient scheduling
