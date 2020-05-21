@@ -12,7 +12,12 @@
 	/* update IE workarounds below */
 }
 
+html {
+	height: -webkit-fill-available;
+}
+
 body {
+	min-height: -webkit-fill-available;
 	margin-top: var(--body-margin-top);
 	margin-bottom: var(--body-margin-bottom);
 	margin-left: 2vw;
