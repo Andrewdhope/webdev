@@ -251,7 +251,15 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>service</title>
-			<!-- https://www.handsonsandiego.org/ -->
+			<!-- Standing donation sites endorsed by me -->
+				<line>equity</line>
+				<!-- http://d4bl.org/ -->
+				<!-- https://www.eff.org/about/opportunities/volunteer/coding-with-eff -->
+				<!-- https://www.redcrossblood.org/blood-donor-app.html -->
+				<line>education</line>
+					<link>https://upchieve.org/</link>
+				<line>environment</line>
+				<!-- https://theabf.org/ -->
 		</bullet>
 	</section>
 </content>
