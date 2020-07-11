@@ -254,13 +254,12 @@
 			<!-- Standing donation sites endorsed by me -->
 				<line>equity</line>
 				<!-- http://d4bl.org/ -->
+				<!-- https://www.afsc.org/get-involved -->
 				<!-- https://www.eff.org/about/opportunities/volunteer/coding-with-eff -->
-				<!-- https://www.redcrossblood.org/blood-donor-app.html -->
 				<line>education</line>
-					<link>https://upchieve.org/</link>
+					<!-- https://upchieve.org/ -->
 					<!-- https://www.khanacademy.org -->
 				<line>environment</line>
-				<!-- https://theabf.org/ -->
 		</bullet>
 	</section>
 </content>
