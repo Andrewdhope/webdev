@@ -40,9 +40,6 @@
 				<entry>MapReduce
 					<link>https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html</link>
 				</entry>
-				<entry>ArcGIS
-					<link>https://andrewdhope.maps.arcgis.com/home/index.html</link>
-				</entry>
 			</line>
 			<line>payload
 				<entry>pipelines
@@ -52,6 +49,12 @@
 					<linkset>
 						<link>https://www.json.org/</link>
 						<link>https://www.hl7.org/fhir/summary.html</link>
+					</linkset>
+				</entry>
+				<entry>notebooks
+					<linkset>
+						<link>https://www.shinyapps.io/</link> <!-- update with apportionment project -->
+						<link>https://www.arcgis.com/home/index.html</link> <!-- https://andrewdhope.maps.arcgis.com/home/index.html -->
 					</linkset>
 				</entry>
 			</line>
