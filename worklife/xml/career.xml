@@ -272,16 +272,13 @@
 		<bullet list-orientation="vert">
 			<title>service</title>
 			<!-- Standing donation sites endorsed by me -->
-				<line>equity</line>
 				<!-- http://d4bl.org/ -->
 				<!-- https://www.afsc.org/get-involved -->
 				<!-- https://www.eff.org/about/opportunities/volunteer/coding-with-eff -->
 				<!-- naacp-ldf -->
-				<line>education</line>
-					<!-- https://upchieve.org/ -->
-					<!-- https://www.khanacademy.org -->
-					<!-- nfp -->
-				<line>environment</line>
+				<!-- https://upchieve.org/ -->
+				<!-- https://www.khanacademy.org -->
+				<!-- nfp -->
 		</bullet>
 	</section>
 </content>
