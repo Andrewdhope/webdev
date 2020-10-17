@@ -14,6 +14,7 @@
 			</line>
 			<line>objectives
 				<entry>documented
+					<link>https://www.range.co/blog/better-tech-specs</link>
 				</entry>
 				<entry>measurable
 					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
@@ -25,11 +26,15 @@
 		<bullet list-orientation="vert">
 			<title>mining</title>
 			<line>structure
-				<entry>warehousing
-					<link>http://aatinegar.com/wp-content/uploads/2016/05/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf</link>
+				<entry>transactional
+					<link>https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html</link>
+					<!-- https://dev.mysql.com/doc/#topic -->
 				</entry>
-				<entry>performance
+				<entry>distributed
 					<link>https://www.mongodb.com/nosql-explained</link>
+				</entry>
+				<entry>warehousing
+					<link>https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/</link>
 				</entry>
 			</line>
 			<line>extraction
@@ -142,7 +147,7 @@
 				<entry>R
 					<link>https://swirlstats.com/</link>
 				</entry>
-				<entry>T-SQL
+				<entry>SQL
 					<link>https://www.tsql.info/</link>
 				</entry>
 			</line>
@@ -196,7 +201,7 @@
 					<role>application engineer</role>
 					<link>https://catalyst.nejm.org/implementing-proms-patient-reported-outcome-measures/</link>
 				</entry>
-				<!-- https://www.opennotes.org/about/ -->
+				<!-- https://www.opennotes.org -->
 			</line>
 			<line>Stanford Health Care
 				<entry>patient scheduling
