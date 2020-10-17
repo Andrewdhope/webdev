@@ -14,16 +14,12 @@
 			</line>
 			<line>objectives
 				<entry>documented
-					<link>https://vita.had.co.nz/papers/tidy-data.pdf</link>
 				</entry>
 				<entry>measurable
 					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
 				</entry>				
 			</line>
 			<line>innovation
-				<entry>computational
-					<link>https://www.wolframscience.com/nks/p30--how-do-simple-programs-behave/</link>
-				</entry>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
@@ -31,6 +27,9 @@
 			<line>structure
 				<entry>warehousing
 					<link>http://aatinegar.com/wp-content/uploads/2016/05/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf</link>
+				</entry>
+				<entry>performance
+					<link>https://www.mongodb.com/nosql-explained</link>
 				</entry>
 			</line>
 			<line>extraction
@@ -96,9 +95,11 @@
 			</line>	
 			<line>systems design
 				<entry>framework
-					<link>https://dotnet.microsoft.com/</link>
+					<linkset>
+						<link>https://dotnet.microsoft.com/</link>
+						<link>https://serverless.css-tricks.com/services/major</link>
+					</linkset>
 				</entry>
-				<!-- https://serverless.css-tricks.com/services/major -->
 			</line>
 			<line>process optimization
 				<entry>strategy
