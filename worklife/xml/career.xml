@@ -259,8 +259,9 @@
 				<entry>tutorials
 					<linkset>
 						<link>https://javascript.info</link>
+						<link>https://nodejs.dev/learn</link>
 						<link>https://fsharp.org/about/index.html</link>
-						<link>https://opendatastructures.org</link>
+						<link>https://opendatastructures.org</link> <!-- maybe remove one of these -->
 					</linkset>
 				</entry>
 				<entry>showcase
