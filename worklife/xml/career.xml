@@ -21,14 +21,11 @@
 				</entry>				
 			</line>
 			<line>quality
-				<entry>robust
-					<link>https://qualitytrainingportal.com/resources/design-experiments/taguchi-experiments/</link>
-				</entry>
-				<entry>reliable
-					<link>https://www.freecodecamp.org/news/a-design-methodology-for-reliable-software-systems-a-summary-394dfd0dcbc2/</link>
-				</entry>
-				<entry>resilient
-					<link>https://www.resilientdesign.org/the-resilient-design-principles/</link>
+				<entry>reliability
+					<linkset>
+						<link>https://www.computer.org/csdl/proceedings-article/afips/1972/50800191/12OmNxXUhP6</link>
+						<link>https://eng.uber.com/monitoring-data-quality-at-scale/</link>
+					</linkset>
 				</entry>
 			</line>
 		</bullet>
@@ -36,8 +33,10 @@
 			<title>mining</title>
 			<line>structure
 				<entry>transactional
-					<link>https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html</link>
-					<!-- https://dev.mysql.com/doc/#topic -->
+					<linkset>
+						<link>https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html</link>
+						<link>https://dev.mysql.com/doc/#topic</link>
+					</linkset>
 				</entry>
 				<entry>distributed
 					<link>https://www.mongodb.com/</link>
@@ -79,13 +78,16 @@
 				<entry>platforms
 					<linkset>
 						<link>https://www.wolfram.com/language/uses/</link>
-						<link>https://www.tidymodels.org/</link>
+						<link>https://hash.ai/</link>
 					</linkset>
 				</entry>
 			</line>
 			<line>forecasting
 				<entry>principles
 					<link>https://otexts.com/fpp2/</link>
+				</entry>
+				<entry>tools
+					<link>https://www.tidymodels.org/</link>
 				</entry>
 			</line>
 			<line>calibration
