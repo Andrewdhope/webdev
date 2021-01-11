@@ -20,15 +20,23 @@
 					<link>https://kpi.org/KPI-Basics/Dashboarding-and-Analysis</link>
 				</entry>				
 			</line>
-			<line>innovation
+			<line>quality
+				<entry>reliability
+					<linkset>
+						<link>https://www.computer.org/csdl/proceedings-article/afips/1972/50800191/12OmNxXUhP6</link>
+						<link>https://eng.uber.com/monitoring-data-quality-at-scale/</link>
+					</linkset>
+				</entry>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
 			<line>structure
 				<entry>transactional
-					<link>https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html</link>
-					<!-- https://dev.mysql.com/doc/#topic -->
+					<linkset>
+						<link>https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html</link>
+						<link>https://dev.mysql.com/doc/#topic</link>
+					</linkset>
 				</entry>
 				<entry>distributed
 					<link>https://www.mongodb.com/</link>
@@ -70,13 +78,16 @@
 				<entry>platforms
 					<linkset>
 						<link>https://www.wolfram.com/language/uses/</link>
-						<link>https://www.tidymodels.org/</link>
+						<link>https://hash.ai/</link>
 					</linkset>
 				</entry>
 			</line>
 			<line>forecasting
 				<entry>principles
 					<link>https://otexts.com/fpp2/</link>
+				</entry>
+				<entry>tools
+					<link>https://www.tidymodels.org/</link>
 				</entry>
 			</line>
 			<line>calibration
@@ -171,10 +182,10 @@
 				</entry>
 			</line>
 			<line>presentation
-				<entry>CSS3
+				<entry>CSS
 					<link>https://css-tricks.com/</link>
 				</entry>
-				<entry>HTML5
+				<entry>HTML
 					<link>https://www.w3schools.com/tags/ref_byfunc.asp</link>
 				</entry>
 			</line>
