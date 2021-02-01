@@ -250,13 +250,13 @@
 			<title>print</title>
 				<line>books
 					<entry>current
-						<link>https://en.wikipedia.org/wiki/The_Book_of_Night_Women</link>
+						<link>https://en.wikipedia.org/wiki/Black_Boy</link>
 					</entry>
 					<entry>recent
 						<linkset>
+							<link>https://en.wikipedia.org/wiki/Continental_Drift_(novel)</link>
+							<link>https://en.wikipedia.org/wiki/The_Book_of_Night_Women</link>
 							<link>https://en.wikipedia.org/wiki/Bibliography_of_the_Lewis_and_Clark_Expedition</link>
-							<link>https://en.wikipedia.org/wiki/Common_Sense</link>
-							<link>https://en.wikipedia.org/wiki/Democracy_in_America</link>
 						</linkset>
 					</entry>
 				</line>
