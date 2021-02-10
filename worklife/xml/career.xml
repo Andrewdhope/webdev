@@ -66,8 +66,8 @@
 				</entry>
 				<entry>notebooks
 					<linkset>
-						<link>https://www.shinyapps.io/</link> <!-- update with apportionment project -->
-						<link>https://www.arcgis.com/home/index.html</link> <!-- https://andrewdhope.maps.arcgis.com/home/index.html -->
+						<link>https://www.shinyapps.io/</link>
+						<link>https://www.arcgis.com/home/index.html</link>
 					</linkset>
 				</entry>
 			</line>
@@ -272,7 +272,6 @@
 						<link>https://javascript.info</link>
 						<link>https://nodejs.dev/learn</link>
 						<link>https://fsharp.org/about/index.html</link>
-						<link>https://opendatastructures.org</link> <!-- maybe remove one of these -->
 					</linkset>
 				</entry>
 				<entry>showcase
