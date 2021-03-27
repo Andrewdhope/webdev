@@ -107,7 +107,11 @@ a:hover {
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 4%;
+	
+	/* in dev */
+	padding-bottom: 5vh;
+	margin-bottom: var(--footer-margin);
+	
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -293,7 +297,10 @@ sup {
 footer {
 	width: 100%;
 	height: var(--footer-height);
+	/* in dev */
+	/*
 	margin-top: var(--footer-margin);
+	*/
 	text-align: right;
 	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
