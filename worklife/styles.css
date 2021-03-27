@@ -1,4 +1,5 @@
 :root {
+	/* update IE workarounds below */
 	--body-margin-top: 2vh;
 	--body-margin-bottom: 2vh;
 	--header-height: 10vh; 
@@ -8,7 +9,12 @@
 	--title-padding-bottom: 1vh;
 	--footer-height: 2vh;
 	--footer-margin: 2vh;
-	/* update IE workarounds below */
+	
+	/* workaround to prevent footer links from appearing under the browser controls on iOS */
+	/* https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */ 
+	--vh: 100vh;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 }
 
 body {	
@@ -107,11 +113,7 @@ a:hover {
 section#content {
 	width: 75%;
 	float: left;
-	
-	/* in dev */
 	padding-bottom: 5vh;
-	margin-bottom: var(--footer-margin);
-	
 	box-sizing: border-box;
 	background-color: green;
 	color: #cccccc;
@@ -297,10 +299,7 @@ sup {
 footer {
 	width: 100%;
 	height: var(--footer-height);
-	/* in dev */
-	/*
 	margin-top: var(--footer-margin);
-	*/
 	text-align: right;
 	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
