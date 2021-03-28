@@ -25,11 +25,11 @@ body {
 	font-size: calc(1rem + 0.25vw);
 	font-family: Ubuntu, Courier;
 	background-color: green;
-	height: calc((var(--vh)*100) - var(--body-margin-top) - var(--body-margin-bottom))
+	/* height: calc((var(--vh)*100) - var(--body-margin-top) - var(--body-margin-bottom)) */
 }
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	body { margin-top: 2vh; margin-bottom: 2vh }
+	body { margin-top: 2vh; margin-bottom: 2vh; }
 }
 
 #wrapper {
