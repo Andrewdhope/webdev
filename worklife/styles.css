@@ -12,9 +12,10 @@
 	
 	/* workaround to prevent footer links from appearing under the browser controls on iOS */
 	/* https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */ 
-	--vh: 100vh;
-	height: 100vh;
-	height: calc(var(--vh, 1vh) * 100);
+	/* --vh: 100vh; */
+	/* height: 100vh; */
+	/* height: calc(var(--vh, 1vh) * 100); */
+	height: -webkit-fill-available
 }
 
 body {	
@@ -26,6 +27,8 @@ body {
 	font-family: Ubuntu, Courier;
 	background-color: green;
 	/* height: calc((var(--vh)*100) - var(--body-margin-top) - var(--body-margin-bottom)) */
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
 }
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -305,7 +308,7 @@ footer {
 	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
 	color: #ccc;
-	color: yellow;
+	color: orange;
 }
 
 /* IE10+ workaround */
