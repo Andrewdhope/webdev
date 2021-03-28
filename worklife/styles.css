@@ -14,7 +14,7 @@
 	/* https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */ 
 	--vh: 100vh;
 	height: 100vh;
-	height: calc(var(--vh, 1vh) * 100);
+	/*height: calc(var(--vh, 1vh) * 100);*/
 }
 
 body {	
@@ -25,10 +25,11 @@ body {
 	font-size: calc(1rem + 0.25vw);
 	font-family: Ubuntu, Courier;
 	background-color: green;
+	height: calc((var(--vh) * 100) - var(--body-margin-top) - var(--body-margin-bottom))
 }
 /* IE10+ workaround */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	body { margin-top: 2vh; margin-bottom: 2vh; }
+	body { margin-top: 2vh; margin-bottom: 2vh; height: 96vh}
 }
 
 #wrapper {
@@ -306,7 +307,7 @@ footer {
 	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
 	color: #ccc;
-	color: #0101FF;
+	color: #AA99FF;
 }
 
 /* IE10+ workaround */
