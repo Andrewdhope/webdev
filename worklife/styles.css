@@ -299,11 +299,14 @@ sup {
 footer {
 	width: 100%;
 	height: var(--footer-height);
+	/*
 	margin-top: var(--footer-margin);
+	*/
 	text-align: right;
 	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
 	color: #ccc;
+	color: #0101FF;
 }
 
 /* IE10+ workaround */
