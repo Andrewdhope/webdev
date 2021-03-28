@@ -18,7 +18,7 @@ html {
 	/* --vh: 100vh; */
 	/* height: 100vh; */
 	/* height: calc(var(--vh, 1vh) * 100); */
-	min-height: -webkit-fill-available
+	height: -webkit-fill-available
 }
 
 body {	
@@ -308,11 +308,12 @@ footer {
 	width: 100%;
 	/* height: var(--footer-height); */
 	/* margin-top: var(--footer-margin); */
+	padding-bottom: var(--footer-margin);
 	text-align: right;
 	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
 	color: #ccc;
-	color: brown;
+	color: black;
 }
 
 /* IE10+ workaround */
