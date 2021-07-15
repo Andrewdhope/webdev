@@ -313,7 +313,6 @@ footer {
 	font-size: calc(1rem - 0.25vw);
 	font-family: ubuntu, courier;
 	color: #ccc;
-	color: black;
 }
 
 /* IE10+ workaround */
