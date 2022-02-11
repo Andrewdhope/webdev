@@ -1,0 +1,5 @@
+- keep the webdev folder, a test environment is smart
+- continue to tinker with my current page, reduce fluff
+- make a beautiful single page application or two
+- build up a portfolio and re-design my own page from scratch
+- the old one can continue to operate, with revised content
