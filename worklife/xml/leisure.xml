@@ -247,7 +247,7 @@
 	</section>
 	<section option="letters">
 		<bullet list-orientation="vert">
-			<title>written</title>
+			<title>content</title>
 				<line>offline
 					<entry>current
 						<link>https://en.wikipedia.org/wiki/The_Common_Wind</link>
@@ -285,7 +285,7 @@
 				</line>
 		</bullet>
 		<bullet list-orientation="vert">
-			<title>legal</title>
+			<title>law</title>
 			<line>theory
 				<entry>liberalism
 					<link>https://en.wikipedia.org/wiki/Liberalism</link>
