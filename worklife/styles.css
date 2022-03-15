@@ -285,12 +285,12 @@ a.multi-entry {
 
 /* general effects */
 
-.entry .multi-entry:link, .entry .multi-entry:visited  {
+.entry .multi-entry:link, .entry .multi-entry:visited, .line .multi-entry:link, .line .multi-entry:visited {
 	text-decoration: none;
 	font-size: 1rem;
 }
 
-.entry a.multi-entry:hover {
+.entry a.multi-entry:hover, .line a.multi-entry:hover {
 	text-decoration: underline;
 }
 
@@ -365,7 +365,7 @@ a.ga, a.ga:hover {
 	.entry {padding-left: 0%;}
 	.entry {font-size: calc(1rem - 0.5vw);}
 	.entry {white-space: nowrap; padding-bottom: 1vh;}
-	.entry .multi-entry:link, .entry .multi-entry:visited {font-size: inherit;}
+	.entry .multi-entry:link, .entry .multi-entry:visited, .line .multi-entry:link, .line .multi-entry:visited {font-size: inherit;}
 	.subtitle { font-size: calc(1rem - 0.5vw); vertical-align: top;}
 	.centered { font-size: calc(1rem - 0.5vw);}
 	.material-icons {font-size: 12px;}
