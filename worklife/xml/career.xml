@@ -42,10 +42,12 @@
 				<link>https://otexts.com/fpp2/</link>
 			</line>
 			<line>calibration
-				<linkset>
-					<link>https://projects.fivethirtyeight.com/checking-our-work/</link>
-					<link>https://stats.stackexchange.com/search?q=calibration</link>
-				</linkset>
+				<entry>methods
+					<linkset>
+						<link>https://projects.fivethirtyeight.com/checking-our-work/</link>
+						<link>https://stats.stackexchange.com/search?q=calibration</link>
+					</linkset>
+				</entry>
 			</line>
 		</bullet>
 	</section>
@@ -53,8 +55,12 @@
 		<bullet list-orientation="vert">
 			<title>engineering</title>
 			<line>dataset evaluation
-				<link>https://www.tidyverse.org/</link>
-			</line>	
+				<linkset>
+					<link>https://www.tidyverse.org/</link>
+					<link>https://dev.mysql.com/doc/#topic</link>
+					<link>https://hadoop.apache.org/</link>
+				</linkset>
+			</line>
 			<line>systems architecture
 				<linkset>
 					<link>https://dotnet.microsoft.com/</link>
