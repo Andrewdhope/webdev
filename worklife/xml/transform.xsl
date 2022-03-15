@@ -68,7 +68,25 @@
 							<xsl:value-of select="normalize-space(text())" />
 						</xsl:element>
 					</xsl:if>
-					<!-- could add a multi-entry linkset option if needed -->
+
+					<!-- linkset directly under the line -->
+					<xsl:when test="count(linkset[1]) = 1">
+						<xsl:for-each select="linkset/link">
+							<xsl:variable name="i" select="position()"/>
+							<xsl:element name="a">
+								<xsl:attribute name="class">
+									<xsl:text>multi-entry</xsl:text>
+								</xsl:attribute>
+								<xsl:attribute name="href">
+									<xsl:value-of select="normalize-space(text())" />
+								</xsl:attribute>
+								<xsl:attribute name="target">
+									<xsl:text>"_blank"</xsl:text>
+								</xsl:attribute>
+								<xsl:text>[</xsl:text><xsl:value-of select="$i" /><xsl:text>]</xsl:text>
+							</xsl:element>
+						</xsl:for-each>
+					</xsl:when>
 				</xsl:element>
 			
 				<xsl:if test="count(entry) > 0">

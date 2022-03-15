@@ -16,7 +16,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
-			<line>architecture
+			<line>framework
 				<link>https://www.mongodb.com/</link>
 			</line>
 			<line>extraction
@@ -55,7 +55,7 @@
 			<line>dataset evaluation
 				<link>https://www.tidyverse.org/</link>
 			</line>	
-			<line>systems design
+			<line>systems architecture
 				<entry>framework
 					<linkset>
 						<link>https://dotnet.microsoft.com/</link>
@@ -65,13 +65,11 @@
 				</entry>
 			</line>
 			<line>healthcare delivery
-				<entry>operations
-					<linkset>
-						<link>https://www.mychart.com/</link>
-						<link>https://www.opennotes.org</link>
-						<link>https://www.epic.com/</link>
-					</linkset>
-				</entry>
+				<linkset>
+					<link>https://www.mychart.com/</link>
+					<link>https://www.opennotes.org</link>
+					<link>https://www.epic.com/</link>
+				</linkset>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
@@ -104,22 +102,22 @@
 		<bullet list-orientation="vert">
 			<title>programming</title>
 			<line>analysis
-				<entry>SQL
-					<link>https://www.tsql.info/</link>
-				</entry>
 				<entry>R
 					<link>https://moderndive.com/</link>
 				</entry>
+				<entry>SQL
+					<link>https://www.tsql.info/</link>
+				</entry>
 			</line>
 			<line>development
+				<entry>C#
+					<link>https://docs.microsoft.com/en-us/dotnet/csharp/</link>
+				</entry>
 				<entry>JavaScript
 					<linkset>
 						<link>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</link>
 						<link>https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model</link>
 					</linkset>
-				</entry>
-				<entry>C#
-					<link>https://docs.microsoft.com/en-us/dotnet/csharp/</link>
 				</entry>
 			</line>
 			<line>scripting
