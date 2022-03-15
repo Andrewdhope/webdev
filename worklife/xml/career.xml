@@ -56,13 +56,11 @@
 				<link>https://www.tidyverse.org/</link>
 			</line>	
 			<line>systems architecture
-				<entry>framework
-					<linkset>
-						<link>https://dotnet.microsoft.com/</link>
-						<link>https://nodejs.dev/</link>
-						<link>https://serverless.css-tricks.com/</link>
-					</linkset>
-				</entry>
+				<linkset>
+					<link>https://dotnet.microsoft.com/</link>
+					<link>https://nodejs.dev/</link>
+					<link>https://serverless.css-tricks.com/</link>
+				</linkset>
 			</line>
 			<line>healthcare delivery
 				<linkset>
