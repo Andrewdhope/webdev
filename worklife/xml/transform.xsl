@@ -70,7 +70,7 @@
 					</xsl:if>
 
 					<!-- linkset directly under the line -->
-					<xsl:when test="count(linkset[1]) = 1">
+					<xsl:if test="count(linkset[1]) = 1">
 						<xsl:for-each select="linkset/link">
 							<xsl:variable name="i" select="position()"/>
 							<xsl:element name="a">
@@ -86,7 +86,7 @@
 								<xsl:text>[</xsl:text><xsl:value-of select="$i" /><xsl:text>]</xsl:text>
 							</xsl:element>
 						</xsl:for-each>
-					</xsl:when>
+					</xsl:if>
 				</xsl:element>
 			
 				<xsl:if test="count(entry) > 0">
