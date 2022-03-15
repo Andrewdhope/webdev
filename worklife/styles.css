@@ -298,6 +298,10 @@ a.multi-entry {
 	text-decoration: underline;
 }
 
+.line .multi-entry {
+	font-weight: bold;
+}
+
 sup {
 	white-space: nowrap; 
 }
