@@ -82,7 +82,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>casts</title>
-			<line>tales
+			<line>stories
 				<entry>Hardcore History
 					<link>https://www.dancarlin.com/</link>
 				</entry>
@@ -247,7 +247,7 @@
 	</section>
 	<section option="letters">
 		<bullet list-orientation="vert">
-			<title>story</title>
+			<title>lit</title>
 				<line>offline
 					<entry>current
 						<link>https://en.wikipedia.org/wiki/The_Common_Wind</link>
@@ -273,7 +273,7 @@
 				</line>
 		</bullet>
 		<bullet list-orientation="vert">
-			<title>science</title>
+			<title>lab</title>
 				<line>physics
 					<link>https://www.wolframphysics.org/</link>
 				</line>

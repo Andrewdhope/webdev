@@ -55,25 +55,31 @@
 		<bullet list-orientation="vert">
 			<title>engineering</title>
 			<line>dataset evaluation
-				<linkset>
-					<link>https://www.tidyverse.org/</link>
-					<link>https://dev.mysql.com/doc/#topic</link>
-					<link>https://hadoop.apache.org/</link>
-				</linkset>
+				<entry>packages
+					<linkset>
+						<link>https://www.tidyverse.org/</link>
+						<link>https://dev.mysql.com/doc/#topic</link>
+						<link>https://hadoop.apache.org/</link>
+					</linkset>
+				</entry>
 			</line>
 			<line>systems architecture
-				<linkset>
-					<link>https://dotnet.microsoft.com/</link>
-					<link>https://nodejs.dev/</link>
-					<link>https://serverless.css-tricks.com/</link>
-				</linkset>
+				<entry>stacks
+					<linkset>
+						<link>https://dotnet.microsoft.com/</link>
+						<link>https://nodejs.dev/</link>
+						<link>https://serverless.css-tricks.com/</link>
+					</linkset>
+				</entry>
 			</line>
 			<line>healthcare delivery
-				<linkset>
-					<link>https://www.mychart.com/</link>
-					<link>https://www.opennotes.org</link>
-					<link>https://www.epic.com/</link>
-				</linkset>
+				<entry>services
+					<linkset>
+						<link>https://www.mychart.com/</link>
+						<link>https://www.opennotes.org</link>
+						<link>https://www.epic.com/</link>
+					</linkset>
+				</entry>
 			</line>
 		</bullet>
 		<bullet list-orientation="vert">
