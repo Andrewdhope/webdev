@@ -1,5 +1,8 @@
 // scripts to load html result documents from xml documents and xsl stylesheets
 
+// jsonLoad
+function jsonLoad() {}
+
 // ajaxLoad
 // standard ajax call using the XMLHttpRequest object
 // this function is used to retrieve both xml documents and xsl stylesheets,
