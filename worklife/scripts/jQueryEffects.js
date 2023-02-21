@@ -22,7 +22,9 @@ function jBounceUp() {
 
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
-		ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']);
+		if (setting == "life2") {jsonLoad()}
+		else {ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])}
+		//ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']);
 	} else {
 	
 		$("header").addClass("up");
