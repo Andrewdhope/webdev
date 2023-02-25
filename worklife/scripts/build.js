@@ -1,7 +1,19 @@
 // scripts to load html result documents from xml documents and xsl stylesheets
 
 // jsonLoad
-function jsonLoad() {}
+function jsonLoad() {
+	const menuRequest = new Request('../json/menu.json');
+	fetch(menuRequest)
+		.then((response) => {
+    		if (!response.ok) {
+      			throw new Error(`HTTP error. Status: ${response.status}`);
+    		}
+		return response();
+  	})
+  		.then((response) => {
+    		console.log(response);
+  	});
+}
 
 // ajaxLoad
 // standard ajax call using the XMLHttpRequest object

@@ -22,9 +22,8 @@ function jBounceUp() {
 
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
-		if (xmlpath = "xml/leisure.xml") {jsonLoad()}
-		else {ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#'])}
-		//ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']);
+		if (menu_mode = "work") { jsonLoad() }
+		else { ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) }
 	} else {
 	
 		$("header").addClass("up");
@@ -42,7 +41,8 @@ function jBounceUp() {
 		}
 		
 		$("header").animate({paddingTop: '0vh'}, "slow", function() {
-			ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) // takes a few seconds, async
+			if (menu_mode = "work") { jsonLoad() }
+			else { ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) } // takes a few seconds, async
 			$("#wrapper").animate({width: '100%'}, "slow") 
 			$(".centered").animate({paddingRight: '0vw'}, "slow", function() {
 				$("footer p").slideDown("100")

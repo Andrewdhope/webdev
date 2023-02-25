@@ -14,11 +14,13 @@ function vhViewport() {
 
 function setPath(setting) {
 	if (setting == "work") {
+		menu_mode = "work"
 		xmlpath = "xml/career.xml"
 		xslpath = "xml/transform.xsl"
 	}
 	
 	if (setting == "life") {
+		menu_mode = "life"
 		xmlpath = "xml/leisure.xml"
 		xslpath = "xml/transform.xsl"
 	}
