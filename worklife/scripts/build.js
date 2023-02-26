@@ -2,16 +2,38 @@
 
 // jsonLoad
 function jsonLoad() {
-	const menuRequest = new Request('./json/menu.json');
+	const menuRequest = new Request('./json/menu.json'); // generalize
+
+	// fetch returns a promise, .then defines an anonymous function to execute upon fulfillment
+	//	"the first argument of .then is a function that runs when the promise is resolved and receives the result"
+	//	...in this case the (anonymous) first function's first parameter is going to be the promise result
+	//  ...if we were to list a second function, its first parameter would use the promise error
+	//  ...note that fetch doesn't error due to HTTP status codes, so you check those in the result function
+	// fetch is just a promise specialized to HTTP requests, that typically returns a response object
 	fetch(menuRequest)
-		.then((response) => {
+		.then(response => {
     		if (!response.ok) {
       			throw new Error(`HTTP error. Status: ${response.status}`);
-    		}
+    		} // good example code but probably not strictly needed when referencing a local directory
 			const jsonResponse = response.json();
-			console.log(jsonResponse);
+			jsonResponse.then(r => {
+				console.log(r) // why is this logging the promise and not just the array?
+			});
+			// attempt alternate approach with await/async
+			// yeah, async/await is the right approach because we're referencing a local directory - trivial delay and trivial error risk
+			// I think I just need to wrap the fetches and subsequent functions in an async function:
+			// ...https://dmitripavlutin.com/javascript-fetch-async-await/
   		});
 }
+
+async function fetchMenu() {
+	const menuRequest = new Request('./json/menu.json');
+	const response = await fetch(menuRequest);
+	const menuJson = await response.json();
+	console.log(menuJson);
+}
+
+
 
 // ajaxLoad
 // standard ajax call using the XMLHttpRequest object

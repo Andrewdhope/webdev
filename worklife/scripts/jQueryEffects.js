@@ -22,7 +22,7 @@ function jBounceUp() {
 
 	// if the header is already up, just load the menu
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
-		if (menu_mode = "work") { jsonLoad() }
+		if (menu_mode == "life") { fetchMenu() }
 		else { ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) }
 	} else {
 	
@@ -41,7 +41,7 @@ function jBounceUp() {
 		}
 		
 		$("header").animate({paddingTop: '0vh'}, "slow", function() {
-			if (menu_mode = "work") { jsonLoad() }
+			if (menu_mode == "life") { fetchMenu() }
 			else { ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) } // takes a few seconds, async
 			$("#wrapper").animate({width: '100%'}, "slow") 
 			$(".centered").animate({paddingRight: '0vw'}, "slow", function() {
