@@ -8,9 +8,9 @@ function jsonLoad() {
     		if (!response.ok) {
       			throw new Error(`HTTP error. Status: ${response.status}`);
     		}
-		console.log(response.body);
-		return response;
-  	});
+			const jsonResponse = response.json();
+			console.log(jsonResponse);
+  		});
 }
 
 // ajaxLoad
