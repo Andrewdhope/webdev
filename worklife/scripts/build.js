@@ -2,7 +2,6 @@
 
 // jsonLoad
 // generalized fetch and return json response
-// are these requests chained properly?
 function jsonLoad(request) {
 	// fetch returns a promise, .then defines an anonymous function to execute upon fulfillment
 	//	"the first argument of .then is a function that runs when the promise is resolved and receives the result"
@@ -14,18 +13,56 @@ function jsonLoad(request) {
 		.then(response => {
     		if (!response.ok) {
       			throw new Error(`HTTP error. Status: ${response.status}`);
-    		} // good example code but probably not strictly needed when referencing a local directory
+    		}
 			const jsonResponse = response.json();
-			jsonResponse
-  		}).then(r => { console.log(r); 
-		});
+			jsonResponse.then(r => { 
+				console.log(r); 
+			});
+  		});
 }
 
 async function fetchMenu() {
 	const menuRequest = new Request('./json/menu.json');
 	const response = await fetch(menuRequest);
 	const menuJson = await response.json();
-	console.log(menuJson);
+	let returnMenu = "<ul>";
+	for (let obj in menuJson) {
+		console.log(`${obj}: ${menuJson[obj].Section}`);
+		// from here just build the html structure
+		returnMenu += "<li class=\"menulist\">"
+			returnMenu += "<a href=\"#\" "
+			returnMenu += "onclick="
+			returnMenu += "\""
+				returnMenu += "ajaxLoad(xmlpath,buildContent,xslpath,"
+				returnMenu += "['";
+					returnMenu += `${menuJson[obj].Section}`;
+				returnMenu += "']);";
+				returnMenu += "selectedMenu";
+				returnMenu += "('";
+					returnMenu += `${menuJson[obj].Section}`;
+				returnMenu += "');";
+			returnMenu += "\"";
+			returnMenu += ">";
+				returnMenu += `${menuJson[obj].Section}`;
+			returnMenu += "</a>"
+		returnMenu += "</li>"
+	}
+	returnMenu += "</ul>"
+	console.log(returnMenu)
+	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
+		$("#content").html(""); // clear content
+		$("#menu").slideUp("slow", function() {
+			// start showing the border after one of the menu options is first clicked
+			if (!document.getElementById("menu").classList.contains("border")) {
+				$("#menu").addClass("border")
+			}
+			$("#menu").html(""); // clear menu
+			$("#menu").append(returnMenu).slideDown(); // append
+			}); 
+		}
+	);
+	// take the array and build the menu (new function)
+	// will need to re-create the format of the resultDocument
 }
 
 
@@ -94,8 +131,7 @@ function buildMenu(xslDoc, xmlDoc) {
 	}
 	
 	// 'slide up, clear, and append'
-	$("#content").slideUp("slow", function() // slide the content side up before re-loading the navigation menu
-		{
+	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
 		$("#menu").slideUp("slow", function() {
 			// start showing the border after one of the menu options is first clicked
