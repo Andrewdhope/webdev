@@ -27,18 +27,7 @@ function jBounceUp() {
 	} else {
 	
 		$("header").addClass("up");
-		
-		// *sigh* IE workaround
-		if (window.ActiveXObject !== undefined)
-		{
-		//	abandoning the initial animation for IE. It worked fairly well but had issues with the width of the wrapper. Animation is still in Edge. 
-		//	$("header").animate({paddingTop: "44vh"}, "slow"); // need to hardcode the paddingTop value for IE (from totalpaddingvint) 
-	
-		}
-		else // better browsers
-		{
-			$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
-		}
+		$("header").animate(animatePadding, "slow"); // use the PlainObject constructed above
 		
 		$("header").animate({paddingTop: '0vh'}, "slow", function() {
 			if (menu_mode == "life") { fetchMenu() }
