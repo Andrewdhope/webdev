@@ -29,25 +29,16 @@ async function fetchMenu() {
 	for (let obj in menuJson) {
 		console.log(`${obj}: ${menuJson[obj].Section}`);
 		// from here just build the html structure
-		returnMenu += "<li class=\"menulist\">"
-			returnMenu += "<a href=\"#\" "
-			returnMenu += "onclick="
-			returnMenu += "\""
-				returnMenu += "ajaxLoad(xmlpath,buildContent,xslpath,"
-				returnMenu += "['";
-					returnMenu += `${menuJson[obj].Section}`;
-				returnMenu += "']);";
-				returnMenu += "selectedMenu";
-				returnMenu += "('";
-					returnMenu += `${menuJson[obj].Section}`;
-				returnMenu += "');";
-			returnMenu += "\"";
-			returnMenu += ">";
-				returnMenu += `${menuJson[obj].Section}`;
-			returnMenu += "</a>"
-		returnMenu += "</li>"
+		returnMenu += "<li class=\"menulist\">";
+			//returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" +`${menuJson[obj].Section}` + "']);";
+			returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" +`${menuJson[obj].Section}` + "']);";
+			returnMenu += "selectedMenu('" + `${menuJson[obj].Section}` + "');\">";
+			returnMenu += `${menuJson[obj].Section}`;
+			returnMenu += "</a>";
+		returnMenu += "</li>";
 	}
-	returnMenu += "</ul>"
+	returnMenu += "</ul>";
+	
 	console.log(returnMenu)
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
@@ -63,6 +54,22 @@ async function fetchMenu() {
 	);
 	// take the array and build the menu (new function)
 	// will need to re-create the format of the resultDocument
+}
+
+// buildJsonContent
+// next step: continue building out html, using existing 'work' formatting for now
+function buildJsonContent(file, primary, secondary, description, date) {
+	const filepath = './json/' + file + '.json'
+	const fileRequest = new Request(filepath);
+	const response = await fetch(fileRequest);
+	const jsonResposnse = await response.json();
+	for (let obj in jsonResponse) {
+		let returnContent = "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
+		returnContent += "<h2 class=\"collapsible\" onclick=\"expandBullet('" + `${jsonResponse[obj][primary]}` + "')\">"
+		returnContent += `${jsonResponse[obj][primary]}`
+		returnContent += "</h2>"
+		// build out the next divs for author and date, doesn't need to follow orginal formatting, just get it in and test it
+	}
 }
 
 // ajaxLoad
