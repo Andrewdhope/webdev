@@ -30,8 +30,8 @@ async function fetchMenu() {
 		console.log(`${obj}: ${menuJson[obj].Section}`);
 		// from here just build the html structure
 		returnMenu += "<li class=\"menulist\">";
-			//returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" +`${menuJson[obj].Section}` + "']);";
-			returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" +`${menuJson[obj].Section}` + "']);";
+			//returnMenu += "<a href=\"#\" onclick=\"buildJsonContent(" + `${menuJson[obj].Section}` + ",1,4,3,6);";
+			returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" + `${menuJson[obj].Section}` + "']);";
 			returnMenu += "selectedMenu('" + `${menuJson[obj].Section}` + "');\">";
 			returnMenu += `${menuJson[obj].Section}`;
 			returnMenu += "</a>";
@@ -58,8 +58,10 @@ async function fetchMenu() {
 
 // buildJsonContent
 // next step: continue building out html, using existing 'work' formatting for now
-function buildJsonContent(file, primary, secondary, description, date) {
-	const filepath = './json/' + file + '.json'
+async function buildJsonContent(file, primary, secondary, description, date) {
+	//const filepath = './json/' + file + '.json';
+	const filepath = './json/books.json'
+	console.log(filepath)
 	const fileRequest = new Request(filepath);
 	const response = await fetch(fileRequest);
 	const jsonResposnse = await response.json();
@@ -68,8 +70,22 @@ function buildJsonContent(file, primary, secondary, description, date) {
 		returnContent += "<h2 class=\"collapsible\" onclick=\"expandBullet('" + `${jsonResponse[obj][primary]}` + "')\">"
 		returnContent += `${jsonResponse[obj][primary]}`
 		returnContent += "</h2>"
+		returnContent += "<div>"
+		returnContent += `${jsonResponse[obj][secondary]}`
+		returnContent += "</div>"
 		// build out the next divs for author and date, doesn't need to follow orginal formatting, just get it in and test it
 	}
+	// 'slide up, clear, and append'
+	$("#content").slideUp("slow", function() {
+		// start showing the border after one of the menu options is first clicked
+		if (!document.getElementById("content").classList.contains("border")) {
+			$("#content").addClass("border")
+		}
+		$("#content").html(""); // clear content
+		$("#content").append(returnContent).slideDown(); // append
+		}
+	); 
+	return;
 }
 
 // ajaxLoad
