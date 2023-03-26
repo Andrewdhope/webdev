@@ -30,8 +30,8 @@ async function fetchMenu() {
 		console.log(`${obj}: ${menuJson[obj].Section}`);
 		// from here just build the html structure
 		returnMenu += "<li class=\"menulist\">";
-			//returnMenu += "<a href=\"#\" onclick=\"buildJsonContent(" + `${menuJson[obj].Section}` + ",1,4,3,6);";
-			returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" + `${menuJson[obj].Section}` + "']);";
+			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" + `${menuJson[obj].Section}` + "','Title','Authors','Description','Published');";
+			//returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" + `${menuJson[obj].Section}` + "']);";
 			returnMenu += "selectedMenu('" + `${menuJson[obj].Section}` + "');\">";
 			returnMenu += `${menuJson[obj].Section}`;
 			returnMenu += "</a>";
@@ -54,19 +54,21 @@ async function fetchMenu() {
 	);
 	// take the array and build the menu (new function)
 	// will need to re-create the format of the resultDocument
+	return;
 }
 
 // buildJsonContent
 // next step: continue building out html, using existing 'work' formatting for now
 async function buildJsonContent(file, primary, secondary, description, date) {
-	//const filepath = './json/' + file + '.json';
-	const filepath = './json/books.json'
-	console.log(filepath)
+	const filepath = './json/' + file + '.json';
+	console.log(filepath);
 	const fileRequest = new Request(filepath);
 	const response = await fetch(fileRequest);
-	const jsonResposnse = await response.json();
+	const jsonResponse = await response.json();
+	let returnContent = ""
+	console.log(`${jsonResponse[0][primary]}`)
 	for (let obj in jsonResponse) {
-		let returnContent = "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
+		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
 		returnContent += "<h2 class=\"collapsible\" onclick=\"expandBullet('" + `${jsonResponse[obj][primary]}` + "')\">"
 		returnContent += `${jsonResponse[obj][primary]}`
 		returnContent += "</h2>"
@@ -82,7 +84,8 @@ async function buildJsonContent(file, primary, secondary, description, date) {
 			$("#content").addClass("border")
 		}
 		$("#content").html(""); // clear content
-		$("#content").append(returnContent).slideDown(); // append
+		$("#content").html(returnContent); 
+		//$("#content").append(returnContent).slideDown(); // append
 		}
 	); 
 	return;
