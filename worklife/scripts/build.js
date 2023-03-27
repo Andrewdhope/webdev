@@ -75,6 +75,7 @@ async function buildJsonContent(file, primary, secondary, description, date) {
 		returnContent += "<div>"
 		returnContent += `${jsonResponse[obj][secondary]}`
 		returnContent += "</div>"
+		returnContent += "</div>"
 		// build out the next divs for author and date, doesn't need to follow orginal formatting, just get it in and test it
 	}
 	// 'slide up, clear, and append'
