@@ -76,7 +76,6 @@ async function buildJsonContent(file, primary, secondary, description, date) {
 		returnContent += `${jsonResponse[obj][secondary]}`
 		returnContent += "</div>"
 		returnContent += "</div>"
-		// build out the next divs for author and date, doesn't need to follow orginal formatting, just get it in and test it
 	}
 	// 'slide up, clear, and append'
 	$("#content").slideUp("slow", function() {
@@ -85,7 +84,7 @@ async function buildJsonContent(file, primary, secondary, description, date) {
 			$("#content").addClass("border")
 		}
 		$("#content").html(""); // clear content
-		$("#content").html(returnContent); 
+		$("#content").html(returnContent).slideDown(); 
 		//$("#content").append(returnContent).slideDown(); // append
 		}
 	); 
