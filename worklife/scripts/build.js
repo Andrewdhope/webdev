@@ -75,6 +75,9 @@ async function buildJsonContent(file, primary, secondary, description, date) {
 		returnContent += "<div>"
 		returnContent += `${jsonResponse[obj][secondary]}`
 		returnContent += "</div>"
+		// returnContent += "<p>"
+		// returnContent += `${jsonResponse[obj][description]}`
+		// returnContent += "</p>"
 		returnContent += "</div>"
 	}
 	// 'slide up, clear, and append'
@@ -83,9 +86,11 @@ async function buildJsonContent(file, primary, secondary, description, date) {
 		if (!document.getElementById("content").classList.contains("border")) {
 			$("#content").addClass("border")
 		}
+		if (!document.getElementById("content").classList.contains("life-list")) {
+			$("#content").addClass("life-list")
+		}
 		$("#content").html(""); // clear content
 		$("#content").html(returnContent).slideDown(); 
-		//$("#content").append(returnContent).slideDown(); // append
 		}
 	); 
 	return;

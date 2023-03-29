@@ -132,6 +132,11 @@ section#content.border {
 	border-style: dashed;
 }
 
+section#content.life-list {
+	overflow: auto;
+	height: 75vh;
+}
+
 nav#menu {
 	width: 25%;
 	float: right;
