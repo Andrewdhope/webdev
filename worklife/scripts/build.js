@@ -1,5 +1,7 @@
 // scripts to load html result documents from xml documents and xsl stylesheets
 
+//next steps: finish books (links, dates), build out allelse with my old stuff (dine, seas, games, wolfram, apportionment), put music under construction (future api work), commit, hide strava from github
+
 // jsonLoad
 // generalized fetch and return json response
 function jsonLoad(request) {
