@@ -1,6 +1,6 @@
 // scripts to load html result documents from xml documents and xsl stylesheets
 
-//next steps: finish books (links, dates), build out allelse with my old stuff (dine, seas, games, wolfram, apportionment), put music under construction (future api work), commit, hide strava from github
+//next steps: finish books (links, dates), build out allelse with my old stuff (games), put music under construction (future api work)
 
 // jsonLoad
 // generalized fetch and return json response
@@ -29,19 +29,21 @@ async function fetchMenu() {
 	const menuJson = await response.json();
 	let returnMenu = "<ul>";
 	for (let obj in menuJson) {
-		console.log(`${obj}: ${menuJson[obj].Section}`);
+		console.log(`${obj}: ${menuJson[obj].section}`); // debug
+		console.log(`${obj}: ${menuJson[obj].properties[0]}`); // debug
 		// from here just build the html structure
 		returnMenu += "<li class=\"menulist\">";
-			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" + `${menuJson[obj].Section}` + "','Title','Authors','Description','Published');";
-			//returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" + `${menuJson[obj].Section}` + "']);";
-			returnMenu += "selectedMenu('" + `${menuJson[obj].Section}` + "');\">";
-			returnMenu += `${menuJson[obj].Section}`;
+			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" + `${menuJson[obj].section}` + "','Title','Authors','Description','Published');";
+			//returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" + `${menuJson[obj].section}` + "']);";
+			returnMenu += "selectedMenu('" + `${menuJson[obj].section}` + "');\">";
+			returnMenu += `${menuJson[obj].section}`;
 			returnMenu += "</a>";
 		returnMenu += "</li>";
 	}
 	returnMenu += "</ul>";
 	
-	console.log(returnMenu)
+	console.log(returnMenu) // debug
+	
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
 		$("#menu").slideUp("slow", function() {
