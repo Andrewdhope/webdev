@@ -1,1 +1,1 @@
-[{"section":"music"},{"section":"games"}, {"section":"books", "properties":["Title", "Authors", "Description", "Published"]}]
+[{"section":"music", "properties": []},{"section":"games", "properties": []}, {"section":"books", "properties":["Title", "Authors", "Description", "Published"]}]
