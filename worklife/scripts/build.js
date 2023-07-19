@@ -1,6 +1,6 @@
 // scripts to load html result documents from xml documents and xsl stylesheets
 
-//next steps: finish books (links, dates), build out allelse with my old stuff (games), put music under construction (future api work)
+//next steps: finish books (links, dates), build out games, put music under construction (future api work)
 
 // jsonLoad
 // generalized fetch and return json response
@@ -33,8 +33,8 @@ async function fetchMenu() {
 		console.log(`${obj}: ${menuJson[obj].properties[0]}`); // debug
 		// from here just build the html structure
 		returnMenu += "<li class=\"menulist\">";
-			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" + `${menuJson[obj].section}` + "','Title','Authors','Description','Published');";
-			//returnMenu += "<a href=\"#\" onclick=\"ajaxLoad(xmlpath,buildContent,xslpath,['" + `${menuJson[obj].section}` + "']);";
+			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" 
+			returnMenu += `${menuJson[obj].section}` + "','" + `${menuJson[obj].properties[0]}` + "','" + `${menuJson[obj].properties[1]}` + "');";
 			returnMenu += "selectedMenu('" + `${menuJson[obj].section}` + "');\">";
 			returnMenu += `${menuJson[obj].section}`;
 			returnMenu += "</a>";
@@ -63,7 +63,7 @@ async function fetchMenu() {
 
 // buildJsonContent
 // next step: continue building out html, using existing 'work' formatting for now
-async function buildJsonContent(file, primary, secondary, description, date) {
+async function buildJsonContent(file, primary, secondary, href, date) {
 	const filepath = './json/' + file + '.json';
 	console.log(filepath);
 	const fileRequest = new Request(filepath);
@@ -73,7 +73,7 @@ async function buildJsonContent(file, primary, secondary, description, date) {
 	console.log(`${jsonResponse[0][primary]}`)
 	for (let obj in jsonResponse) {
 		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
-		returnContent += "<h2 class=\"collapsible\" onclick=\"expandBullet('" + `${jsonResponse[obj][primary]}` + "')\">"
+		returnContent += "<h2 class=\"collapsible\" href=\"https://www.worldcat.org/search?q=isbn:" + `${jsonResponse[obj][href]}` + "\">"
 		returnContent += `${jsonResponse[obj][primary]}`
 		returnContent += "</h2>"
 		returnContent += "<div>"
