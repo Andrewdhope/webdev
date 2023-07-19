@@ -1,6 +1,6 @@
 // scripts to load html result documents from xml documents and xsl stylesheets
 
-//next steps: finish books (links, dates), build out games, put music under construction (future api work)
+//next steps: finish books (links, dates), build out games (with my own quick json file?), put music under construction (future api work)
 
 // jsonLoad
 // generalized fetch and return json response
@@ -34,7 +34,11 @@ async function fetchMenu() {
 		// from here just build the html structure
 		returnMenu += "<li class=\"menulist\">";
 			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" 
-			returnMenu += `${menuJson[obj].section}` + "','" + `${menuJson[obj].properties[0]}` + "','" + `${menuJson[obj].properties[1]}` + "');";
+			returnMenu += `${menuJson[obj].section}` 
+			returnMenu += "','" + `${menuJson[obj].properties[0]}` 
+			returnMenu += "','" + `${menuJson[obj].properties[1]}` 
+			returnMenu += "','" + `${menuJson[obj].properties[2]}` + "');";
+			// for (let property in `${menuJson[obj].properties}`) {}
 			returnMenu += "selectedMenu('" + `${menuJson[obj].section}` + "');\">";
 			returnMenu += `${menuJson[obj].section}`;
 			returnMenu += "</a>";
@@ -73,8 +77,10 @@ async function buildJsonContent(file, primary, secondary, href, date) {
 	console.log(`${jsonResponse[0][primary]}`)
 	for (let obj in jsonResponse) {
 		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
-		returnContent += "<h2 class=\"collapsible\" href=\"https://www.worldcat.org/search?q=isbn:" + `${jsonResponse[obj][href]}` + "\">"
+		returnContent += "<h2 class=\"collapsible\">"
+		returnContent += "<a href=\"https://www.worldcat.org/search?q=isbn:" + `${jsonResponse[obj][href]}` + "\" target=\"_blank\">"
 		returnContent += `${jsonResponse[obj][primary]}`
+		returnContent += "</a>"
 		returnContent += "</h2>"
 		returnContent += "<div>"
 		returnContent += `${jsonResponse[obj][secondary]}`
