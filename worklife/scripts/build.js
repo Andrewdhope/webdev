@@ -1,6 +1,6 @@
 // scripts to load html result documents from xml documents and xsl stylesheets
 
-//next steps: finish books (links, dates), build out games (with my own quick json file?), put music under construction (future api work)
+//next steps: finish books (qa comp, dates), put music under dev (future api work), commit
 
 // jsonLoad
 // generalized fetch and return json response
@@ -67,7 +67,7 @@ async function fetchMenu() {
 
 // buildJsonContent
 // next step: continue building out html, using existing 'work' formatting for now
-async function buildJsonContent(file, primary, secondary, qid, baseurl) {
+async function buildJsonContent(file, primary, secondary, queryparams, baseurl) {
 	const filepath = './json/' + file + '.json';
 	console.log(filepath);
 	const fileRequest = new Request(filepath);
@@ -78,7 +78,7 @@ async function buildJsonContent(file, primary, secondary, qid, baseurl) {
 	for (let obj in jsonResponse) {
 		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
 		returnContent += "<h2 class=\"collapsible\">"
-		returnContent += "<a href=\"" + baseurl + `${jsonResponse[obj][qid]}` + "\" target=\"_blank\">"
+		returnContent += "<a href=\"" + baseurl + `${jsonResponse[obj][queryparams]}` + "\" target=\"_blank\">"
 		returnContent += `${jsonResponse[obj][primary]}`
 		returnContent += "</a>"
 		returnContent += "</h2>"
