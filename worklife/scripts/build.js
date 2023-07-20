@@ -39,7 +39,6 @@ async function fetchMenu() {
 			returnMenu += "','" + `${menuJson[obj].properties[1]}`
 			returnMenu += "','" + `${menuJson[obj].properties[2]}`
 			returnMenu += "','" + `${menuJson[obj].baseurl}` + "');";
-			// for (let property in `${menuJson[obj].properties}`) {}
 			returnMenu += "selectedMenu('" + `${menuJson[obj].section}` + "');\">";
 			returnMenu += `${menuJson[obj].section}`;
 			returnMenu += "</a>";
