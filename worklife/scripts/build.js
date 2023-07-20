@@ -78,7 +78,7 @@ async function buildJsonContent(file, primary, secondary, qid, baseurl) {
 	for (let obj in jsonResponse) {
 		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
 		returnContent += "<h2 class=\"collapsible\">"
-		returnContent += "<a href=\"" + `${jsonResponse[obj][baseurl]}` + `${jsonResponse[obj][qid]}` + "\" target=\"_blank\">"
+		returnContent += "<a href=\"" + baseurl + `${jsonResponse[obj][qid]}` + "\" target=\"_blank\">"
 		returnContent += `${jsonResponse[obj][primary]}`
 		returnContent += "</a>"
 		returnContent += "</h2>"
