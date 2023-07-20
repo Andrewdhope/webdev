@@ -36,8 +36,9 @@ async function fetchMenu() {
 			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" 
 			returnMenu += `${menuJson[obj].section}` 
 			returnMenu += "','" + `${menuJson[obj].properties[0]}` 
-			returnMenu += "','" + `${menuJson[obj].properties[1]}` 
-			returnMenu += "','" + `${menuJson[obj].properties[2]}` + "');";
+			returnMenu += "','" + `${menuJson[obj].properties[1]}`
+			returnMenu += "','" + `${menuJson[obj].properties[2]}`
+			returnMenu += "','" + `${menuJson[obj].baseurl}` + "');";
 			// for (let property in `${menuJson[obj].properties}`) {}
 			returnMenu += "selectedMenu('" + `${menuJson[obj].section}` + "');\">";
 			returnMenu += `${menuJson[obj].section}`;
@@ -67,7 +68,7 @@ async function fetchMenu() {
 
 // buildJsonContent
 // next step: continue building out html, using existing 'work' formatting for now
-async function buildJsonContent(file, primary, secondary, href, date) {
+async function buildJsonContent(file, primary, secondary, qid, baseurl) {
 	const filepath = './json/' + file + '.json';
 	console.log(filepath);
 	const fileRequest = new Request(filepath);
@@ -78,7 +79,7 @@ async function buildJsonContent(file, primary, secondary, href, date) {
 	for (let obj in jsonResponse) {
 		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
 		returnContent += "<h2 class=\"collapsible\">"
-		returnContent += "<a href=\"https://www.worldcat.org/search?q=isbn:" + `${jsonResponse[obj][href]}` + "\" target=\"_blank\">"
+		returnContent += "<a href=\"" + `${jsonResponse[obj][baseurl]}` + `${jsonResponse[obj][qid]}` + "\" target=\"_blank\">"
 		returnContent += `${jsonResponse[obj][primary]}`
 		returnContent += "</a>"
 		returnContent += "</h2>"
