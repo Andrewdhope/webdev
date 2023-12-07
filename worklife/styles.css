@@ -222,6 +222,11 @@ h2.empty, h3.empty` {
 	padding-left: 10%;
 }
 
+.line .Author {
+	display: block;
+	padding-left: 2.5%;
+}
+
 .line {
 	display: none; /* needed for jQuery effects */
 	padding-left: 5%; 

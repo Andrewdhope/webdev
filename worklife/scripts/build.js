@@ -82,7 +82,7 @@ async function buildJsonContent(file, primary, secondary, queryparams, baseurl) 
 		returnContent += `${jsonResponse[obj][primary]}`
 		returnContent += "</a>"
 		returnContent += "</h2>"
-		returnContent += "<div>"
+		returnContent += "<div class=\"line " + secondary + "\">"
 		returnContent += `${jsonResponse[obj][secondary]}`
 		returnContent += "</div>"
 		// returnContent += "<p>"
