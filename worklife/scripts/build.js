@@ -74,11 +74,15 @@ async function buildJsonContent(file, baseurl,...args) {
 	const fileRequest = new Request(filepath);
 	const response = await fetch(fileRequest);
 	const jsonResponse = await response.json();
-	let primary = new args[0];
-	let secondary = new args[1];
-	let queryparams = new args[2]
-    let bagged = new args[3];
-	//let	sortedJson = new sortByDate(jsonResponse, bagged);
+	let primary;
+	let queryparams;
+	let secondary;
+
+	primary = args[0];
+	secondary = args[1];
+	queryparams = args[2];
+    //let bagged = new args[3];
+	//let sortedJson = new sortByDate(jsonResponse, bagged);
 	
 	let returnContent = "";
 	// ahope: function call for sorting
@@ -113,7 +117,7 @@ async function buildJsonContent(file, baseurl,...args) {
 	); 
 	return;
 }
-
+/*
 function sortByDate(jsonObject, dateProperty) {
 	let sortedArray = [];
 	let dateArray
@@ -125,6 +129,7 @@ function sortByDate(jsonObject, dateProperty) {
 	}
 	return sortedArray.sort();
 }
+*/
 
 // ajaxLoad
 // standard ajax call using the XMLHttpRequest object

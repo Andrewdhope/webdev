@@ -195,7 +195,7 @@ h2.empty:hover, h3.empty:hover {
 	text-decoration: none;
 }
 
-h2.empty, h3.empty` {
+h2.empty, h3.empty {
 	cursor: default;
 }
 
