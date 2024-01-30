@@ -74,34 +74,34 @@ async function buildJsonContent(file, baseurl,...args) {
 	const fileRequest = new Request(filepath);
 	const response = await fetch(fileRequest);
 	const jsonResponse = await response.json();
+	
 	let primary = args[0];
 	let queryparams = args[2];
 	let secondary = args[1];
 	let bagged = args[3];
 
 	let sortedObj = sortByDate(jsonResponse, bagged);
-	
+	let resonseObj = {};
 	let returnContent = "";
-	// ahope: function call for sorting
+
 	for (let i in sortedObj) {
+		console.log(i);
 		console.log(sortedObj[i]);
-		returnContent += "<div>" + Object.keys(sortedObj)[i] + "</div>"
-	}
-	for (let obj in jsonResponse) {
-		// ahope: the new sorted array will have year in the first position...
-		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
-		returnContent += "<h2 class=\"collapsible\">"
-		returnContent += "<a href=\"" + baseurl + `${jsonResponse[obj][queryparams]}` + "\" target=\"_blank\">"
-		returnContent += `${jsonResponse[obj][primary]}`
-		returnContent += "</a>"
-		returnContent += "</h2>"
-		returnContent += "<div class=\"line " + secondary + "\">"
-		returnContent += `${jsonResponse[obj][secondary]}`
-		returnContent += "</div>"
-		// returnContent += "<p>"
-		// returnContent += `${jsonResponse[obj][description]}`
-		// returnContent += "</p>"
-		returnContent += "</div>"
+		returnContent += "<div>" + i + "</div>"
+		for (let j in sortedObj[i]["sortedObject"]) {
+			resonseObj = sortedObj[i]["sortedObject"][j][1]
+			
+			returnContent += "<div class=\"bullet\" id=\"" + `${resonseObj[primary]}` + "\">"
+			returnContent += "<h2 class=\"collapsible\">"
+			returnContent += "<a href=\"" + baseurl + `${resonseObj[queryparams]}` + "\" target=\"_blank\">"
+			returnContent += `${resonseObj[primary]}`
+			returnContent += "</a>"
+			returnContent += "</h2>"
+			returnContent += "<div class=\"line " + secondary + "\">"
+			returnContent += `${resonseObj[secondary]}`
+			returnContent += "</div>"
+			returnContent += "</div>"
+		}
 	}
 	// 'slide up, clear, and append'
 	$("#content").slideUp("slow", function() {
@@ -114,8 +114,7 @@ async function buildJsonContent(file, baseurl,...args) {
 		}
 		$("#content").html(""); // clear content
 		$("#content").html(returnContent).slideDown(); 
-		}
-	); 
+	}); 
 	return;
 }
 
@@ -124,23 +123,25 @@ async function buildJsonContent(file, baseurl,...args) {
 function sortByDate(jsonObject, dateProperty) {
 	let dateArray = [];
 	let yearPiece = "";
-	let sortedObj = [];
+	let sortedObj = {};
 
 	for (let i in jsonObject) {
 		dateArray = jsonObject[i][dateProperty].split('-');
 		yearPiece = dateArray[0];
-		//how to reference with a variable name??
 		if (sortedObj[yearPiece] != null) {
-			sortedObj[yearPiece].sortedObject.push({"Date" : jsonObject[i][dateProperty], "jsonObject" : jsonObject[i]});
+			sortedObj[yearPiece].sortedObject.push([jsonObject[i][dateProperty], jsonObject[i]]);
 		}
 		else {
 			sortedObj[yearPiece] = {sortedObject: []};
-			sortedObj[yearPiece].sortedObject = [{"Date" : jsonObject[i][dateProperty], "jsonObject" : jsonObject[i]}];
+			sortedObj[yearPiece].sortedObject = [[jsonObject[i][dateProperty], jsonObject[i]]];
 		}
-		console.log(sortedObj);
 	}
-	//convert to array??
-	return sortedObj.sort();
+	
+	for (let i in sortedObj) {
+		sortedObj[i].sortedObject = sortedObj[i].sortedObject.sort();
+	}
+	
+	return sortedObj;
 }
 
 
