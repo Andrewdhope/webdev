@@ -35,10 +35,12 @@ async function fetchMenu() {
 		returnMenu += "<li class=\"menulist\">";
 			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" 
 			returnMenu += `${menuJson[obj].section}` 
-			returnMenu += "','" + `${menuJson[obj].properties[0]}` 
-			returnMenu += "','" + `${menuJson[obj].properties[1]}`
-			returnMenu += "','" + `${menuJson[obj].properties[2]}`
-			returnMenu += "','" + `${menuJson[obj].baseurl}` + "');";
+			returnMenu += "','" 
+			returnMenu += `${menuJson[obj].baseurl}`
+			for (let i in menuJson[obj].properties) {
+				returnMenu += "','" + `${menuJson[obj].properties[i]}` 	
+			}
+			returnMenu += "');";
 			returnMenu += "selectedMenu('" + `${menuJson[obj].section}` + "');\">";
 			returnMenu += `${menuJson[obj].section}`;
 			returnMenu += "</a>";
@@ -67,15 +69,21 @@ async function fetchMenu() {
 
 // buildJsonContent
 // next step: continue building out html, using existing 'work' formatting for now
-async function buildJsonContent(file, primary, secondary, queryparams, baseurl) {
+async function buildJsonContent(file, baseurl,...args) {
 	const filepath = './json/' + file + '.json';
-	console.log(filepath);
 	const fileRequest = new Request(filepath);
 	const response = await fetch(fileRequest);
 	const jsonResponse = await response.json();
-	let returnContent = ""
-	console.log(`${jsonResponse[0][primary]}`)
+	let primary = new args[0];
+	let secondary = new args[1];
+	let queryparams = new args[2]
+    let bagged = new args[3];
+	//let	sortedJson = new sortByDate(jsonResponse, bagged);
+	
+	let returnContent = "";
+	// ahope: function call for sorting
 	for (let obj in jsonResponse) {
+		// ahope: the new sorted array will have year in the first position...
 		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
 		returnContent += "<h2 class=\"collapsible\">"
 		returnContent += "<a href=\"" + baseurl + `${jsonResponse[obj][queryparams]}` + "\" target=\"_blank\">"
@@ -104,6 +112,18 @@ async function buildJsonContent(file, primary, secondary, queryparams, baseurl) 
 		}
 	); 
 	return;
+}
+
+function sortByDate(jsonObject, dateProperty) {
+	let sortedArray = [];
+	let dateArray
+	let yearPiece;
+	for (let i in jsonObject) {
+		dateArray = jsonObject[i].properties[dateProperty].split('-');
+		yearPiece = dateArray[0]
+		sortedArray.push(yearPiece, [jsonObject[i].properties[dateProperty], jsonObject[i]]);
+	}
+	return sortedArray.sort();
 }
 
 // ajaxLoad
