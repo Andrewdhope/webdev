@@ -79,13 +79,13 @@ async function buildJsonContent(file, baseurl,...args) {
 	let secondary = args[1];
 	let bagged = args[3];
 
-	let sortedJson = sortByDate(jsonResponse, bagged);
+	let sortedObj = sortByDate(jsonResponse, bagged);
 	
 	let returnContent = "";
 	// ahope: function call for sorting
-	for (let i in sortedJson) {
-		console.log(sortedJson[i]);
-		returnContent += "<div>" + sortedJson[i][0] + "</div>"
+	for (let i in sortedObj) {
+		console.log(sortedObj[i]);
+		returnContent += "<div>" + Object.keys(sortedObj)[i] + "</div>"
 	}
 	for (let obj in jsonResponse) {
 		// ahope: the new sorted array will have year in the first position...
@@ -119,16 +119,28 @@ async function buildJsonContent(file, baseurl,...args) {
 	return;
 }
 
+// how do I reference the array to allow me to push onto it?
+// desired structure: ary[ [2022, [date, obj], [date, obj]], [2023, [date,obj] ] ]
 function sortByDate(jsonObject, dateProperty) {
-	let sortedArray = [];
 	let dateArray = [];
-	let yearPiece;
+	let yearPiece = "";
+	let sortedObj = [];
+
 	for (let i in jsonObject) {
 		dateArray = jsonObject[i][dateProperty].split('-');
 		yearPiece = dateArray[0];
-		sortedArray.push([yearPiece, [jsonObject[i][dateProperty], jsonObject[i]]]);
+		//how to reference with a variable name??
+		if (sortedObj[yearPiece] != null) {
+			sortedObj[yearPiece].sortedObject.push({"Date" : jsonObject[i][dateProperty], "jsonObject" : jsonObject[i]});
+		}
+		else {
+			sortedObj[yearPiece] = {sortedObject: []};
+			sortedObj[yearPiece].sortedObject = [{"Date" : jsonObject[i][dateProperty], "jsonObject" : jsonObject[i]}];
+		}
+		console.log(sortedObj);
 	}
-	return sortedArray.sort();
+	//convert to array??
+	return sortedObj.sort();
 }
 
 
