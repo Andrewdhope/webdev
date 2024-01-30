@@ -74,15 +74,19 @@ async function buildJsonContent(file, baseurl,...args) {
 	const fileRequest = new Request(filepath);
 	const response = await fetch(fileRequest);
 	const jsonResponse = await response.json();
-	let primary = new args[0];
-	let queryparams = new args[1];
-	let secondary = new args[2];
-	let bagges = new args[3];
+	let primary = args[0];
+	let queryparams = args[2];
+	let secondary = args[1];
+	let bagged = args[3];
 
-	let sortedJson = new sortByDate(jsonResponse, bagged);
+	let sortedJson = sortByDate(jsonResponse, bagged);
 	
 	let returnContent = "";
 	// ahope: function call for sorting
+	for (let i in sortedJson) {
+		console.log(sortedJson[i]);
+		returnContent += "<div>" + sortedJson[i][0] + "</div>"
+	}
 	for (let obj in jsonResponse) {
 		// ahope: the new sorted array will have year in the first position...
 		returnContent += "<div class=\"bullet\" id=\"" + `${jsonResponse[obj][primary]}` + "\">"
@@ -117,12 +121,12 @@ async function buildJsonContent(file, baseurl,...args) {
 
 function sortByDate(jsonObject, dateProperty) {
 	let sortedArray = [];
-	let dateArray
+	let dateArray = [];
 	let yearPiece;
 	for (let i in jsonObject) {
-		dateArray = jsonObject[i].properties[dateProperty].split('-');
-		yearPiece = dateArray[0]
-		sortedArray.push(yearPiece, [jsonObject[i].properties[dateProperty], jsonObject[i]]);
+		dateArray = jsonObject[i][dateProperty].split('-');
+		yearPiece = dateArray[0];
+		sortedArray.push([yearPiece, [jsonObject[i][dateProperty], jsonObject[i]]]);
 	}
 	return sortedArray.sort();
 }
