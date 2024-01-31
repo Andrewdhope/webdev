@@ -84,12 +84,14 @@ async function buildJsonContent(file, baseurl,...args) {
 	let resonseObj = {};
 	let returnContent = "";
 
-	for (let i in sortedObj) {
-		console.log(i);
-		console.log(sortedObj[i]);
-		returnContent += "<div>" + i + "</div>"
-		for (let j in sortedObj[i]["sortedObject"]) {
-			resonseObj = sortedObj[i]["sortedObject"][j][1]
+	for (let i = Object.keys(sortedObj).length - 1; i >= 0; i--) {
+		let ikey = Object.keys(sortedObj)[i];
+		console.log(ikey);
+		console.log(sortedObj[ikey]);
+		returnContent += "<div>" + ikey + "</div>"
+		for (let j = Object.keys(sortedObj[ikey]["sortedObject"]).length - 1; j >=0; j--) {
+			let jkey = Object.keys(sortedObj[ikey]["sortedObject"])[j]
+			resonseObj = sortedObj[ikey]["sortedObject"][jkey][1]
 			
 			returnContent += "<div class=\"bullet\" id=\"" + `${resonseObj[primary]}` + "\">"
 			returnContent += "<h2 class=\"collapsible\">"
