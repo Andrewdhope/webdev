@@ -29,8 +29,6 @@ async function fetchMenu() {
 	const menuJson = await response.json();
 	let returnMenu = "<ul>";
 	for (let obj in menuJson) {
-		console.log(`${obj}: ${menuJson[obj].section}`); // debug
-		console.log(`${obj}: ${menuJson[obj].properties[0]}`); // debug
 		// from here just build the html structure
 		returnMenu += "<li class=\"menulist\">";
 			returnMenu += "<a href=\"#\" onclick=\"buildJsonContent('" 
@@ -48,7 +46,7 @@ async function fetchMenu() {
 	}
 	returnMenu += "</ul>";
 	
-	console.log(returnMenu) // debug
+	//console.log(returnMenu) 
 	
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
@@ -73,34 +71,31 @@ async function buildJsonContent(file, baseurl,...args) {
 	const filepath = './json/' + file + '.json';
 	const fileRequest = new Request(filepath);
 	const response = await fetch(fileRequest);
-	const jsonResponse = await response.json();
-	
-	let primary = args[0];
-	let queryparams = args[2];
-	let secondary = args[1];
-	let bagged = args[3];
+	const jsonResponse = await response.json();	
 
-	let sortedObj = sortByDate(jsonResponse, bagged);
-	let resonseObj = {};
+	let sortedObj = sortByDate(jsonResponse, args[3]);
+	let resonseObj = {};	
 	let returnContent = "";
 
 	for (let i = Object.keys(sortedObj).length - 1; i >= 0; i--) {
 		let ikey = Object.keys(sortedObj)[i];
-		console.log(ikey);
-		console.log(sortedObj[ikey]);
-		returnContent += "<div>" + ikey + "</div>"
+		//console.log(ikey);
+		//console.log(sortedObj[ikey]);
+		if (ikey > 0 ) {
+			returnContent += "<div class=\"collator\">" + ikey + "</div>"
+		}
 		for (let j = Object.keys(sortedObj[ikey]["sortedObject"]).length - 1; j >=0; j--) {
 			let jkey = Object.keys(sortedObj[ikey]["sortedObject"])[j]
 			resonseObj = sortedObj[ikey]["sortedObject"][jkey][1]
 			
-			returnContent += "<div class=\"bullet\" id=\"" + `${resonseObj[primary]}` + "\">"
+			returnContent += "<div class=\"bullet\" id=\"" + `${resonseObj[args[0]]}` + "\">"
 			returnContent += "<h2 class=\"collapsible\">"
-			returnContent += "<a href=\"" + baseurl + `${resonseObj[queryparams]}` + "\" target=\"_blank\">"
-			returnContent += `${resonseObj[primary]}`
+			returnContent += "<a href=\"" + baseurl + `${resonseObj[args[2]]}` + "\" target=\"_blank\">"
+			returnContent += `${resonseObj[args[0]]}`
 			returnContent += "</a>"
 			returnContent += "</h2>"
-			returnContent += "<div class=\"line " + secondary + "\">"
-			returnContent += `${resonseObj[secondary]}`
+			returnContent += "<div class=\"line " + args[1] + "\">"
+			returnContent += `${resonseObj[args[1]]}`
 			returnContent += "</div>"
 			returnContent += "</div>"
 		}
@@ -120,22 +115,28 @@ async function buildJsonContent(file, baseurl,...args) {
 	return;
 }
 
-// how do I reference the array to allow me to push onto it?
-// desired structure: ary[ [2022, [date, obj], [date, obj]], [2023, [date,obj] ] ]
+// sortByDate
 function sortByDate(jsonObject, dateProperty) {
-	let dateArray = [];
+	let dateNode = "";
 	let yearPiece = "";
 	let sortedObj = {};
 
 	for (let i in jsonObject) {
-		dateArray = jsonObject[i][dateProperty].split('-');
-		yearPiece = dateArray[0];
+		dateNode = dateProperty;
+		if (dateNode != null) {
+			yearPiece = jsonObject[i][dateNode].split('-')[0];
+		}
+		else {
+			dateNode = i
+			yearPiece = -1;
+			jsonObject[i][dateNode] = i;
+		}
 		if (sortedObj[yearPiece] != null) {
-			sortedObj[yearPiece].sortedObject.push([jsonObject[i][dateProperty], jsonObject[i]]);
+			sortedObj[yearPiece].sortedObject.push([jsonObject[i][dateNode], jsonObject[i]]);
 		}
 		else {
 			sortedObj[yearPiece] = {sortedObject: []};
-			sortedObj[yearPiece].sortedObject = [[jsonObject[i][dateProperty], jsonObject[i]]];
+			sortedObj[yearPiece].sortedObject = [[jsonObject[i][dateNode], jsonObject[i]]];
 		}
 	}
 	
