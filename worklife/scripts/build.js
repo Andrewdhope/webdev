@@ -104,8 +104,8 @@ async function buildJsonContent(file, baseurl,...args) {
 		if (!document.getElementById("content").classList.contains("border")) {
 			$("#content").addClass("border")
 		}
-		if (!document.getElementById("content").classList.contains("life-list")) {
-			$("#content").addClass("life-list")
+		if (!document.getElementById("content").classList.contains("overflow-list")) {
+			$("#content").addClass("overflow-list")
 		}
 		$("#content").html(""); // clear content
 		$("#content").html(returnContent).slideDown(); 

@@ -132,7 +132,7 @@ section#content.border {
 	border-style: dashed;
 }
 
-section#content.life-list {
+section#content.overflow-list {
 	overflow: auto;
 	height: 75vh;
 }
