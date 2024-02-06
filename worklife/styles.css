@@ -161,6 +161,15 @@ nav#menu li:before {
 	padding-right: 10px;
 }
 
+.collator {
+	text-align: right;
+	margin-left:  10%;
+	margin-right: 2.5%;
+	padding-bottom: 1%;
+	border-width: 1px;
+	border-bottom-style: dashed;
+}
+
 /* positioning of the group class to keep the footer stuck to the bottom */
 
 .group:after {
