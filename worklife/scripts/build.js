@@ -66,7 +66,7 @@ async function fetchMenu() {
 }
 
 // buildJsonContent
-// next step: continue building out html, using existing 'work' formatting for now
+// all entries in menu.json have a section and baseurl, then a properties array that goes into args here
 async function buildJsonContent(file, baseurl,...args) {
 	const filepath = './json/' + file + '.json';
 	const fileRequest = new Request(filepath);
@@ -79,8 +79,6 @@ async function buildJsonContent(file, baseurl,...args) {
 
 	for (let i = Object.keys(sortedObj).length - 1; i >= 0; i--) {
 		let ikey = Object.keys(sortedObj)[i];
-		//console.log(ikey);
-		//console.log(sortedObj[ikey]);
 		if (ikey > 0 ) {
 			returnContent += "<div class=\"collator\">" + ikey + "</div>"
 		}
@@ -116,6 +114,7 @@ async function buildJsonContent(file, baseurl,...args) {
 }
 
 // sortByDate
+// dateProperty is assumed to be dash-delimited date string
 function sortByDate(jsonObject, dateProperty) {
 	let dateNode = "";
 	let yearPiece = "";
@@ -127,6 +126,7 @@ function sortByDate(jsonObject, dateProperty) {
 			yearPiece = jsonObject[i][dateNode].split('-')[0];
 		}
 		else {
+			// if dateProperty doesn't exist, sort by (reverse) index-order of the json object
 			dateNode = i
 			yearPiece = -1;
 			jsonObject[i][dateNode] = i;
@@ -135,6 +135,8 @@ function sortByDate(jsonObject, dateProperty) {
 			sortedObj[yearPiece].sortedObject.push([jsonObject[i][dateNode], jsonObject[i]]);
 		}
 		else {
+			// instantiate sortedObject for this year node
+			// sortedObject contains the full date node and the full json object
 			sortedObj[yearPiece] = {sortedObject: []};
 			sortedObj[yearPiece].sortedObject = [[jsonObject[i][dateNode], jsonObject[i]]];
 		}
