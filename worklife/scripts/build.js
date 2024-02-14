@@ -204,8 +204,13 @@ function buildMenu(xslDoc, xmlDoc) {
 			if (!document.getElementById("menu").classList.contains("border")) {
 				$("#menu").addClass("border")
 			}
+			/*
 			if (document.getElementById("content").classList.contains("overflow-list")) {
 				$("#content").removeClass("overflow-list")
+			}
+			*/
+			if (!document.getElementById("content").classList.contains("overflow-list")) {
+				$("#content").addClass("overflow-list")
 			}
 			$("#menu").html(""); // clear menu
 			$("#menu").append(resultDocument).slideDown(); // append
