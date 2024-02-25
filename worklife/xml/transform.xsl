@@ -56,6 +56,14 @@
 						<xsl:value-of select="normalize-space(text())"/> 
 					</xsl:if>
 					
+					<!-- substitute a paragraph when there are no links and just a writeup -->
+					<xsl:if test="count(writeup) > 0">
+						<xsl:element name="a">
+							<xsl:attribute name="class">writeup</xsl:attribute>
+							<xsl:value-of select="normalize-space(writeup/text())"/> 
+						</xsl:element>
+					</xsl:if>
+					
 					<!-- add an option for the line-header to be a standalone link -->
 					<xsl:if test="count(link[1]) = 1">
 						<xsl:element name="a">
