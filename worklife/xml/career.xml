@@ -4,6 +4,7 @@
 	<section option="interests">
 		<bullet list-orientation="vert">
 			<title>design</title>
+			<writeup>Design work is a pillar of engineering. Starting from neutral, a designer expresses a solution in which intricate features link to a thematic core.</writeup>
 			<line>heuristics
 				<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 			</line>
@@ -16,25 +17,11 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
-			<writeup>extraction methods interfaces apis protocol data structure framework architecture retrieval security. tools include... relevant projects include...</writeup>
-			<line>framework
-				<link>https://www.mongodb.com/</link>
-			</line>
-			<line>extraction
-				<entry>interfaces
-					<linkset>
-						<link>https://www.postman.com/</link>
-						<link>https://rapidapi.com/</link>
-						<link>https://open.epic.com/</link>
-					</linkset>
-				</entry>
-			</line>
-			<line>payload
-				<link>https://D3js.org</link>
-			</line>
+			<writeup>Data mining leverages public protocols, interfaces, and inventive retrieval methods to extract structured data from various database framework sets.</br></br>Tools include: Postman, Rapid API, Rstudio, DOM</br></br>Relevant projects include: Salary Search, <a href="https://open.epic.com/" target="_blank">open.epic.co,</a>, Baptist</writeup>
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>modeling</title>
+			<writeup>Mathematical models encourage exploratory analysis through computational reducibility and calibrated simulation. Models form an analogous system to test theories and adjust inputs. When done well, they can forecast outcomes within a quantifiable error range, though they are best deployed when engineered to answer very specific questions.</writeup>
 			<line>simulation
 				<link>https://hash.ai/</link>
 			</line>
