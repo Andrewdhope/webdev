@@ -17,7 +17,8 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
-			<writeup>Data mining leverages public protocols, interfaces, and inventive retrieval methods to extract structured data from various database framework sets.</br></br>Tools include: Postman, Rapid API, Rstudio, DOM</br></br>Relevant projects include: Salary Search, <a href="https://open.epic.com/" target="_blank">open.epic.co,</a>, Baptist</writeup>
+			<writeup>Data mining leverages public protocols, interfaces, and inventive retrieval methods to extract structured data from various database framework sets.</writeup>
+			<!--</br></br>Tools include: Postman, Rapid API, Rstudio, DOM</br></br>Relevant projects include: Salary Search, <a href="https://open.epic.com/" target="_blank">open.epic.co,</a>, Baptist</writeup>-->
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>modeling</title>
