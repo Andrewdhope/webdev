@@ -36,7 +36,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>modeling</title>
-			<writeup>Dathematical models allow for exploratory analysis, through computational reducibility and calibrated simulation, to forecast outcomes within an quantifiable error range.</writeup>
+			<writeup>Mathematical models allow for exploratory analysis, through computational reducibility and calibrated simulation, to forecast outcomes within an quantifiable error range.</writeup>
 			<line>simulation
 				<link>https://hash.ai/</link>
 			</line>
