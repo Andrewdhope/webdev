@@ -4,7 +4,7 @@
 	<section option="interests">
 		<bullet list-orientation="vert">
 			<title>design</title>
-			<writeup>design work is a pillar of engineering. Starting from neutral, a designer expresses a solution in which intricate features link to a thematic core</writeup>
+			<writeup>Design work is a pillar of engineering. Starting from neutral, a designer expresses a solution in which intricate features link to a thematic core.</writeup>
 			<line>heuristics
 				<link>https://www.nngroup.com/articles/ten-usability-heuristics/</link>
 			</line>
@@ -17,7 +17,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>mining</title>
-			<writeup>data mining leverages public protocols, interfaces, and inventive retrieval methods to extract structured data from various database framework sets</writeup>
+			<writeup>Data mining leverages public protocols, interfaces, and inventive retrieval methods to extract structured data from various database framework sets.</writeup>
 			<line>framework
 				<link>https://www.mongodb.com/</link>
 			</line>
@@ -36,7 +36,7 @@
 		</bullet>
 		<bullet list-orientation="vert">
 			<title>modeling</title>
-			<writeup>mathematical models allow for exploratory analysis, through computational reducibility and calibrated simulation, to forecast outcomes within an quantifiable error range</writeup>
+			<writeup>Dathematical models allow for exploratory analysis, through computational reducibility and calibrated simulation, to forecast outcomes within an quantifiable error range.</writeup>
 			<line>simulation
 				<link>https://hash.ai/</link>
 			</line>
