@@ -115,6 +115,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+a.writeup:hover {
+	text-decoration: none;
+}
+
 /* --- BODY --- */ 
 
 section#content {
@@ -213,6 +217,7 @@ h2.empty, h3.empty {
 	border-style: dashed;
 	border-width: 0px 0px 0px 1px;
 	padding-left: 5%;
+	padding-right: 5%; 
 }
 
 /* expand_more and expand_less icons */
