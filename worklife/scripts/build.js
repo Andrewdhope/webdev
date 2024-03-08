@@ -202,7 +202,7 @@ function buildMenu(xslDoc, xmlDoc, mode_click) {
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
 		$("#content").slideDown(750);
-		if (mode_change = 1) {
+		if (mode_change == 1) {
 			$("#menu").slideUp("slow", function() {
 				// start showing the border after one of the menu options is first clicked
 				if (!document.getElementById("menu").classList.contains("border")) {
