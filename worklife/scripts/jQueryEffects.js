@@ -24,6 +24,7 @@ function jBounceUp() {
 	if (document.getElementsByTagName("header")[0].classList.contains("up")) {
 		if (menu_mode == "life") { fetchMenu() }
 		else { ajaxLoad(xmlpath,buildMenu,'xml/loadMenu.xsl',['#']) }
+		
 	} else {
 	
 		$("header").addClass("up");
@@ -40,4 +41,5 @@ function jBounceUp() {
 			});
 		});	
 	}
+	
 }
