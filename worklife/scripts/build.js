@@ -50,7 +50,7 @@ async function fetchMenu() {
 	
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
-		if (menu_change == 1) {
+		if (mode_change == 1) {
 			$("#menu").slideUp("slow", function() {
 				// start showing the border after one of the menu options is first clicked
 				if (!document.getElementById("menu").classList.contains("border")) {
