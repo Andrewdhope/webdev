@@ -15,7 +15,11 @@
 				<xsl:attribute name="class">collapsible</xsl:attribute>
 			</xsl:if>
 			<xsl:attribute name="onclick">
-				<xsl:text>expandBullet('</xsl:text><xsl:value-of select="$bullet" /><xsl:text>')</xsl:text>
+				<xsl:text>expandBullet('</xsl:text><xsl:value-of select="$bullet" />
+				<xsl:if test="@auto-expand > -1"> 
+					<xsl:text>','</xsl:text><xsl:value-of select="@auto-expand" />
+				</xsl:if>
+				<xsl:text>')</xsl:text>
 			</xsl:attribute>
 			<xsl:value-of select="title"/> <!-- actual value of the header -->
 		</xsl:element>
