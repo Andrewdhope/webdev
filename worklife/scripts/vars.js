@@ -14,7 +14,7 @@ function vhViewport() {
 
 function setPath(setting) {
 	if (setting == "work") {
-		if (menu_mode !== "work") {
+		if (menu_mode !== null && menu_mode !== "work") {
 			mode_change = 1
 		}
 		else {
@@ -26,7 +26,7 @@ function setPath(setting) {
 	}
 	
 	if (setting == "life") {
-		if (menu_mode !== "life") {
+		if (menu_mode !== null && menu_mode !== "life") {
 			mode_change = 1
 		}
 		else {

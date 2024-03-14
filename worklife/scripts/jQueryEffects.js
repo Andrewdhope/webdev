@@ -38,7 +38,16 @@ function jBounceUp() {
 				$("footer p").slideDown("100")
 				$(".subtitle").fadeIn("10")
 				$("header").removeClass("down")
+				
+				if (!document.getElementById("content").classList.contains("border")) {
+					$("#content").addClass("border");
+				}
+				if (!document.getElementById("content").classList.contains("overflow-list")) {
+					$("#content").addClass("overflow-list")
+				}
+				$("#content").slideDown(750);
 			});
+
 		});	
 	}
 	
