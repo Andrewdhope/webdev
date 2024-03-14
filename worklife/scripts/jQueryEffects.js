@@ -39,11 +39,11 @@ function jBounceUp() {
 				$(".subtitle").fadeIn("10")
 				$("header").removeClass("down")
 				
-				if (!document.getElementById("content").classList.contains("border")) {
-					$("#content").addClass("border");
-				}
 				if (!document.getElementById("content").classList.contains("overflow-list")) {
 					$("#content").addClass("overflow-list")
+				}
+				if (!document.getElementById("content").classList.contains("border")) {
+					$("#content").addClass("border");
 				}
 				$("#content").slideDown(750);
 			});
