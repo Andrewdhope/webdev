@@ -8,6 +8,12 @@ function expandBullet(bullet, expand_index) {
 	var header = document.getElementById(bullet);
 	var title = header.childNodes[1]; // h2
 	
+	if (expand_index >= 0) {
+		var expand_index2 = expand_index * 2
+		var line = document.getElementById(bullet).children[2].children[expand_index2].id
+		expandLine(line);
+	}
+
 	// change the icon and slide the content up/down
 	if (title.classList.contains("active")) {
 		title.classList.remove("active")
@@ -32,11 +38,6 @@ function expandBullet(bullet, expand_index) {
 			}
 			$("#" + bullet + " .lineset").slideDown("slow")
 		}
-	}
-	if (expand_index >= 0) {
-		var expand_index2 = expand_index * 2
-		var line = document.getElementById(bullet).children[2].children[expand_index2].id
-		expandLine(line);
 	}
 }
 
