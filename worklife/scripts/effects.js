@@ -7,7 +7,8 @@ function expandBullet(bullet, expand_index) {
 
 	var header = document.getElementById(bullet);
 	var title = header.childNodes[1]; // h2
-	
+
+	// does this need to be an async function that kicks off the rest after this is loaded?
 	if (expand_index >= 0) {
 		var expand_index2 = expand_index * 2
 		var line = document.getElementById(bullet).children[2].children[expand_index2].id
