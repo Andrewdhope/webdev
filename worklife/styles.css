@@ -124,7 +124,6 @@ a.writeup:hover {
 section#content {
 	width: 75%;
 	float: left;
-	padding-bottom: 5vh;
 	margin-bottom: var(--footer-margin);
 	box-sizing: border-box;
 	background-color: green;

@@ -46,6 +46,7 @@ function jBounceUp() {
 					$("#content").addClass("border");
 				}
 				$("#content").slideDown(750);
+				$("#content").css({"padding-bottom": "5vh"}) 
 			});
 
 		});	
