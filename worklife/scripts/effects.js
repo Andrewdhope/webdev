@@ -20,7 +20,9 @@ function expandBullet(bullet, expand_index) {
 		$("#" + bullet + " span:first").html("expand_more")
 		$("#" + bullet + " .lineset").slideUp("slow", function(){
 			$("#" + bullet + " .line").hide();
-			expandLine(line);
+			if (expand_index >= 0) {
+				expandLine(line);
+			}
 		})		
 	
 	} else {
@@ -39,7 +41,9 @@ function expandBullet(bullet, expand_index) {
 			}
 			
 			$("#" + bullet + " .lineset").slideDown("slow", function(){
-				expandLine(line);
+				if (expand_index >= 0) {
+					expandLine(line);
+				}
 			  });
 
 		}
