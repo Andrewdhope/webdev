@@ -199,14 +199,9 @@ function buildMenu(xslDoc, xmlDoc, mode_click) {
 	xsltProcessor.importStylesheet(xslDoc); 
 	resultDocument = xsltProcessor.transformToFragment(xmlDoc, document);	
 
-	// 'slide up, clear, and append'
-	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
-		$("#content").html(""); // clear content
-
+	$("#content").slideUp("slow", function() {
 		ajaxLoad(xmlpath,buildContent,xslpath,['intro']);
 
-		$("#content").slideDown(750);
-		
 		if (mode_change == 1) {
 			$("#menu").slideUp("slow", function() {
 				// start showing the border after one of the menu options is first clicked
@@ -223,11 +218,10 @@ function buildMenu(xslDoc, xmlDoc, mode_click) {
 				}
 				$("#menu").html(""); // clear menu
 				$("#menu").append(resultDocument).slideDown(); // append
-				}); 
-			}
+			}); 
 		}
-	);
-	
+	});
+
 	return;
 }
 
