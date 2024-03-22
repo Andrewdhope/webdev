@@ -227,6 +227,7 @@ function buildMenu(xslDoc, xmlDoc, mode_click) {
 			}
 		}
 	);
+	
 	return;
 }
 

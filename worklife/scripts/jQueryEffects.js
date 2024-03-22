@@ -46,9 +46,12 @@ function jBounceUp() {
 					$("#content").addClass("border");
 				}
 				
+				/* 
+				// confident in eliminating the slideDown, but not sure whether or not we need the padding-bottom added here
 				$("#content").slideDown(750, function(){
 					$("#content").css({"padding-bottom": "5vh"}) // consider adding a class and controlling css in styles
 				});
+				*/
 				
 			});
 
