@@ -202,6 +202,9 @@ function buildMenu(xslDoc, xmlDoc, mode_click) {
 	// 'slide up, clear, and append'
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
+		
+		buildContent(xslDoc, xmlDoc, 'intro');
+
 		$("#content").slideDown(750);
 		if (mode_change == 1) {
 			$("#menu").slideUp("slow", function() {

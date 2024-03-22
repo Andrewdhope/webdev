@@ -2,6 +2,14 @@
 <xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
+
+<xsl:for-each select="section[@option = $sectionVal]/blurbset">
+	<div class="blurb">
+		<xsl:element name="p">
+			<xsl:value-of select="normalize-space(blurb/text())"/> 
+		</xsl:element>
+	</div>
+</xsl:for-each>
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
 	<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 	<xsl:variable name="bullet" select="translate(normalize-space(title/text()),' ','_')" />
@@ -46,10 +54,11 @@
 				</xsl:element>
 			</xsl:if>
 			
-			<xsl:for-each select="line">
+		<xsl:for-each select="line">
 			<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
 			<xsl:variable name="line" select="translate(normalize-space(text()),' ','_')" />
 			
+
 			<div class="line" id="{$line}">
 				<!-- assign a class (collapsible, empty) based on whether there is content under this line -->
 				<xsl:element name="h3">

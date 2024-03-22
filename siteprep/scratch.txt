@@ -1,1 +1,8 @@
 test.
+
+Contained in this portfolio are several topics of interest. They cover specific achievements, as well as areas of focus for professional development.
+
+I designed the layout and features from scratch (no template), and implemented the design using HTML, javascript, json, jquery, xml, xsl, and css.
+
+
+

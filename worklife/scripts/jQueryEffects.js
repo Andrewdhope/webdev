@@ -45,6 +45,7 @@ function jBounceUp() {
 				if (!document.getElementById("content").classList.contains("border")) {
 					$("#content").addClass("border");
 				}
+				
 				$("#content").slideDown(750, function(){
 					$("#content").css({"padding-bottom": "5vh"}) // consider adding a class and controlling css in styles
 				});
