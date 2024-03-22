@@ -3,12 +3,16 @@
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
 
-<xsl:for-each select="section[@option = $sectionVal]/blurbset/blurb">
-	<div class="blurb">
-		<xsl:element name="p">
+<xsl:for-each select="intro[@option = $sectionVal]/blurb">
+	<xsl:element name="p" class="blurb">
 			<xsl:value-of select="normalize-space(text())"/> 
-		</xsl:element>
-	</div>
+			<xsl:if test="@option='quote'">
+				<xsl:attribute name="class">quote</xsl:attribute>
+			</xsl:if>
+			<xsl:if test="@option='attrib'">
+				<xsl:attribute name="class">attrib</xsl:attribute>
+			</xsl:if>
+	</xsl:element>
 </xsl:for-each>
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
 	<!-- element IDs shouldn't contain spaces, use translate to remove them with XSLT 1.0 -->
