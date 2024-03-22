@@ -33,7 +33,7 @@ function setPath(setting) {
 			mode_change = 0
 		}
 		menu_mode = "life"
-		xmlpath = "xml/leisure.xml"
+		xmlpath = "xml/career.xml"
 		xslpath = "xml/transform.xsl"
 	}
 }
