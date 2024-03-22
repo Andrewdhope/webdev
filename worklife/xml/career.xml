@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content>
 <!-- don't look back, look forward -->
-	<intro option="blurbset">
+	<intro option="intro">
 		<blurb>You have reached the web portfolio of andrewdhope. Welcome!</blurb>
 		<blurb>This showcase contains many topics of interest, some of which are aspirational, but many reflect real-world accomplishment and experience.</blurb>
 		<blurb>The features and layout of this site were designed from scratch, without a pre-existing template, implemented with classic web design tools.</blurb>
