@@ -2,11 +2,11 @@
 <content>
 <!-- don't look back, look forward -->
 	<intro option="intro">
-			<blurb>You have reached the web portfolio of andrewdhope. Welcome!</blurb>
-			<blurb>This showcase contains many topics of interest, some of which are aspirational, but many reflect real-world accomplishment and experience.</blurb>
-			<blurb>The features and layout of this site were designed from scratch, without a pre-existing template, implemented with classic web design tools.</blurb>
-			<blurb option="quote">"'After all is said and done,' said Wilson one day after supper, 'the best sledger is the man who sees what has to be done, and does it -- and says nothing about it.'"</blurb>
-			<blurb option="attrib">Apsley Cherry-Garland, The Worst Journey in the World</blurb>
+		<blurb>You have reached the web portfolio of andrewdhope. Welcome!</blurb>
+		<blurb>This showcase contains many topics of interest, some of which are aspirational, but many reflect real-world accomplishment and experience.</blurb>
+		<blurb>The features and layout of this site were designed from scratch, without a pre-existing template, implemented with classic web design tools.</blurb>
+		<blurb option="quote">"'After all is said and done,' said Wilson one day after supper, 'the best sledger is the man who sees what has to be done, and does it -- and says nothing about it.'"</blurb>
+		<blurb option="attrib">Apsley Cherry-Garland, The Worst Journey in the World</blurb>
 	</intro>
 	<section option="interests">
 		<bullet list-orientation="vert">

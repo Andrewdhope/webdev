@@ -3,7 +3,7 @@
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
 
-<xsl:for-each select="intro[@option = $sectionVal]">
+<xsl:for-each select="intro[@option = $sectionVal]/blurb">
 	<xsl:element name="p" class="blurb">
 			<xsl:value-of select="normalize-space(text())"/> 
 			<xsl:if test="@option='quote'">
