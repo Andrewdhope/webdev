@@ -42,9 +42,12 @@ function jBounceUp() {
 				if (!document.getElementById("content").classList.contains("overflow-list")) {
 					$("#content").addClass("overflow-list")
 				}
+
+				/*
 				if (!document.getElementById("content").classList.contains("border")) {
 					$("#content").addClass("border");
 				}
+				*/
 				
 				/* 
 				// confident in eliminating the slideDown, but not sure whether or not we need the padding-bottom added here
