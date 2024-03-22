@@ -3,7 +3,7 @@
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
 
-<xsl:for-each select="intro[@option = $sectionVal]/blurb">
+<xsl:for-each select="intro[@option = $sectionVal]">
 	<xsl:element name="p" class="blurb">
 			<xsl:if test="@option='quote'">
 				<xsl:attribute name="class">quote</xsl:attribute>
