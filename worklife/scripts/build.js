@@ -203,7 +203,7 @@ function buildMenu(xslDoc, xmlDoc, mode_click) {
 	$("#content").slideUp("slow", function() { // slide the content side up before re-loading the navigation menu
 		$("#content").html(""); // clear content
 		
-		buildContent(xslDoc, xmlDoc, 'intro');
+		ajaxLoad(xmlpath,buildContent,xslpath,['intro']);
 
 		$("#content").slideDown(750);
 		if (mode_change == 1) {

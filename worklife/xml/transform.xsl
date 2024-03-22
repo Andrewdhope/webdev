@@ -3,10 +3,10 @@
 <xsl:param name="sectionVal" />
 <xsl:template match="content">
 
-<xsl:for-each select="section[@option = $sectionVal]/blurbset">
+<xsl:for-each select="section[@option = $sectionVal]/blurbset/blurb">
 	<div class="blurb">
 		<xsl:element name="p">
-			<xsl:value-of select="normalize-space(blurb/text())"/> 
+			<xsl:value-of select="normalize-space(text())"/> 
 		</xsl:element>
 	</div>
 </xsl:for-each>
