@@ -4,14 +4,15 @@
 <xsl:template match="content">
 
 <xsl:for-each select="intro[@option = $sectionVal]/blurb">
-	<xsl:element name="p" class="blurb">
-			<xsl:if test="@option='quote'">
-				<xsl:attribute name="class">quote</xsl:attribute>
-			</xsl:if>
-			<xsl:if test="@option='attrib'">
-				<xsl:attribute name="class">attrib</xsl:attribute>
-			</xsl:if>
-			<xsl:value-of select="normalize-space(text())"/> 
+	<xsl:element name="p">
+		<xsl:attribute name="class">blurb</xsl:attribute>
+		<xsl:if test="@option='quote'">
+			<xsl:attribute name="class">quote</xsl:attribute>
+		</xsl:if>
+		<xsl:if test="@option='attrib'">
+			<xsl:attribute name="class">attrib</xsl:attribute>
+		</xsl:if>
+		<xsl:value-of select="normalize-space(text())"/> 
 	</xsl:element>
 </xsl:for-each>
 <xsl:for-each select="section[@option = $sectionVal]/bullet">
