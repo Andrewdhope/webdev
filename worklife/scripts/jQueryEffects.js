@@ -42,7 +42,7 @@ function jBounceUp() {
 				if (!document.getElementById("content").classList.contains("overflow-list")) {
 					$("#content").addClass("overflow-list")
 				}
-
+				
 				/*
 				if (!document.getElementById("content").classList.contains("border")) {
 					$("#content").addClass("border");

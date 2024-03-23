@@ -138,6 +138,7 @@ section#content.border {
 section#content.overflow-list {
 	overflow: auto;
 	height: calc((var(--vh)*75) - var(--footer-margin));
+	padding-bottom: 5vh;
 }
 
 section#content p {
