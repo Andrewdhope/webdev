@@ -140,6 +140,21 @@ section#content.overflow-list {
 	height: calc((var(--vh)*75) - var(--footer-margin));
 }
 
+section#content p {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+section#content p.quote {
+	font-style: italic;
+	margin-left: 5%;
+	padding-top: 10vh;
+}
+
+section#content p.attrib {
+	margin-left: 6%;
+}
+
 nav#menu {
 	width: 25%;
 	float: right;
